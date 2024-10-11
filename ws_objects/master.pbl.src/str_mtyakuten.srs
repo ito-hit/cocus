@@ -1,0 +1,28 @@
+﻿$PBExportHeader$str_mtyakuten.srs
+$PBExportComments$m_tyakuten用の構造体
+global type str_mtyakuten from structure
+	integer		data_kbn
+	integer		unso_code
+	string		yubin_no
+	string		jyusyo
+	string		tyakuten_code
+	string		tyakuten_code_tome
+	string		hanyo_col_1
+	string		hanyo_col_2
+	string		hanyo_col_3
+	string		hanyo_col_4
+	string		hanyo_col_5
+	datetime	touroku_date
+	string		touroku_user_id
+	string		touroku_client_id
+	string		touroku_pg_id
+	datetime	henkou_date
+	string		henkou_user_id
+	string		henkou_client_id
+	string		henkou_pg_id
+	datetime	kousin_date
+	string		kousin_user_id
+	string		kousin_client_id
+	string		kousin_pg_id
+	integer		haita_flg
+end type

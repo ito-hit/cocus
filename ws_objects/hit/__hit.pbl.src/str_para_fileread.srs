@@ -1,0 +1,6 @@
+﻿$PBExportHeader$str_para_fileread.srs
+$PBExportComments$ファイル読込用構造体
+global type str_para_fileread from structure
+	str_fileread		ret[]
+end type
+

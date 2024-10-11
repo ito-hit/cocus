@@ -1,0 +1,11 @@
+﻿$PBExportHeader$str_calendar.srs
+$PBExportComments$カレンダー登録用構造体
+global type str_calendar from structure
+	boolean		answer
+	integer		kbn
+	string		kbn_mei
+	integer		kyoten
+	string		kyoten_mei_ryaku
+	string		shori_kbn
+end type
+

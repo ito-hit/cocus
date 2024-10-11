@@ -1,0 +1,27 @@
+﻿$PBExportHeader$str_mdlpara_tokui.srs
+$PBExportComments$m_tokuirのmodal構造体
+global type str_mdlpara_tokui from structure
+	boolean		ret
+	long		out_tokui_code
+	string		out_tokui_mei_full		descriptor "comment" = "追加"
+	string		out_tokui_mei		descriptor "comment" = "追加"
+	string		out_tokui_mei_ryaku		descriptor "comment" = "追加"
+	string		out_tokui_mei_kana		descriptor "comment" = "追加"
+	long		out_tokui_kbn		descriptor "comment" = "追加"
+	long		out_gyotai_kbn		descriptor "comment" = "追加"
+	long		out_syokuti_flg		descriptor "comment" = "追加"
+	string		out_torihiki_code		descriptor "comment" = "追加"
+	string		out_jigyosya_code		descriptor "comment" = "追加"
+	string		out_houjin_no		descriptor "comment" = "追加"
+	long		out_bumon_code		descriptor "comment" = "追加"
+	long		out_tanto_code		descriptor "comment" = "追加"
+	long		out_nayose_code		descriptor "comment" = "追加"
+	long		out_nayose_eda		descriptor "comment" = "追加"
+	long		out_todofuken_code		descriptor "comment" = "追加"
+	long		out_sikutyoson_code		descriptor "comment" = "追加"
+	string		out_yubin_no		descriptor "comment" = "追加"
+	string		out_jyusyo		descriptor "comment" = "追加"
+	string		out_tel_no		descriptor "comment" = "追加"
+	string		out_fax_no		descriptor "comment" = "追加"
+end type
+

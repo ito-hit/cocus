@@ -1,0 +1,13 @@
+﻿$PBExportHeader$fo_decode.srf
+$PBExportComments$Oracleのdecode関数と同じ動きをするグローバル関数
+global type fo_decode from function_object
+end type
+
+forward prototypes
+global function any fo_decode (any p_value, any p_search, any p_true, any p_false)
+end prototypes
+
+global function any fo_decode (any p_value, any p_search, any p_true, any p_false);return fnc.of_decode( p_value, p_search, p_true, p_false )
+
+end function
+

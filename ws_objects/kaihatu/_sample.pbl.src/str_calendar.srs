@@ -1,0 +1,11 @@
+﻿$PBExportHeader$str_calendar.srs
+$PBExportComments$カレンダマスタメンテナンス用構造体
+global type str_calendar from structure
+	boolean		answer
+	integer		id
+	integer		kbn
+	boolean		holiday_flg
+	integer		nen
+	integer		tuki
+end type
+

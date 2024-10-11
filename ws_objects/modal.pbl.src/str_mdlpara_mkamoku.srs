@@ -1,0 +1,7 @@
+﻿$PBExportHeader$str_mdlpara_mkamoku.srs
+$PBExportComments$m_kamoku用のモーダル構造体
+global type str_mdlpara_mkamoku from structure
+	long		in_kamoku_code
+	str_mkamoku		ret[]
+end type
+

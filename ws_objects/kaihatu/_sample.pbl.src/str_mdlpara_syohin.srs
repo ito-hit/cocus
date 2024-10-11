@@ -1,0 +1,28 @@
+﻿$PBExportHeader$str_mdlpara_syohin.srs
+$PBExportComments$m_syohinのmodal構造体
+global type str_mdlpara_syohin from structure
+	boolean		ret
+	long		out_syohin_code
+	long		out_iro_no
+	string		out_size_mei
+	string		out_size_code		descriptor "comment" = "追加"
+	long		out_sku_code		descriptor "comment" = "追加"
+	string		out_hin_ban		descriptor "comment" = "追加"
+	string		out_hin_mei		descriptor "comment" = "追加"
+	string		out_iro_mei		descriptor "comment" = "追加"
+	long		out_hi_toriatukai_flg		descriptor "comment" = "追加"
+	long		out_bumon_code		descriptor "comment" = "追加"
+	long		out_kyoyo_kbn		descriptor "comment" = "追加"
+	long		out_brand_code		descriptor "comment" = "追加"
+	long		out_subbrand_code		descriptor "comment" = "追加"
+	long		out_season_code		descriptor "comment" = "追加"
+	long		out_daibunrui_code		descriptor "comment" = "追加"
+	long		out_tyubunrui_code		descriptor "comment" = "追加"
+	long		out_syobunrui_code		descriptor "comment" = "追加"
+	long		out_group_code		descriptor "comment" = "追加"
+	long		out_seriese_code		descriptor "comment" = "追加"
+	long		out_iro_keitou_code		descriptor "comment" = "追加"
+	long		out_zaiko_kanri_flg		descriptor "comment" = "追加"
+	long		out_bhin_flg		descriptor "comment" = "追加"
+end type
+

@@ -1,0 +1,14 @@
+﻿$PBExportHeader$fo_num_today.srf
+$PBExportComments$サーバーのシステム日付を数値タイプで返すグローバル関数
+global type fo_num_today from function_object
+end type
+
+forward prototypes
+global function long fo_num_today ()
+end prototypes
+
+global function long fo_num_today ();// サーバーのシステム日付を数値で返す
+return fnc.db.of_get_numsysdate( )
+
+end function
+

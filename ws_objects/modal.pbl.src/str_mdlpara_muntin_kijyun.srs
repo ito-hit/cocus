@@ -1,0 +1,6 @@
+﻿$PBExportHeader$str_mdlpara_muntin_kijyun.srs
+$PBExportComments$m_untin_kijyun用のモーダル構造体
+global type str_mdlpara_muntin_kijyun from structure
+	str_muntin_kijyun		ret[]
+end type
+

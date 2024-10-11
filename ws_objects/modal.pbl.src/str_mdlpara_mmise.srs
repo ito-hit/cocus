@@ -1,0 +1,7 @@
+﻿$PBExportHeader$str_mdlpara_mmise.srs
+$PBExportComments$m_mise用のモーダル構造体
+global type str_mdlpara_mmise from structure
+	long		in_tokui_code
+	str_mmise	ret[]
+end type
+

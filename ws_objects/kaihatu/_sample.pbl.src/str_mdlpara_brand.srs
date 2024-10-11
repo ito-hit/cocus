@@ -1,0 +1,8 @@
+﻿$PBExportHeader$str_mdlpara_brand.srs
+$PBExportComments$m_brandのmodal構造体
+global type str_mdlpara_brand from structure
+	boolean		ret
+	long		out_brand_code
+	string		out_brand_mei		descriptor "comment" = "追加"
+end type
+

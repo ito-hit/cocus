@@ -1,0 +1,13 @@
+﻿$PBExportHeader$str_mdlpara_meisyo_parent.srs
+$PBExportComments$m_meisyoのmodal構造体 名称区分=0
+global type str_mdlpara_meisyo_parent from structure
+	boolean		ret
+	string		out_meisyo_code
+	string		out_meisyo_mei		descriptor "comment" = "追加"
+	string		out_meisyo_1		descriptor "comment" = "追加"
+	string		out_meisyo_2		descriptor "comment" = "追加"
+	string		out_meisyo_3		descriptor "comment" = "追加"
+	string		out_setsumei		descriptor "comment" = "追加"
+	long		out_kousin_kengen		descriptor "comment" = "追加"
+end type
+

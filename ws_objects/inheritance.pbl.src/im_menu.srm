@@ -1,0 +1,21 @@
+﻿$PBExportHeader$im_menu.srm
+$PBExportComments$右クリックメニューの先祖オブジェクト
+forward
+global type im_menu from am_menu
+end type
+end forward
+
+global type im_menu from am_menu
+end type
+global im_menu im_menu
+
+on im_menu.create
+im_menu=this
+call super::create
+this.text = "im_menu"
+end on
+
+on im_menu.destroy
+call super::destroy
+end on
+

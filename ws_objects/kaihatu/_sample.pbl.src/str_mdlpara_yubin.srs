@@ -1,0 +1,14 @@
+﻿$PBExportHeader$str_mdlpara_yubin.srs
+$PBExportComments$m_yubinのmodal構造体
+global type str_mdlpara_yubin from structure
+	boolean		ret
+	string		out_yubin_no
+	long		out_jis_code		descriptor "comment" = "追加"
+	string		out_todofu_mei		descriptor "comment" = "追加"
+	string		out_sikutyo_mei		descriptor "comment" = "追加"
+	string		out_tyoiki_mei		descriptor "comment" = "追加"
+	string		out_tyome		descriptor "comment" = "追加"
+	string		out_jigyosyo_mei		descriptor "comment" = "追加"
+	string		out_full_mei		descriptor "comment" = "追加"
+end type
+

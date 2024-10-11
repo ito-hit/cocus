@@ -1,0 +1,6 @@
+﻿$PBExportHeader$str_mdlpara_mwindow.srs
+$PBExportComments$m_window用のモーダル構造体
+global type str_mdlpara_mwindow from structure
+	str_mwindow		ret[]
+end type
+

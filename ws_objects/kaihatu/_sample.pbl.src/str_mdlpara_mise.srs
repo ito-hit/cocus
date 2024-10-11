@@ -1,0 +1,28 @@
+﻿$PBExportHeader$str_mdlpara_mise.srs
+$PBExportComments$m_miseのmodal構造体
+global type str_mdlpara_mise from structure
+	boolean		ret
+	long		in_tokui_code
+	long		out_tokui_code
+	long		out_mise_code
+	string		out_mise_mei_full		descriptor "comment" = "追加"
+	string		out_mise_mei		descriptor "comment" = "追加"
+	string		out_mise_mei_ryaku		descriptor "comment" = "追加"
+	long		out_heiten_flg		descriptor "comment" = "追加"
+	long		out_todofuken_code		descriptor "comment" = "追加"
+	long		out_sikutyoson_code		descriptor "comment" = "追加"
+	string		out_yubin_no		descriptor "comment" = "追加"
+	string		out_jyusyo1		descriptor "comment" = "追加"
+	string		out_jyusyo2		descriptor "comment" = "追加"
+	string		out_jyusyo3		descriptor "comment" = "追加"
+	string		out_okuri_mei1		descriptor "comment" = "追加"
+	string		out_okuri_mei2		descriptor "comment" = "追加"
+	string		out_tel_no		descriptor "comment" = "追加"
+	string		out_fax_no		descriptor "comment" = "追加"
+	long		out_hensin_flg		descriptor "comment" = "追加"
+	long		out_unso_code		descriptor "comment" = "追加"
+	string		out_tyakuten_code		descriptor "comment" = "追加"
+	long		out_tyakuten_tome_flg		descriptor "comment" = "追加"
+	long		out_kobetu_haiso_flg		descriptor "comment" = "追加"
+end type
+

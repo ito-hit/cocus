@@ -1,0 +1,6 @@
+﻿$PBExportHeader$str_mdlpara_mkihon.srs
+$PBExportComments$m_kihon用のモーダル構造体
+global type str_mdlpara_mkihon from structure
+	str_mkihon		ret[]
+end type
+

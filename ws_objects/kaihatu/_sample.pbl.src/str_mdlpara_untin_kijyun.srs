@@ -1,0 +1,12 @@
+﻿$PBExportHeader$str_mdlpara_untin_kijyun.srs
+$PBExportComments$m_untin_kijyunのmodal構造体
+global type str_mdlpara_untin_kijyun from structure
+	boolean		ret
+	string		out_kijyun_code
+	string		out_kijyun_mei		descriptor "comment" = "追加"
+	string		out_kijyun_mei_ryaku		descriptor "comment" = "追加"
+	string		out_seikyu_kbn		descriptor "comment" = "追加"
+	string		out_keisan_kijyun		descriptor "comment" = "追加"
+	long		out_keisan_kijyunti		descriptor "comment" = "追加"
+end type
+

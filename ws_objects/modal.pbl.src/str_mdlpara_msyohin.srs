@@ -1,0 +1,6 @@
+﻿$PBExportHeader$str_mdlpara_msyohin.srs
+$PBExportComments$m_syohin用のモーダル構造体
+global type str_mdlpara_msyohin from structure
+	str_msyohin		ret[]
+end type
+

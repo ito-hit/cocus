@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="shift_jis" ?>
+<DB Profile>
+	<kikan>
+		<prod_mode>
+			<dbms>O10 Oracle10g (10.1.0)</dbms>
+			<servername>hanbaidb</servername>
+			<logid>cocos</logid>
+			<logpassword>nobuoka</logpassword>
+			<autocommit>False</autocommit>
+			<dbparm>CommitOnDisconnect='No',PBCatalogOwner='cocos',DisableBind=1</dbparm>
+		</prod_mode>
+		<test_mode>
+			<dbms>O10 Oracle10g (10.1.0)</dbms>
+			<servername>hanbaidb</servername>
+			<logid>cocos</logid>
+			<logpassword>nobuoka</logpassword>
+			<autocommit>False</autocommit>
+			<dbparm>CommitOnDisconnect='No',PBCatalogOwner='cocos',DisableBind=1</dbparm>
+		</test_mode>
+	</kikan>
+	<seisan>
+		<prod_mode>
+			<dbms>O10 Oracle10g (10.1.0)</dbms>
+			<servername>csall1</servername>
+			<logid>seisan</logid>
+			<logpassword>nobuoka</logpassword>
+			<autocommit>False</autocommit>
+			<dbparm>CommitOnDisconnect='No',PBCatalogOwner='seisan'</dbparm>
+		</prod_mode>
+		<test_mode>
+			<dbms>O10 Oracle10g (10.1.0)</dbms>
+			<servername>cstest</servername>
+			<logid>seisan</logid>
+			<logpassword>nobuoka</logpassword>
+			<autocommit>False</autocommit>
+			<dbparm>CommitOnDisconnect='No',PBCatalogOwner='seisan'</dbparm>
+		</test_mode>
+	</seisan>
+	<buturyu>
+		<prod_mode>
+			<dbms>O10 Oracle10g (10.1.0)</dbms>
+			<servername>syukkadb</servername>
+			<logid>syukka</logid>
+			<logpassword>nobuoka</logpassword>
+			<autocommit>False</autocommit>
+			<dbparm>CommitOnDisconnect='No',PBCatalogOwner='syukka'</dbparm>
+		</prod_mode>
+		<test_mode>
+			<dbms>O10 Oracle10g (10.1.0)</dbms>
+			<servername>syukkatest</servername>
+			<logid>syukka</logid>
+			<logpassword>nobuoka</logpassword>
+			<autocommit>False</autocommit>
+			<dbparm>CommitOnDisconnect='No',PBCatalogOwner='syukka'</dbparm>
+		</test_mode>
+	</buturyu>
+	<handy>
+		<prod_mode>
+			<dbms>O10 Oracle10g (10.1.0)</dbms>
+			<servername>syukkadb</servername>
+			<logid>handy</logid>
+			<logpassword>nobuoka</logpassword>
+			<autocommit>False</autocommit>
+			<dbparm>CommitOnDisconnect='No',PBCatalogOwner='handy'</dbparm>
+		</prod_mode>
+		<test_mode>
+			<dbms>O10 Oracle10g (10.1.0)</dbms>
+			<servername>syukkatest</servername>
+			<logid>handy</logid>
+			<logpassword>nobuoka</logpassword>
+			<autocommit>False</autocommit>
+			<dbparm>CommitOnDisconnect='No',PBCatalogOwner='handy'</dbparm>
+		</test_mode>
+	</handy>
+	<bunseki>
+		<prod_mode>
+			<dbms>O10 Oracle10g (10.1.0)</dbms>
+			<servername>bunseki</servername>
+			<logid>bunseki</logid>
+			<logpassword>nobuoka</logpassword>
+			<autocommit>False</autocommit>
+			<dbparm>CommitOnDisconnect='No',PBCatalogOwner='bunseki'</dbparm>
+		</prod_mode>
+		<test_mode>
+			<dbms>O10 Oracle10g (10.1.0)</dbms>
+			<servername>bunsekitest</servername>
+			<logid>bunseki</logid>
+			<logpassword>nobuoka</logpassword>
+			<autocommit>False</autocommit>
+			<dbparm>CommitOnDisconnect='No',PBCatalogOwner='bunseki'</dbparm>
+		</test_mode>
+	</bunseki>
+	<ccsnet>
+		<prod_mode>
+			<dbms>O10 Oracle10g (10.1.0)</dbms>
+			<servername>edidb</servername>
+			<logid>cosedi</logid>
+			<logpassword>nobuoka</logpassword>
+			<autocommit>False</autocommit>
+			<dbparm>CommitOnDisconnect='No',PBCatalogOwner='cosedi'</dbparm>
+		</prod_mode>
+		<test_mode>
+			<dbms>O10 Oracle10g (10.1.0)</dbms>
+			<servername>editest</servername>
+			<logid>cosedi</logid>
+			<logpassword>nobuoka</logpassword>
+			<autocommit>False</autocommit>
+			<dbparm>CommitOnDisconnect='No',PBCatalogOwner='cosedi'</dbparm>
+		</test_mode>
+	</ccsnet>
+	<ccsnet_rep>
+		<prod_mode>
+			<dbms>O10 Oracle10g (10.1.0)</dbms>
+			<servername>edidb</servername>
+			<logid>rep_host</logid>
+			<logpassword>nobuoka</logpassword>
+			<autocommit>False</autocommit>
+			<dbparm>CommitOnDisconnect='No',PBCatalogOwner='rep_host'</dbparm>
+		</prod_mode>
+		<test_mode>
+			<dbms>O10 Oracle10g (10.1.0)</dbms>
+			<servername>editest</servername>
+			<logid>rep_host</logid>
+			<logpassword>nobuoka</logpassword>
+			<autocommit>False</autocommit>
+			<dbparm>CommitOnDisconnect='No',PBCatalogOwner='rep_host'</dbparm>
+		</test_mode>
+	</ccsnet_rep>
+	<fax>
+		<prod_mode>
+			<dbms>O10 Oracle10g (10.1.0)</dbms>
+			<servername>edidb</servername>
+			<logid>fax</logid>
+			<logpassword>nobuoka</logpassword>
+			<autocommit>False</autocommit>
+			<dbparm>CommitOnDisconnect='No',PBCatalogOwner='fax'</dbparm>
+		</prod_mode>
+		<test_mode>
+			<dbms>O10 Oracle10g (10.1.0)</dbms>
+			<servername>editest</servername>
+			<logid>fax</logid>
+			<logpassword>nobuoka</logpassword>
+			<autocommit>False</autocommit>
+			<dbparm>CommitOnDisconnect='No',PBCatalogOwner='fax'</dbparm>
+		</test_mode>
+	</fax>
+	<host>
+		<prod_mode>
+			<dbms>odbc</dbms>
+			<servername></servername>
+			<logid></logid>
+			<logpassword></logpassword>
+			<autocommit>False</autocommit>
+			<dbparm>ConnectString='DSN=PG6910;UID=RDAPRF01;PWD=RDAPRF01',CommitOnDisconnect='No'</dbparm>
+		</prod_mode>
+		<test_mode>
+			<dbms>odbc</dbms>
+			<servername></servername>
+			<logid></logid>
+			<logpassword></logpassword>
+			<autocommit>False</autocommit>
+			<dbparm>ConnectString='DSN=PG6910;UID=RDAPRF01;PWD=RDAPRF01',CommitOnDisconnect='No',TableCriteria=',KAIHATU',PBCatalogOwner='KAIHATU'</dbparm>
+		</test_mode>
+	</host>
+	<systemdb>
+		<prod_mode>
+			<dbms>O10 Oracle10g (10.1.0)</dbms>
+			<servername>systemdb</servername>
+			<logid>cocos</logid>
+			<logpassword>nobuoka</logpassword>
+			<autocommit>False</autocommit>
+			<dbparm>CommitOnDisconnect='No',PBCatalogOwner='cocos'</dbparm>
+		</prod_mode>
+		<test_mode>
+			<dbms>O10 Oracle10g (10.1.0)</dbms>
+			<servername>systemdb</servername>
+			<logid>cocos</logid>
+			<logpassword>nobuoka</logpassword>
+			<autocommit>False</autocommit>
+			<dbparm>CommitOnDisconnect='No',PBCatalogOwner='cocos'</dbparm>
+		</test_mode>
+	</systemdb>
+</DB Profile>

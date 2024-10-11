@@ -1,0 +1,10 @@
+﻿$PBExportHeader$str_mdlpara_mtyakuten.srs
+$PBExportComments$m_tyakuten用のモーダル構造体
+global type str_mdlpara_mtyakuten from structure
+	long		in_tokui_code
+	long		in_mise_code
+	long		in_unso_code
+	string		in_yubin_no
+	str_mtyakuten		ret[]
+end type
+

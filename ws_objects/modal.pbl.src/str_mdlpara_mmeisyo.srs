@@ -1,0 +1,7 @@
+﻿$PBExportHeader$str_mdlpara_mmeisyo.srs
+$PBExportComments$m_meisyo用のモーダル構造体
+global type str_mdlpara_mmeisyo from structure
+	integer		in_meisyo_kbn
+	str_mmeisyo		ret[]
+end type
+

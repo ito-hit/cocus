@@ -1,0 +1,95 @@
+﻿$PBExportHeader$dsm_tanto.srd
+$PBExportComments$wsm_tantoのデータウィンドウ
+release 19;
+datawindow(units=0 timer_interval=0 color=268435456 brushmode=0 transparency=0 gradient.angle=0 gradient.color=8421504 gradient.focus=0 gradient.repetition.count=0 gradient.repetition.length=100 gradient.repetition.mode=0 gradient.scale=100 gradient.spread=100 gradient.transparency=0 picture.blur=0 picture.clip.bottom=0 picture.clip.left=0 picture.clip.right=0 picture.clip.top=0 picture.mode=0 picture.scale.x=100 picture.scale.y=100 picture.transparency=0 processing=1 HTMLDW=no print.printername="" print.documentname="" print.orientation = 0 print.margin.left = 96 print.margin.right = 96 print.margin.top = 85 print.margin.bottom = 85 print.paper.source = 0 print.paper.size = 0 print.canusedefaultprinter=yes print.prompt=no print.buttons=no print.preview.buttons=no print.cliptext=no print.overrideprintjob=no print.collate=yes print.background=no print.preview.background=no print.preview.outline=yes hidegrayline=no showbackcoloronxp=no picture.file="" grid.lines=0 grid.columnmove=no selected.mouse=no )
+header(height=85 color="67108864" transparency="0" gradient.color="8421504" gradient.transparency="0" gradient.angle="0" brushmode="0" gradient.repetition.mode="0" gradient.repetition.count="0" gradient.repetition.length="100" gradient.focus="0" gradient.scale="100" gradient.spread="100" )
+summary(height=0 color="536870912" transparency="0" gradient.color="8421504" gradient.transparency="0" gradient.angle="0" brushmode="0" gradient.repetition.mode="0" gradient.repetition.count="0" gradient.repetition.length="100" gradient.focus="0" gradient.scale="100" gradient.spread="100" )
+footer(height=0 color="536870912" transparency="0" gradient.color="8421504" gradient.transparency="0" gradient.angle="0" brushmode="0" gradient.repetition.mode="0" gradient.repetition.count="0" gradient.repetition.length="100" gradient.focus="0" gradient.scale="100" gradient.spread="100" )
+detail(height=85 color="536870912~tfo_lattice( getrow() )" transparency="0" gradient.color="8421504" gradient.transparency="0" gradient.angle="0" brushmode="0" gradient.repetition.mode="0" gradient.repetition.count="0" gradient.repetition.length="100" gradient.focus="0" gradient.scale="100" gradient.spread="100" )
+table(column=(type=decimal(0) updatewhereclause=yes name=tanto_code dbname="tanto_code" )
+ column=(type=char(20) updatewhereclause=yes name=tanto_mei dbname="tanto_mei" )
+ column=(type=char(10) updatewhereclause=yes name=tanto_mei_ryaku dbname="tanto_mei_ryaku" )
+ column=(type=decimal(0) updatewhereclause=yes name=nayose_code dbname="nayose_code" )
+ column=(type=decimal(0) updatewhereclause=yes name=bumon_code dbname="bumon_code" )
+ column=(type=char(256) updatewhereclause=yes name=busyo_mei dbname="busyo_mei" )
+ column=(type=decimal(0) updatewhereclause=yes name=eigyosyo_code dbname="eigyosyo_code" )
+ column=(type=char(256) updatewhereclause=yes name=eigyosyo_mei dbname="eigyosyo_mei" )
+ column=(type=decimal(0) updatewhereclause=yes name=ka_code dbname="ka_code" )
+ column=(type=char(256) updatewhereclause=yes name=ka_mei dbname="ka_mei" )
+ column=(type=char(10) updatewhereclause=yes name=user_id dbname="user_id" )
+ column=(type=decimal(0) updatewhereclause=yes name=haiban_flg dbname="haiban_flg" )
+ column=(type=char(2) updatewhereclause=yes name=haiban dbname="haiban" )
+ column=(type=datetime updatewhereclause=yes name=touroku_date dbname="touroku_date" )
+ column=(type=char(10) updatewhereclause=yes name=touroku_user_id dbname="touroku_user_id" )
+ column=(type=char(40) updatewhereclause=yes name=touroku_client_id dbname="touroku_client_id" )
+ column=(type=char(40) updatewhereclause=yes name=touroku_pg_id dbname="touroku_pg_id" )
+ column=(type=datetime updatewhereclause=yes name=henkou_date dbname="henkou_date" )
+ column=(type=char(10) updatewhereclause=yes name=henkou_user_id dbname="henkou_user_id" )
+ column=(type=char(40) updatewhereclause=yes name=henkou_client_id dbname="henkou_client_id" )
+ column=(type=char(40) updatewhereclause=yes name=henkou_pg_id dbname="henkou_pg_id" )
+ column=(type=datetime updatewhereclause=yes name=kousin_date dbname="kousin_date" )
+ column=(type=char(10) updatewhereclause=yes name=kousin_user_id dbname="kousin_user_id" )
+ column=(type=char(40) updatewhereclause=yes name=kousin_client_id dbname="kousin_client_id" )
+ column=(type=char(40) updatewhereclause=yes name=kousin_pg_id dbname="kousin_pg_id" )
+ column=(type=decimal(0) updatewhereclause=yes name=haita_flg dbname="haita_flg" )
+ retrieve="select ta.tanto_code,ta.tanto_mei,ta.tanto_mei_ryaku,
+       ta.nayose_code,
+       ta.bumon_code,
+       bu.meisyo_1 busyo_mei,
+       ta.eigyosyo_code,
+       ei.meisyo_1 eigyosyo_mei,
+       ta.ka_code,
+       ka.meisyo_1 ka_mei,
+       ta.user_id,
+       ta.haiban_flg,
+       decode( ta.haiban_flg, 1, '廃番', '' ) haiban,
+       ta.touroku_date,ta.touroku_user_id,ta.touroku_client_id,ta.touroku_pg_id,
+       ta.henkou_date,ta.henkou_user_id,ta.henkou_client_id,ta.henkou_pg_id,
+       ta.kousin_date,ta.kousin_user_id,ta.kousin_client_id,ta.kousin_pg_id,
+       ta.haita_flg
+  from m_tanto ta,
+       ( select meisyo_code,
+                meisyo_1
+           from m_meisyo
+          where meisyo_kbn = 21
+       ) bu,
+       ( select meisyo_code,
+                meisyo_1
+           from m_meisyo
+          where meisyo_kbn = 22
+       ) ei,
+       ( select meisyo_code,
+                meisyo_1
+           from m_meisyo
+          where meisyo_kbn = 23
+       ) ka
+ where ta.bumon_code		= bu.meisyo_code
+   and ta.eigyosyo_code		= ei.meisyo_code
+   and ta.ka_code			= ka.meisyo_code
+   and (    ta.tanto_mei			like '%' || :p_tanto_mei || '%'
+         or ta.tanto_mei_ryaku		like '%' || :p_tanto_mei || '%'
+       )
+ order by tanto_code" arguments=(("p_tanto_mei", string)) )
+text(band=header alignment="2" text="コード" border="6" color="33554432" x="4" y="7" height="71" width="220" html.valueishtml="0"  name=t_tanto_code visible="1"  font.face="Yu Gothic UI Semilight" font.height="-11" font.weight="400"  font.family="3" font.pitch="2" font.charset="128" background.mode="1" background.color="536870912" background.transparency="0" background.gradient.color="8421504" background.gradient.transparency="0" background.gradient.angle="0" background.brushmode="0" background.gradient.repetition.mode="0" background.gradient.repetition.count="0" background.gradient.repetition.length="100" background.gradient.focus="0" background.gradient.scale="100" background.gradient.spread="100" tooltip.backcolor="134217752" tooltip.delay.initial="0" tooltip.delay.visible="32000" tooltip.enabled="0" tooltip.hasclosebutton="0" tooltip.icon="0" tooltip.isbubble="0" tooltip.maxwidth="0" tooltip.textcolor="134217751" tooltip.transparency="0" transparency="0" )
+text(band=header alignment="2" text="廃番" border="6" color="33554432" x="732" y="7" height="71" width="292" html.valueishtml="0"  name=t_haiban visible="1"  font.face="Yu Gothic UI Semilight" font.height="-11" font.weight="400"  font.family="3" font.pitch="2" font.charset="128" background.mode="1" background.color="536870912" background.transparency="0" background.gradient.color="8421504" background.gradient.transparency="0" background.gradient.angle="0" background.brushmode="0" background.gradient.repetition.mode="0" background.gradient.repetition.count="0" background.gradient.repetition.length="100" background.gradient.focus="0" background.gradient.scale="100" background.gradient.spread="100" tooltip.backcolor="134217752" tooltip.delay.initial="0" tooltip.delay.visible="32000" tooltip.enabled="0" tooltip.hasclosebutton="0" tooltip.icon="0" tooltip.isbubble="0" tooltip.maxwidth="0" tooltip.textcolor="134217751" tooltip.transparency="0" transparency="0" )
+text(band=header alignment="2" text="部署" border="6" color="33554432" x="1032" y="7" height="71" width="532" html.valueishtml="0"  name=t_busyo_mei visible="1"  font.face="Yu Gothic UI Semilight" font.height="-11" font.weight="400"  font.family="3" font.pitch="2" font.charset="128" background.mode="1" background.color="536870912" background.transparency="0" background.gradient.color="8421504" background.gradient.transparency="0" background.gradient.angle="0" background.brushmode="0" background.gradient.repetition.mode="0" background.gradient.repetition.count="0" background.gradient.repetition.length="100" background.gradient.focus="0" background.gradient.scale="100" background.gradient.spread="100" tooltip.backcolor="134217752" tooltip.delay.initial="0" tooltip.delay.visible="32000" tooltip.enabled="0" tooltip.hasclosebutton="0" tooltip.icon="0" tooltip.isbubble="0" tooltip.maxwidth="0" tooltip.textcolor="134217751" tooltip.transparency="0" transparency="0" )
+text(band=header alignment="2" text="営業所" border="6" color="33554432" x="1572" y="7" height="71" width="704" html.valueishtml="0"  name=t_eigyosyo_mei visible="1"  font.face="Yu Gothic UI Semilight" font.height="-11" font.weight="400"  font.family="3" font.pitch="2" font.charset="128" background.mode="1" background.color="536870912" background.transparency="0" background.gradient.color="8421504" background.gradient.transparency="0" background.gradient.angle="0" background.brushmode="0" background.gradient.repetition.mode="0" background.gradient.repetition.count="0" background.gradient.repetition.length="100" background.gradient.focus="0" background.gradient.scale="100" background.gradient.spread="100" tooltip.backcolor="134217752" tooltip.delay.initial="0" tooltip.delay.visible="32000" tooltip.enabled="0" tooltip.hasclosebutton="0" tooltip.icon="0" tooltip.isbubble="0" tooltip.maxwidth="0" tooltip.textcolor="134217751" tooltip.transparency="0" transparency="0" )
+text(band=header alignment="2" text="担当者名" border="6" color="33554432" x="232" y="7" height="71" width="492" html.valueishtml="0"  name=t_tanto_mei visible="1"  font.face="Yu Gothic UI Semilight" font.height="-11" font.weight="400"  font.family="3" font.pitch="2" font.charset="128" background.mode="1" background.color="536870912" background.transparency="0" background.gradient.color="8421504" background.gradient.transparency="0" background.gradient.angle="0" background.brushmode="0" background.gradient.repetition.mode="0" background.gradient.repetition.count="0" background.gradient.repetition.length="100" background.gradient.focus="0" background.gradient.scale="100" background.gradient.spread="100" tooltip.backcolor="134217752" tooltip.delay.initial="0" tooltip.delay.visible="32000" tooltip.enabled="0" tooltip.hasclosebutton="0" tooltip.icon="0" tooltip.isbubble="0" tooltip.maxwidth="0" tooltip.textcolor="134217751" tooltip.transparency="0" transparency="0" )
+text(band=header alignment="2" text="課" border="6" color="33554432" x="2284" y="7" height="71" width="1092" html.valueishtml="0"  name=t_ka_mei visible="1"  font.face="Yu Gothic UI Semilight" font.height="-11" font.weight="400"  font.family="3" font.pitch="2" font.charset="128" background.mode="1" background.color="536870912" background.transparency="0" background.gradient.color="8421504" background.gradient.transparency="0" background.gradient.angle="0" background.brushmode="0" background.gradient.repetition.mode="0" background.gradient.repetition.count="0" background.gradient.repetition.length="100" background.gradient.focus="0" background.gradient.scale="100" background.gradient.spread="100" tooltip.backcolor="134217752" tooltip.delay.initial="0" tooltip.delay.visible="32000" tooltip.enabled="0" tooltip.hasclosebutton="0" tooltip.icon="0" tooltip.isbubble="0" tooltip.maxwidth="0" tooltip.textcolor="134217751" tooltip.transparency="0" transparency="0" )
+column(band=detail id=1 alignment="1" tabsequence=32766 border="0" color="33554432" x="8" y="3" height="71" width="216" format="[general]" html.valueishtml="0"  name=tanto_code visible="1" edit.limit=0 edit.case=any edit.focusrectangle=no edit.autoselect=no edit.imemode=0  font.face="Yu Gothic UI Semilight" font.height="-11" font.weight="400"  font.family="3" font.pitch="2" font.charset="1" background.mode="1" background.color="536870912" background.transparency="0" background.gradient.color="8421504" background.gradient.transparency="0" background.gradient.angle="0" background.brushmode="0" background.gradient.repetition.mode="0" background.gradient.repetition.count="0" background.gradient.repetition.length="100" background.gradient.focus="0" background.gradient.scale="100" background.gradient.spread="100" tooltip.backcolor="134217752" tooltip.delay.initial="0" tooltip.delay.visible="32000" tooltip.enabled="1" tooltip.hasclosebutton="0" tooltip.icon="0" tooltip.isbubble="0" tooltip.maxwidth="0" tooltip.textcolor="134217751" tooltip.transparency="0" transparency="0" )
+column(band=detail id=13 alignment="0" tabsequence=32766 border="0" color="33554432~trgb( 255, 0, 0 /*169,68,66*/ )" x="740" y="3" height="71" width="284" format="[general]" html.valueishtml="0"  name=haiban visible="1" edit.limit=0 edit.case=any edit.focusrectangle=no edit.autoselect=no edit.imemode=0  font.face="Yu Gothic UI Semilight" font.height="-11" font.weight="400"  font.family="3" font.pitch="2" font.charset="1" background.mode="1" background.color="536870912" background.transparency="0" background.gradient.color="8421504" background.gradient.transparency="0" background.gradient.angle="0" background.brushmode="0" background.gradient.repetition.mode="0" background.gradient.repetition.count="0" background.gradient.repetition.length="100" background.gradient.focus="0" background.gradient.scale="100" background.gradient.spread="100" tooltip.backcolor="134217752" tooltip.delay.initial="0" tooltip.delay.visible="32000" tooltip.enabled="0" tooltip.hasclosebutton="0" tooltip.icon="0" tooltip.isbubble="0" tooltip.maxwidth="0" tooltip.textcolor="134217751" tooltip.transparency="0" transparency="0" )
+column(band=detail id=6 alignment="0" tabsequence=32766 border="0" color="33554432" x="1036" y="3" height="71" width="528" format="[general]" html.valueishtml="0"  name=busyo_mei visible="1" edit.limit=0 edit.case=any edit.focusrectangle=no edit.autoselect=no edit.imemode=0  font.face="Yu Gothic UI Semilight" font.height="-11" font.weight="400"  font.family="3" font.pitch="2" font.charset="1" background.mode="1" background.color="536870912" background.transparency="0" background.gradient.color="8421504" background.gradient.transparency="0" background.gradient.angle="0" background.brushmode="0" background.gradient.repetition.mode="0" background.gradient.repetition.count="0" background.gradient.repetition.length="100" background.gradient.focus="0" background.gradient.scale="100" background.gradient.spread="100" tooltip.backcolor="134217752" tooltip.delay.initial="0" tooltip.delay.visible="32000" tooltip.enabled="0" tooltip.hasclosebutton="0" tooltip.icon="0" tooltip.isbubble="0" tooltip.maxwidth="0" tooltip.textcolor="134217751" tooltip.transparency="0" transparency="0" )
+column(band=detail id=8 alignment="0" tabsequence=32766 border="0" color="33554432" x="1576" y="3" height="71" width="700" format="[general]" html.valueishtml="0"  name=eigyosyo_mei visible="1" edit.limit=0 edit.case=any edit.focusrectangle=no edit.autoselect=no edit.imemode=0  font.face="Yu Gothic UI Semilight" font.height="-11" font.weight="400"  font.family="3" font.pitch="2" font.charset="1" background.mode="1" background.color="536870912" background.transparency="0" background.gradient.color="8421504" background.gradient.transparency="0" background.gradient.angle="0" background.brushmode="0" background.gradient.repetition.mode="0" background.gradient.repetition.count="0" background.gradient.repetition.length="100" background.gradient.focus="0" background.gradient.scale="100" background.gradient.spread="100" tooltip.backcolor="134217752" tooltip.delay.initial="0" tooltip.delay.visible="32000" tooltip.enabled="0" tooltip.hasclosebutton="0" tooltip.icon="0" tooltip.isbubble="0" tooltip.maxwidth="0" tooltip.textcolor="134217751" tooltip.transparency="0" transparency="0" )
+column(band=detail id=2 alignment="0" tabsequence=32766 border="0" color="33554432" x="236" y="3" height="71" width="488" format="[general]" html.valueishtml="0"  name=tanto_mei visible="1" edit.limit=0 edit.case=any edit.focusrectangle=no edit.autoselect=no edit.imemode=0  font.face="Yu Gothic UI Semilight" font.height="-11" font.weight="400"  font.family="3" font.pitch="2" font.charset="1" background.mode="1" background.color="536870912" background.transparency="0" background.gradient.color="8421504" background.gradient.transparency="0" background.gradient.angle="0" background.brushmode="0" background.gradient.repetition.mode="0" background.gradient.repetition.count="0" background.gradient.repetition.length="100" background.gradient.focus="0" background.gradient.scale="100" background.gradient.spread="100" tooltip.backcolor="134217752" tooltip.delay.initial="0" tooltip.delay.visible="32000" tooltip.enabled="0" tooltip.hasclosebutton="0" tooltip.icon="0" tooltip.isbubble="0" tooltip.maxwidth="0" tooltip.textcolor="134217751" tooltip.transparency="0" transparency="0" )
+column(band=detail id=10 alignment="0" tabsequence=32766 border="0" color="33554432" x="2288" y="3" height="71" width="1088" format="[general]" html.valueishtml="0"  name=ka_mei visible="1" edit.limit=0 edit.case=any edit.focusrectangle=no edit.autoselect=no edit.imemode=0  font.face="Yu Gothic UI Semilight" font.height="-11" font.weight="400"  font.family="3" font.pitch="2" font.charset="1" background.mode="1" background.color="536870912" background.transparency="0" background.gradient.color="8421504" background.gradient.transparency="0" background.gradient.angle="0" background.brushmode="0" background.gradient.repetition.mode="0" background.gradient.repetition.count="0" background.gradient.repetition.length="100" background.gradient.focus="0" background.gradient.scale="100" background.gradient.spread="100" tooltip.backcolor="134217752" tooltip.delay.initial="0" tooltip.delay.visible="32000" tooltip.enabled="0" tooltip.hasclosebutton="0" tooltip.icon="0" tooltip.isbubble="0" tooltip.maxwidth="0" tooltip.textcolor="134217751" tooltip.transparency="0" transparency="0" )
+htmltable(border="1" )
+htmlgen(clientevents="1" clientvalidation="1" clientcomputedfields="1" clientformatting="0" clientscriptable="0" generatejavascript="1" encodeselflinkargs="1" netscapelayers="0" pagingmethod=0 generatedddwframes="1" )
+xhtmlgen() cssgen(sessionspecific="0" )
+xmlgen(inline="0" )
+xsltgen()
+jsgen()
+export.xml(headgroups="1" includewhitespace="0" metadatatype=0 savemetadata=0 )
+import.xml()
+export.pdf(method=2 distill.custompostscript="0" xslfop.print="0" nativepdf.customsize=0 nativepdf.customorientation=0 nativepdf.pdfstandard=0 nativepdf.useprintspec=no )
+export.xhtml()
+ 

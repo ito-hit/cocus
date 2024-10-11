@@ -1,0 +1,11 @@
+﻿$PBExportHeader$str_dpara.srs
+$PBExportComments$データ取得(modal含む)のやりとりで使う構造体
+global type str_dpara from structure
+	boolean		ret		descriptor "comment" = "True：データ取得成功　False：データ取得失敗"
+	boolean		visibled		descriptor "comment" = "True：モーダル表示　False：モーダル非表示"
+	boolean		multiple		descriptor "comment" = "True：複数結果で返す　False：単一結果で返す"
+	string		where_string[]		descriptor "comment" = "where句の文字列を生成して格納する(andは含めない)　例：meisyo_code = '101'など"
+	string		in_para[]		descriptor "comment" = "inパラメータがある場合ここに格納する"
+	datastore		ds		descriptor "comment" = "取得したデータをすべて格納する"
+end type
+

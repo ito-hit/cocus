@@ -1,0 +1,174 @@
+﻿$PBExportHeader$dmm_meisyo_entry.srd
+$PBExportComments$名称入力フォーム用データウインドウ
+release 19;
+datawindow(units=0 timer_interval=0 color=67108864 brushmode=0 transparency=0 gradient.angle=0 gradient.color=8421504 gradient.focus=0 gradient.repetition.count=0 gradient.repetition.length=100 gradient.repetition.mode=0 gradient.scale=100 gradient.spread=100 gradient.transparency=0 picture.blur=0 picture.clip.bottom=0 picture.clip.left=0 picture.clip.right=0 picture.clip.top=0 picture.mode=0 picture.scale.x=100 picture.scale.y=100 picture.transparency=0 processing=0 HTMLDW=no print.printername="" print.documentname="" print.orientation = 0 print.margin.left = 96 print.margin.right = 96 print.margin.top = 85 print.margin.bottom = 85 print.paper.source = 0 print.paper.size = 0 print.canusedefaultprinter=yes print.prompt=no print.buttons=no print.preview.buttons=no print.cliptext=no print.overrideprintjob=no print.collate=yes print.background=no print.preview.background=no print.preview.outline=yes hidegrayline=no showbackcoloronxp=no picture.file="" )
+header(height=0 color="536870912" transparency="0" gradient.color="8421504" gradient.transparency="0" gradient.angle="0" brushmode="0" gradient.repetition.mode="0" gradient.repetition.count="0" gradient.repetition.length="100" gradient.focus="0" gradient.scale="100" gradient.spread="100" )
+summary(height=0 color="536870912" transparency="0" gradient.color="8421504" gradient.transparency="0" gradient.angle="0" brushmode="0" gradient.repetition.mode="0" gradient.repetition.count="0" gradient.repetition.length="100" gradient.focus="0" gradient.scale="100" gradient.spread="100" )
+footer(height=0 color="536870912" transparency="0" gradient.color="8421504" gradient.transparency="0" gradient.angle="0" brushmode="0" gradient.repetition.mode="0" gradient.repetition.count="0" gradient.repetition.length="100" gradient.focus="0" gradient.scale="100" gradient.spread="100" )
+detail(height=420 color="67108864" transparency="0" gradient.color="8421504" gradient.transparency="0" gradient.angle="0" brushmode="0" gradient.repetition.mode="0" gradient.repetition.count="0" gradient.repetition.length="100" gradient.focus="0" gradient.scale="100" gradient.spread="100" )
+table(column=(type=decimal(0) updatewhereclause=yes key=yes name=meisyo_kbn dbname="m_meisyo.meisyo_kbn" )
+ column=(type=char(64) updatewhereclause=yes name=meisyo_mei dbname="m_meisyo.meisyo_mei" )
+ column=(type=char(10) updatewhereclause=yes key=yes name=meisyo_code dbname="m_meisyo.meisyo_code" )
+ column=(type=char(256) updatewhereclause=yes name=meisyo_1 dbname="m_meisyo.meisyo_1" )
+ column=(type=char(256) updatewhereclause=yes name=meisyo_2 dbname="m_meisyo.meisyo_2" )
+ column=(type=char(256) updatewhereclause=yes name=meisyo_3 dbname="m_meisyo.meisyo_3" )
+ column=(type=char(256) updatewhereclause=yes name=setumei dbname="m_meisyo.setumei" )
+ column=(type=decimal(0) updatewhereclause=yes name=code_ketasu dbname="m_meisyo.code_ketasu" )
+ column=(type=decimal(0) updatewhereclause=yes name=code_zokusei_flg dbname="m_meisyo.code_zokusei_flg" )
+ column=(type=decimal(0) updatewhereclause=yes name=kousin_kengen dbname="m_meisyo.kousin_kengen" values="	0/	1/" )
+ column=(type=datetime updatewhereclause=yes name=touroku_date dbname="m_meisyo.touroku_date" )
+ column=(type=char(10) updatewhereclause=yes name=touroku_user_id dbname="m_meisyo.touroku_user_id" )
+ column=(type=char(40) updatewhereclause=yes name=touroku_client_id dbname="m_meisyo.touroku_client_id" )
+ column=(type=char(40) updatewhereclause=yes name=touroku_pg_id dbname="m_meisyo.touroku_pg_id" )
+ column=(type=datetime updatewhereclause=yes name=kousin_date dbname="m_meisyo.kousin_date" )
+ column=(type=char(10) updatewhereclause=yes name=kousin_user_id dbname="m_meisyo.kousin_user_id" )
+ column=(type=char(40) updatewhereclause=yes name=kousin_client_id dbname="m_meisyo.kousin_client_id" )
+ column=(type=char(40) updatewhereclause=yes name=kousin_pg_id dbname="m_meisyo.kousin_pg_id" )
+ column=(type=decimal(0) updatewhereclause=yes name=haita_flg dbname="m_meisyo.haita_flg" )
+ column=(type=char(37) updatewhereclause=yes name=rowid dbname="m_meisyo.rowid" )
+ column=(type=char(2) updatewhereclause=yes name=syori_kbn dbname="syori_kbn" )
+ retrieve="select meisyo_kbn,meisyo_mei,
+       meisyo_code,
+       meisyo_1,meisyo_2,meisyo_3,
+       setumei,
+       code_ketasu,
+       code_zokusei_flg,
+       kousin_kengen,
+       touroku_date,touroku_user_id,touroku_client_id,touroku_pg_id,
+       kousin_date,kousin_user_id,kousin_client_id,kousin_pg_id,
+       haita_flg,
+       rowid,
+       '照会' syori_kbn
+  from m_meisyo
+ where meisyo_kbn	= :p_kbn
+   and meisyo_code	= :p_code
+" update="m_meisyo" updatewhere=0 updatekeyinplace=no arguments=(("p_kbn", number),("p_code", string)) )
+column(band=detail id=6 alignment="0" tabsequence=40 border="5" color="33554432~tif( meisyo_kbn=0, rgb( 128,128,128 ),
+	case ( syori_kbn 
+	  when ~"登録~" then rgb( 0, 0, 0 )
+	  when ~"変更~" then rgb( 0, 0, 0 )
+	  when ~"削除~" then rgb( 128,128,128 )
+	  when ~"照会~" then rgb( 128,128,128 )
+	              else rgb( 128,128,128 )
+	)
+)
+" x="620" y="320" height="82" width="4008" format="[general]" html.valueishtml="0" protect="0~tif( meisyo_kbn=0, 1,
+	case ( syori_kbn 
+	  when ~"登録~" then 0
+	  when ~"変更~" then 0
+	  when ~"削除~" then 1
+	  when ~"照会~" then 1
+	              else 1
+	)
+)
+"  name=meisyo_3 visible="1" edit.limit=256 edit.case=any edit.focusrectangle=no edit.autoselect=yes edit.autohscroll=yes edit.imemode=0  font.face="Yu Gothic UI Semilight" font.height="-12" font.weight="400"  font.family="3" font.pitch="2" font.charset="128" background.mode="0" background.color="16777215~tif( meisyo_kbn=0, rgb( 245,245,245 ),
+	case ( syori_kbn 
+	  when ~"登録~" then rgb( 255, 255, 255 )
+	  when ~"変更~" then rgb( 255, 255, 255 )
+	  when ~"削除~" then rgb( 245,245,245 )
+	  when ~"照会~" then rgb( 245,245,245 )
+	              else rgb( 245,245,245 )
+	)
+)
+" background.transparency="0" background.gradient.color="12632256" background.gradient.transparency="0" background.gradient.angle="0" background.brushmode="0" background.gradient.repetition.mode="0" background.gradient.repetition.count="0" background.gradient.repetition.length="100" background.gradient.focus="0" background.gradient.scale="100" background.gradient.spread="100" tooltip.backcolor="134217752" tooltip.delay.initial="0" tooltip.delay.visible="32000" tooltip.enabled="0" tooltip.hasclosebutton="0" tooltip.icon="0" tooltip.isbubble="0" tooltip.maxwidth="0" tooltip.textcolor="134217751" tooltip.transparency="0" transparency="0" )
+text(band=detail alignment="1" text="名称３" border="0" color="33554432" x="32" y="327" height="71" width="568" html.valueishtml="0"  name=meisyo_3_t visible="1"  font.face="Yu Gothic UI Semilight" font.height="-11" font.weight="400"  font.family="3" font.pitch="2" font.charset="128" background.mode="1" background.color="536870912" background.transparency="0" background.gradient.color="8421504" background.gradient.transparency="0" background.gradient.angle="0" background.brushmode="0" background.gradient.repetition.mode="0" background.gradient.repetition.count="0" background.gradient.repetition.length="100" background.gradient.focus="0" background.gradient.scale="100" background.gradient.spread="100" tooltip.backcolor="134217752" tooltip.delay.initial="0" tooltip.delay.visible="32000" tooltip.enabled="0" tooltip.hasclosebutton="0" tooltip.icon="0" tooltip.isbubble="0" tooltip.maxwidth="0" tooltip.textcolor="134217751" tooltip.transparency="0" transparency="0" )
+column(band=detail id=3 alignment="0" tabsequence=10 border="5" color="33554432~tif( meisyo_kbn=0, rgb( 128,128,128 ),
+	case ( syori_kbn 
+	  when ~"登録~" then rgb( 0, 0, 0 )
+	  when ~"変更~" then rgb( 128,128,128 )
+	  when ~"削除~" then rgb( 128,128,128 )
+	  when ~"照会~" then rgb( 128,128,128 )
+	              else rgb( 128,128,128 )
+	)
+)
+" x="620" y="32" height="82" width="408" format="[general]" html.valueishtml="0" protect="0~tif( meisyo_kbn=0, 1,
+	case ( syori_kbn 
+	  when ~"登録~" then 0
+	  when ~"変更~" then 1
+	  when ~"削除~" then 1
+	  when ~"照会~" then 1
+	              else 1
+	)
+)
+"  name=meisyo_code visible="1" edit.limit=10 edit.case=any edit.focusrectangle=no edit.autoselect=yes edit.autohscroll=yes edit.imemode=0  font.face="Yu Gothic UI Semilight" font.height="-12" font.weight="400"  font.family="3" font.pitch="2" font.charset="128" background.mode="0" background.color="16777215~tif( meisyo_kbn=0, rgb( 245,245,245 ),
+	case ( syori_kbn 
+	  when ~"登録~" then rgb( 255, 255, 255 )
+	  when ~"変更~" then rgb( 245,245,245 )
+	  when ~"削除~" then rgb( 245,245,245 )
+	  when ~"照会~" then rgb( 245,245,245 )
+	              else rgb( 245,245,245 )
+	)
+)
+" background.transparency="0" background.gradient.color="12632256" background.gradient.transparency="0" background.gradient.angle="0" background.brushmode="0" background.gradient.repetition.mode="0" background.gradient.repetition.count="0" background.gradient.repetition.length="100" background.gradient.focus="0" background.gradient.scale="100" background.gradient.spread="100" tooltip.backcolor="134217752" tooltip.delay.initial="0" tooltip.delay.visible="32000" tooltip.enabled="0" tooltip.hasclosebutton="0" tooltip.icon="0" tooltip.isbubble="0" tooltip.maxwidth="0" tooltip.textcolor="134217751" tooltip.transparency="0" transparency="0" )
+text(band=detail alignment="1" text="名称コード" border="0" color="33554432" x="32" y="39" height="71" width="568" html.valueishtml="0"  name=t_3 visible="1"  font.face="Yu Gothic UI Semilight" font.height="-11" font.weight="400"  font.family="3" font.pitch="2" font.charset="128" background.mode="1" background.color="536870912" background.transparency="0" background.gradient.color="8421504" background.gradient.transparency="0" background.gradient.angle="0" background.brushmode="0" background.gradient.repetition.mode="0" background.gradient.repetition.count="0" background.gradient.repetition.length="100" background.gradient.focus="0" background.gradient.scale="100" background.gradient.spread="100" tooltip.backcolor="134217752" tooltip.delay.initial="0" tooltip.delay.visible="32000" tooltip.enabled="0" tooltip.hasclosebutton="0" tooltip.icon="0" tooltip.isbubble="0" tooltip.maxwidth="0" tooltip.textcolor="134217751" tooltip.transparency="0" transparency="0" )
+text(band=detail alignment="0" text="※英数字最大10桁まで指定可能" border="0" color="33554432" x="1068" y="39" height="71" width="1128" html.valueishtml="0"  name=t_4 visible="1"  font.face="Yu Gothic UI Semilight" font.height="-11" font.weight="400"  font.family="3" font.pitch="2" font.charset="128" background.mode="1" background.color="536870912" background.transparency="0" background.gradient.color="8421504" background.gradient.transparency="0" background.gradient.angle="0" background.brushmode="0" background.gradient.repetition.mode="0" background.gradient.repetition.count="0" background.gradient.repetition.length="100" background.gradient.focus="0" background.gradient.scale="100" background.gradient.spread="100" tooltip.backcolor="134217752" tooltip.delay.initial="0" tooltip.delay.visible="32000" tooltip.enabled="0" tooltip.hasclosebutton="0" tooltip.icon="0" tooltip.isbubble="0" tooltip.maxwidth="0" tooltip.textcolor="134217751" tooltip.transparency="0" transparency="0" )
+column(band=detail id=21 alignment="0" tabsequence=32766 border="0" color="33554432" x="3500" y="36" height="75" width="176" format="[general]" html.valueishtml="0"  name=syori_kbn visible="0" edit.limit=0 edit.case=any edit.focusrectangle=no edit.autoselect=no edit.imemode=0  font.face="Yu Gothic UI Semilight" font.height="-12" font.weight="400"  font.family="3" font.pitch="2" font.charset="128" background.mode="2" background.color="16777215" background.transparency="0" background.gradient.color="8421504" background.gradient.transparency="0" background.gradient.angle="0" background.brushmode="0" background.gradient.repetition.mode="0" background.gradient.repetition.count="0" background.gradient.repetition.length="100" background.gradient.focus="0" background.gradient.scale="100" background.gradient.spread="100" tooltip.backcolor="134217752" tooltip.delay.initial="0" tooltip.delay.visible="32000" tooltip.enabled="0" tooltip.hasclosebutton="0" tooltip.icon="0" tooltip.isbubble="0" tooltip.maxwidth="0" tooltip.textcolor="134217751" tooltip.transparency="0" transparency="0" )
+column(band=detail id=4 alignment="0" tabsequence=20 border="5" color="33554432~tif( meisyo_kbn=0, rgb( 128,128,128 ),
+	case ( syori_kbn 
+	  when ~"登録~" then rgb( 0, 0, 0 )
+	  when ~"変更~" then rgb( 0, 0, 0 )
+	  when ~"削除~" then rgb( 128,128,128 )
+	  when ~"照会~" then rgb( 128,128,128 )
+	              else rgb( 128,128,128 )
+	)
+)
+" x="620" y="135" height="82" width="4008" format="[general]" html.valueishtml="0" protect="0~tif( meisyo_kbn=0, 1,
+	case ( syori_kbn 
+	  when ~"登録~" then 0
+	  when ~"変更~" then 0
+	  when ~"削除~" then 1
+	  when ~"照会~" then 1
+	              else 1
+	)
+)
+"  name=meisyo_1 visible="1" edit.limit=256 edit.case=any edit.focusrectangle=no edit.autoselect=yes edit.autohscroll=yes edit.imemode=0  font.face="Yu Gothic UI Semilight" font.height="-12" font.weight="400"  font.family="3" font.pitch="2" font.charset="128" background.mode="0" background.color="16777215~tif( meisyo_kbn=0, rgb( 245,245,245 ),
+	case ( syori_kbn 
+	  when ~"登録~" then rgb( 255, 255, 255 )
+	  when ~"変更~" then rgb( 255, 255, 255 )
+	  when ~"削除~" then rgb( 245,245,245 )
+	  when ~"照会~" then rgb( 245,245,245 )
+	              else rgb( 245,245,245 )
+	)
+)
+" background.transparency="0" background.gradient.color="12632256" background.gradient.transparency="0" background.gradient.angle="0" background.brushmode="0" background.gradient.repetition.mode="0" background.gradient.repetition.count="0" background.gradient.repetition.length="100" background.gradient.focus="0" background.gradient.scale="100" background.gradient.spread="100" tooltip.backcolor="134217752" tooltip.delay.initial="0" tooltip.delay.visible="32000" tooltip.enabled="0" tooltip.hasclosebutton="0" tooltip.icon="0" tooltip.isbubble="0" tooltip.maxwidth="0" tooltip.textcolor="134217751" tooltip.transparency="0" transparency="0" )
+text(band=detail alignment="1" text="名称１" border="0" color="33554432" x="32" y="143" height="71" width="568" html.valueishtml="0"  name=meisyo_1_t visible="1"  font.face="Yu Gothic UI Semilight" font.height="-11" font.weight="400"  font.family="3" font.pitch="2" font.charset="128" background.mode="1" background.color="536870912" background.transparency="0" background.gradient.color="8421504" background.gradient.transparency="0" background.gradient.angle="0" background.brushmode="0" background.gradient.repetition.mode="0" background.gradient.repetition.count="0" background.gradient.repetition.length="100" background.gradient.focus="0" background.gradient.scale="100" background.gradient.spread="100" tooltip.backcolor="134217752" tooltip.delay.initial="0" tooltip.delay.visible="32000" tooltip.enabled="0" tooltip.hasclosebutton="0" tooltip.icon="0" tooltip.isbubble="0" tooltip.maxwidth="0" tooltip.textcolor="134217751" tooltip.transparency="0" transparency="0" )
+column(band=detail id=5 alignment="0" tabsequence=30 border="5" color="33554432~tif( meisyo_kbn=0, rgb( 128,128,128 ),
+	case ( syori_kbn 
+	  when ~"登録~" then rgb( 0, 0, 0 )
+	  when ~"変更~" then rgb( 0, 0, 0 )
+	  when ~"削除~" then rgb( 128,128,128 )
+	  when ~"照会~" then rgb( 128,128,128 )
+	              else rgb( 128,128,128 )
+	)
+)
+" x="620" y="228" height="82" width="4008" format="[general]" html.valueishtml="0" protect="0~tif( meisyo_kbn=0, 1,
+	case ( syori_kbn 
+	  when ~"登録~" then 0
+	  when ~"変更~" then 0
+	  when ~"削除~" then 1
+	  when ~"照会~" then 1
+	              else 1
+	)
+)
+"  name=meisyo_2 visible="1" edit.limit=256 edit.case=any edit.focusrectangle=no edit.autoselect=yes edit.autohscroll=yes edit.imemode=0  font.face="Yu Gothic UI Semilight" font.height="-12" font.weight="400"  font.family="3" font.pitch="2" font.charset="128" background.mode="0" background.color="16777215~tif( meisyo_kbn=0, rgb( 245,245,245 ),
+	case ( syori_kbn 
+	  when ~"登録~" then rgb( 255, 255, 255 )
+	  when ~"変更~" then rgb( 255, 255, 255 )
+	  when ~"削除~" then rgb( 245,245,245 )
+	  when ~"照会~" then rgb( 245,245,245 )
+	              else rgb( 245,245,245 )
+	)
+)
+" background.transparency="0" background.gradient.color="12632256" background.gradient.transparency="0" background.gradient.angle="0" background.brushmode="0" background.gradient.repetition.mode="0" background.gradient.repetition.count="0" background.gradient.repetition.length="100" background.gradient.focus="0" background.gradient.scale="100" background.gradient.spread="100" tooltip.backcolor="134217752" tooltip.delay.initial="0" tooltip.delay.visible="32000" tooltip.enabled="0" tooltip.hasclosebutton="0" tooltip.icon="0" tooltip.isbubble="0" tooltip.maxwidth="0" tooltip.textcolor="134217751" tooltip.transparency="0" transparency="0" )
+text(band=detail alignment="1" text="名称２" border="0" color="33554432" x="32" y="235" height="71" width="568" html.valueishtml="0"  name=meisyo_2_t visible="1"  font.face="Yu Gothic UI Semilight" font.height="-11" font.weight="400"  font.family="3" font.pitch="2" font.charset="128" background.mode="1" background.color="536870912" background.transparency="0" background.gradient.color="8421504" background.gradient.transparency="0" background.gradient.angle="0" background.brushmode="0" background.gradient.repetition.mode="0" background.gradient.repetition.count="0" background.gradient.repetition.length="100" background.gradient.focus="0" background.gradient.scale="100" background.gradient.spread="100" tooltip.backcolor="134217752" tooltip.delay.initial="0" tooltip.delay.visible="32000" tooltip.enabled="0" tooltip.hasclosebutton="0" tooltip.icon="0" tooltip.isbubble="0" tooltip.maxwidth="0" tooltip.textcolor="134217751" tooltip.transparency="0" transparency="0" )
+htmltable(border="1" )
+htmlgen(clientevents="1" clientvalidation="1" clientcomputedfields="1" clientformatting="0" clientscriptable="0" generatejavascript="1" encodeselflinkargs="1" netscapelayers="0" pagingmethod=0 generatedddwframes="1" )
+xhtmlgen() cssgen(sessionspecific="0" )
+xmlgen(inline="0" )
+xsltgen()
+jsgen()
+export.xml(headgroups="1" includewhitespace="0" metadatatype=0 savemetadata=0 )
+import.xml()
+export.pdf(method=0 distill.custompostscript="0" xslfop.print="0" nativepdf.customsize=0 nativepdf.customorientation=0 nativepdf.pdfstandard=0 nativepdf.useprintspec=no )
+export.xhtml()
+ 

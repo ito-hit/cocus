@@ -1,0 +1,289 @@
+﻿$PBExportHeader$dsm_tokui.srd
+$PBExportComments$wsm_tokuiのデータウィンドウ
+release 19;
+datawindow(units=0 timer_interval=0 color=268435456 brushmode=0 transparency=0 gradient.angle=0 gradient.color=8421504 gradient.focus=0 gradient.repetition.count=0 gradient.repetition.length=100 gradient.repetition.mode=0 gradient.scale=100 gradient.spread=100 gradient.transparency=0 picture.blur=0 picture.clip.bottom=0 picture.clip.left=0 picture.clip.right=0 picture.clip.top=0 picture.mode=0 picture.scale.x=100 picture.scale.y=100 picture.transparency=0 processing=1 HTMLDW=no print.printername="" print.documentname="" print.orientation = 0 print.margin.left = 96 print.margin.right = 96 print.margin.top = 85 print.margin.bottom = 85 print.paper.source = 0 print.paper.size = 0 print.canusedefaultprinter=yes print.prompt=no print.buttons=no print.preview.buttons=no print.cliptext=no print.overrideprintjob=no print.collate=yes print.background=no print.preview.background=no print.preview.outline=yes hidegrayline=no showbackcoloronxp=no picture.file="" grid.lines=2 grid.columnmove=no selected.mouse=no )
+header(height=85 color="67108864" transparency="0" gradient.color="8421504" gradient.transparency="0" gradient.angle="0" brushmode="0" gradient.repetition.mode="0" gradient.repetition.count="0" gradient.repetition.length="100" gradient.focus="0" gradient.scale="100" gradient.spread="100" )
+summary(height=0 color="536870912" transparency="0" gradient.color="8421504" gradient.transparency="0" gradient.angle="0" brushmode="0" gradient.repetition.mode="0" gradient.repetition.count="0" gradient.repetition.length="100" gradient.focus="0" gradient.scale="100" gradient.spread="100" )
+footer(height=0 color="536870912" transparency="0" gradient.color="8421504" gradient.transparency="0" gradient.angle="0" brushmode="0" gradient.repetition.mode="0" gradient.repetition.count="0" gradient.repetition.length="100" gradient.focus="0" gradient.scale="100" gradient.spread="100" )
+detail(height=85 color="536870912~tfo_lattice( getrow() )" transparency="0" gradient.color="8421504" gradient.transparency="0" gradient.angle="0" brushmode="0" gradient.repetition.mode="0" gradient.repetition.count="0" gradient.repetition.length="100" gradient.focus="0" gradient.scale="100" gradient.spread="100" )
+table(column=(type=decimal(0) updatewhereclause=yes name=tokui_code dbname="tokui_code" )
+ column=(type=char(60) updatewhereclause=yes name=tokui_mei_full dbname="tokui_mei_full" )
+ column=(type=char(40) updatewhereclause=yes name=tokui_mei dbname="tokui_mei" )
+ column=(type=char(40) updatewhereclause=yes name=tokui_mei_syagai dbname="tokui_mei_syagai" )
+ column=(type=char(40) updatewhereclause=yes name=tokui_mei_ryaku dbname="tokui_mei_ryaku" )
+ column=(type=char(40) updatewhereclause=yes name=tokui_mei_kana dbname="tokui_mei_kana" )
+ column=(type=decimal(0) updatewhereclause=yes name=tokui_kbn dbname="tokui_kbn" )
+ column=(type=decimal(0) updatewhereclause=yes name=gyotai_kbn dbname="gyotai_kbn" )
+ column=(type=decimal(0) updatewhereclause=yes name=syokuti_flg dbname="syokuti_flg" )
+ column=(type=char(15) updatewhereclause=yes name=torihiki_code dbname="torihiki_code" )
+ column=(type=char(15) updatewhereclause=yes name=jigyosya_code dbname="jigyosya_code" )
+ column=(type=char(15) updatewhereclause=yes name=houjin_no dbname="houjin_no" )
+ column=(type=decimal(0) updatewhereclause=yes name=bumon_code dbname="bumon_code" )
+ column=(type=decimal(0) updatewhereclause=yes name=tanto_code dbname="tanto_code" )
+ column=(type=char(20) updatewhereclause=yes name=tanto_mei dbname="tanto_mei" )
+ column=(type=decimal(0) updatewhereclause=yes name=tanto_code_new dbname="tanto_code_new" )
+ column=(type=decimal(0) updatewhereclause=yes name=nayose_code dbname="nayose_code" )
+ column=(type=char(40) updatewhereclause=yes name=nayose_mei dbname="nayose_mei" )
+ column=(type=decimal(0) updatewhereclause=yes name=nayose_eda dbname="nayose_eda" )
+ column=(type=decimal(0) updatewhereclause=yes name=seikyu_code dbname="seikyu_code" )
+ column=(type=char(40) updatewhereclause=yes name=seikyu_mei dbname="seikyu_mei" )
+ column=(type=decimal(0) updatewhereclause=yes name=seikyu_eda dbname="seikyu_eda" )
+ column=(type=decimal(0) updatewhereclause=yes name=torihiki_jyoken_kbn dbname="torihiki_jyoken_kbn" )
+ column=(type=decimal(0) updatewhereclause=yes name=yosin_gendo_gaku dbname="yosin_gendo_gaku" )
+ column=(type=decimal(0) updatewhereclause=yes name=syohizei_kbn dbname="syohizei_kbn" )
+ column=(type=decimal(0) updatewhereclause=yes name=zei_hasu_kbn dbname="zei_hasu_kbn" )
+ column=(type=char(10) updatewhereclause=yes name=untin_kbn_fax dbname="untin_kbn_fax" )
+ column=(type=char(10) updatewhereclause=yes name=untin_kbn_net dbname="untin_kbn_net" )
+ column=(type=char(10) updatewhereclause=yes name=untin_kbn_edi dbname="untin_kbn_edi" )
+ column=(type=decimal(0) updatewhereclause=yes name=untin_kbn dbname="untin_kbn" )
+ column=(type=decimal(0) updatewhereclause=yes name=torihiki_teisi_kbn dbname="torihiki_teisi_kbn" )
+ column=(type=char(256) updatewhereclause=yes name=torihiki_teisi_mei dbname="torihiki_teisi_mei" )
+ column=(type=decimal(0) updatewhereclause=yes name=torihiki_teisi_riyu dbname="torihiki_teisi_riyu" )
+ column=(type=decimal(0) updatewhereclause=yes name=syusoku_flg dbname="syusoku_flg" )
+ column=(type=decimal(0) updatewhereclause=yes name=kesikomi_flg dbname="kesikomi_flg" )
+ column=(type=decimal(0) updatewhereclause=yes name=kaisyu_flg dbname="kaisyu_flg" )
+ column=(type=decimal(0) updatewhereclause=yes name=kaisyu_keikoku_flg dbname="kaisyu_keikoku_flg" )
+ column=(type=decimal(0) updatewhereclause=yes name=nohinsyo_kbn dbname="nohinsyo_kbn" )
+ column=(type=decimal(0) updatewhereclause=yes name=nohinsyo_hakkou_kbn dbname="nohinsyo_hakkou_kbn" )
+ column=(type=decimal(0) updatewhereclause=yes name=nohinsyo_kingaku_kbn dbname="nohinsyo_kingaku_kbn" )
+ column=(type=decimal(0) updatewhereclause=yes name=nohinsyo_kousou_kbn dbname="nohinsyo_kousou_kbn" )
+ column=(type=decimal(0) updatewhereclause=yes name=nohinsyo_kousou_jyun dbname="nohinsyo_kousou_jyun" )
+ column=(type=decimal(0) updatewhereclause=yes name=seikyusyo_kbn dbname="seikyusyo_kbn" )
+ column=(type=decimal(0) updatewhereclause=yes name=seikyu_meisai_kbn dbname="seikyu_meisai_kbn" )
+ column=(type=decimal(0) updatewhereclause=yes name=seikyu_tanni_kbn dbname="seikyu_tanni_kbn" )
+ column=(type=decimal(0) updatewhereclause=yes name=seikyu_denpyo_no_hyoji_kbn dbname="seikyu_denpyo_no_hyoji_kbn" )
+ column=(type=decimal(0) updatewhereclause=yes name=seikyu_cd_hyoji_flg dbname="seikyu_cd_hyoji_flg" )
+ column=(type=decimal(0) updatewhereclause=yes name=siharai_kijitu_hyoji_flg dbname="siharai_kijitu_hyoji_flg" )
+ column=(type=decimal(0) updatewhereclause=yes name=jikai_siharai_hyoji_flg dbname="jikai_siharai_hyoji_flg" )
+ column=(type=decimal(0) updatewhereclause=yes name=seikyu_data_kbn dbname="seikyu_data_kbn" )
+ column=(type=decimal(0) updatewhereclause=yes name=kijyun_kingaku dbname="kijyun_kingaku" )
+ column=(type=decimal(0) updatewhereclause=yes name=simebi_1 dbname="simebi_1" )
+ column=(type=decimal(0) updatewhereclause=yes name=nyukin_tuki_1 dbname="nyukin_tuki_1" )
+ column=(type=decimal(0) updatewhereclause=yes name=nyukin_date_1 dbname="nyukin_date_1" )
+ column=(type=decimal(0) updatewhereclause=yes name=nyukin_houhou_1 dbname="nyukin_houhou_1" )
+ column=(type=decimal(0) updatewhereclause=yes name=tegata_site_1 dbname="tegata_site_1" )
+ column=(type=decimal(0) updatewhereclause=yes name=nyukin_tuki_1m dbname="nyukin_tuki_1m" )
+ column=(type=decimal(0) updatewhereclause=yes name=nyukin_date_1m dbname="nyukin_date_1m" )
+ column=(type=decimal(0) updatewhereclause=yes name=nyukin_houhou_1m dbname="nyukin_houhou_1m" )
+ column=(type=decimal(0) updatewhereclause=yes name=tegata_site_1m dbname="tegata_site_1m" )
+ column=(type=decimal(0) updatewhereclause=yes name=simebi_2 dbname="simebi_2" )
+ column=(type=decimal(0) updatewhereclause=yes name=nyukin_tuki_2 dbname="nyukin_tuki_2" )
+ column=(type=decimal(0) updatewhereclause=yes name=nyukin_date_2 dbname="nyukin_date_2" )
+ column=(type=decimal(0) updatewhereclause=yes name=nyukin_houhou_2 dbname="nyukin_houhou_2" )
+ column=(type=decimal(0) updatewhereclause=yes name=tegata_site_2 dbname="tegata_site_2" )
+ column=(type=decimal(0) updatewhereclause=yes name=nyukin_tuki_2m dbname="nyukin_tuki_2m" )
+ column=(type=decimal(0) updatewhereclause=yes name=nyukin_date_2m dbname="nyukin_date_2m" )
+ column=(type=decimal(0) updatewhereclause=yes name=nyukin_houhou_2m dbname="nyukin_houhou_2m" )
+ column=(type=decimal(0) updatewhereclause=yes name=tegata_site_2m dbname="tegata_site_2m" )
+ column=(type=decimal(0) updatewhereclause=yes name=tanka_touroku_flg dbname="tanka_touroku_flg" )
+ column=(type=decimal(0) updatewhereclause=yes name=unso_code dbname="unso_code" )
+ column=(type=decimal(0) updatewhereclause=yes name=leadtime_flg dbname="leadtime_flg" )
+ column=(type=decimal(0) updatewhereclause=yes name=saiken_doukou_flg dbname="saiken_doukou_flg" )
+ column=(type=decimal(0) updatewhereclause=yes name=jyuten_kbn dbname="jyuten_kbn" )
+ column=(type=decimal(0) updatewhereclause=yes name=reserve_hikiate_code dbname="reserve_hikiate_code" )
+ column=(type=decimal(0) updatewhereclause=yes name=rank dbname="rank" )
+ column=(type=decimal(0) updatewhereclause=yes name=syukka_yusen_jyun dbname="syukka_yusen_jyun" )
+ column=(type=decimal(0) updatewhereclause=yes name=syukka_siji_kingaku dbname="syukka_siji_kingaku" )
+ column=(type=decimal(0) updatewhereclause=yes name=todofuken_code dbname="todofuken_code" )
+ column=(type=decimal(0) updatewhereclause=yes name=sikutyoson_code dbname="sikutyoson_code" )
+ column=(type=char(10) updatewhereclause=yes name=yubin_no dbname="yubin_no" )
+ column=(type=char(128) updatewhereclause=yes name=jyusyo dbname="jyusyo" )
+ column=(type=char(15) updatewhereclause=yes name=tel_no dbname="tel_no" )
+ column=(type=char(15) updatewhereclause=yes name=fax_no dbname="fax_no" )
+ column=(type=char(128) updatewhereclause=yes name=url dbname="url" )
+ column=(type=char(64) updatewhereclause=yes name=daihyo_yakusyoku dbname="daihyo_yakusyoku" )
+ column=(type=char(64) updatewhereclause=yes name=daihyo_simei dbname="daihyo_simei" )
+ column=(type=decimal(0) updatewhereclause=yes name=sogyo_kbn dbname="sogyo_kbn" )
+ column=(type=decimal(0) updatewhereclause=yes name=sogyo_nen dbname="sogyo_nen" )
+ column=(type=decimal(0) updatewhereclause=yes name=sogyo_tuki dbname="sogyo_tuki" )
+ column=(type=decimal(0) updatewhereclause=yes name=kessan_tuki dbname="kessan_tuki" )
+ column=(type=char(64) updatewhereclause=yes name=gyosyu dbname="gyosyu" )
+ column=(type=decimal(0) updatewhereclause=yes name=sihonkin dbname="sihonkin" )
+ column=(type=decimal(0) updatewhereclause=yes name=jyugyoin_su dbname="jyugyoin_su" )
+ column=(type=char(64) updatewhereclause=yes name=torihiki_ginkou_1 dbname="torihiki_ginkou_1" )
+ column=(type=char(64) updatewhereclause=yes name=torihiki_ginkou_siten_1 dbname="torihiki_ginkou_siten_1" )
+ column=(type=char(64) updatewhereclause=yes name=torihiki_ginkou_2 dbname="torihiki_ginkou_2" )
+ column=(type=char(64) updatewhereclause=yes name=torihiki_ginkou_siten_2 dbname="torihiki_ginkou_siten_2" )
+ column=(type=char(64) updatewhereclause=yes name=torihiki_ginkou_3 dbname="torihiki_ginkou_3" )
+ column=(type=char(64) updatewhereclause=yes name=torihiki_ginkou_siten_3 dbname="torihiki_ginkou_siten_3" )
+ column=(type=decimal(0) updatewhereclause=yes name=siten_su dbname="siten_su" )
+ column=(type=decimal(0) updatewhereclause=yes name=kojyo_su dbname="kojyo_su" )
+ column=(type=char(256) updatewhereclause=yes name=hanbai_saki dbname="hanbai_saki" )
+ column=(type=char(256) updatewhereclause=yes name=siire_saki dbname="siire_saki" )
+ column=(type=char(64) updatewhereclause=yes name=jigyo_naiyo dbname="jigyo_naiyo" )
+ column=(type=decimal(0) updatewhereclause=yes name=gyokai_tii dbname="gyokai_tii" )
+ column=(type=decimal(0) updatewhereclause=yes name=torihiki_keii dbname="torihiki_keii" )
+ column=(type=char(512) updatewhereclause=yes name=torihiki_keii_bikou dbname="torihiki_keii_bikou" )
+ column=(type=decimal(0) updatewhereclause=yes name=baibai_keiyaku_flg dbname="baibai_keiyaku_flg" )
+ column=(type=decimal(0) updatewhereclause=yes name=hosyonin_umu dbname="hosyonin_umu" )
+ column=(type=char(64) updatewhereclause=yes name=hosyonin_mei dbname="hosyonin_mei" )
+ column=(type=char(64) updatewhereclause=yes name=hosyonin_kankei dbname="hosyonin_kankei" )
+ column=(type=char(256) updatewhereclause=yes name=hosyokin dbname="hosyokin" )
+ column=(type=decimal(2) updatewhereclause=yes name=ryoritu_1 dbname="ryoritu_1" )
+ column=(type=decimal(0) updatewhereclause=yes name=ryoritu_tani_1 dbname="ryoritu_tani_1" )
+ column=(type=decimal(2) updatewhereclause=yes name=ryoritu_2 dbname="ryoritu_2" )
+ column=(type=decimal(0) updatewhereclause=yes name=ryoritu_tani_2 dbname="ryoritu_tani_2" )
+ column=(type=decimal(2) updatewhereclause=yes name=ryoritu_3 dbname="ryoritu_3" )
+ column=(type=decimal(0) updatewhereclause=yes name=ryoritu_tani_3 dbname="ryoritu_tani_3" )
+ column=(type=decimal(2) updatewhereclause=yes name=ryoritu_4 dbname="ryoritu_4" )
+ column=(type=decimal(0) updatewhereclause=yes name=ryoritu_tani_4 dbname="ryoritu_tani_4" )
+ column=(type=decimal(2) updatewhereclause=yes name=ryoritu_5 dbname="ryoritu_5" )
+ column=(type=decimal(0) updatewhereclause=yes name=ryoritu_tani_5 dbname="ryoritu_tani_5" )
+ column=(type=decimal(2) updatewhereclause=yes name=tesuryo_1 dbname="tesuryo_1" )
+ column=(type=decimal(0) updatewhereclause=yes name=tesuryo_tani_1 dbname="tesuryo_tani_1" )
+ column=(type=decimal(2) updatewhereclause=yes name=tesuryo_2 dbname="tesuryo_2" )
+ column=(type=decimal(0) updatewhereclause=yes name=tesuryo_tani_2 dbname="tesuryo_tani_2" )
+ column=(type=decimal(2) updatewhereclause=yes name=tesuryo_3 dbname="tesuryo_3" )
+ column=(type=decimal(0) updatewhereclause=yes name=tesuryo_tani_3 dbname="tesuryo_tani_3" )
+ column=(type=decimal(2) updatewhereclause=yes name=tesuryo_4 dbname="tesuryo_4" )
+ column=(type=decimal(0) updatewhereclause=yes name=tesuryo_tani_4 dbname="tesuryo_tani_4" )
+ column=(type=decimal(2) updatewhereclause=yes name=tesuryo_5 dbname="tesuryo_5" )
+ column=(type=decimal(0) updatewhereclause=yes name=tesuryo_tani_5 dbname="tesuryo_tani_5" )
+ column=(type=char(2000) updatewhereclause=yes name=memo dbname="memo" )
+ column=(type=datetime updatewhereclause=yes name=touroku_date dbname="touroku_date" )
+ column=(type=char(10) updatewhereclause=yes name=touroku_user_id dbname="touroku_user_id" )
+ column=(type=char(40) updatewhereclause=yes name=touroku_client_id dbname="touroku_client_id" )
+ column=(type=char(40) updatewhereclause=yes name=touroku_pg_id dbname="touroku_pg_id" )
+ column=(type=datetime updatewhereclause=yes name=henkou_date dbname="henkou_date" )
+ column=(type=char(10) updatewhereclause=yes name=henkou_user_id dbname="henkou_user_id" )
+ column=(type=char(40) updatewhereclause=yes name=henkou_client_id dbname="henkou_client_id" )
+ column=(type=char(40) updatewhereclause=yes name=henkou_pg_id dbname="henkou_pg_id" )
+ column=(type=datetime updatewhereclause=yes name=kousin_date dbname="kousin_date" )
+ column=(type=char(10) updatewhereclause=yes name=kousin_user_id dbname="kousin_user_id" )
+ column=(type=char(40) updatewhereclause=yes name=kousin_client_id dbname="kousin_client_id" )
+ column=(type=char(40) updatewhereclause=yes name=kousin_pg_id dbname="kousin_pg_id" )
+ column=(type=decimal(0) updatewhereclause=yes name=haita_flg dbname="haita_flg" )
+ retrieve="select tok.tokui_code,
+       tok.tokui_mei_full,tok.tokui_mei,
+       tok.tokui_mei_syagai,tok.tokui_mei_ryaku,tok.tokui_mei_kana,
+       tok.tokui_kbn,tok.gyotai_kbn,
+       tok.syokuti_flg,
+       tok.torihiki_code,tok.jigyosya_code,
+       tok.houjin_no,
+       tok.bumon_code,
+       tok.tanto_code,tan.tanto_mei,tok.tanto_code_new,
+       tok.nayose_code,
+       decode( tok.tokui_code, tok.nayose_code, null, nam.tokui_mei ) nayose_mei,
+       tok.nayose_eda,
+       tok.seikyu_code,
+       decode( tok.tokui_code, tok.seikyu_code, null, sem.tokui_mei ) seikyu_mei,
+       tok.seikyu_eda,
+       tok.torihiki_jyoken_kbn,
+       tok.yosin_gendo_gaku,
+       tok.syohizei_kbn,tok.zei_hasu_kbn,
+       tok.untin_kbn_fax,tok.untin_kbn_net,tok.untin_kbn_edi,tok.untin_kbn,
+       tok.torihiki_teisi_kbn,
+       decode( tok.torihiki_teisi_kbn, 1, '', met.meisyo_1 ) torihiki_teisi_mei,
+       tok.torihiki_teisi_riyu,
+       tok.syusoku_flg,tok.kesikomi_flg,tok.kaisyu_flg,tok.kaisyu_keikoku_flg,
+       tok.nohinsyo_kbn,tok.nohinsyo_hakkou_kbn,tok.nohinsyo_kingaku_kbn,tok.nohinsyo_kousou_kbn,tok.nohinsyo_kousou_jyun,
+       tok.seikyusyo_kbn,tok.seikyu_meisai_kbn,tok.seikyu_tanni_kbn,tok.seikyu_denpyo_no_hyoji_kbn,
+       tok.seikyu_cd_hyoji_flg,tok.siharai_kijitu_hyoji_flg,tok.jikai_siharai_hyoji_flg,
+       tok.seikyu_data_kbn,
+       tok.kijyun_kingaku,
+       tok.simebi_1,
+       tok.nyukin_tuki_1,tok.nyukin_date_1,tok.nyukin_houhou_1,tok.tegata_site_1,
+       tok.nyukin_tuki_1m,tok.nyukin_date_1m,tok.nyukin_houhou_1m,tok.tegata_site_1m,
+       tok.simebi_2,
+       tok.nyukin_tuki_2,tok.nyukin_date_2,tok.nyukin_houhou_2,tok.tegata_site_2,
+       tok.nyukin_tuki_2m,tok.nyukin_date_2m,tok.nyukin_houhou_2m,tok.tegata_site_2m,
+       tok.tanka_touroku_flg,
+       tok.unso_code,
+       tok.leadtime_flg,
+       tok.saiken_doukou_flg,
+       tok.jyuten_kbn,
+       tok.reserve_hikiate_code,
+       tok.rank,
+       tok.syukka_yusen_jyun,tok.syukka_siji_kingaku,
+       tok.todofuken_code,tok.sikutyoson_code,tok.yubin_no,tok.jyusyo,
+       tok.tel_no,tok.fax_no,
+       tok.url,
+       tok.daihyo_yakusyoku,tok.daihyo_simei,
+       tok.sogyo_kbn,tok.sogyo_nen,tok.sogyo_tuki,
+       tok.kessan_tuki,
+       tok.gyosyu,tok.sihonkin,tok.jyugyoin_su,
+       tok.torihiki_ginkou_1,tok.torihiki_ginkou_siten_1,
+       tok.torihiki_ginkou_2,tok.torihiki_ginkou_siten_2,
+       tok.torihiki_ginkou_3,tok.torihiki_ginkou_siten_3,
+       tok.siten_su,tok.kojyo_su,
+       tok.hanbai_saki,tok.siire_saki,
+       tok.jigyo_naiyo,
+       tok.gyokai_tii,
+       tok.torihiki_keii,tok.torihiki_keii_bikou,
+       tok.baibai_keiyaku_flg,
+       tok.hosyonin_umu,tok.hosyonin_mei,tok.hosyonin_kankei,
+       tok.hosyokin,
+       tok.ryoritu_1,tok.ryoritu_tani_1,
+       tok.ryoritu_2,tok.ryoritu_tani_2,
+       tok.ryoritu_3,tok.ryoritu_tani_3,
+       tok.ryoritu_4,tok.ryoritu_tani_4,
+       tok.ryoritu_5,tok.ryoritu_tani_5,
+       tok.tesuryo_1,tok.tesuryo_tani_1,
+       tok.tesuryo_2,tok.tesuryo_tani_2,
+       tok.tesuryo_3,tok.tesuryo_tani_3,
+       tok.tesuryo_4,tok.tesuryo_tani_4,
+       tok.tesuryo_5,tok.tesuryo_tani_5,
+       tok.memo,
+       tok.touroku_date,tok.touroku_user_id,tok.touroku_client_id,tok.touroku_pg_id,
+       tok.henkou_date,tok.henkou_user_id,tok.henkou_client_id,tok.henkou_pg_id,
+       tok.kousin_date,tok.kousin_user_id,tok.kousin_client_id,tok.kousin_pg_id,
+       tok.haita_flg
+  from m_tokui tok,
+       m_tanto tan,
+       m_tokui nam,
+       m_tokui sem,
+       ( select meisyo_code,
+                meisyo_1
+           from m_meisyo
+          where meisyo_kbn	= 106
+       ) met
+ where tok.tanto_code				= tan.tanto_code(+)
+   and tok.torihiki_teisi_kbn		= met.meisyo_code(+)
+   and tok.nayose_code				= nam.tokui_code(+)
+   and tok.seikyu_code				= sem.tokui_code(+)
+   and (   tok.tokui_mei_full			like '%' || :p_tokui_mei || '%'
+        or tok.tokui_mei				like '%' || :p_tokui_mei || '%'
+        or tok.tokui_mei_syagai			like '%' || :p_tokui_mei || '%'
+       )
+   and tok.tokui_mei_kana			like '%' || :p_tokui_mei_kana || '%'
+   and tok.jyusyo					like '%' || :p_jyusyo || '%'
+   and (   replace( tok.tel_no, '-' )	like '%' || :p_number || '%'
+        or replace( tok.fax_no, '-' )	like '%' || :p_number || '%'
+       )
+ order by tok.tokui_code" arguments=(("p_tokui_mei", string),("p_tokui_mei_kana", string),("p_jyusyo", string),("p_number", string)) )
+text(band=header alignment="2" text="コード" border="6" color="33554432" x="4" y="7" height="71" width="304" html.valueishtml="0"  name=tokui_code_t visible="1"  font.face="Yu Gothic UI Semilight" font.height="-11" font.weight="400"  font.family="3" font.pitch="2" font.charset="1" background.mode="1" background.color="536870912" background.transparency="0" background.gradient.color="8421504" background.gradient.transparency="0" background.gradient.angle="0" background.brushmode="0" background.gradient.repetition.mode="0" background.gradient.repetition.count="0" background.gradient.repetition.length="0" background.gradient.focus="0" background.gradient.scale="0" background.gradient.spread="0" tooltip.backcolor="134217752" tooltip.delay.initial="0" tooltip.delay.visible="0" tooltip.enabled="0" tooltip.hasclosebutton="0" tooltip.icon="0" tooltip.isbubble="0" tooltip.maxwidth="0" tooltip.textcolor="134217751" tooltip.transparency="0" transparency="0" )
+text(band=header alignment="2" text="得意先名" border="6" color="33554432" x="316" y="7" height="71" width="1124" html.valueishtml="0"  name=tokui_mei_full_t visible="1"  font.face="Yu Gothic UI Semilight" font.height="-11" font.weight="400"  font.family="3" font.pitch="2" font.charset="1" background.mode="1" background.color="536870912" background.transparency="0" background.gradient.color="8421504" background.gradient.transparency="0" background.gradient.angle="0" background.brushmode="0" background.gradient.repetition.mode="0" background.gradient.repetition.count="0" background.gradient.repetition.length="0" background.gradient.focus="0" background.gradient.scale="0" background.gradient.spread="0" tooltip.backcolor="134217752" tooltip.delay.initial="0" tooltip.delay.visible="0" tooltip.enabled="0" tooltip.hasclosebutton="0" tooltip.icon="0" tooltip.isbubble="0" tooltip.maxwidth="0" tooltip.textcolor="134217751" tooltip.transparency="0" transparency="0" )
+text(band=header alignment="2" text="社内表示名" border="6" color="33554432" x="1448" y="7" height="71" width="1016" html.valueishtml="0"  name=tokui_mei_t visible="1"  font.face="Yu Gothic UI Semilight" font.height="-11" font.weight="400"  font.family="3" font.pitch="2" font.charset="1" background.mode="1" background.color="536870912" background.transparency="0" background.gradient.color="8421504" background.gradient.transparency="0" background.gradient.angle="0" background.brushmode="0" background.gradient.repetition.mode="0" background.gradient.repetition.count="0" background.gradient.repetition.length="0" background.gradient.focus="0" background.gradient.scale="0" background.gradient.spread="0" tooltip.backcolor="134217752" tooltip.delay.initial="0" tooltip.delay.visible="0" tooltip.enabled="0" tooltip.hasclosebutton="0" tooltip.icon="0" tooltip.isbubble="0" tooltip.maxwidth="0" tooltip.textcolor="134217751" tooltip.transparency="0" transparency="0" )
+text(band=header alignment="2" text="住所" border="6" color="33554432" x="2472" y="7" height="71" width="1380" html.valueishtml="0"  name=jyusyo_t visible="1"  font.face="Yu Gothic UI Semilight" font.height="-11" font.weight="400"  font.family="3" font.pitch="2" font.charset="1" background.mode="1" background.color="536870912" background.transparency="0" background.gradient.color="8421504" background.gradient.transparency="0" background.gradient.angle="0" background.brushmode="0" background.gradient.repetition.mode="0" background.gradient.repetition.count="0" background.gradient.repetition.length="0" background.gradient.focus="0" background.gradient.scale="0" background.gradient.spread="0" tooltip.backcolor="134217752" tooltip.delay.initial="0" tooltip.delay.visible="0" tooltip.enabled="0" tooltip.hasclosebutton="0" tooltip.icon="0" tooltip.isbubble="0" tooltip.maxwidth="0" tooltip.textcolor="134217751" tooltip.transparency="0" transparency="0" )
+text(band=header alignment="2" text="電話番号" border="6" color="33554432" x="3860" y="7" height="71" width="484" html.valueishtml="0"  name=tel_no_t visible="1"  font.face="Yu Gothic UI Semilight" font.height="-11" font.weight="400"  font.family="3" font.pitch="2" font.charset="1" background.mode="1" background.color="536870912" background.transparency="0" background.gradient.color="8421504" background.gradient.transparency="0" background.gradient.angle="0" background.brushmode="0" background.gradient.repetition.mode="0" background.gradient.repetition.count="0" background.gradient.repetition.length="0" background.gradient.focus="0" background.gradient.scale="0" background.gradient.spread="0" tooltip.backcolor="134217752" tooltip.delay.initial="0" tooltip.delay.visible="0" tooltip.enabled="0" tooltip.hasclosebutton="0" tooltip.icon="0" tooltip.isbubble="0" tooltip.maxwidth="0" tooltip.textcolor="134217751" tooltip.transparency="0" transparency="0" )
+text(band=header alignment="2" text="FAX番号" border="6" color="33554432" x="4352" y="7" height="71" width="484" html.valueishtml="0"  name=fax_no_t visible="1"  font.face="Yu Gothic UI Semilight" font.height="-11" font.weight="400"  font.family="3" font.pitch="2" font.charset="1" background.mode="1" background.color="536870912" background.transparency="0" background.gradient.color="8421504" background.gradient.transparency="0" background.gradient.angle="0" background.brushmode="0" background.gradient.repetition.mode="0" background.gradient.repetition.count="0" background.gradient.repetition.length="0" background.gradient.focus="0" background.gradient.scale="0" background.gradient.spread="0" tooltip.backcolor="134217752" tooltip.delay.initial="0" tooltip.delay.visible="0" tooltip.enabled="0" tooltip.hasclosebutton="0" tooltip.icon="0" tooltip.isbubble="0" tooltip.maxwidth="0" tooltip.textcolor="134217751" tooltip.transparency="0" transparency="0" )
+text(band=header alignment="2" text="営業担当者" border="6" color="33554432" x="4844" y="7" height="71" width="436" html.valueishtml="0"  name=tanto_mei_t visible="1"  font.face="Yu Gothic UI Semilight" font.height="-11" font.weight="400"  font.family="3" font.pitch="2" font.charset="1" background.mode="1" background.color="536870912" background.transparency="0" background.gradient.color="8421504" background.gradient.transparency="0" background.gradient.angle="0" background.brushmode="0" background.gradient.repetition.mode="0" background.gradient.repetition.count="0" background.gradient.repetition.length="0" background.gradient.focus="0" background.gradient.scale="0" background.gradient.spread="0" tooltip.backcolor="134217752" tooltip.delay.initial="0" tooltip.delay.visible="0" tooltip.enabled="0" tooltip.hasclosebutton="0" tooltip.icon="0" tooltip.isbubble="0" tooltip.maxwidth="0" tooltip.textcolor="134217751" tooltip.transparency="0" transparency="0" )
+text(band=header alignment="2" text="取引停止" border="6" color="33554432" x="5288" y="7" height="71" width="480" html.valueishtml="0"  name=torihiki_teisi_mei_t visible="1"  font.face="Yu Gothic UI Semilight" font.height="-11" font.weight="400"  font.family="3" font.pitch="2" font.charset="1" background.mode="1" background.color="536870912" background.transparency="0" background.gradient.color="8421504" background.gradient.transparency="0" background.gradient.angle="0" background.brushmode="0" background.gradient.repetition.mode="0" background.gradient.repetition.count="0" background.gradient.repetition.length="0" background.gradient.focus="0" background.gradient.scale="0" background.gradient.spread="0" tooltip.backcolor="134217752" tooltip.delay.initial="0" tooltip.delay.visible="0" tooltip.enabled="0" tooltip.hasclosebutton="0" tooltip.icon="0" tooltip.isbubble="0" tooltip.maxwidth="0" tooltip.textcolor="134217751" tooltip.transparency="0" transparency="0" )
+text(band=header alignment="2" text="名寄せ先" border="6" color="33554432" x="5776" y="7" height="71" width="304" html.valueishtml="0"  name=nayose_code_t visible="1"  font.face="Yu Gothic UI Semilight" font.height="-11" font.weight="400"  font.family="3" font.pitch="2" font.charset="1" background.mode="1" background.color="536870912" background.transparency="0" background.gradient.color="8421504" background.gradient.transparency="0" background.gradient.angle="0" background.brushmode="0" background.gradient.repetition.mode="0" background.gradient.repetition.count="0" background.gradient.repetition.length="0" background.gradient.focus="0" background.gradient.scale="0" background.gradient.spread="0" tooltip.backcolor="134217752" tooltip.delay.initial="0" tooltip.delay.visible="0" tooltip.enabled="0" tooltip.hasclosebutton="0" tooltip.icon="0" tooltip.isbubble="0" tooltip.maxwidth="0" tooltip.textcolor="134217751" tooltip.transparency="0" transparency="0" )
+text(band=header alignment="2" text="名寄せ先名" border="6" color="33554432" x="6088" y="7" height="71" width="1016" html.valueishtml="0"  name=nayose_mei_t visible="1"  font.face="Yu Gothic UI Semilight" font.height="-11" font.weight="400"  font.family="3" font.pitch="2" font.charset="1" background.mode="1" background.color="536870912" background.transparency="0" background.gradient.color="8421504" background.gradient.transparency="0" background.gradient.angle="0" background.brushmode="0" background.gradient.repetition.mode="0" background.gradient.repetition.count="0" background.gradient.repetition.length="0" background.gradient.focus="0" background.gradient.scale="0" background.gradient.spread="0" tooltip.backcolor="134217752" tooltip.delay.initial="0" tooltip.delay.visible="0" tooltip.enabled="0" tooltip.hasclosebutton="0" tooltip.icon="0" tooltip.isbubble="0" tooltip.maxwidth="0" tooltip.textcolor="134217751" tooltip.transparency="0" transparency="0" )
+text(band=header alignment="2" text="請求先" border="6" color="33554432" x="7112" y="7" height="71" width="304" html.valueishtml="0"  name=seikyu_code_t visible="1"  font.face="Yu Gothic UI Semilight" font.height="-11" font.weight="400"  font.family="3" font.pitch="2" font.charset="1" background.mode="1" background.color="536870912" background.transparency="0" background.gradient.color="8421504" background.gradient.transparency="0" background.gradient.angle="0" background.brushmode="0" background.gradient.repetition.mode="0" background.gradient.repetition.count="0" background.gradient.repetition.length="0" background.gradient.focus="0" background.gradient.scale="0" background.gradient.spread="0" tooltip.backcolor="134217752" tooltip.delay.initial="0" tooltip.delay.visible="0" tooltip.enabled="0" tooltip.hasclosebutton="0" tooltip.icon="0" tooltip.isbubble="0" tooltip.maxwidth="0" tooltip.textcolor="134217751" tooltip.transparency="0" transparency="0" )
+text(band=header alignment="2" text="請求先名" border="6" color="33554432" x="7424" y="7" height="71" width="1016" html.valueishtml="0"  name=seikyu_mei_t visible="1"  font.face="Yu Gothic UI Semilight" font.height="-11" font.weight="400"  font.family="3" font.pitch="2" font.charset="1" background.mode="1" background.color="536870912" background.transparency="0" background.gradient.color="8421504" background.gradient.transparency="0" background.gradient.angle="0" background.brushmode="0" background.gradient.repetition.mode="0" background.gradient.repetition.count="0" background.gradient.repetition.length="0" background.gradient.focus="0" background.gradient.scale="0" background.gradient.spread="0" tooltip.backcolor="134217752" tooltip.delay.initial="0" tooltip.delay.visible="0" tooltip.enabled="0" tooltip.hasclosebutton="0" tooltip.icon="0" tooltip.isbubble="0" tooltip.maxwidth="0" tooltip.textcolor="134217751" tooltip.transparency="0" transparency="0" )
+column(band=detail id=32 alignment="2" tabsequence=32766 border="0" color="33554432~tif( torihiki_teisi_kbn = 1, if( syusoku_flg <> 1, rgb( 0,0,0 ), rgb(255,0,0/*169,68,66*/) ),
+                                rgb(255,0,0/*169,68,66*/) )" x="5292" y="3" height="71" width="476" format="[general]" html.valueishtml="0"  name=torihiki_teisi_mei visible="1" edit.limit=0 edit.case=any edit.focusrectangle=no edit.autoselect=no edit.imemode=0  font.face="Yu Gothic UI Semilight" font.height="-11" font.weight="400"  font.family="3" font.pitch="2" font.charset="1" background.mode="1" background.color="536870912" background.transparency="0" background.gradient.color="8421504" background.gradient.transparency="0" background.gradient.angle="0" background.brushmode="0" background.gradient.repetition.mode="0" background.gradient.repetition.count="0" background.gradient.repetition.length="100" background.gradient.focus="0" background.gradient.scale="100" background.gradient.spread="100" tooltip.backcolor="134217752" tooltip.delay.initial="0" tooltip.delay.visible="32000" tooltip.enabled="0" tooltip.hasclosebutton="0" tooltip.icon="0" tooltip.isbubble="0" tooltip.maxwidth="0" tooltip.textcolor="134217751" tooltip.transparency="0" transparency="0" )
+column(band=detail id=1 alignment="1" tabsequence=32766 border="0" color="33554432~tif( syusoku_flg = 1, rgb(169,68,66), rgb(0,0,0) )" x="8" y="3" height="71" width="300" format="[general]" html.valueishtml="0"  name=tokui_code visible="1" edit.limit=0 edit.case=any edit.focusrectangle=no edit.autoselect=no edit.imemode=0  font.face="Yu Gothic UI Semilight" font.height="-11" font.weight="400"  font.family="3" font.pitch="2" font.charset="1" background.mode="1" background.color="536870912" background.transparency="0" background.gradient.color="8421504" background.gradient.transparency="0" background.gradient.angle="0" background.brushmode="0" background.gradient.repetition.mode="0" background.gradient.repetition.count="0" background.gradient.repetition.length="100" background.gradient.focus="0" background.gradient.scale="100" background.gradient.spread="100" tooltip.backcolor="134217752" tooltip.delay.initial="0" tooltip.delay.visible="32000" tooltip.enabled="0" tooltip.hasclosebutton="0" tooltip.icon="0" tooltip.isbubble="0" tooltip.maxwidth="0" tooltip.textcolor="134217751" tooltip.transparency="0" transparency="0" )
+column(band=detail id=2 alignment="0" tabsequence=32766 border="0" color="33554432~tif( syusoku_flg = 1, rgb(169,68,66), rgb(0,0,0) )" x="320" y="3" height="71" width="1120" format="[general]" html.valueishtml="0"  name=tokui_mei_full visible="1" edit.limit=0 edit.case=any edit.focusrectangle=no edit.autoselect=no edit.imemode=0  font.face="Yu Gothic UI Semilight" font.height="-11" font.weight="400"  font.family="3" font.pitch="2" font.charset="1" background.mode="1" background.color="536870912" background.transparency="0" background.gradient.color="8421504" background.gradient.transparency="0" background.gradient.angle="0" background.brushmode="0" background.gradient.repetition.mode="0" background.gradient.repetition.count="0" background.gradient.repetition.length="100" background.gradient.focus="0" background.gradient.scale="100" background.gradient.spread="100" tooltip.backcolor="134217752" tooltip.delay.initial="0" tooltip.delay.visible="32000" tooltip.enabled="0" tooltip.hasclosebutton="0" tooltip.icon="0" tooltip.isbubble="0" tooltip.maxwidth="0" tooltip.textcolor="134217751" tooltip.transparency="0" transparency="0" )
+column(band=detail id=3 alignment="0" tabsequence=32766 border="0" color="33554432~tif( syusoku_flg = 1, rgb(169,68,66), rgb(0,0,0) )" x="1452" y="3" height="71" width="1012" format="[general]" html.valueishtml="0"  name=tokui_mei visible="1" edit.limit=0 edit.case=any edit.focusrectangle=no edit.autoselect=no edit.imemode=0  font.face="Yu Gothic UI Semilight" font.height="-11" font.weight="400"  font.family="3" font.pitch="2" font.charset="1" background.mode="1" background.color="536870912" background.transparency="0" background.gradient.color="8421504" background.gradient.transparency="0" background.gradient.angle="0" background.brushmode="0" background.gradient.repetition.mode="0" background.gradient.repetition.count="0" background.gradient.repetition.length="100" background.gradient.focus="0" background.gradient.scale="100" background.gradient.spread="100" tooltip.backcolor="134217752" tooltip.delay.initial="0" tooltip.delay.visible="32000" tooltip.enabled="0" tooltip.hasclosebutton="0" tooltip.icon="0" tooltip.isbubble="0" tooltip.maxwidth="0" tooltip.textcolor="134217751" tooltip.transparency="0" transparency="0" )
+column(band=detail id=82 alignment="0" tabsequence=32766 border="0" color="33554432~tif( syusoku_flg = 1, rgb(169,68,66), rgb(0,0,0) )" x="2476" y="3" height="71" width="1376" format="[general]" html.valueishtml="0"  name=jyusyo visible="1" edit.limit=0 edit.case=any edit.focusrectangle=no edit.autoselect=no edit.imemode=0  font.face="Yu Gothic UI Semilight" font.height="-11" font.weight="400"  font.family="3" font.pitch="2" font.charset="1" background.mode="1" background.color="536870912" background.transparency="0" background.gradient.color="8421504" background.gradient.transparency="0" background.gradient.angle="0" background.brushmode="0" background.gradient.repetition.mode="0" background.gradient.repetition.count="0" background.gradient.repetition.length="100" background.gradient.focus="0" background.gradient.scale="100" background.gradient.spread="100" tooltip.backcolor="134217752" tooltip.delay.initial="0" tooltip.delay.visible="32000" tooltip.enabled="0" tooltip.hasclosebutton="0" tooltip.icon="0" tooltip.isbubble="0" tooltip.maxwidth="0" tooltip.textcolor="134217751" tooltip.transparency="0" transparency="0" )
+column(band=detail id=15 alignment="0" tabsequence=32766 border="0" color="33554432~tif( syusoku_flg = 1, rgb(169,68,66), rgb(0,0,0) )" x="4848" y="3" height="71" width="432" format="[general]" html.valueishtml="0"  name=tanto_mei visible="1" edit.limit=0 edit.case=any edit.focusrectangle=no edit.autoselect=no edit.imemode=0  font.face="Yu Gothic UI Semilight" font.height="-11" font.weight="400"  font.family="3" font.pitch="2" font.charset="1" background.mode="1" background.color="536870912" background.transparency="0" background.gradient.color="8421504" background.gradient.transparency="0" background.gradient.angle="0" background.brushmode="0" background.gradient.repetition.mode="0" background.gradient.repetition.count="0" background.gradient.repetition.length="100" background.gradient.focus="0" background.gradient.scale="100" background.gradient.spread="100" tooltip.backcolor="134217752" tooltip.delay.initial="0" tooltip.delay.visible="32000" tooltip.enabled="0" tooltip.hasclosebutton="0" tooltip.icon="0" tooltip.isbubble="0" tooltip.maxwidth="0" tooltip.textcolor="134217751" tooltip.transparency="0" transparency="0" )
+column(band=detail id=83 alignment="2" tabsequence=32766 border="0" color="33554432~tif( syusoku_flg = 1, rgb(169,68,66), rgb(0,0,0) )" x="3864" y="3" height="71" width="480" format="[general]" html.valueishtml="0"  name=tel_no visible="1" edit.limit=0 edit.case=any edit.focusrectangle=no edit.autoselect=no edit.imemode=0  font.face="Yu Gothic UI Semilight" font.height="-11" font.weight="400"  font.family="3" font.pitch="2" font.charset="1" background.mode="1" background.color="536870912" background.transparency="0" background.gradient.color="8421504" background.gradient.transparency="0" background.gradient.angle="0" background.brushmode="0" background.gradient.repetition.mode="0" background.gradient.repetition.count="0" background.gradient.repetition.length="100" background.gradient.focus="0" background.gradient.scale="100" background.gradient.spread="100" tooltip.backcolor="134217752" tooltip.delay.initial="0" tooltip.delay.visible="32000" tooltip.enabled="0" tooltip.hasclosebutton="0" tooltip.icon="0" tooltip.isbubble="0" tooltip.maxwidth="0" tooltip.textcolor="134217751" tooltip.transparency="0" transparency="0" )
+column(band=detail id=84 alignment="2" tabsequence=32766 border="0" color="33554432~tif( syusoku_flg = 1, rgb(169,68,66), rgb(0,0,0) )" x="4356" y="3" height="71" width="480" format="[general]" html.valueishtml="0"  name=fax_no visible="1" edit.limit=0 edit.case=any edit.focusrectangle=no edit.autoselect=no edit.imemode=0  font.face="Yu Gothic UI Semilight" font.height="-11" font.weight="400"  font.family="3" font.pitch="2" font.charset="1" background.mode="1" background.color="536870912" background.transparency="0" background.gradient.color="8421504" background.gradient.transparency="0" background.gradient.angle="0" background.brushmode="0" background.gradient.repetition.mode="0" background.gradient.repetition.count="0" background.gradient.repetition.length="100" background.gradient.focus="0" background.gradient.scale="100" background.gradient.spread="100" tooltip.backcolor="134217752" tooltip.delay.initial="0" tooltip.delay.visible="32000" tooltip.enabled="0" tooltip.hasclosebutton="0" tooltip.icon="0" tooltip.isbubble="0" tooltip.maxwidth="0" tooltip.textcolor="134217751" tooltip.transparency="0" transparency="0" )
+column(band=detail id=21 alignment="0" tabsequence=32766 border="0" color="33554432~tif( syusoku_flg = 1, rgb(169,68,66), rgb(0,0,0) )" x="7428" y="3" height="71" width="1012" format="[general]" html.valueishtml="0"  name=seikyu_mei visible="1" edit.limit=0 edit.case=any edit.focusrectangle=no edit.autoselect=no edit.imemode=0  font.face="Yu Gothic UI Semilight" font.height="-11" font.weight="400"  font.family="3" font.pitch="2" font.charset="1" background.mode="1" background.color="536870912" background.transparency="0" background.gradient.color="8421504" background.gradient.transparency="0" background.gradient.angle="0" background.brushmode="0" background.gradient.repetition.mode="0" background.gradient.repetition.count="0" background.gradient.repetition.length="100" background.gradient.focus="0" background.gradient.scale="100" background.gradient.spread="100" tooltip.backcolor="134217752" tooltip.delay.initial="0" tooltip.delay.visible="32000" tooltip.enabled="0" tooltip.hasclosebutton="0" tooltip.icon="0" tooltip.isbubble="0" tooltip.maxwidth="0" tooltip.textcolor="134217751" tooltip.transparency="0" transparency="0" )
+column(band=detail id=18 alignment="0" tabsequence=32766 border="0" color="33554432~tif( syusoku_flg = 1, rgb(169,68,66), rgb(0,0,0) )" x="6092" y="3" height="71" width="1012" format="[general]" html.valueishtml="0"  name=nayose_mei visible="1" edit.limit=0 edit.case=any edit.focusrectangle=no edit.autoselect=no edit.imemode=0  font.face="Yu Gothic UI Semilight" font.height="-11" font.weight="400"  font.family="3" font.pitch="2" font.charset="1" background.mode="1" background.color="536870912" background.transparency="0" background.gradient.color="8421504" background.gradient.transparency="0" background.gradient.angle="0" background.brushmode="0" background.gradient.repetition.mode="0" background.gradient.repetition.count="0" background.gradient.repetition.length="100" background.gradient.focus="0" background.gradient.scale="100" background.gradient.spread="100" tooltip.backcolor="134217752" tooltip.delay.initial="0" tooltip.delay.visible="32000" tooltip.enabled="0" tooltip.hasclosebutton="0" tooltip.icon="0" tooltip.isbubble="0" tooltip.maxwidth="0" tooltip.textcolor="134217751" tooltip.transparency="0" transparency="0" )
+column(band=detail id=17 alignment="0" tabsequence=32766 border="0" color="33554432~tif( syusoku_flg = 1, rgb(169,68,66), rgb(0,0,0) )" x="5780" y="3" height="71" width="300" format="[general]" html.valueishtml="0"  name=nayose_code visible="1" edit.limit=0 edit.case=any edit.focusrectangle=no edit.autoselect=no edit.imemode=0  font.face="Yu Gothic UI Semilight" font.height="-11" font.weight="400"  font.family="3" font.pitch="2" font.charset="1" background.mode="1" background.color="536870912" background.transparency="0" background.gradient.color="8421504" background.gradient.transparency="0" background.gradient.angle="0" background.brushmode="0" background.gradient.repetition.mode="0" background.gradient.repetition.count="0" background.gradient.repetition.length="100" background.gradient.focus="0" background.gradient.scale="100" background.gradient.spread="100" tooltip.backcolor="134217752" tooltip.delay.initial="0" tooltip.delay.visible="32000" tooltip.enabled="0" tooltip.hasclosebutton="0" tooltip.icon="0" tooltip.isbubble="0" tooltip.maxwidth="0" tooltip.textcolor="134217751" tooltip.transparency="0" transparency="0" )
+column(band=detail id=20 alignment="0" tabsequence=32766 border="0" color="33554432~tif( syusoku_flg = 1, rgb(169,68,66), rgb(0,0,0) )" x="7116" y="3" height="71" width="300" format="[general]" html.valueishtml="0"  name=seikyu_code visible="1" edit.limit=0 edit.case=any edit.focusrectangle=no edit.autoselect=no edit.imemode=0  font.face="Yu Gothic UI Semilight" font.height="-11" font.weight="400"  font.family="3" font.pitch="2" font.charset="1" background.mode="1" background.color="536870912" background.transparency="0" background.gradient.color="8421504" background.gradient.transparency="0" background.gradient.angle="0" background.brushmode="0" background.gradient.repetition.mode="0" background.gradient.repetition.count="0" background.gradient.repetition.length="100" background.gradient.focus="0" background.gradient.scale="100" background.gradient.spread="100" tooltip.backcolor="134217752" tooltip.delay.initial="0" tooltip.delay.visible="32000" tooltip.enabled="0" tooltip.hasclosebutton="0" tooltip.icon="0" tooltip.isbubble="0" tooltip.maxwidth="0" tooltip.textcolor="134217751" tooltip.transparency="0" transparency="0" )
+htmltable(border="1" )
+htmlgen(clientevents="1" clientvalidation="1" clientcomputedfields="1" clientformatting="0" clientscriptable="0" generatejavascript="1" encodeselflinkargs="1" netscapelayers="0" pagingmethod=0 generatedddwframes="1" )
+xhtmlgen() cssgen(sessionspecific="0" )
+xmlgen(inline="0" )
+xsltgen()
+jsgen()
+export.xml(headgroups="1" includewhitespace="0" metadatatype=0 savemetadata=0 )
+import.xml()
+export.pdf(method=0 distill.custompostscript="0" xslfop.print="0" nativepdf.customsize=0 nativepdf.customorientation=0 nativepdf.pdfstandard=0 nativepdf.useprintspec=no )
+export.xhtml()
+ 

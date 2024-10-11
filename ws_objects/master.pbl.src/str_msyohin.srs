@@ -1,0 +1,135 @@
+﻿$PBExportHeader$str_msyohin.srs
+$PBExportComments$m_syohin用の構造体
+global type str_msyohin from structure
+	long		syohin_code
+	long		iro_no
+	integer		eda_no
+	integer		size_iti
+	string		size_code
+	longlong	sku_code
+	string		hin_ban
+	string		hin_mei_kana
+	string		iro_mei_kana
+	string		hin_mei
+	string		iro_mei
+	string		size_mei
+	integer		hi_toriatukai_flg
+	integer		bumon_code
+	integer		kyoyo_flg
+	integer		brand_code
+	integer		subbrand_code
+	integer		season_code
+	integer		daibunrui_code
+	integer		tyubunrui_code
+	long		syobunrui_code
+	integer		group_code
+	long		seriese_code
+	integer		iro_keitou_code
+	integer		category_code_1
+	integer		category_code_2
+	integer		category_code_3
+	long		category_code_4
+	long		category_code_5
+	long		hatubai_date
+	integer		haiban_kbn
+	integer		haiban_flg
+	long		haiban_date
+	integer		haiban_riyu_kbn
+	integer		syusoku_flg
+	integer		syobunhin_flg
+	integer		jyutenhin_flg
+	decimal {2}	jyoudai
+	integer		jyoudai_koukai_flg
+	integer		kakaku_group_kbn
+	integer		up_iti
+	decimal {2}	up_gaku
+	decimal {2}	up_gaku_j
+	integer		tanka_touroku_flg
+	decimal {2}	kyuu_jyoudai
+	long		jyoudai_henkou_date
+	decimal {2}	sin_jyoudai
+	long		sin_jyoudai_tekiyou_date
+	decimal {2}	kibou_kouri_kakaku
+	decimal {2}	yotei_genka
+	decimal {2}	hyojyun_genka
+	decimal {8}	jissai_genka
+	long		siiresaki_code
+	string		maker_hinban
+	integer		syohin_kukaku_kbn
+	integer		bettyu_flg
+	integer		bettyu_running_flg
+	long		tokui_code
+	long		bukken_code
+	integer		tokutei_tokui_kbn
+	long		irisu
+	long		ball_irisu
+	integer		tani_kbn
+	long		hatyu_tanni_su
+	long		hanbai_tanni_su
+	integer		rank
+	integer		seihin_syohin_kbn
+	integer		irisu_hyoji_kbn
+	integer		keikaku_kbn
+	integer		hatyu_kbn
+	integer		hatyusaki_kbn
+	integer		syozai_kbn
+	integer		syokuti_flg
+	integer		zaiko_kanri_flg
+	integer		suryo_keisan_flg
+	integer		kingaku_keisan_flg
+	integer		arari_keisan_flg
+	integer		hako_keisan_flg
+	integer		kenpin_taisyo_flg
+	integer		muryo_kyoka_flg
+	integer		bhin_flg
+	integer		tankahyo_hakkou_kbn
+	integer		kankyo_hairyo_flg
+	integer		zeiritu_kbn
+	integer		siirehin_flg
+	integer		kuuyu_kinsi_flg
+	string		sozai
+	string		konritu_1
+	string		konritu_2
+	string		konritu_3
+	string		konritu_4
+	string		konritu_5
+	string		konritu_6
+	string		konritu_7
+	string		konritu_8
+	string		konritu_9
+	string		konritu_10
+	string		seisankoku_code
+	decimal {2}	yoki_kami
+	decimal {2}	yoki_pla
+	decimal {2}	housou_kami
+	decimal {2}	housou_pla
+	decimal {2}	sunpo_tate
+	decimal {2}	sunpo_yoko
+	decimal {2}	sunpo_takasa
+	long		jyuryo
+	decimal {2}	tijimi_ritu
+	integer		flg_1
+	integer		flg_2
+	integer		flg_3
+	integer		flg_4
+	integer		flg_5
+	integer		kbn_1
+	integer		kbn_2
+	integer		kbn_3
+	integer		kbn_4
+	integer		kbn_5
+	integer		touroku_kbn
+	datetime	touroku_date
+	string		touroku_user_id
+	string		touroku_client_id
+	string		touroku_pg_id
+	datetime	henkou_date
+	string		henkou_user_id
+	string		henkou_client_id
+	string		henkou_pg_id
+	datetime	kousin_date
+	string		kousin_user_id
+	string		kousin_client_id
+	string		kousin_pg_id
+	integer		haita_flg
+end type

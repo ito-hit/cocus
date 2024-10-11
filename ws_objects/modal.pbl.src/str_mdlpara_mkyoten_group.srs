@@ -1,0 +1,6 @@
+﻿$PBExportHeader$str_mdlpara_mkyoten_group.srs
+$PBExportComments$m_kyoten_group用のモーダル構造体
+global type str_mdlpara_mkyoten_group from structure
+	str_mkyoten_group		ret[]
+end type
+

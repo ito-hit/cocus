@@ -1,0 +1,6 @@
+﻿$PBExportHeader$str_mdlpara_mtanto.srs
+$PBExportComments$m_tanto用のモーダル構造体
+global type str_mdlpara_mtanto from structure
+	str_mtanto		ret[]
+end type
+

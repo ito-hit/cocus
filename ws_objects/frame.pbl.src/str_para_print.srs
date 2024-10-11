@@ -1,0 +1,17 @@
+﻿$PBExportHeader$str_para_print.srs
+$PBExportComments$印刷関連の構造体
+global type str_para_print from structure
+	boolean		ret
+	string		printer_mei
+	string		printer_mei_ryaku
+	string		printer_syubetu
+	string		addition_info
+	integer		format_id
+	string		data_window_id
+	string		tyohyo_id
+	integer		copies
+	integer		orientation
+	datawindow	dw
+	blob		blob_dw
+end type
+

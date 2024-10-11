@@ -1,0 +1,26 @@
+﻿$PBExportHeader$fo_to_multi_byte_full.srf
+$PBExportComments$半角文字をすべて全角文字にするグローバル関数
+global type fo_to_multi_byte_full from function_object
+end type
+
+forward prototypes
+global function string fo_to_multi_byte_full (string p_string)
+end prototypes
+
+global function string fo_to_multi_byte_full (string p_string);// --------------------------------------------------------------------------
+// Script:     	fo_to_multi_byte_full
+// Purpose:    	半角文字→全角文字変換
+//
+// Arguments:  	p_string		- 半角文字が含まれた文字列
+//
+// Return:     	string		全角に変換された文字列
+//
+// Date        Prog/ID	Description of Change / Reason
+// ----------  --------	-----------------------------------------------------
+// 2012.10.02	Kin		Initial coding
+// --------------------------------------------------------------------------
+
+return fnc.db.of_cnv_multi_byte_full( p_string )
+
+end function
+

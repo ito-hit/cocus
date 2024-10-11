@@ -1,0 +1,7 @@
+﻿$PBExportHeader$str_mdlpara_myubin.srs
+$PBExportComments$m_yubin用のモーダル構造体
+global type str_mdlpara_myubin from structure
+	string		in_yubin_no
+	str_myubin		ret[]
+end type
+

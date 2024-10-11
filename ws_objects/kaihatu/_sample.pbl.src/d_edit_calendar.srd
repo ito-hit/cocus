@@ -1,0 +1,345 @@
+﻿$PBExportHeader$d_edit_calendar.srd
+$PBExportComments$カレンダマスタメンテナンス（編集）（カレンダー設定用DW）
+release 10;
+datawindow(units=0 timer_interval=0 color=67108864 processing=0 HTMLDW=no print.printername="" print.documentname="" print.orientation = 0 print.margin.left = 96 print.margin.right = 96 print.margin.top = 85 print.margin.bottom = 85 print.paper.source = 0 print.paper.size = 0 print.canusedefaultprinter=yes print.prompt=no print.buttons=no print.preview.buttons=no print.cliptext=no print.overrideprintjob=no print.collate=yes hidegrayline=no )
+summary(height=0 color="536870912" )
+footer(height=0 color="536870912" )
+detail(height=1088 color="536870912" )
+table(column=(type=number updatewhereclause=yes name=nen dbname="nen" )
+ column=(type=number updatewhereclause=yes name=tuki dbname="tuki" )
+ column=(type=number updatewhereclause=yes name=day_1_1 dbname="day_1_1" )
+ column=(type=number updatewhereclause=yes name=day_1_2 dbname="day_1_2" )
+ column=(type=number updatewhereclause=yes name=day_1_3 dbname="day_1_3" )
+ column=(type=number updatewhereclause=yes name=day_1_4 dbname="day_1_4" )
+ column=(type=number updatewhereclause=yes name=day_1_5 dbname="day_1_5" )
+ column=(type=number updatewhereclause=yes name=day_1_6 dbname="day_1_6" )
+ column=(type=number updatewhereclause=yes name=day_1_7 dbname="day_1_7" )
+ column=(type=number updatewhereclause=yes name=day_2_1 dbname="day_2_1" )
+ column=(type=number updatewhereclause=yes name=day_2_2 dbname="day_2_2" )
+ column=(type=number updatewhereclause=yes name=day_2_3 dbname="day_2_3" )
+ column=(type=number updatewhereclause=yes name=day_2_4 dbname="day_2_4" )
+ column=(type=number updatewhereclause=yes name=day_2_5 dbname="day_2_5" )
+ column=(type=number updatewhereclause=yes name=day_2_6 dbname="day_2_6" )
+ column=(type=number updatewhereclause=yes name=day_2_7 dbname="day_2_7" )
+ column=(type=number updatewhereclause=yes name=day_3_1 dbname="day_3_1" )
+ column=(type=number updatewhereclause=yes name=day_3_2 dbname="day_3_2" )
+ column=(type=number updatewhereclause=yes name=day_3_3 dbname="day_3_3" )
+ column=(type=number updatewhereclause=yes name=day_3_4 dbname="day_3_4" )
+ column=(type=number updatewhereclause=yes name=day_3_5 dbname="day_3_5" )
+ column=(type=number updatewhereclause=yes name=day_3_6 dbname="day_3_6" )
+ column=(type=number updatewhereclause=yes name=day_3_7 dbname="day_3_7" )
+ column=(type=number updatewhereclause=yes name=day_4_1 dbname="day_4_1" )
+ column=(type=number updatewhereclause=yes name=day_4_2 dbname="day_4_2" )
+ column=(type=number updatewhereclause=yes name=day_4_3 dbname="day_4_3" )
+ column=(type=number updatewhereclause=yes name=day_4_4 dbname="day_4_4" )
+ column=(type=number updatewhereclause=yes name=day_4_5 dbname="day_4_5" )
+ column=(type=number updatewhereclause=yes name=day_4_6 dbname="day_4_6" )
+ column=(type=number updatewhereclause=yes name=day_4_7 dbname="day_4_7" )
+ column=(type=number updatewhereclause=yes name=day_5_1 dbname="day_5_1" )
+ column=(type=number updatewhereclause=yes name=day_5_2 dbname="day_5_2" )
+ column=(type=number updatewhereclause=yes name=day_5_3 dbname="day_5_3" )
+ column=(type=number updatewhereclause=yes name=day_5_4 dbname="day_5_4" )
+ column=(type=number updatewhereclause=yes name=day_5_5 dbname="day_5_5" )
+ column=(type=number updatewhereclause=yes name=day_5_6 dbname="day_5_6" )
+ column=(type=number updatewhereclause=yes name=day_5_7 dbname="day_5_7" )
+ column=(type=number updatewhereclause=yes name=day_6_1 dbname="day_6_1" )
+ column=(type=number updatewhereclause=yes name=day_6_2 dbname="day_6_2" )
+ column=(type=number updatewhereclause=yes name=day_6_3 dbname="day_6_3" )
+ column=(type=number updatewhereclause=yes name=day_6_4 dbname="day_6_4" )
+ column=(type=number updatewhereclause=yes name=day_6_5 dbname="day_6_5" )
+ column=(type=number updatewhereclause=yes name=day_6_6 dbname="day_6_6" )
+ column=(type=number updatewhereclause=yes name=day_6_7 dbname="day_6_7" )
+ column=(type=number updatewhereclause=yes name=enabled_1_1 dbname="enabled_1_1" )
+ column=(type=number updatewhereclause=yes name=enabled_1_2 dbname="enabled_1_2" )
+ column=(type=number updatewhereclause=yes name=enabled_1_3 dbname="enabled_1_3" )
+ column=(type=number updatewhereclause=yes name=enabled_1_4 dbname="enabled_1_4" )
+ column=(type=number updatewhereclause=yes name=enabled_1_5 dbname="enabled_1_5" )
+ column=(type=number updatewhereclause=yes name=enabled_1_6 dbname="enabled_1_6" )
+ column=(type=number updatewhereclause=yes name=enabled_1_7 dbname="enabled_1_7" )
+ column=(type=number updatewhereclause=yes name=enabled_2_1 dbname="enabled_2_1" )
+ column=(type=number updatewhereclause=yes name=enabled_2_2 dbname="enabled_2_2" )
+ column=(type=number updatewhereclause=yes name=enabled_2_3 dbname="enabled_2_3" )
+ column=(type=number updatewhereclause=yes name=enabled_2_4 dbname="enabled_2_4" )
+ column=(type=number updatewhereclause=yes name=enabled_2_5 dbname="enabled_2_5" )
+ column=(type=number updatewhereclause=yes name=enabled_2_6 dbname="enabled_2_6" )
+ column=(type=number updatewhereclause=yes name=enabled_2_7 dbname="enabled_2_7" )
+ column=(type=number updatewhereclause=yes name=enabled_3_1 dbname="enabled_3_1" )
+ column=(type=number updatewhereclause=yes name=enabled_3_2 dbname="enabled_3_2" )
+ column=(type=number updatewhereclause=yes name=enabled_3_3 dbname="enabled_3_3" )
+ column=(type=number updatewhereclause=yes name=enabled_3_4 dbname="enabled_3_4" )
+ column=(type=number updatewhereclause=yes name=enabled_3_5 dbname="enabled_3_5" )
+ column=(type=number updatewhereclause=yes name=enabled_3_6 dbname="enabled_3_6" )
+ column=(type=number updatewhereclause=yes name=enabled_3_7 dbname="enabled_3_7" )
+ column=(type=number updatewhereclause=yes name=enabled_4_1 dbname="enabled_4_1" )
+ column=(type=number updatewhereclause=yes name=enabled_4_2 dbname="enabled_4_2" )
+ column=(type=number updatewhereclause=yes name=enabled_4_3 dbname="enabled_4_3" )
+ column=(type=number updatewhereclause=yes name=enabled_4_4 dbname="enabled_4_4" )
+ column=(type=number updatewhereclause=yes name=enabled_4_5 dbname="enabled_4_5" )
+ column=(type=number updatewhereclause=yes name=enabled_4_6 dbname="enabled_4_6" )
+ column=(type=number updatewhereclause=yes name=enabled_4_7 dbname="enabled_4_7" )
+ column=(type=number updatewhereclause=yes name=enabled_5_1 dbname="enabled_5_1" )
+ column=(type=number updatewhereclause=yes name=enabled_5_2 dbname="enabled_5_2" )
+ column=(type=number updatewhereclause=yes name=enabled_5_3 dbname="enabled_5_3" )
+ column=(type=number updatewhereclause=yes name=enabled_5_4 dbname="enabled_5_4" )
+ column=(type=number updatewhereclause=yes name=enabled_5_5 dbname="enabled_5_5" )
+ column=(type=number updatewhereclause=yes name=enabled_5_6 dbname="enabled_5_6" )
+ column=(type=number updatewhereclause=yes name=enabled_5_7 dbname="enabled_5_7" )
+ column=(type=number updatewhereclause=yes name=enabled_6_1 dbname="enabled_6_1" )
+ column=(type=number updatewhereclause=yes name=enabled_6_2 dbname="enabled_6_2" )
+ column=(type=number updatewhereclause=yes name=enabled_6_3 dbname="enabled_6_3" )
+ column=(type=number updatewhereclause=yes name=enabled_6_4 dbname="enabled_6_4" )
+ column=(type=number updatewhereclause=yes name=enabled_6_5 dbname="enabled_6_5" )
+ column=(type=number updatewhereclause=yes name=enabled_6_6 dbname="enabled_6_6" )
+ column=(type=number updatewhereclause=yes name=enabled_6_7 dbname="enabled_6_7" )
+ retrieve="select nen,tuki,
+       max(decode(week_no,1,decode(youbi_no,1,hi,0),0)) day_1_1,
+       max(decode(week_no,1,decode(youbi_no,2,hi,0),0)) day_1_2,
+       max(decode(week_no,1,decode(youbi_no,3,hi,0),0)) day_1_3,
+       max(decode(week_no,1,decode(youbi_no,4,hi,0),0)) day_1_4,
+       max(decode(week_no,1,decode(youbi_no,5,hi,0),0)) day_1_5,
+       max(decode(week_no,1,decode(youbi_no,6,hi,0),0)) day_1_6,
+       max(decode(week_no,1,decode(youbi_no,7,hi,0),0)) day_1_7,
+       max(decode(week_no,2,decode(youbi_no,1,hi,0),0)) day_2_1,
+       max(decode(week_no,2,decode(youbi_no,2,hi,0),0)) day_2_2,
+       max(decode(week_no,2,decode(youbi_no,3,hi,0),0)) day_2_3,
+       max(decode(week_no,2,decode(youbi_no,4,hi,0),0)) day_2_4,
+       max(decode(week_no,2,decode(youbi_no,5,hi,0),0)) day_2_5,
+       max(decode(week_no,2,decode(youbi_no,6,hi,0),0)) day_2_6,
+       max(decode(week_no,2,decode(youbi_no,7,hi,0),0)) day_2_7,
+       max(decode(week_no,3,decode(youbi_no,1,hi,0),0)) day_3_1,
+       max(decode(week_no,3,decode(youbi_no,2,hi,0),0)) day_3_2,
+       max(decode(week_no,3,decode(youbi_no,3,hi,0),0)) day_3_3,
+       max(decode(week_no,3,decode(youbi_no,4,hi,0),0)) day_3_4,
+       max(decode(week_no,3,decode(youbi_no,5,hi,0),0)) day_3_5,
+       max(decode(week_no,3,decode(youbi_no,6,hi,0),0)) day_3_6,
+       max(decode(week_no,3,decode(youbi_no,7,hi,0),0)) day_3_7,
+       max(decode(week_no,4,decode(youbi_no,1,hi,0),0)) day_4_1,
+       max(decode(week_no,4,decode(youbi_no,2,hi,0),0)) day_4_2,
+       max(decode(week_no,4,decode(youbi_no,3,hi,0),0)) day_4_3,
+       max(decode(week_no,4,decode(youbi_no,4,hi,0),0)) day_4_4,
+       max(decode(week_no,4,decode(youbi_no,5,hi,0),0)) day_4_5,
+       max(decode(week_no,4,decode(youbi_no,6,hi,0),0)) day_4_6,
+       max(decode(week_no,4,decode(youbi_no,7,hi,0),0)) day_4_7,
+       max(decode(week_no,5,decode(youbi_no,1,hi,0),0)) day_5_1,
+       max(decode(week_no,5,decode(youbi_no,2,hi,0),0)) day_5_2,
+       max(decode(week_no,5,decode(youbi_no,3,hi,0),0)) day_5_3,
+       max(decode(week_no,5,decode(youbi_no,4,hi,0),0)) day_5_4,
+       max(decode(week_no,5,decode(youbi_no,5,hi,0),0)) day_5_5,
+       max(decode(week_no,5,decode(youbi_no,6,hi,0),0)) day_5_6,
+       max(decode(week_no,5,decode(youbi_no,7,hi,0),0)) day_5_7,
+       max(decode(week_no,6,decode(youbi_no,1,hi,0),0)) day_6_1,
+       max(decode(week_no,6,decode(youbi_no,2,hi,0),0)) day_6_2,
+       max(decode(week_no,6,decode(youbi_no,3,hi,0),0)) day_6_3,
+       max(decode(week_no,6,decode(youbi_no,4,hi,0),0)) day_6_4,
+       max(decode(week_no,6,decode(youbi_no,5,hi,0),0)) day_6_5,
+       max(decode(week_no,6,decode(youbi_no,6,hi,0),0)) day_6_6,
+       max(decode(week_no,6,decode(youbi_no,7,hi,0),0)) day_6_7,
+       max(decode(week_no,1,decode(youbi_no,1,day_enabled,0),0)) enabled_1_1,
+       max(decode(week_no,1,decode(youbi_no,2,day_enabled,0),0)) enabled_1_2,
+       max(decode(week_no,1,decode(youbi_no,3,day_enabled,0),0)) enabled_1_3,
+       max(decode(week_no,1,decode(youbi_no,4,day_enabled,0),0)) enabled_1_4,
+       max(decode(week_no,1,decode(youbi_no,5,day_enabled,0),0)) enabled_1_5,
+       max(decode(week_no,1,decode(youbi_no,6,day_enabled,0),0)) enabled_1_6,
+       max(decode(week_no,1,decode(youbi_no,7,day_enabled,0),0)) enabled_1_7,
+       max(decode(week_no,2,decode(youbi_no,1,day_enabled,0),0)) enabled_2_1,
+       max(decode(week_no,2,decode(youbi_no,2,day_enabled,0),0)) enabled_2_2,
+       max(decode(week_no,2,decode(youbi_no,3,day_enabled,0),0)) enabled_2_3,
+       max(decode(week_no,2,decode(youbi_no,4,day_enabled,0),0)) enabled_2_4,
+       max(decode(week_no,2,decode(youbi_no,5,day_enabled,0),0)) enabled_2_5,
+       max(decode(week_no,2,decode(youbi_no,6,day_enabled,0),0)) enabled_2_6,
+       max(decode(week_no,2,decode(youbi_no,7,day_enabled,0),0)) enabled_2_7,
+       max(decode(week_no,3,decode(youbi_no,1,day_enabled,0),0)) enabled_3_1,
+       max(decode(week_no,3,decode(youbi_no,2,day_enabled,0),0)) enabled_3_2,
+       max(decode(week_no,3,decode(youbi_no,3,day_enabled,0),0)) enabled_3_3,
+       max(decode(week_no,3,decode(youbi_no,4,day_enabled,0),0)) enabled_3_4,
+       max(decode(week_no,3,decode(youbi_no,5,day_enabled,0),0)) enabled_3_5,
+       max(decode(week_no,3,decode(youbi_no,6,day_enabled,0),0)) enabled_3_6,
+       max(decode(week_no,3,decode(youbi_no,7,day_enabled,0),0)) enabled_3_7,
+       max(decode(week_no,4,decode(youbi_no,1,day_enabled,0),0)) enabled_4_1,
+       max(decode(week_no,4,decode(youbi_no,2,day_enabled,0),0)) enabled_4_2,
+       max(decode(week_no,4,decode(youbi_no,3,day_enabled,0),0)) enabled_4_3,
+       max(decode(week_no,4,decode(youbi_no,4,day_enabled,0),0)) enabled_4_4,
+       max(decode(week_no,4,decode(youbi_no,5,day_enabled,0),0)) enabled_4_5,
+       max(decode(week_no,4,decode(youbi_no,6,day_enabled,0),0)) enabled_4_6,
+       max(decode(week_no,4,decode(youbi_no,7,day_enabled,0),0)) enabled_4_7,
+       max(decode(week_no,5,decode(youbi_no,1,day_enabled,0),0)) enabled_5_1,
+       max(decode(week_no,5,decode(youbi_no,2,day_enabled,0),0)) enabled_5_2,
+       max(decode(week_no,5,decode(youbi_no,3,day_enabled,0),0)) enabled_5_3,
+       max(decode(week_no,5,decode(youbi_no,4,day_enabled,0),0)) enabled_5_4,
+       max(decode(week_no,5,decode(youbi_no,5,day_enabled,0),0)) enabled_5_5,
+       max(decode(week_no,5,decode(youbi_no,6,day_enabled,0),0)) enabled_5_6,
+       max(decode(week_no,5,decode(youbi_no,7,day_enabled,0),0)) enabled_5_7,
+       max(decode(week_no,6,decode(youbi_no,1,day_enabled,0),0)) enabled_6_1,
+       max(decode(week_no,6,decode(youbi_no,2,day_enabled,0),0)) enabled_6_2,
+       max(decode(week_no,6,decode(youbi_no,3,day_enabled,0),0)) enabled_6_3,
+       max(decode(week_no,6,decode(youbi_no,4,day_enabled,0),0)) enabled_6_4,
+       max(decode(week_no,6,decode(youbi_no,5,day_enabled,0),0)) enabled_6_5,
+       max(decode(week_no,6,decode(youbi_no,6,day_enabled,0),0)) enabled_6_6,
+       max(decode(week_no,6,decode(youbi_no,7,day_enabled,0),0)) enabled_6_7
+  from ( select base.cal_date,
+	           extract( year from base.cal_date ) nen,
+	           extract( month from base.cal_date ) tuki,
+	           extract( day from base.cal_date ) hi,
+	           substr(to_char( base.cal_date, 'day' ), 1, 1 ) youbi,
+	           dense_rank() over( order by week_no ) week_no,
+	           to_number( to_char( base.cal_date, 'd' ) ) youbi_no,
+	           day.day_enabled
+	      from ( select cal_date,
+	                    case extract( month from base_date ) 
+	                         when 1  then case when cal_week_no >= fast_week_no
+	                                           then decode( to_number( to_char( next_day( fast_date, '日曜日' ), 'iw' ) ), 1, 1, cal_week_no - to_number( to_char( next_day( fast_date, '日曜日' ), 'iw' ) ) )
+	                                           else cal_week_no
+	                                      end
+	                         when 12 then case when cal_week_no < fast_week_no
+	                                           then to_number( to_char( next_day( last_date - 8, '日曜日' ), 'iw' ) ) + 1
+	                                           else cal_week_no
+	                                      end
+	                         else cal_week_no
+	                    end week_no
+	               from ( select base_date,
+	                             base.fast_date + level - 1 cal_date,
+	                             decode( to_number( to_char( base.fast_date + level - 1, 'd' ) ), 1, to_number( to_char( base.fast_date + level - 1, 'iw' ) ) + 1, to_number( to_char( base.fast_date + level - 1, 'iw' ) ) ) cal_week_no,
+	                             base.fast_date,
+	                             decode( to_number(to_char(base.fast_date ,'d')), 1,to_number(to_char(base.fast_date,'iw')) + 1, to_number(to_char(base.fast_date,'iw'))) fast_week_no,
+	                             base.last_date,
+	                             decode( to_number(to_char(base.last_date,'d')), 1,to_number(to_char(base.last_date,'iw')) + 1, to_number(to_char(base.last_date,'iw'))) last_week_no
+	                        from ( select base_date,
+	                                      decode(to_char(base_date,'d'),1,base_date,next_day( base_date - 8, '日曜日' )) fast_date,
+	                                      last_day( base_date ) last_date
+	                                 from ( select to_date( :p_nen || to_char(:p_tuki,'00') || '01','yyyymmdd') base_date from dual )
+	                             ) base
+	                       connect by level <= base.last_date - base.fast_date + 1
+	                    )
+	              where extract( month from cal_date ) = :p_tuki
+	           ) base,  /* ベースカレンダー */
+	           ( select cal.calendar_year year,
+	                    cal.calendar_month month,
+	                    cal.calendar_day day,
+	                    cal.kanri_id id,
+	                    cal.calendar_kbn kbn,
+	                    cal.enabled day_enabled,
+	                    cal.bikou_flg,
+	                    cal.bikou
+	               from m_edi_calendar cal
+	              where cal.kanri_id 		= :p_id
+	                and cal.calendar_kbn 	= :p_kbn
+	           ) day    /* 有効判定 */
+	     where extract( year  from base.cal_date ) 	= day.year(+)
+	       and extract( month from base.cal_date ) 	= day.month(+)
+	       and extract( day   from base.cal_date ) 	= day.day(+)
+	     order by base.cal_date
+       ) 
+group by nen,tuki
+" arguments=(("p_nen", number),("p_tuki", number),("p_id", number),("p_kbn", number)) )
+button(band=detail text="< 前月" enabled=yes action="0" border="0" color="33554432" x="48" y="4" height="82" width="280" vtextalign="0" htextalign="0"  name=b_prior visible="1"  font.face="メイリオ" font.height="-10" font.weight="400"  font.family="1" font.pitch="2" font.charset="128" background.mode="2" background.color="67108864" )
+button(band=detail text="次月 >" enabled=yes action="0" border="0" color="33554432" x="848" y="4" height="82" width="280" vtextalign="0" htextalign="0"  name=b_next visible="1"  font.face="メイリオ" font.height="-10" font.weight="400"  font.family="1" font.pitch="2" font.charset="128" background.mode="2" background.color="67108864" )
+compute(band=detail alignment="2" expression="string( nen ) + ~"年~" + string( tuki ) + ~"月~""border="6" color="33554432" x="352" y="4" height="82" width="464" format="[GENERAL]" html.valueishtml="0"  name=compute_1 visible="1"  font.face="メイリオ" font.height="-11" font.weight="400"  font.family="1" font.pitch="2" font.charset="128" background.mode="1" background.color="536870912" )
+rectangle(band=detail x="0" y="935" height="142" width="160"  name=r_6_1 visible="1" brush.hatch="7~tif( enabled_6_1 = 1, 6, 7 )" brush.color="603979776~tif( enabled_6_1 = 1,rgb( 154,179,255 ),0)" pen.style="0" pen.width="4" pen.color="8421504~tif( day_6_1 = 0, RGB(192,192,192),RGB(128,128,128))"  background.mode="2" background.color="67108864" )
+rectangle(band=detail x="168" y="935" height="142" width="160"  name=r_6_2 visible="1" brush.hatch="7~tif( enabled_6_2 = 1, 6, 7 )" brush.color="603979776~tif( enabled_6_2 = 1,rgb( 154,179,255 ),0)" pen.style="0" pen.width="4" pen.color="8421504~tif( day_6_2 = 0, RGB(192,192,192),RGB(128,128,128))"  background.mode="1" background.color="553648127" )
+rectangle(band=detail x="336" y="935" height="142" width="160"  name=r_6_3 visible="1" brush.hatch="7~tif( enabled_6_3 = 1, 6, 7 )" brush.color="603979776~tif( enabled_6_3 = 1,rgb( 154,179,255 ),0)" pen.style="0" pen.width="4" pen.color="8421504~tif( day_6_3 = 0, RGB(192,192,192),RGB(128,128,128))"  background.mode="1" background.color="553648127" )
+rectangle(band=detail x="504" y="935" height="142" width="160"  name=r_6_4 visible="1" brush.hatch="7~tif( enabled_6_4 = 1, 6, 7 )" brush.color="603979776~tif( enabled_6_4 = 1,rgb( 154,179,255 ),0)" pen.style="0" pen.width="4" pen.color="8421504~tif( day_6_4 = 0, RGB(192,192,192),RGB(128,128,128))"  background.mode="1" background.color="553648127" )
+rectangle(band=detail x="672" y="935" height="142" width="160"  name=r_6_5 visible="1" brush.hatch="7~tif( enabled_6_5 = 1, 6, 7 )" brush.color="603979776~tif( enabled_6_5 = 1,rgb( 154,179,255 ),0)" pen.style="0" pen.width="4" pen.color="8421504~tif( day_6_5 = 0, RGB(192,192,192),RGB(128,128,128))"  background.mode="1" background.color="553648127" )
+rectangle(band=detail x="840" y="935" height="142" width="160"  name=r_6_6 visible="1" brush.hatch="7~tif( enabled_6_6 = 1, 6, 7 )" brush.color="603979776~tif( enabled_6_6 = 1,rgb( 154,179,255 ),0)" pen.style="0" pen.width="4" pen.color="8421504~tif( day_6_6 = 0, RGB(192,192,192),RGB(128,128,128))"  background.mode="1" background.color="553648127" )
+rectangle(band=detail x="1008" y="935" height="142" width="160"  name=r_6_7 visible="1" brush.hatch="7~tif( enabled_6_7 = 1, 6, 7 )" brush.color="603979776~tif( enabled_6_7 = 1,rgb( 154,179,255 ),0)" pen.style="0" pen.width="4" pen.color="8421504~tif( day_6_7 = 0, RGB(192,192,192),RGB(128,128,128))"  background.mode="1" background.color="553648127" )
+rectangle(band=detail x="1008" y="786" height="142" width="160"  name=r_5_7 visible="1" brush.hatch="7~tif( enabled_5_7 = 1, 6, 7 )" brush.color="603979776~tif( enabled_5_7 = 1,rgb( 154,179,255 ),0)" pen.style="0" pen.width="4" pen.color="8421504~tif( day_5_7 = 0, RGB(192,192,192),RGB(128,128,128))"  background.mode="1" background.color="553648127" )
+rectangle(band=detail x="840" y="786" height="142" width="160"  name=r_5_6 visible="1" brush.hatch="7~tif( enabled_5_6 = 1, 6, 7 )" brush.color="603979776~tif( enabled_5_6 = 1,rgb( 154,179,255 ),0)" pen.style="0" pen.width="4" pen.color="8421504~tif( day_5_6 = 0, RGB(192,192,192),RGB(128,128,128))"  background.mode="1" background.color="553648127" )
+rectangle(band=detail x="672" y="786" height="142" width="160"  name=r_5_5 visible="1" brush.hatch="7~tif( enabled_5_5 = 1, 6, 7 )" brush.color="603979776~tif( enabled_5_5 = 1,rgb( 154,179,255 ),0)" pen.style="0" pen.width="4" pen.color="8421504~tif( day_5_5 = 0, RGB(192,192,192),RGB(128,128,128))"  background.mode="1" background.color="553648127" )
+rectangle(band=detail x="504" y="786" height="142" width="160"  name=r_5_4 visible="1" brush.hatch="7~tif( enabled_5_4 = 1, 6, 7 )" brush.color="603979776~tif( enabled_5_4 = 1,rgb( 154,179,255 ),0)" pen.style="0" pen.width="4" pen.color="8421504~tif( day_5_4 = 0, RGB(192,192,192),RGB(128,128,128))"  background.mode="1" background.color="553648127" )
+rectangle(band=detail x="336" y="786" height="142" width="160"  name=r_5_3 visible="1" brush.hatch="7~tif( enabled_5_3 = 1, 6, 7 )" brush.color="603979776~tif( enabled_5_3 = 1,rgb( 154,179,255 ),0)" pen.style="0" pen.width="4" pen.color="8421504~tif( day_5_3 = 0, RGB(192,192,192),RGB(128,128,128))"  background.mode="1" background.color="553648127" )
+rectangle(band=detail x="168" y="786" height="142" width="160"  name=r_5_2 visible="1" brush.hatch="7~tif( enabled_5_2 = 1, 6, 7 )" brush.color="603979776~tif( enabled_5_2 = 1,rgb( 154,179,255 ),0)" pen.style="0" pen.width="4" pen.color="8421504~tif( day_5_2 = 0, RGB(192,192,192),RGB(128,128,128))"  background.mode="1" background.color="553648127" )
+rectangle(band=detail x="0" y="786" height="142" width="160"  name=r_5_1 visible="1" brush.hatch="7~tif( enabled_5_1 = 1, 6, 7 )" brush.color="603979776~tif( enabled_5_1 = 1,rgb( 154,179,255 ),0)" pen.style="0" pen.width="4" pen.color="8421504~tif( day_5_1 = 0, RGB(192,192,192),RGB(128,128,128))"  background.mode="2" background.color="67108864" )
+rectangle(band=detail x="0" y="637" height="142" width="160"  name=r_4_1 visible="1" brush.hatch="7~tif( enabled_4_1 = 1, 6, 7 )" brush.color="603979776~tif( enabled_4_1 = 1,rgb( 154,179,255 ),0)" pen.style="0" pen.width="4" pen.color="8421504~tif( day_4_1 = 0, RGB(192,192,192),RGB(128,128,128))"  background.mode="2" background.color="67108864" )
+rectangle(band=detail x="168" y="637" height="142" width="160"  name=r_4_2 visible="1" brush.hatch="7~tif( enabled_4_2 = 1, 6, 7 )" brush.color="603979776~tif( enabled_4_2 = 1,rgb( 154,179,255 ),0)" pen.style="0" pen.width="4" pen.color="8421504~tif( day_4_2 = 0, RGB(192,192,192),RGB(128,128,128))"  background.mode="1" background.color="553648127" )
+rectangle(band=detail x="336" y="637" height="142" width="160"  name=r_4_3 visible="1" brush.hatch="7~tif( enabled_4_3 = 1, 6, 7 )" brush.color="603979776~tif( enabled_4_3 = 1,rgb( 154,179,255 ),0)" pen.style="0" pen.width="4" pen.color="8421504~tif( day_4_3 = 0, RGB(192,192,192),RGB(128,128,128))"  background.mode="1" background.color="553648127" )
+rectangle(band=detail x="504" y="637" height="142" width="160"  name=r_4_4 visible="1" brush.hatch="7~tif( enabled_4_4 = 1, 6, 7 )" brush.color="603979776~tif( enabled_4_4 = 1,rgb( 154,179,255 ),0)" pen.style="0" pen.width="4" pen.color="8421504~tif( day_4_4 = 0, RGB(192,192,192),RGB(128,128,128))"  background.mode="1" background.color="553648127" )
+rectangle(band=detail x="672" y="637" height="142" width="160"  name=r_4_5 visible="1" brush.hatch="7~tif( enabled_4_5 = 1, 6, 7 )" brush.color="603979776~tif( enabled_4_5 = 1,rgb( 154,179,255 ),0)" pen.style="0" pen.width="4" pen.color="8421504~tif( day_4_5 = 0, RGB(192,192,192),RGB(128,128,128))"  background.mode="1" background.color="553648127" )
+rectangle(band=detail x="840" y="637" height="142" width="160"  name=r_4_6 visible="1" brush.hatch="7~tif( enabled_4_6 = 1, 6, 7 )" brush.color="603979776~tif( enabled_4_6 = 1,rgb( 154,179,255 ),0)" pen.style="0" pen.width="4" pen.color="8421504~tif( day_4_6 = 0, RGB(192,192,192),RGB(128,128,128))"  background.mode="1" background.color="553648127" )
+rectangle(band=detail x="1008" y="637" height="142" width="160"  name=r_4_7 visible="1" brush.hatch="7~tif( enabled_4_7 = 1, 6, 7 )" brush.color="603979776~tif( enabled_4_7 = 1,rgb( 154,179,255 ),0)" pen.style="0" pen.width="4" pen.color="8421504~tif( day_4_7 = 0, RGB(192,192,192),RGB(128,128,128))"  background.mode="1" background.color="553648127" )
+rectangle(band=detail x="1008" y="487" height="139" width="160"  name=r_3_7 visible="1" brush.hatch="7~tif( enabled_3_7 = 1, 6, 7 )" brush.color="603979776~tif( enabled_3_7 = 1,rgb( 154,179,255 ),0)" pen.style="0" pen.width="4" pen.color="8421504~tif( day_3_7 = 0, RGB(192,192,192),RGB(128,128,128))"  background.mode="1" background.color="553648127" )
+rectangle(band=detail x="840" y="487" height="139" width="160"  name=r_3_6 visible="1" brush.hatch="7~tif( enabled_3_6 = 1, 6, 7 )" brush.color="603979776~tif( enabled_3_6 = 1,rgb( 154,179,255 ),0)" pen.style="0" pen.width="4" pen.color="8421504~tif( day_3_6 = 0, RGB(192,192,192),RGB(128,128,128))"  background.mode="1" background.color="553648127" )
+rectangle(band=detail x="672" y="487" height="139" width="160"  name=r_3_5 visible="1" brush.hatch="7~tif( enabled_3_5 = 1, 6, 7 )" brush.color="603979776~tif( enabled_3_5 = 1,rgb( 154,179,255 ),0)" pen.style="0" pen.width="4" pen.color="8421504~tif( day_3_5 = 0, RGB(192,192,192),RGB(128,128,128))"  background.mode="1" background.color="553648127" )
+rectangle(band=detail x="504" y="487" height="139" width="160"  name=r_3_4 visible="1" brush.hatch="7~tif( enabled_3_4 = 1, 6, 7 )" brush.color="603979776~tif( enabled_3_4 = 1,rgb( 154,179,255 ),0)" pen.style="0" pen.width="4" pen.color="8421504~tif( day_3_4 = 0, RGB(192,192,192),RGB(128,128,128))"  background.mode="1" background.color="553648127" )
+rectangle(band=detail x="336" y="487" height="139" width="160"  name=r_3_3 visible="1" brush.hatch="7~tif( enabled_3_3 = 1, 6, 7 )" brush.color="603979776~tif( enabled_3_3 = 1,rgb( 154,179,255 ),0)" pen.style="0" pen.width="4" pen.color="8421504~tif( day_3_3 = 0, RGB(192,192,192),RGB(128,128,128))"  background.mode="1" background.color="553648127" )
+rectangle(band=detail x="168" y="487" height="139" width="160"  name=r_3_2 visible="1" brush.hatch="7~tif( enabled_3_2 = 1, 6, 7 )" brush.color="603979776~tif( enabled_3_2 = 1,rgb( 154,179,255 ),0)" pen.style="0" pen.width="4" pen.color="8421504~tif( day_3_2 = 0, RGB(192,192,192),RGB(128,128,128))"  background.mode="1" background.color="553648127" )
+rectangle(band=detail x="0" y="487" height="139" width="160"  name=r_3_1 visible="1" brush.hatch="7~tif( enabled_3_1 = 1, 6, 7 )" brush.color="603979776~tif( enabled_3_1 = 1,rgb( 154,179,255 ),0)" pen.style="0" pen.width="4" pen.color="8421504~tif( day_3_1 = 0, RGB(192,192,192),RGB(128,128,128))"  background.mode="2" background.color="67108864" )
+rectangle(band=detail x="0" y="338" height="142" width="160"  name=r_2_1 visible="1" brush.hatch="7~tif( enabled_2_1 = 1, 6, 7 )" brush.color="603979776~tif( enabled_2_1 = 1,rgb( 154,179,255 ),0)" pen.style="0" pen.width="4" pen.color="8421504~tif( day_2_1 = 0, RGB(192,192,192),RGB(128,128,128))"  background.mode="2" background.color="67108864" )
+rectangle(band=detail x="168" y="338" height="142" width="160"  name=r_2_2 visible="1" brush.hatch="7~tif( enabled_2_2 = 1, 6, 7 )" brush.color="603979776~tif( enabled_2_2 = 1,rgb( 154,179,255 ),0)" pen.style="0" pen.width="4" pen.color="8421504~tif( day_2_2 = 0, RGB(192,192,192),RGB(128,128,128))"  background.mode="1" background.color="553648127" )
+rectangle(band=detail x="336" y="338" height="142" width="160"  name=r_2_3 visible="1" brush.hatch="7~tif( enabled_2_3 = 1, 6, 7 )" brush.color="603979776~tif( enabled_2_3 = 1,rgb( 154,179,255 ),0)" pen.style="0" pen.width="4" pen.color="8421504~tif( day_2_3 = 0, RGB(192,192,192),RGB(128,128,128))"  background.mode="1" background.color="553648127" )
+rectangle(band=detail x="504" y="338" height="142" width="160"  name=r_2_4 visible="1" brush.hatch="7~tif( enabled_2_4 = 1, 6, 7 )" brush.color="603979776~tif( enabled_2_4 = 1,rgb( 154,179,255 ),0)" pen.style="0" pen.width="4" pen.color="8421504~tif( day_2_4 = 0, RGB(192,192,192),RGB(128,128,128))"  background.mode="1" background.color="553648127" )
+rectangle(band=detail x="672" y="338" height="142" width="160"  name=r_2_5 visible="1" brush.hatch="7~tif( enabled_2_5 = 1, 6, 7 )" brush.color="603979776~tif( enabled_2_5 = 1,rgb( 154,179,255 ),0)" pen.style="0" pen.width="4" pen.color="8421504~tif( day_2_5 = 0, RGB(192,192,192),RGB(128,128,128))"  background.mode="1" background.color="553648127" )
+rectangle(band=detail x="840" y="338" height="142" width="160"  name=r_2_6 visible="1" brush.hatch="7~tif( enabled_2_6 = 1, 6, 7 )" brush.color="603979776~tif( enabled_2_6 = 1,rgb( 154,179,255 ),0)" pen.style="0" pen.width="4" pen.color="8421504~tif( day_2_6 = 0, RGB(192,192,192),RGB(128,128,128))"  background.mode="1" background.color="553648127" )
+rectangle(band=detail x="1008" y="338" height="142" width="160"  name=r_2_7 visible="1" brush.hatch="7~tif( enabled_2_7 = 1, 6, 7 )" brush.color="603979776~tif( enabled_2_7 = 1,rgb( 154,179,255 ),0)" pen.style="0" pen.width="4" pen.color="8421504~tif( day_2_7 = 0, RGB(192,192,192),RGB(128,128,128))"  background.mode="1" background.color="553648127" )
+rectangle(band=detail x="0" y="189" height="142" width="160"  name=r_1_1 visible="1" brush.hatch="7~tif( enabled_1_1 = 1, 6, 7 )" brush.color="603979776~tif( enabled_1_1 = 1,rgb( 154,179,255 ),0)" pen.style="0" pen.width="4" pen.color="8421504~tif( day_1_1 = 0, RGB(192,192,192),RGB(128,128,128))"  background.mode="2" background.color="67108864" )
+rectangle(band=detail x="168" y="189" height="142" width="160"  name=r_1_2 visible="1" brush.hatch="7~tif( enabled_1_2 = 1, 6, 7 )" brush.color="603979776~tif( enabled_1_2 = 1,rgb( 154,179,255 ),0)" pen.style="0" pen.width="4" pen.color="8421504~tif( day_1_2 = 0, RGB(192,192,192),RGB(128,128,128))"  background.mode="1" background.color="553648127" )
+rectangle(band=detail x="336" y="189" height="142" width="160"  name=r_1_3 visible="1" brush.hatch="7~tif( enabled_1_3 = 1, 6, 7 )" brush.color="603979776~tif( enabled_1_3 = 1,rgb( 154,179,255 ),0)" pen.style="0" pen.width="4" pen.color="8421504~tif( day_1_3 = 0, RGB(192,192,192),RGB(128,128,128))"  background.mode="1" background.color="553648127" )
+rectangle(band=detail x="504" y="189" height="142" width="160"  name=r_1_4 visible="1" brush.hatch="7~tif( enabled_1_4 = 1, 6, 7 )" brush.color="603979776~tif( enabled_1_4 = 1,rgb( 154,179,255 ),0)" pen.style="0" pen.width="4" pen.color="8421504~tif( day_1_4 = 0, RGB(192,192,192),RGB(128,128,128))"  background.mode="1" background.color="553648127" )
+rectangle(band=detail x="672" y="189" height="142" width="160"  name=r_1_5 visible="1" brush.hatch="7~tif( enabled_1_5 = 1, 6, 7 )" brush.color="603979776~tif( enabled_1_5 = 1,rgb( 154,179,255 ),0)" pen.style="0" pen.width="4" pen.color="8421504~tif( day_1_5 = 0, RGB(192,192,192),RGB(128,128,128))"  background.mode="1" background.color="553648127" )
+rectangle(band=detail x="840" y="189" height="142" width="160"  name=r_1_6 visible="1" brush.hatch="7~tif( enabled_1_6 = 1, 6, 7 )" brush.color="603979776~tif( enabled_1_6 = 1,rgb( 154,179,255 ),0)" pen.style="0" pen.width="4" pen.color="8421504~tif( day_1_6 = 0, RGB(192,192,192),RGB(128,128,128))"  background.mode="1" background.color="553648127" )
+rectangle(band=detail x="1008" y="189" height="142" width="160"  name=r_1_7 visible="1" brush.hatch="7~tif( enabled_1_7 = 1, 6, 7 )" brush.color="603979776~tif( enabled_1_7 = 1,rgb( 154,179,255 ),0)" pen.style="0" pen.width="4" pen.color="8421504~tif( day_1_7 = 0, RGB(192,192,192),RGB(128,128,128))"  background.mode="1" background.color="553648127" )
+column(band=detail id=4 alignment="0" tabsequence=32766 border="0" color="33554432" x="184" y="189" height="142" width="128" format="#" html.valueishtml="0" protect="0~tif(long(gettext()) = 0,1,0)"  name=day_1_2 visible="1" edit.limit=0 edit.case=any edit.focusrectangle=no edit.autoselect=yes edit.autohscroll=yes edit.imemode=0  font.face="メイリオ" font.height="-11" font.weight="400"  font.family="1" font.pitch="1" font.charset="128" background.mode="1" background.color="536870912" )
+column(band=detail id=5 alignment="0" tabsequence=32766 border="0" color="33554432" x="352" y="189" height="142" width="128" format="#" html.valueishtml="0" protect="0~tif(long(gettext()) = 0,1,0)"  name=day_1_3 visible="1" edit.limit=0 edit.case=any edit.focusrectangle=no edit.autoselect=yes edit.autohscroll=yes edit.imemode=0  font.face="メイリオ" font.height="-11" font.weight="400"  font.family="1" font.pitch="1" font.charset="128" background.mode="1" background.color="536870912" )
+column(band=detail id=7 alignment="0" tabsequence=32766 border="0" color="33554432" x="688" y="189" height="142" width="128" format="#" html.valueishtml="0" protect="0~tif(long(gettext()) = 0,1,0)"  name=day_1_5 visible="1" edit.limit=0 edit.case=any edit.focusrectangle=no edit.autoselect=yes edit.autohscroll=yes edit.imemode=0  font.face="メイリオ" font.height="-11" font.weight="400"  font.family="1" font.pitch="1" font.charset="128" background.mode="1" background.color="536870912" )
+column(band=detail id=8 alignment="0" tabsequence=32766 border="0" color="33554432" x="856" y="189" height="142" width="128" format="#" html.valueishtml="0" protect="0~tif(long(gettext()) = 0,1,0)"  name=day_1_6 visible="1" edit.limit=0 edit.case=any edit.focusrectangle=no edit.autoselect=yes edit.autohscroll=yes edit.imemode=0  font.face="メイリオ" font.height="-11" font.weight="400"  font.family="1" font.pitch="1" font.charset="128" background.mode="1" background.color="536870912" )
+column(band=detail id=11 alignment="0" tabsequence=32766 border="0" color="33554432" x="184" y="342" height="139" width="128" format="#" html.valueishtml="0" protect="0~tif(long(gettext()) = 0,1,0)"  name=day_2_2 visible="1" edit.limit=0 edit.case=any edit.focusrectangle=no edit.autoselect=yes edit.autohscroll=yes edit.imemode=0  font.face="メイリオ" font.height="-11" font.weight="400"  font.family="1" font.pitch="1" font.charset="128" background.mode="1" background.color="536870912" )
+column(band=detail id=12 alignment="0" tabsequence=32766 border="0" color="33554432" x="352" y="342" height="139" width="128" format="#" html.valueishtml="0" protect="0~tif(long(gettext()) = 0,1,0)"  name=day_2_3 visible="1" edit.limit=0 edit.case=any edit.focusrectangle=no edit.autoselect=yes edit.autohscroll=yes edit.imemode=0  font.face="メイリオ" font.height="-11" font.weight="400"  font.family="1" font.pitch="1" font.charset="128" background.mode="1" background.color="536870912" )
+column(band=detail id=13 alignment="0" tabsequence=32766 border="0" color="33554432" x="520" y="342" height="139" width="128" format="#" html.valueishtml="0" protect="0~tif(long(gettext()) = 0,1,0)"  name=day_2_4 visible="1" edit.limit=0 edit.case=any edit.focusrectangle=no edit.autoselect=yes edit.autohscroll=yes edit.imemode=0  font.face="メイリオ" font.height="-11" font.weight="400"  font.family="1" font.pitch="1" font.charset="128" background.mode="1" background.color="536870912" )
+column(band=detail id=14 alignment="0" tabsequence=32766 border="0" color="33554432" x="688" y="342" height="139" width="128" format="#" html.valueishtml="0" protect="0~tif(long(gettext()) = 0,1,0)"  name=day_2_5 visible="1" edit.limit=0 edit.case=any edit.focusrectangle=no edit.autoselect=yes edit.autohscroll=yes edit.imemode=0  font.face="メイリオ" font.height="-11" font.weight="400"  font.family="1" font.pitch="1" font.charset="128" background.mode="1" background.color="536870912" )
+column(band=detail id=15 alignment="0" tabsequence=32766 border="0" color="33554432" x="856" y="342" height="139" width="128" format="#" html.valueishtml="0" protect="0~tif(long(gettext()) = 0,1,0)"  name=day_2_6 visible="1" edit.limit=0 edit.case=any edit.focusrectangle=no edit.autoselect=yes edit.autohscroll=yes edit.imemode=0  font.face="メイリオ" font.height="-11" font.weight="400"  font.family="1" font.pitch="1" font.charset="128" background.mode="1" background.color="536870912" )
+column(band=detail id=18 alignment="0" tabsequence=32766 border="0" color="33554432" x="184" y="487" height="139" width="128" format="#" html.valueishtml="0" protect="0~tif(long(gettext()) = 0,1,0)"  name=day_3_2 visible="1" edit.limit=0 edit.case=any edit.focusrectangle=no edit.autoselect=yes edit.autohscroll=yes edit.imemode=0  font.face="メイリオ" font.height="-11" font.weight="400"  font.family="1" font.pitch="1" font.charset="128" background.mode="1" background.color="536870912" )
+column(band=detail id=19 alignment="0" tabsequence=32766 border="0" color="33554432" x="352" y="487" height="139" width="128" format="#" html.valueishtml="0" protect="0~tif(long(gettext()) = 0,1,0)"  name=day_3_3 visible="1" edit.limit=0 edit.case=any edit.focusrectangle=no edit.autoselect=yes edit.autohscroll=yes edit.imemode=0  font.face="メイリオ" font.height="-11" font.weight="400"  font.family="1" font.pitch="1" font.charset="128" background.mode="1" background.color="536870912" )
+column(band=detail id=20 alignment="0" tabsequence=32766 border="0" color="33554432" x="520" y="487" height="139" width="128" format="#" html.valueishtml="0" protect="0~tif(long(gettext()) = 0,1,0)"  name=day_3_4 visible="1" edit.limit=0 edit.case=any edit.focusrectangle=no edit.autoselect=yes edit.autohscroll=yes edit.imemode=0  font.face="メイリオ" font.height="-11" font.weight="400"  font.family="1" font.pitch="1" font.charset="128" background.mode="1" background.color="536870912" )
+column(band=detail id=21 alignment="0" tabsequence=32766 border="0" color="33554432" x="688" y="487" height="139" width="128" format="#" html.valueishtml="0" protect="0~tif(long(gettext()) = 0,1,0)"  name=day_3_5 visible="1" edit.limit=0 edit.case=any edit.focusrectangle=no edit.autoselect=yes edit.autohscroll=yes edit.imemode=0  font.face="メイリオ" font.height="-11" font.weight="400"  font.family="1" font.pitch="1" font.charset="128" background.mode="1" background.color="536870912" )
+column(band=detail id=22 alignment="0" tabsequence=32766 border="0" color="33554432" x="856" y="487" height="139" width="128" format="#" html.valueishtml="0" protect="0~tif(long(gettext()) = 0,1,0)"  name=day_3_6 visible="1" edit.limit=0 edit.case=any edit.focusrectangle=no edit.autoselect=yes edit.autohscroll=yes edit.imemode=0  font.face="メイリオ" font.height="-11" font.weight="400"  font.family="1" font.pitch="1" font.charset="128" background.mode="1" background.color="536870912" )
+column(band=detail id=25 alignment="0" tabsequence=32766 border="0" color="33554432" x="184" y="637" height="142" width="128" format="#" html.valueishtml="0" protect="0~tif(long(gettext()) = 0,1,0)"  name=day_4_2 visible="1" edit.limit=0 edit.case=any edit.focusrectangle=no edit.autoselect=yes edit.autohscroll=yes edit.imemode=0  font.face="メイリオ" font.height="-11" font.weight="400"  font.family="1" font.pitch="1" font.charset="128" background.mode="1" background.color="536870912" )
+column(band=detail id=26 alignment="0" tabsequence=32766 border="0" color="33554432" x="352" y="637" height="142" width="128" format="#" html.valueishtml="0" protect="0~tif(long(gettext()) = 0,1,0)"  name=day_4_3 visible="1" edit.limit=0 edit.case=any edit.focusrectangle=no edit.autoselect=yes edit.autohscroll=yes edit.imemode=0  font.face="メイリオ" font.height="-11" font.weight="400"  font.family="1" font.pitch="1" font.charset="128" background.mode="1" background.color="536870912" )
+column(band=detail id=27 alignment="0" tabsequence=32766 border="0" color="33554432" x="520" y="637" height="142" width="128" format="#" html.valueishtml="0" protect="0~tif(long(gettext()) = 0,1,0)"  name=day_4_4 visible="1" edit.limit=0 edit.case=any edit.focusrectangle=no edit.autoselect=yes edit.autohscroll=yes edit.imemode=0  font.face="メイリオ" font.height="-11" font.weight="400"  font.family="1" font.pitch="1" font.charset="128" background.mode="1" background.color="536870912" )
+column(band=detail id=28 alignment="0" tabsequence=32766 border="0" color="33554432" x="688" y="637" height="142" width="128" format="#" html.valueishtml="0" protect="0~tif(long(gettext()) = 0,1,0)"  name=day_4_5 visible="1" edit.limit=0 edit.case=any edit.focusrectangle=no edit.autoselect=yes edit.autohscroll=yes edit.imemode=0  font.face="メイリオ" font.height="-11" font.weight="400"  font.family="1" font.pitch="1" font.charset="128" background.mode="1" background.color="536870912" )
+column(band=detail id=29 alignment="0" tabsequence=32766 border="0" color="33554432" x="856" y="637" height="142" width="128" format="#" html.valueishtml="0" protect="0~tif(long(gettext()) = 0,1,0)"  name=day_4_6 visible="1" edit.limit=0 edit.case=any edit.focusrectangle=no edit.autoselect=yes edit.autohscroll=yes edit.imemode=0  font.face="メイリオ" font.height="-11" font.weight="400"  font.family="1" font.pitch="1" font.charset="128" background.mode="1" background.color="536870912" )
+column(band=detail id=30 alignment="0" tabsequence=32766 border="0" color="16711680" x="1024" y="637" height="142" width="128" format="#" html.valueishtml="0" protect="0~tif(long(gettext()) = 0,1,0)"  name=day_4_7 visible="1" edit.limit=0 edit.case=any edit.focusrectangle=no edit.autoselect=yes edit.autohscroll=yes edit.imemode=0  font.face="メイリオ" font.height="-11" font.weight="400"  font.family="1" font.pitch="1" font.charset="128" background.mode="1" background.color="536870912" )
+column(band=detail id=32 alignment="0" tabsequence=32766 border="0" color="33554432" x="184" y="790" height="139" width="128" format="#" html.valueishtml="0" protect="0~tif(long(gettext()) = 0,1,0)"  name=day_5_2 visible="1" edit.limit=0 edit.case=any edit.focusrectangle=no edit.autoselect=yes edit.autohscroll=yes edit.imemode=0  font.face="メイリオ" font.height="-11" font.weight="400"  font.family="1" font.pitch="1" font.charset="128" background.mode="1" background.color="536870912" )
+column(band=detail id=33 alignment="0" tabsequence=32766 border="0" color="33554432" x="352" y="790" height="139" width="128" format="#" html.valueishtml="0" protect="0~tif(long(gettext()) = 0,1,0)"  name=day_5_3 visible="1" edit.limit=0 edit.case=any edit.focusrectangle=no edit.autoselect=yes edit.autohscroll=yes edit.imemode=0  font.face="メイリオ" font.height="-11" font.weight="400"  font.family="1" font.pitch="1" font.charset="128" background.mode="1" background.color="536870912" )
+column(band=detail id=34 alignment="0" tabsequence=32766 border="0" color="33554432" x="520" y="790" height="139" width="128" format="#" html.valueishtml="0" protect="0~tif(long(gettext()) = 0,1,0)"  name=day_5_4 visible="1" edit.limit=0 edit.case=any edit.focusrectangle=no edit.autoselect=yes edit.autohscroll=yes edit.imemode=0  font.face="メイリオ" font.height="-11" font.weight="400"  font.family="1" font.pitch="1" font.charset="128" background.mode="1" background.color="536870912" )
+column(band=detail id=35 alignment="0" tabsequence=32766 border="0" color="33554432" x="688" y="790" height="139" width="128" format="#" html.valueishtml="0" protect="0~tif(long(gettext()) = 0,1,0)"  name=day_5_5 visible="1" edit.limit=0 edit.case=any edit.focusrectangle=no edit.autoselect=yes edit.autohscroll=yes edit.imemode=0  font.face="メイリオ" font.height="-11" font.weight="400"  font.family="1" font.pitch="1" font.charset="128" background.mode="1" background.color="536870912" )
+column(band=detail id=36 alignment="0" tabsequence=32766 border="0" color="33554432" x="856" y="790" height="139" width="128" format="#" html.valueishtml="0" protect="0~tif(long(gettext()) = 0,1,0)"  name=day_5_6 visible="1" edit.limit=0 edit.case=any edit.focusrectangle=no edit.autoselect=yes edit.autohscroll=yes edit.imemode=0  font.face="メイリオ" font.height="-11" font.weight="400"  font.family="1" font.pitch="1" font.charset="128" background.mode="1" background.color="536870912" )
+column(band=detail id=6 alignment="0" tabsequence=32766 border="0" color="33554432" x="520" y="189" height="142" width="128" format="#" html.valueishtml="0" protect="0~tif(long(gettext()) = 0,1,0)"  name=day_1_4 visible="1" edit.limit=0 edit.case=any edit.focusrectangle=no edit.autoselect=yes edit.autohscroll=yes edit.imemode=0  font.face="メイリオ" font.height="-11" font.weight="400"  font.family="1" font.pitch="1" font.charset="128" background.mode="1" background.color="536870912" )
+column(band=detail id=39 alignment="0" tabsequence=32766 border="0" color="33554432" x="184" y="939" height="139" width="128" format="#" html.valueishtml="0" protect="0~tif(long(gettext()) = 0,1,0)"  name=day_6_2 visible="1" edit.limit=0 edit.case=any edit.focusrectangle=no edit.autoselect=yes edit.autohscroll=yes edit.imemode=0  font.face="メイリオ" font.height="-11" font.weight="400"  font.family="1" font.pitch="1" font.charset="128" background.mode="1" background.color="536870912" )
+column(band=detail id=40 alignment="0" tabsequence=32766 border="0" color="33554432" x="352" y="939" height="139" width="128" format="#" html.valueishtml="0" protect="0~tif(long(gettext()) = 0,1,0)"  name=day_6_3 visible="1" edit.limit=0 edit.case=any edit.focusrectangle=no edit.autoselect=yes edit.autohscroll=yes edit.imemode=0  font.face="メイリオ" font.height="-11" font.weight="400"  font.family="1" font.pitch="1" font.charset="128" background.mode="1" background.color="536870912" )
+column(band=detail id=41 alignment="0" tabsequence=32766 border="0" color="33554432" x="520" y="939" height="139" width="128" format="#" html.valueishtml="0" protect="0~tif(long(gettext()) = 0,1,0)"  name=day_6_4 visible="1" edit.limit=0 edit.case=any edit.focusrectangle=no edit.autoselect=yes edit.autohscroll=yes edit.imemode=0  font.face="メイリオ" font.height="-11" font.weight="400"  font.family="1" font.pitch="1" font.charset="128" background.mode="1" background.color="536870912" )
+column(band=detail id=42 alignment="0" tabsequence=32766 border="0" color="33554432" x="688" y="939" height="139" width="128" format="#" html.valueishtml="0" protect="0~tif(long(gettext()) = 0,1,0)"  name=day_6_5 visible="1" edit.limit=0 edit.case=any edit.focusrectangle=no edit.autoselect=yes edit.autohscroll=yes edit.imemode=0  font.face="メイリオ" font.height="-11" font.weight="400"  font.family="1" font.pitch="1" font.charset="128" background.mode="1" background.color="536870912" )
+column(band=detail id=43 alignment="0" tabsequence=32766 border="0" color="33554432" x="856" y="939" height="139" width="128" format="#" html.valueishtml="0" protect="0~tif(long(gettext()) = 0,1,0)"  name=day_6_6 visible="1" edit.limit=0 edit.case=any edit.focusrectangle=no edit.autoselect=yes edit.autohscroll=yes edit.imemode=0  font.face="メイリオ" font.height="-11" font.weight="400"  font.family="1" font.pitch="1" font.charset="128" background.mode="1" background.color="536870912" )
+rectangle(band=detail x="0" y="96" height="82" width="160"  name=r_1 visible="1" brush.hatch="7" brush.color="603979776" pen.style="0" pen.width="4" pen.color="8421504"  background.mode="2" background.color="67108864" )
+text(band=detail alignment="2" text="日" border="0" color="255" x="8" y="103" height="71" width="144" html.valueishtml="0"  name=t_2 visible="1"  font.face="メイリオ" font.height="-10" font.weight="400"  font.family="1" font.pitch="2" font.charset="128" background.mode="1" background.color="553648127" )
+rectangle(band=detail x="168" y="96" height="82" width="160"  name=r_2 visible="1" brush.hatch="7" brush.color="603979776" pen.style="0" pen.width="4" pen.color="8421504"  background.mode="1" background.color="553648127" )
+text(band=detail alignment="2" text="月" border="0" color="33554432" x="176" y="103" height="71" width="144" html.valueishtml="0"  name=t_1 visible="1"  font.face="メイリオ" font.height="-10" font.weight="400"  font.family="1" font.pitch="2" font.charset="128" background.mode="1" background.color="553648127" )
+rectangle(band=detail x="336" y="96" height="82" width="160"  name=r_3 visible="1" brush.hatch="7" brush.color="603979776" pen.style="0" pen.width="4" pen.color="8421504"  background.mode="1" background.color="553648127" )
+text(band=detail alignment="2" text="火" border="0" color="33554432" x="344" y="103" height="71" width="144" html.valueishtml="0"  name=t_3 visible="1"  font.face="メイリオ" font.height="-10" font.weight="400"  font.family="1" font.pitch="2" font.charset="128" background.mode="1" background.color="553648127" )
+rectangle(band=detail x="504" y="96" height="82" width="160"  name=r_4 visible="1" brush.hatch="7" brush.color="603979776" pen.style="0" pen.width="4" pen.color="8421504"  background.mode="1" background.color="553648127" )
+text(band=detail alignment="2" text="水" border="0" color="33554432" x="512" y="103" height="71" width="144" html.valueishtml="0"  name=t_4 visible="1"  font.face="メイリオ" font.height="-10" font.weight="400"  font.family="1" font.pitch="2" font.charset="128" background.mode="1" background.color="553648127" )
+rectangle(band=detail x="672" y="96" height="82" width="160"  name=r_5 visible="1" brush.hatch="7" brush.color="603979776" pen.style="0" pen.width="4" pen.color="8421504"  background.mode="1" background.color="553648127" )
+text(band=detail alignment="2" text="木" border="0" color="33554432" x="680" y="103" height="71" width="144" html.valueishtml="0"  name=t_5 visible="1"  font.face="メイリオ" font.height="-10" font.weight="400"  font.family="1" font.pitch="2" font.charset="128" background.mode="1" background.color="553648127" )
+rectangle(band=detail x="840" y="96" height="82" width="160"  name=r_6 visible="1" brush.hatch="7" brush.color="603979776" pen.style="0" pen.width="4" pen.color="8421504"  background.mode="1" background.color="553648127" )
+text(band=detail alignment="2" text="金" border="0" color="33554432" x="848" y="103" height="71" width="144" html.valueishtml="0"  name=t_6 visible="1"  font.face="メイリオ" font.height="-10" font.weight="400"  font.family="1" font.pitch="2" font.charset="128" background.mode="1" background.color="553648127" )
+rectangle(band=detail x="1008" y="96" height="82" width="160"  name=r_7 visible="1" brush.hatch="7" brush.color="603979776" pen.style="0" pen.width="4" pen.color="8421504"  background.mode="1" background.color="553648127" )
+text(band=detail alignment="2" text="土" border="0" color="16711680" x="1016" y="103" height="71" width="144" html.valueishtml="0"  name=t_7 visible="1"  font.face="メイリオ" font.height="-10" font.weight="400"  font.family="1" font.pitch="2" font.charset="128" background.mode="1" background.color="553648127" )
+column(band=detail id=9 alignment="0" tabsequence=32766 border="0" color="16711680" x="1024" y="189" height="142" width="128" format="#" html.valueishtml="0" protect="0~tif(long(gettext()) = 0,1,0)"  name=day_1_7 visible="1" edit.limit=0 edit.case=any edit.focusrectangle=no edit.autoselect=yes edit.autohscroll=yes edit.imemode=0  font.face="メイリオ" font.height="-11" font.weight="400"  font.family="1" font.pitch="1" font.charset="128" background.mode="1" background.color="536870912" )
+column(band=detail id=16 alignment="0" tabsequence=32766 border="0" color="16711680" x="1024" y="342" height="139" width="128" format="#" html.valueishtml="0" protect="0~tif(long(gettext()) = 0,1,0)"  name=day_2_7 visible="1" edit.limit=0 edit.case=any edit.focusrectangle=no edit.autoselect=yes edit.autohscroll=yes edit.imemode=0  font.face="メイリオ" font.height="-11" font.weight="400"  font.family="1" font.pitch="1" font.charset="128" background.mode="1" background.color="536870912" )
+column(band=detail id=23 alignment="0" tabsequence=32766 border="0" color="16711680" x="1024" y="487" height="139" width="128" format="#" html.valueishtml="0" protect="0~tif(long(gettext()) = 0,1,0)"  name=day_3_7 visible="1" edit.limit=0 edit.case=any edit.focusrectangle=no edit.autoselect=yes edit.autohscroll=yes edit.imemode=0  font.face="メイリオ" font.height="-11" font.weight="400"  font.family="1" font.pitch="1" font.charset="128" background.mode="1" background.color="536870912" )
+column(band=detail id=37 alignment="0" tabsequence=32766 border="0" color="16711680" x="1024" y="790" height="139" width="128" format="#" html.valueishtml="0" protect="0~tif(long(gettext()) = 0,1,0)"  name=day_5_7 visible="1" edit.limit=0 edit.case=any edit.focusrectangle=no edit.autoselect=yes edit.autohscroll=yes edit.imemode=0  font.face="メイリオ" font.height="-11" font.weight="400"  font.family="1" font.pitch="1" font.charset="128" background.mode="1" background.color="536870912" )
+column(band=detail id=44 alignment="0" tabsequence=32766 border="0" color="16711680" x="1024" y="939" height="139" width="128" format="#" html.valueishtml="0" protect="0~tif(long(gettext()) = 0,1,0)"  name=day_6_7 visible="1" edit.limit=0 edit.case=any edit.focusrectangle=no edit.autoselect=yes edit.autohscroll=yes edit.imemode=0  font.face="メイリオ" font.height="-11" font.weight="400"  font.family="1" font.pitch="1" font.charset="128" background.mode="1" background.color="536870912" )
+column(band=detail id=3 alignment="0" tabsequence=32766 border="0" color="255" x="16" y="189" height="142" width="128" format="#" html.valueishtml="0" protect="0~tif(long(gettext()) = 0,1,0)"  name=day_1_1 visible="1" edit.limit=0 edit.case=any edit.focusrectangle=no edit.autoselect=yes edit.autohscroll=yes edit.imemode=0  font.face="メイリオ" font.height="-11" font.weight="400"  font.family="1" font.pitch="1" font.charset="128" background.mode="1" background.color="553648127" )
+column(band=detail id=10 alignment="0" tabsequence=32766 border="0" color="255" x="16" y="342" height="139" width="128" format="#" html.valueishtml="0" protect="0~tif(long(gettext()) = 0,1,0)"  name=day_2_1 visible="1" edit.limit=0 edit.case=any edit.focusrectangle=no edit.autoselect=yes edit.autohscroll=yes edit.imemode=0  font.face="メイリオ" font.height="-11" font.weight="400"  font.family="1" font.pitch="1" font.charset="128" background.mode="1" background.color="536870912" )
+column(band=detail id=17 alignment="0" tabsequence=32766 border="0" color="255" x="16" y="487" height="139" width="128" format="#" html.valueishtml="0" protect="0~tif(long(gettext()) = 0,1,0)"  name=day_3_1 visible="1" edit.limit=0 edit.case=any edit.focusrectangle=no edit.autoselect=yes edit.autohscroll=yes edit.imemode=0  font.face="メイリオ" font.height="-11" font.weight="400"  font.family="1" font.pitch="1" font.charset="128" background.mode="1" background.color="536870912" )
+column(band=detail id=24 alignment="0" tabsequence=32766 border="0" color="255" x="16" y="637" height="142" width="128" format="#" html.valueishtml="0" protect="0~tif(long(gettext()) = 0,1,0)"  name=day_4_1 visible="1" edit.limit=0 edit.case=any edit.focusrectangle=no edit.autoselect=yes edit.autohscroll=yes edit.imemode=0  font.face="メイリオ" font.height="-11" font.weight="400"  font.family="1" font.pitch="1" font.charset="128" background.mode="1" background.color="536870912" )
+column(band=detail id=31 alignment="0" tabsequence=32766 border="0" color="255" x="16" y="790" height="139" width="128" format="#" html.valueishtml="0" protect="0~tif(long(gettext()) = 0,1,0)"  name=day_5_1 visible="1" edit.limit=0 edit.case=any edit.focusrectangle=no edit.autoselect=yes edit.autohscroll=yes edit.imemode=0  font.face="メイリオ" font.height="-11" font.weight="400"  font.family="1" font.pitch="1" font.charset="128" background.mode="1" background.color="536870912" )
+column(band=detail id=38 alignment="0" tabsequence=32766 border="0" color="255" x="16" y="939" height="139" width="128" format="#" html.valueishtml="0" protect="0~tif(long(gettext()) = 0,1,0)"  name=day_6_1 visible="1" edit.limit=0 edit.case=any edit.focusrectangle=no edit.autoselect=yes edit.autohscroll=yes edit.imemode=0  font.face="メイリオ" font.height="-11" font.weight="400"  font.family="1" font.pitch="1" font.charset="128" background.mode="1" background.color="536870912" )
+htmltable(border="1" )
+htmlgen(clientevents="1" clientvalidation="1" clientcomputedfields="1" clientformatting="0" clientscriptable="0" generatejavascript="1" encodeselflinkargs="1" netscapelayers="0" )
+xhtmlgen() cssgen(sessionspecific="0" )
+xmlgen(inline="0" )
+xsltgen()
+jsgen()
+export.xml(headgroups="1" includewhitespace="0" metadatatype=0 savemetadata=0 )
+import.xml()
+export.pdf(method=0 distill.custompostscript="0" xslfop.print="0" )
+export.xhtml()
+ 

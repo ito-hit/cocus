@@ -1,0 +1,13 @@
+﻿$PBExportHeader$str_mdlpara_teisu.srs
+$PBExportComments$m_teisuのmodal構造体
+global type str_mdlpara_teisu from structure
+	boolean		ret
+	string		out_teisu_code
+	string		out_teisu_mei		descriptor "comment" = "追加"
+	long		out_teisu_1		descriptor "comment" = "追加"
+	long		out_teisu_2		descriptor "comment" = "追加"
+	long		out_teisu_3		descriptor "comment" = "追加"
+	string		out_setsumei		descriptor "comment" = "追加"
+	long		out_kousin_kengen		descriptor "comment" = "追加"
+end type
+

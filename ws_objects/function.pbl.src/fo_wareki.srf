@@ -1,0 +1,13 @@
+﻿$PBExportHeader$fo_wareki.srf
+$PBExportComments$西暦を和暦に変換するグローバル関数
+global type fo_wareki from function_object
+end type
+
+forward prototypes
+global function long fo_wareki (long p_date)
+end prototypes
+
+global function long fo_wareki (long p_date);return fnc.of_cnv_wareki( p_date )
+
+end function
+

@@ -1,0 +1,124 @@
+﻿$PBExportHeader$d_menu.srd
+$PBExportComments$メニューボタンのデータウインドウ
+release 19;
+datawindow(units=0 timer_interval=0 color=67108864 brushmode=0 transparency=0 gradient.angle=0 gradient.color=8421504 gradient.focus=0 gradient.repetition.count=0 gradient.repetition.length=100 gradient.repetition.mode=0 gradient.scale=100 gradient.spread=100 gradient.transparency=0 picture.blur=0 picture.clip.bottom=0 picture.clip.left=0 picture.clip.right=0 picture.clip.top=0 picture.mode=0 picture.scale.x=100 picture.scale.y=100 picture.transparency=0 processing=0 HTMLDW=no print.printername="" print.documentname="" print.orientation = 0 print.margin.left = 96 print.margin.right = 96 print.margin.top = 85 print.margin.bottom = 85 print.paper.source = 0 print.paper.size = 0 print.canusedefaultprinter=yes print.prompt=no print.buttons=no print.preview.buttons=no print.cliptext=no print.overrideprintjob=no print.collate=yes print.background=no print.preview.background=no print.preview.outline=yes hidegrayline=no showbackcoloronxp=no picture.file="" )
+header(height=82 color="536870912" transparency="0" gradient.color="8421504" gradient.transparency="0" gradient.angle="0" brushmode="0" gradient.repetition.mode="0" gradient.repetition.count="0" gradient.repetition.length="100" gradient.focus="0" gradient.scale="100" gradient.spread="100" )
+summary(height=0 color="536870912" transparency="0" gradient.color="8421504" gradient.transparency="0" gradient.angle="0" brushmode="0" gradient.repetition.mode="0" gradient.repetition.count="0" gradient.repetition.length="100" gradient.focus="0" gradient.scale="100" gradient.spread="100" )
+footer(height=0 color="536870912" transparency="0" gradient.color="8421504" gradient.transparency="0" gradient.angle="0" brushmode="0" gradient.repetition.mode="0" gradient.repetition.count="0" gradient.repetition.length="100" gradient.focus="0" gradient.scale="100" gradient.spread="100" )
+detail(height=146 color="536870912" transparency="0" gradient.color="8421504" gradient.transparency="0" gradient.angle="0" brushmode="0" gradient.repetition.mode="0" gradient.repetition.count="0" gradient.repetition.length="100" gradient.focus="0" gradient.scale="100" gradient.spread="100" )
+table(column=(type=number updatewhereclause=yes name=b_row dbname="b_row" )
+ column=(type=number updatewhereclause=yes name=button_no_1 dbname="button_no_1" )
+ column=(type=number updatewhereclause=yes name=button_no_2 dbname="button_no_2" )
+ column=(type=number updatewhereclause=yes name=button_no_3 dbname="button_no_3" )
+ column=(type=char(40) updatewhereclause=yes name=window_id_1 dbname="window_id_1" )
+ column=(type=char(40) updatewhereclause=yes name=window_id_2 dbname="window_id_2" )
+ column=(type=char(40) updatewhereclause=yes name=window_id_3 dbname="window_id_3" )
+ column=(type=char(64) updatewhereclause=yes name=window_name_1 dbname="window_name_1" )
+ column=(type=char(64) updatewhereclause=yes name=window_name_2 dbname="window_name_2" )
+ column=(type=char(64) updatewhereclause=yes name=window_name_3 dbname="window_name_3" )
+ column=(type=char(64) updatewhereclause=yes name=param_1 dbname="param_1" )
+ column=(type=char(64) updatewhereclause=yes name=param_2 dbname="param_2" )
+ column=(type=char(64) updatewhereclause=yes name=param_3 dbname="param_3" )
+ column=(type=number updatewhereclause=yes name=kengen_kbn_1 dbname="kengen_kbn_1" )
+ column=(type=number updatewhereclause=yes name=kengen_kbn_2 dbname="kengen_kbn_2" )
+ column=(type=number updatewhereclause=yes name=kengen_kbn_3 dbname="kengen_kbn_3" )
+ column=(type=number updatewhereclause=yes name=readonly_flg_1 dbname="readonly_flg_1" initial="0" )
+ column=(type=number updatewhereclause=yes name=readonly_flg_2 dbname="readonly_flg_2" initial="0" )
+ column=(type=number updatewhereclause=yes name=readonly_flg_3 dbname="readonly_flg_3" initial="0" )
+ column=(type=number updatewhereclause=yes name=enabled_flg_1 dbname="enabled_flg_1" initial="0" )
+ column=(type=number updatewhereclause=yes name=enabled_flg_2 dbname="enabled_flg_2" initial="0" )
+ column=(type=number updatewhereclause=yes name=enabled_flg_3 dbname="enabled_flg_3" initial="0" )
+ column=(type=number updatewhereclause=yes name=duplicate_flg_1 dbname="duplicate_flg_1" )
+ column=(type=number updatewhereclause=yes name=duplicate_flg_2 dbname="duplicate_flg_2" )
+ column=(type=number updatewhereclause=yes name=duplicate_flg_3 dbname="duplicate_flg_3" )
+ column=(type=char(100) updatewhereclause=yes name=bikou_1 dbname="bikou_1" )
+ column=(type=char(100) updatewhereclause=yes name=bikou_2 dbname="bikou_2" )
+ column=(type=char(100) updatewhereclause=yes name=bikou_3 dbname="bikou_3" )
+ retrieve="select b_row,
+       max( decode( b_col, 1, button_no, null ) ) button_no_1,
+       max( decode( b_col, 2, button_no, null ) ) button_no_2,
+       max( decode( b_col, 3, button_no, null ) ) button_no_3,
+       max( decode( b_col, 1, window_id, '' ) ) window_id_1,
+       max( decode( b_col, 2, window_id, '' ) ) window_id_2,
+       max( decode( b_col, 3, window_id, '' ) ) window_id_3,
+       max( decode( b_col, 1, window_name, '' ) ) window_name_1,
+       max( decode( b_col, 2, window_name, '' ) ) window_name_2,
+       max( decode( b_col, 3, window_name, '' ) ) window_name_3,
+       max( decode( b_col, 1, param, '' ) ) param_1,
+       max( decode( b_col, 2, param, '' ) ) param_2,
+       max( decode( b_col, 3, param, '' ) ) param_3,
+       max( decode( b_col, 1, kengen_kbn, null ) ) kengen_kbn_1,
+       max( decode( b_col, 2, kengen_kbn, null ) ) kengen_kbn_2,
+       max( decode( b_col, 3, kengen_kbn, null ) ) kengen_kbn_3,
+       max( decode( b_col, 1, readonly_flg, null ) ) readonly_flg_1,
+       max( decode( b_col, 2, readonly_flg, null ) ) readonly_flg_2,
+       max( decode( b_col, 3, readonly_flg, null ) ) readonly_flg_3,
+       max( decode( b_col, 1, enabled_flg, null ) ) enabled_flg_1,
+       max( decode( b_col, 2, enabled_flg, null ) ) enabled_flg_2,
+       max( decode( b_col, 3, enabled_flg, null ) ) enabled_flg_3,
+       max( decode( b_col, 1, duplicate_flg, null ) ) duplicate_flg_1,
+       max( decode( b_col, 2, duplicate_flg, null ) ) duplicate_flg_2,
+       max( decode( b_col, 3, duplicate_flg, null ) ) duplicate_flg_3,
+       max( decode( b_col, 1, bikou, '' ) ) bikou_1,
+       max( decode( b_col, 2, bikou, '' ) ) bikou_2,
+       max( decode( b_col, 3, bikou, '' ) ) bikou_3
+  from ( select menu_id,tab_id,
+                button_no,
+                window_id,window_name,
+                param,
+                decode( siyo_kanou_flg + enabled_flg, 2, 1, 0 ) enabled_flg,		/* 0:使用不可(WindowもしくはメニューのいずれかでNG) 1:使用可 */
+                kengen_kbn,
+                readonly_flg,
+                bikou,
+                duplicate_flg,
+                b_col,
+                dense_rank() over( partition by b_col order by button_no ) b_row
+           from ( select mn.menu_id,mn.tab_id,
+                         mn.button_no,
+                         mn.window_id,wd.window_name,
+                         mn.param,
+                         mn.siyo_kanou_flg,
+                         nvl( kg.kengen_kbn, 0 ) kengen_kbn,
+                         nvl( wd.syokai_flg, 0 ) readonly_flg,
+                         nvl( abs( wd.siyo_kinsi_flg - 1 ), 0 ) enabled_flg,		/* 0:使用不可 1:使用可  */
+                         wd.bikou,
+                         nvl( abs( wd.fukusu_kinsi_flg - 1 ), 0 ) duplicate_flg,	/* 0:重複起動不可 1:重複起動可 */
+                         trunc( mn.button_no / 15.1 ) + 1 b_col
+                    from m_menu mn,
+                         m_window wd,
+                         ( select kengen_kbn
+                             from m_kengen
+                            where user_id	= :p_user_id
+                         ) kg
+                   where mn.menu_id		= :p_menu_id
+                     and mn.tab_id		= :p_tab_id
+                     and mn.window_id	= wd.window_id(+)
+                     and wd.kengen_kbn	= kg.kengen_kbn(+)
+                   order by mn.button_no
+                )
+          order by b_col,b_row
+       )
+ group by b_row
+ order by b_row
+ 
+" arguments=(("p_user_id", string),("p_menu_id", string),("p_tab_id", string)) )
+button(band=detail text="~t window_name_2 " enabled="1~tenabled_flg_2" action="0" border="0" color="33554432" x="1716" y="14" height="117" width="1200" vtextalign="0" htextalign="0"  name=button_2 visible="1~tif( isnull(  b_row ), 0, 1 )"  font.face="Yu Gothic UI" font.height="-14" font.weight="400"  font.family="3" font.pitch="2" font.charset="128" background.mode="2" background.color="67108864" background.transparency="0" background.gradient.color="8421504" background.gradient.transparency="0" background.gradient.angle="0" background.brushmode="0" background.gradient.repetition.mode="0" background.gradient.repetition.count="0" background.gradient.repetition.length="100" background.gradient.focus="0" background.gradient.scale="100" background.gradient.spread="100" tooltip.backcolor="134217752" tooltip.delay.initial="0" tooltip.delay.visible="32000" tooltip.enabled="0~tif( len( trim(  bikou_2 ) ) > 0, 1, 0 )" tooltip.hasclosebutton="0" tooltip.icon="0" tooltip.isbubble="0" tooltip.maxwidth="0" tooltip.textcolor="134217751" tooltip.tip="~tbikou_2" tooltip.transparency="0" transparency="0" )
+button(band=detail text="~t window_name_1 " enabled="1~tenabled_flg_1" action="0" border="0" color="33554432" x="212" y="14" height="117" width="1200" vtextalign="0" htextalign="0"  name=button_1 visible="1~tif( isnull(  b_row ), 0, 1 )"  font.face="Yu Gothic UI" font.height="-14" font.weight="400"  font.family="3" font.pitch="2" font.charset="128" background.mode="2" background.color="67108864" background.transparency="0" background.gradient.color="8421504" background.gradient.transparency="0" background.gradient.angle="0" background.brushmode="0" background.gradient.repetition.mode="0" background.gradient.repetition.count="0" background.gradient.repetition.length="100" background.gradient.focus="0" background.gradient.scale="100" background.gradient.spread="100" tooltip.backcolor="134217752" tooltip.delay.initial="0" tooltip.delay.visible="32000" tooltip.enabled="0~tif( len( trim(  bikou_1 ) ) > 0, 1, 0 )" tooltip.hasclosebutton="0" tooltip.icon="0" tooltip.isbubble="0" tooltip.maxwidth="0" tooltip.textcolor="134217751" tooltip.tip="~t bikou_1 " tooltip.transparency="0" transparency="0" )
+button(band=detail text="~t window_name_3 " enabled="1~tenabled_flg_3" action="0" border="0" color="33554432" x="3272" y="14" height="117" width="1200" vtextalign="0" htextalign="0"  name=button_3 visible="1~tif( isnull(  b_row ), 0, 1 )"  font.face="Yu Gothic UI" font.height="-14" font.weight="400"  font.family="3" font.pitch="2" font.charset="128" background.mode="2" background.color="67108864" background.transparency="0" background.gradient.color="8421504" background.gradient.transparency="0" background.gradient.angle="0" background.brushmode="0" background.gradient.repetition.mode="0" background.gradient.repetition.count="0" background.gradient.repetition.length="100" background.gradient.focus="0" background.gradient.scale="100" background.gradient.spread="100" tooltip.backcolor="134217752" tooltip.delay.initial="0" tooltip.delay.visible="32000" tooltip.enabled="0~tif( len( trim(  bikou_3 ) ) > 0, 1, 0 )" tooltip.hasclosebutton="0" tooltip.icon="0" tooltip.isbubble="0" tooltip.maxwidth="0" tooltip.textcolor="134217751" tooltip.tip="~tbikou_3" tooltip.transparency="0" transparency="0" )
+column(band=detail id=4 alignment="1" tabsequence=32766 border="0" color="33554432~tif( enabled_flg_3 = 1, RGB( 0, 0, 0 ), RGB( 128, 128, 128 ) )" x="3168" y="78" height="53" width="80" format="[general]" html.valueishtml="0"  name=button_no_3 visible="1~tif( isnull(  b_row ), 0, 1 )" edit.limit=0 edit.case=any edit.focusrectangle=no edit.autoselect=no edit.imemode=0  font.face="Yu Gothic UI" font.height="-9" font.weight="400"  font.family="3" font.pitch="2" font.charset="128" background.mode="1" background.color="536870912" background.transparency="0" background.gradient.color="8421504" background.gradient.transparency="0" background.gradient.angle="0" background.brushmode="0" background.gradient.repetition.mode="0" background.gradient.repetition.count="0" background.gradient.repetition.length="100" background.gradient.focus="0" background.gradient.scale="100" background.gradient.spread="100" tooltip.backcolor="134217752" tooltip.delay.initial="0" tooltip.delay.visible="32000" tooltip.enabled="0" tooltip.hasclosebutton="0" tooltip.icon="0" tooltip.isbubble="0" tooltip.maxwidth="0" tooltip.textcolor="134217751" tooltip.transparency="0" transparency="0" )
+column(band=detail id=3 alignment="1" tabsequence=32766 border="0" color="33554432~tif( enabled_flg_2 = 1, RGB( 0, 0, 0 ), RGB( 128, 128, 128 ) )" x="1612" y="78" height="53" width="80" format="[general]" html.valueishtml="0"  name=button_no_2 visible="1~tif( isnull(  b_row ), 0, 1 )" edit.limit=0 edit.case=any edit.focusrectangle=no edit.autoselect=no edit.imemode=0  font.face="Yu Gothic UI" font.height="-9" font.weight="400"  font.family="3" font.pitch="2" font.charset="128" background.mode="1" background.color="536870912" background.transparency="0" background.gradient.color="8421504" background.gradient.transparency="0" background.gradient.angle="0" background.brushmode="0" background.gradient.repetition.mode="0" background.gradient.repetition.count="0" background.gradient.repetition.length="100" background.gradient.focus="0" background.gradient.scale="100" background.gradient.spread="100" tooltip.backcolor="134217752" tooltip.delay.initial="0" tooltip.delay.visible="32000" tooltip.enabled="0" tooltip.hasclosebutton="0" tooltip.icon="0" tooltip.isbubble="0" tooltip.maxwidth="0" tooltip.textcolor="134217751" tooltip.transparency="0" transparency="0" )
+column(band=detail id=2 alignment="1" tabsequence=32766 border="0" color="33554432~tif( enabled_flg_1 = 1, RGB( 0, 0, 0 ), RGB( 128, 128, 128 ) )" x="112" y="78" height="53" width="80" format="[general]" html.valueishtml="0"  name=button_no_1 visible="1~tif( isnull(  b_row ), 0, 1 )" edit.limit=0 edit.case=any edit.focusrectangle=no edit.autoselect=no edit.imemode=0  font.face="Yu Gothic UI" font.height="-9" font.weight="400"  font.family="3" font.pitch="2" font.charset="128" background.mode="1" background.color="536870912" background.transparency="0" background.gradient.color="8421504" background.gradient.transparency="0" background.gradient.angle="0" background.brushmode="0" background.gradient.repetition.mode="0" background.gradient.repetition.count="0" background.gradient.repetition.length="100" background.gradient.focus="0" background.gradient.scale="100" background.gradient.spread="100" tooltip.backcolor="134217752" tooltip.delay.initial="0" tooltip.delay.visible="32000" tooltip.enabled="0" tooltip.hasclosebutton="0" tooltip.icon="0" tooltip.isbubble="0" tooltip.maxwidth="0" tooltip.textcolor="134217751" tooltip.transparency="0" transparency="0" )
+text(band=detail alignment="0" text="照会のみ" border="0" color="255" x="1216" y="36" height="43" width="180" html.valueishtml="0"  name=readonly_1 visible="1~tif( kengen_kbn_1=0, readonly_flg_1, 0 )"  font.face="MS UI Gothic" font.height="-9" font.weight="400"  font.family="3" font.pitch="2" font.charset="128" background.mode="1" background.color="536870912" background.transparency="0" background.gradient.color="8421504" background.gradient.transparency="0" background.gradient.angle="0" background.brushmode="0" background.gradient.repetition.mode="0" background.gradient.repetition.count="0" background.gradient.repetition.length="100" background.gradient.focus="0" background.gradient.scale="100" background.gradient.spread="100" tooltip.backcolor="134217752" tooltip.delay.initial="0" tooltip.delay.visible="32000" tooltip.enabled="0" tooltip.hasclosebutton="0" tooltip.icon="0" tooltip.isbubble="0" tooltip.maxwidth="0" tooltip.textcolor="134217751" tooltip.transparency="0" transparency="0" )
+text(band=detail alignment="0" text="照会のみ" border="0" color="255" x="2716" y="36" height="43" width="180" html.valueishtml="0"  name=readonly_2 visible="1~tif( kengen_kbn_2=0, readonly_flg_2, 0 )"  font.face="MS UI Gothic" font.height="-9" font.weight="400"  font.family="3" font.pitch="2" font.charset="128" background.mode="1" background.color="536870912" background.transparency="0" background.gradient.color="8421504" background.gradient.transparency="0" background.gradient.angle="0" background.brushmode="0" background.gradient.repetition.mode="0" background.gradient.repetition.count="0" background.gradient.repetition.length="100" background.gradient.focus="0" background.gradient.scale="100" background.gradient.spread="100" tooltip.backcolor="134217752" tooltip.delay.initial="0" tooltip.delay.visible="32000" tooltip.enabled="0" tooltip.hasclosebutton="0" tooltip.icon="0" tooltip.isbubble="0" tooltip.maxwidth="0" tooltip.textcolor="134217751" tooltip.transparency="0" transparency="0" )
+text(band=detail alignment="0" text="照会のみ" border="0" color="255" x="4268" y="36" height="43" width="180" html.valueishtml="0"  name=readonly_3 visible="1~tif( kengen_kbn_3=0, readonly_flg_3, 0 )"  font.face="MS UI Gothic" font.height="-9" font.weight="400"  font.family="3" font.pitch="2" font.charset="128" background.mode="1" background.color="536870912" background.transparency="0" background.gradient.color="8421504" background.gradient.transparency="0" background.gradient.angle="0" background.brushmode="0" background.gradient.repetition.mode="0" background.gradient.repetition.count="0" background.gradient.repetition.length="100" background.gradient.focus="0" background.gradient.scale="100" background.gradient.spread="100" tooltip.backcolor="134217752" tooltip.delay.initial="0" tooltip.delay.visible="32000" tooltip.enabled="0" tooltip.hasclosebutton="0" tooltip.icon="0" tooltip.isbubble="0" tooltip.maxwidth="0" tooltip.textcolor="134217751" tooltip.transparency="0" transparency="0" )
+htmltable(border="1" )
+htmlgen(clientevents="1" clientvalidation="1" clientcomputedfields="1" clientformatting="0" clientscriptable="0" generatejavascript="1" encodeselflinkargs="1" netscapelayers="0" pagingmethod=0 generatedddwframes="1" )
+xhtmlgen() cssgen(sessionspecific="0" )
+xmlgen(inline="0" )
+xsltgen()
+jsgen()
+export.xml(headgroups="1" includewhitespace="0" metadatatype=0 savemetadata=0 )
+import.xml()
+export.pdf(method=0 distill.custompostscript="0" xslfop.print="0" nativepdf.customsize=0 nativepdf.customorientation=0 nativepdf.pdfstandard=0 nativepdf.useprintspec=no )
+export.xhtml()
+ 

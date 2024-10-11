@@ -1,0 +1,13 @@
+﻿$PBExportHeader$str_mdlpara_window.srs
+$PBExportComments$m_windowのmodal構造体
+global type str_mdlpara_window from structure
+	boolean		ret
+	string		out_window_id
+	string		out_window_name		descriptor "comment" = "追加"
+	long		out_kengen_kbn		descriptor "comment" = "追加"
+	long		out_syokai_flg		descriptor "comment" = "追加"
+	long		out_siyo_kinsi_flg		descriptor "comment" = "追加"
+	long		out_fukusu_kinsi_flg		descriptor "comment" = "追加"
+	string		out_bikou		descriptor "comment" = "追加"
+end type
+

@@ -1,0 +1,438 @@
+﻿$PBExportHeader$dmm_user_entry.srd
+$PBExportComments$ユーザー入力フォーム用データウインドウ
+release 19;
+datawindow(units=0 timer_interval=0 color=67108864 brushmode=0 transparency=0 gradient.angle=0 gradient.color=8421504 gradient.focus=0 gradient.repetition.count=0 gradient.repetition.length=100 gradient.repetition.mode=0 gradient.scale=100 gradient.spread=100 gradient.transparency=0 picture.blur=0 picture.clip.bottom=0 picture.clip.left=0 picture.clip.right=0 picture.clip.top=0 picture.mode=0 picture.scale.x=100 picture.scale.y=100 picture.transparency=0 processing=0 HTMLDW=no print.printername="" print.documentname="" print.orientation = 0 print.margin.left = 96 print.margin.right = 96 print.margin.top = 85 print.margin.bottom = 85 print.paper.source = 0 print.paper.size = 0 print.canusedefaultprinter=yes print.prompt=no print.buttons=no print.preview.buttons=no print.cliptext=no print.overrideprintjob=no print.collate=yes print.background=no print.preview.background=no print.preview.outline=yes hidegrayline=no showbackcoloronxp=no picture.file="" )
+header(height=0 color="536870912" transparency="0" gradient.color="8421504" gradient.transparency="0" gradient.angle="0" brushmode="0" gradient.repetition.mode="0" gradient.repetition.count="0" gradient.repetition.length="100" gradient.focus="0" gradient.scale="100" gradient.spread="100" )
+summary(height=0 color="536870912" transparency="0" gradient.color="8421504" gradient.transparency="0" gradient.angle="0" brushmode="0" gradient.repetition.mode="0" gradient.repetition.count="0" gradient.repetition.length="100" gradient.focus="0" gradient.scale="100" gradient.spread="100" )
+footer(height=0 color="536870912" transparency="0" gradient.color="8421504" gradient.transparency="0" gradient.angle="0" brushmode="0" gradient.repetition.mode="0" gradient.repetition.count="0" gradient.repetition.length="100" gradient.focus="0" gradient.scale="100" gradient.spread="100" )
+detail(height=647 color="67108864" transparency="0" gradient.color="8421504" gradient.transparency="0" gradient.angle="0" brushmode="0" gradient.repetition.mode="0" gradient.repetition.count="0" gradient.repetition.length="100" gradient.focus="0" gradient.scale="100" gradient.spread="100" )
+table(column=(type=char(10) updatewhereclause=yes key=yes name=user_id dbname="m_user.user_id" )
+ column=(type=char(20) updatewhereclause=yes name=user_mei dbname="m_user.user_mei" )
+ column=(type=char(10) updatewhereclause=yes name=user_mei_ryaku dbname="m_user.user_mei_ryaku" )
+ column=(type=char(10) updatewhereclause=yes name=password dbname="m_user.password" )
+ column=(type=char(10) updatewhereclause=yes name=password_new dbname="m_user.password_new" )
+ column=(type=decimal(0) updatewhereclause=yes name=password_new_date dbname="m_user.password_new_date" )
+ column=(type=char(10) updatewhereclause=yes name=password_new_date_str dbname="password_new_date_str" )
+ column=(type=char(100) updatewhereclause=yes name=mail_address dbname="m_user.mail_address" )
+ column=(type=decimal(0) updatewhereclause=yes name=busyo_code dbname="m_user.busyo_code" )
+ column=(type=decimal(0) updatewhereclause=yes name=class dbname="m_user.class" )
+ column=(type=char(32) updatewhereclause=yes name=init_menu_id dbname="m_user.init_menu_id" )
+ column=(type=char(32) updatewhereclause=yes name=init_tab_id dbname="m_user.init_tab_id" )
+ column=(type=decimal(0) updatewhereclause=yes name=kyoten_code dbname="m_user.kyoten_code" )
+ column=(type=decimal(0) updatewhereclause=yes name=kyoten_code_2 dbname="m_user.kyoten_code_2" )
+ column=(type=decimal(0) updatewhereclause=yes name=kyoten_group_code dbname="m_user.kyoten_group_code" )
+ column=(type=decimal(0) updatewhereclause=yes name=login_kengen dbname="m_user.login_kengen" values="ログイン許可	1/ログイン許可	0" )
+ column=(type=decimal(0) updatewhereclause=yes name=riyou_str_date dbname="m_user.riyou_str_date" )
+ column=(type=char(10) updatewhereclause=yes name=riyou_str_date_str dbname="riyou_str_date_str" )
+ column=(type=decimal(0) updatewhereclause=yes name=riyou_end_date dbname="m_user.riyou_end_date" )
+ column=(type=char(10) updatewhereclause=yes name=riyou_end_date_str dbname="riyou_end_date_str" )
+ column=(type=datetime updatewhereclause=yes name=touroku_date dbname="m_user.touroku_date" )
+ column=(type=char(10) updatewhereclause=yes name=touroku_user_id dbname="m_user.touroku_user_id" )
+ column=(type=char(40) updatewhereclause=yes name=touroku_client_id dbname="m_user.touroku_client_id" )
+ column=(type=char(40) updatewhereclause=yes name=touroku_pg_id dbname="m_user.touroku_pg_id" )
+ column=(type=datetime updatewhereclause=yes name=henkou_date dbname="m_user.henkou_date" )
+ column=(type=char(10) updatewhereclause=yes name=henkou_user_id dbname="m_user.henkou_user_id" )
+ column=(type=char(40) updatewhereclause=yes name=henkou_client_id dbname="m_user.henkou_client_id" )
+ column=(type=char(40) updatewhereclause=yes name=henkou_pg_id dbname="m_user.henkou_pg_id" )
+ column=(type=datetime updatewhereclause=yes name=kousin_date dbname="m_user.kousin_date" )
+ column=(type=char(10) updatewhereclause=yes name=kousin_user_id dbname="m_user.kousin_user_id" )
+ column=(type=char(40) updatewhereclause=yes name=kousin_client_id dbname="m_user.kousin_client_id" )
+ column=(type=char(40) updatewhereclause=yes name=kousin_pg_id dbname="m_user.kousin_pg_id" )
+ column=(type=decimal(0) updatewhereclause=yes name=haita_flg dbname="m_user.haita_flg" )
+ column=(type=char(37) updatewhereclause=yes name=rowid dbname="m_user.rowid" )
+ column=(type=number updatewhereclause=yes name=edit_mode dbname="edit_mode" )
+ retrieve="select user_id,
+       user_mei,user_mei_ryaku,
+       password,password_new,
+       password_new_date,
+       to_char( to_date( password_new_date, 'yyyymmdd'), 'yyyy/mm/dd' ) password_new_date_str,
+       mail_address,
+       busyo_code,class,
+       init_menu_id,init_tab_id,
+       kyoten_code,kyoten_code_2,kyoten_group_code,
+       login_kengen,
+       riyou_str_date,
+       to_char( to_date( riyou_str_date, 'yyyymmdd'), 'yyyy/mm/dd' ) riyou_str_date_str,
+       riyou_end_date,
+       to_char( to_date( riyou_end_date, 'yyyymmdd'), 'yyyy/mm/dd' ) riyou_end_date_str,
+       touroku_date,touroku_user_id,touroku_client_id,touroku_pg_id,
+       henkou_date,henkou_user_id,henkou_client_id,henkou_pg_id,
+       kousin_date,kousin_user_id,kousin_client_id,kousin_pg_id,
+       haita_flg,
+       rowid,
+       9 edit_mode	/* 0:入力可 1:ユーザーID以外入力可 9:入力不可 */
+  from m_user
+ where user_id	= :p_user_id
+" update="m_user" updatewhere=1 updatekeyinplace=no arguments=(("p_user_id", number)) )
+column(band=detail id=1 alignment="0" tabsequence=10 border="5" color="33554432~t/* 0:入力可 1:ユーザーID以外入力可 9:入力不可 */
+case( edit_mode
+  when 0 then RGB( 0, 0, 0 )
+  when 1 then RGB( 128, 128, 128 )
+  when 9 then RGB( 128, 128, 128 )
+         else RGB( 128, 128, 128 )
+)
+" x="540" y="32" height="82" width="408" format="[general]" html.valueishtml="0" protect="0~t/* 0:入力可 1:ユーザーID以外入力可 9:入力不可 */
+case( edit_mode
+  when 0 then 0
+  when 1 then 1
+  when 9 then 1
+         else 1
+)
+"  name=user_id visible="1" edit.limit=0 edit.case=any edit.focusrectangle=no edit.autoselect=no edit.imemode=0  font.face="Yu Gothic UI Semilight" font.height="-12" font.weight="400"  font.family="3" font.pitch="2" font.charset="128" background.mode="0" background.color="1073741824~t/* 0:入力可 1:ユーザーID以外入力可 9:入力不可 */
+case( edit_mode
+  when 0 then RGB( 255, 255, 255 )
+  when 1 then RGB( 240, 240, 240 )
+  when 9 then RGB( 240, 240, 240 )
+         else RGB( 240, 240, 240 )
+)
+" background.transparency="0" background.gradient.color="8421504" background.gradient.transparency="0" background.gradient.angle="0" background.brushmode="0" background.gradient.repetition.mode="0" background.gradient.repetition.count="0" background.gradient.repetition.length="100" background.gradient.focus="0" background.gradient.scale="100" background.gradient.spread="100" tooltip.backcolor="134217752" tooltip.delay.initial="0" tooltip.delay.visible="32000" tooltip.enabled="0" tooltip.hasclosebutton="0" tooltip.icon="0" tooltip.isbubble="0" tooltip.maxwidth="0" tooltip.textcolor="134217751" tooltip.transparency="0" transparency="0" )
+text(band=detail alignment="1" text="ユーザー名" border="0" color="33554432" x="988" y="39" height="71" width="408" html.valueishtml="0"  name=t_user_mei visible="1"  font.face="Yu Gothic UI Semilight" font.height="-11" font.weight="400"  font.family="3" font.pitch="2" font.charset="128" background.mode="1" background.color="536870912" background.transparency="0" background.gradient.color="8421504" background.gradient.transparency="0" background.gradient.angle="0" background.brushmode="0" background.gradient.repetition.mode="0" background.gradient.repetition.count="0" background.gradient.repetition.length="100" background.gradient.focus="0" background.gradient.scale="100" background.gradient.spread="100" tooltip.backcolor="134217752" tooltip.delay.initial="0" tooltip.delay.visible="32000" tooltip.enabled="0" tooltip.hasclosebutton="0" tooltip.icon="0" tooltip.isbubble="0" tooltip.maxwidth="0" tooltip.textcolor="134217751" tooltip.transparency="0" transparency="0" )
+column(band=detail id=2 alignment="0" tabsequence=20 border="5" color="33554432~t/* 0:入力可 1:ユーザーID以外入力可 9:入力不可 */
+case( edit_mode
+  when 0 then RGB( 0, 0, 0 )
+  when 1 then RGB( 0, 0, 0 )
+  when 9 then RGB( 128, 128, 128 )
+         else RGB( 128, 128, 128 )
+)
+" x="1416" y="32" height="82" width="808" format="[general]" html.valueishtml="0" protect="0~t/* 0:入力可 1:ユーザーID以外入力可 9:入力不可 */
+case( edit_mode
+  when 0 then 0
+  when 1 then 0
+  when 9 then 1
+         else 1
+)
+"  name=user_mei visible="1" edit.limit=0 edit.case=any edit.focusrectangle=no edit.autoselect=no edit.imemode=0  font.face="Yu Gothic UI Semilight" font.height="-12" font.weight="400"  font.family="3" font.pitch="2" font.charset="128" background.mode="0" background.color="1073741824~tcase( edit_mode
+  when 0 then RGB( 255, 255, 255 )
+  when 1 then RGB( 255, 255, 255 )
+  when 9 then RGB( 240, 240, 240 )
+         else RGB( 240, 240, 240 )
+)
+" background.transparency="0" background.gradient.color="8421504" background.gradient.transparency="0" background.gradient.angle="0" background.brushmode="0" background.gradient.repetition.mode="0" background.gradient.repetition.count="0" background.gradient.repetition.length="100" background.gradient.focus="0" background.gradient.scale="100" background.gradient.spread="100" tooltip.backcolor="134217752" tooltip.delay.initial="0" tooltip.delay.visible="32000" tooltip.enabled="0" tooltip.hasclosebutton="0" tooltip.icon="0" tooltip.isbubble="0" tooltip.maxwidth="0" tooltip.textcolor="134217751" tooltip.transparency="0" transparency="0" )
+text(band=detail alignment="1" text="略称" border="0" color="33554432" x="2264" y="39" height="71" width="168" html.valueishtml="0"  name=t_user_mei_ryaku visible="1"  font.face="Yu Gothic UI Semilight" font.height="-11" font.weight="400"  font.family="3" font.pitch="2" font.charset="128" background.mode="1" background.color="536870912" background.transparency="0" background.gradient.color="8421504" background.gradient.transparency="0" background.gradient.angle="0" background.brushmode="0" background.gradient.repetition.mode="0" background.gradient.repetition.count="0" background.gradient.repetition.length="100" background.gradient.focus="0" background.gradient.scale="100" background.gradient.spread="100" tooltip.backcolor="134217752" tooltip.delay.initial="0" tooltip.delay.visible="32000" tooltip.enabled="0" tooltip.hasclosebutton="0" tooltip.icon="0" tooltip.isbubble="0" tooltip.maxwidth="0" tooltip.textcolor="134217751" tooltip.transparency="0" transparency="0" )
+column(band=detail id=3 alignment="0" tabsequence=30 border="5" color="33554432~t/* 0:入力可 1:ユーザーID以外入力可 9:入力不可 */
+case( edit_mode
+  when 0 then RGB( 0, 0, 0 )
+  when 1 then RGB( 0, 0, 0 )
+  when 9 then RGB( 128, 128, 128 )
+         else RGB( 128, 128, 128 )
+)
+" x="2452" y="32" height="82" width="408" format="[general]" html.valueishtml="0" protect="0~t/* 0:入力可 1:ユーザーID以外入力可 9:入力不可 */
+case( edit_mode
+  when 0 then 0
+  when 1 then 0
+  when 9 then 1
+         else 1
+)
+"  name=user_mei_ryaku visible="1" edit.limit=0 edit.case=any edit.focusrectangle=no edit.autoselect=no edit.imemode=0  font.face="Yu Gothic UI Semilight" font.height="-12" font.weight="400"  font.family="3" font.pitch="2" font.charset="128" background.mode="0" background.color="1073741824~t/* 0:入力可 1:ユーザーID以外入力可 9:入力不可 */
+case( edit_mode
+  when 0 then RGB( 255, 255, 255 )
+  when 1 then RGB( 255, 255, 255 )
+  when 9 then RGB( 240, 240, 240 )
+         else RGB( 240, 240, 240 )
+)
+" background.transparency="0" background.gradient.color="8421504" background.gradient.transparency="0" background.gradient.angle="0" background.brushmode="0" background.gradient.repetition.mode="0" background.gradient.repetition.count="0" background.gradient.repetition.length="100" background.gradient.focus="0" background.gradient.scale="100" background.gradient.spread="100" tooltip.backcolor="134217752" tooltip.delay.initial="0" tooltip.delay.visible="32000" tooltip.enabled="0" tooltip.hasclosebutton="0" tooltip.icon="0" tooltip.isbubble="0" tooltip.maxwidth="0" tooltip.textcolor="134217751" tooltip.transparency="0" transparency="0" )
+column(band=detail id=35 alignment="2" tabsequence=32766 border="0" color="33554432" x="2972" y="32" height="82" width="64" format="[general]" html.valueishtml="0"  name=edit_mode visible="1" edit.limit=0 edit.case=any edit.focusrectangle=no edit.autoselect=no edit.imemode=0  font.face="Yu Gothic UI Semilight" font.height="-12" font.weight="400"  font.family="3" font.pitch="2" font.charset="128" background.mode="2" background.color="1073741824" background.transparency="0" background.gradient.color="8421504" background.gradient.transparency="0" background.gradient.angle="0" background.brushmode="0" background.gradient.repetition.mode="0" background.gradient.repetition.count="0" background.gradient.repetition.length="100" background.gradient.focus="0" background.gradient.scale="100" background.gradient.spread="100" tooltip.backcolor="134217752" tooltip.delay.initial="0" tooltip.delay.visible="32000" tooltip.enabled="0" tooltip.hasclosebutton="0" tooltip.icon="0" tooltip.isbubble="0" tooltip.maxwidth="0" tooltip.textcolor="134217751" tooltip.transparency="0" transparency="0" )
+text(band=detail alignment="1" text="登録日：" border="0" color="33554432" x="3160" y="39" height="71" width="208" html.valueishtml="0"  name=t_touroku visible="1"  font.face="Yu Gothic UI Semilight" font.height="-10" font.weight="400"  font.family="3" font.pitch="2" font.charset="128" background.mode="1" background.color="536870912" background.transparency="0" background.gradient.color="8421504" background.gradient.transparency="0" background.gradient.angle="0" background.brushmode="0" background.gradient.repetition.mode="0" background.gradient.repetition.count="0" background.gradient.repetition.length="100" background.gradient.focus="0" background.gradient.scale="100" background.gradient.spread="100" tooltip.backcolor="134217752" tooltip.delay.initial="0" tooltip.delay.visible="32000" tooltip.enabled="0" tooltip.hasclosebutton="0" tooltip.icon="0" tooltip.isbubble="0" tooltip.maxwidth="0" tooltip.textcolor="134217751" tooltip.transparency="0" transparency="0" )
+column(band=detail id=21 alignment="0" tabsequence=32766 border="0" color="33554432" x="3384" y="32" height="82" width="500" format="[shortdate] [time]" html.valueishtml="0"  name=touroku_date visible="1" edit.limit=0 edit.case=any edit.focusrectangle=no edit.autoselect=no edit.imemode=0  font.face="Yu Gothic UI Semilight" font.height="-10" font.weight="400"  font.family="3" font.pitch="2" font.charset="128" background.mode="1" background.color="536870912" background.transparency="0" background.gradient.color="8421504" background.gradient.transparency="0" background.gradient.angle="0" background.brushmode="0" background.gradient.repetition.mode="0" background.gradient.repetition.count="0" background.gradient.repetition.length="100" background.gradient.focus="0" background.gradient.scale="100" background.gradient.spread="100" tooltip.backcolor="134217752" tooltip.delay.initial="0" tooltip.delay.visible="32000" tooltip.enabled="0" tooltip.hasclosebutton="0" tooltip.icon="0" tooltip.isbubble="0" tooltip.maxwidth="0" tooltip.textcolor="134217751" tooltip.transparency="0" transparency="0" )
+text(band=detail alignment="1" text="変更日：" border="0" color="33554432" x="3916" y="39" height="71" width="208" html.valueishtml="0"  name=t_henkou visible="1"  font.face="Yu Gothic UI Semilight" font.height="-10" font.weight="400"  font.family="3" font.pitch="2" font.charset="128" background.mode="1" background.color="536870912" background.transparency="0" background.gradient.color="8421504" background.gradient.transparency="0" background.gradient.angle="0" background.brushmode="0" background.gradient.repetition.mode="0" background.gradient.repetition.count="0" background.gradient.repetition.length="100" background.gradient.focus="0" background.gradient.scale="100" background.gradient.spread="100" tooltip.backcolor="134217752" tooltip.delay.initial="0" tooltip.delay.visible="32000" tooltip.enabled="0" tooltip.hasclosebutton="0" tooltip.icon="0" tooltip.isbubble="0" tooltip.maxwidth="0" tooltip.textcolor="134217751" tooltip.transparency="0" transparency="0" )
+column(band=detail id=25 alignment="0" tabsequence=32766 border="0" color="33554432" x="4140" y="32" height="82" width="500" format="[shortdate] [time]" html.valueishtml="0"  name=henkou_date visible="1" edit.limit=0 edit.case=any edit.focusrectangle=no edit.autoselect=no edit.imemode=0  font.face="Yu Gothic UI Semilight" font.height="-10" font.weight="400"  font.family="3" font.pitch="2" font.charset="128" background.mode="1" background.color="536870912" background.transparency="0" background.gradient.color="8421504" background.gradient.transparency="0" background.gradient.angle="0" background.brushmode="0" background.gradient.repetition.mode="0" background.gradient.repetition.count="0" background.gradient.repetition.length="100" background.gradient.focus="0" background.gradient.scale="100" background.gradient.spread="100" tooltip.backcolor="134217752" tooltip.delay.initial="0" tooltip.delay.visible="32000" tooltip.enabled="0" tooltip.hasclosebutton="0" tooltip.icon="0" tooltip.isbubble="0" tooltip.maxwidth="0" tooltip.textcolor="134217751" tooltip.transparency="0" transparency="0" )
+column(band=detail id=4 alignment="0" tabsequence=40 border="5" color="33554432~t/* 0:入力可 1:ユーザーID以外入力可 9:入力不可 */
+case( edit_mode
+  when 0 then RGB( 0, 0, 0 )
+  when 1 then RGB( 0, 0, 0 )
+  when 9 then RGB( 128, 128, 128 )
+         else RGB( 128, 128, 128 )
+)
+" x="540" y="135" height="82" width="408" format="*********" html.valueishtml="0" protect="0~t/* 0:入力可 1:ユーザーID以外入力可 9:入力不可 */
+case( edit_mode
+  when 0 then 0
+  when 1 then 0
+  when 9 then 1
+         else 1
+)
+"  name=password visible="1" edit.limit=0 edit.case=any edit.focusrectangle=no edit.autoselect=no edit.password=yes edit.imemode=0  font.face="Yu Gothic UI Semilight" font.height="-12" font.weight="400"  font.family="3" font.pitch="2" font.charset="128" background.mode="0" background.color="1073741824~tcase( edit_mode
+  when 0 then RGB( 255, 255, 255 )
+  when 1 then RGB( 255, 255, 255 )
+  when 9 then RGB( 240, 240, 240 )
+         else RGB( 240, 240, 240 )
+)
+" background.transparency="0" background.gradient.color="8421504" background.gradient.transparency="0" background.gradient.angle="0" background.brushmode="0" background.gradient.repetition.mode="0" background.gradient.repetition.count="0" background.gradient.repetition.length="100" background.gradient.focus="0" background.gradient.scale="100" background.gradient.spread="100" tooltip.backcolor="134217752" tooltip.delay.initial="0" tooltip.delay.visible="32000" tooltip.enabled="0" tooltip.hasclosebutton="0" tooltip.icon="0" tooltip.isbubble="0" tooltip.maxwidth="0" tooltip.textcolor="134217751" tooltip.transparency="0" transparency="0" )
+text(band=detail alignment="1" text="新パスワード" border="0" color="33554432" x="988" y="143" height="71" width="488" html.valueishtml="0"  name=t_password_new visible="1"  font.face="Yu Gothic UI Semilight" font.height="-11" font.weight="400"  font.family="3" font.pitch="2" font.charset="128" background.mode="1" background.color="536870912" background.transparency="0" background.gradient.color="8421504" background.gradient.transparency="0" background.gradient.angle="0" background.brushmode="0" background.gradient.repetition.mode="0" background.gradient.repetition.count="0" background.gradient.repetition.length="100" background.gradient.focus="0" background.gradient.scale="100" background.gradient.spread="100" tooltip.backcolor="134217752" tooltip.delay.initial="0" tooltip.delay.visible="32000" tooltip.enabled="0" tooltip.hasclosebutton="0" tooltip.icon="0" tooltip.isbubble="0" tooltip.maxwidth="0" tooltip.textcolor="134217751" tooltip.transparency="0" transparency="0" )
+column(band=detail id=5 alignment="0" tabsequence=50 border="5" color="33554432~t/* 0:入力可 1:ユーザーID以外入力可 9:入力不可 */
+case( edit_mode
+  when 0 then RGB( 0, 0, 0 )
+  when 1 then RGB( 0, 0, 0 )
+  when 9 then RGB( 128, 128, 128 )
+         else RGB( 128, 128, 128 )
+)
+" x="1496" y="135" height="82" width="408" format="*********" html.valueishtml="0" protect="0~t/* 0:入力可 1:ユーザーID以外入力可 9:入力不可 */
+case( edit_mode
+  when 0 then 0
+  when 1 then 0
+  when 9 then 1
+         else 1
+)
+"  name=password_new visible="1" edit.limit=0 edit.case=any edit.focusrectangle=no edit.autoselect=no edit.password=yes edit.imemode=0  font.face="Yu Gothic UI Semilight" font.height="-12" font.weight="400"  font.family="3" font.pitch="2" font.charset="128" background.mode="0" background.color="1073741824~tcase( edit_mode
+  when 0 then RGB( 255, 255, 255 )
+  when 1 then RGB( 255, 255, 255 )
+  when 9 then RGB( 240, 240, 240 )
+         else RGB( 240, 240, 240 )
+)
+" background.transparency="0" background.gradient.color="8421504" background.gradient.transparency="0" background.gradient.angle="0" background.brushmode="0" background.gradient.repetition.mode="0" background.gradient.repetition.count="0" background.gradient.repetition.length="100" background.gradient.focus="0" background.gradient.scale="100" background.gradient.spread="100" tooltip.backcolor="134217752" tooltip.delay.initial="0" tooltip.delay.visible="32000" tooltip.enabled="0" tooltip.hasclosebutton="0" tooltip.icon="0" tooltip.isbubble="0" tooltip.maxwidth="0" tooltip.textcolor="134217751" tooltip.transparency="0" transparency="0" )
+text(band=detail alignment="1" text="運用開始日" border="0" color="33554432" x="1944" y="143" height="71" width="408" html.valueishtml="0"  name=t_password_new_date_str visible="1"  font.face="Yu Gothic UI Semilight" font.height="-11" font.weight="400"  font.family="3" font.pitch="2" font.charset="128" background.mode="1" background.color="536870912" background.transparency="0" background.gradient.color="8421504" background.gradient.transparency="0" background.gradient.angle="0" background.brushmode="0" background.gradient.repetition.mode="0" background.gradient.repetition.count="0" background.gradient.repetition.length="100" background.gradient.focus="0" background.gradient.scale="100" background.gradient.spread="100" tooltip.backcolor="134217752" tooltip.delay.initial="0" tooltip.delay.visible="32000" tooltip.enabled="0" tooltip.hasclosebutton="0" tooltip.icon="0" tooltip.isbubble="0" tooltip.maxwidth="0" tooltip.textcolor="134217751" tooltip.transparency="0" transparency="0" )
+column(band=detail id=7 alignment="0" tabsequence=60 border="5" color="33554432~t/* 0:入力可 1:ユーザーID以外入力可 9:入力不可 */
+case( edit_mode
+  when 0 then RGB( 0, 0, 0 )
+  when 1 then RGB( 0, 0, 0 )
+  when 9 then RGB( 128, 128, 128 )
+         else RGB( 128, 128, 128 )
+)
+" x="2372" y="135" height="82" width="408" format="[general]" html.valueishtml="0" protect="0~t/* 0:入力可 1:ユーザーID以外入力可 9:入力不可 */
+case( edit_mode
+  when 0 then 0
+  when 1 then 0
+  when 9 then 1
+         else 1
+)
+"  name=password_new_date_str visible="1" edit.limit=0 edit.case=any edit.focusrectangle=no edit.autoselect=no edit.imemode=0  font.face="Yu Gothic UI Semilight" font.height="-12" font.weight="400"  font.family="3" font.pitch="2" font.charset="128" background.mode="0" background.color="1073741824~tcase( edit_mode
+  when 0 then RGB( 255, 255, 255 )
+  when 1 then RGB( 255, 255, 255 )
+  when 9 then RGB( 240, 240, 240 )
+         else RGB( 240, 240, 240 )
+)
+" background.transparency="0" background.gradient.color="8421504" background.gradient.transparency="0" background.gradient.angle="0" background.brushmode="0" background.gradient.repetition.mode="0" background.gradient.repetition.count="0" background.gradient.repetition.length="100" background.gradient.focus="0" background.gradient.scale="100" background.gradient.spread="100" tooltip.backcolor="134217752" tooltip.delay.initial="0" tooltip.delay.visible="32000" tooltip.enabled="0" tooltip.hasclosebutton="0" tooltip.icon="0" tooltip.isbubble="0" tooltip.maxwidth="0" tooltip.textcolor="134217751" tooltip.transparency="0" transparency="0" )
+column(band=detail id=8 alignment="0" tabsequence=70 border="5" color="33554432~t/* 0:入力可 1:ユーザーID以外入力可 9:入力不可 */
+case( edit_mode
+  when 0 then RGB( 0, 0, 0 )
+  when 1 then RGB( 0, 0, 0 )
+  when 9 then RGB( 128, 128, 128 )
+         else RGB( 128, 128, 128 )
+)
+" x="540" y="239" height="82" width="1008" format="[general]" html.valueishtml="0" protect="0~t/* 0:入力可 1:ユーザーID以外入力可 9:入力不可 */
+case( edit_mode
+  when 0 then 0
+  when 1 then 0
+  when 9 then 1
+         else 1
+)
+"  name=mail_address visible="1" edit.limit=0 edit.case=any edit.focusrectangle=no edit.autoselect=no edit.imemode=0  font.face="Yu Gothic UI Semilight" font.height="-12" font.weight="400"  font.family="3" font.pitch="2" font.charset="128" background.mode="0" background.color="1073741824~tcase( edit_mode
+  when 0 then RGB( 255, 255, 255 )
+  when 1 then RGB( 255, 255, 255 )
+  when 9 then RGB( 240, 240, 240 )
+         else RGB( 240, 240, 240 )
+)
+" background.transparency="0" background.gradient.color="8421504" background.gradient.transparency="0" background.gradient.angle="0" background.brushmode="0" background.gradient.repetition.mode="0" background.gradient.repetition.count="0" background.gradient.repetition.length="100" background.gradient.focus="0" background.gradient.scale="100" background.gradient.spread="100" tooltip.backcolor="134217752" tooltip.delay.initial="0" tooltip.delay.visible="32000" tooltip.enabled="0" tooltip.hasclosebutton="0" tooltip.icon="0" tooltip.isbubble="0" tooltip.maxwidth="0" tooltip.textcolor="134217751" tooltip.transparency="0" transparency="0" )
+text(band=detail alignment="1" text="E-Mail" border="0" color="33554432" x="32" y="246" height="71" width="488" html.valueishtml="0"  name=t_mail_address visible="1"  font.face="Yu Gothic UI Semilight" font.height="-11" font.weight="400"  font.family="3" font.pitch="2" font.charset="128" background.mode="1" background.color="536870912" background.transparency="0" background.gradient.color="8421504" background.gradient.transparency="0" background.gradient.angle="0" background.brushmode="0" background.gradient.repetition.mode="0" background.gradient.repetition.count="0" background.gradient.repetition.length="100" background.gradient.focus="0" background.gradient.scale="100" background.gradient.spread="100" tooltip.backcolor="134217752" tooltip.delay.initial="0" tooltip.delay.visible="32000" tooltip.enabled="0" tooltip.hasclosebutton="0" tooltip.icon="0" tooltip.isbubble="0" tooltip.maxwidth="0" tooltip.textcolor="134217751" tooltip.transparency="0" transparency="0" )
+text(band=detail alignment="1" text="ユーザーID" border="0" color="33554432" x="32" y="39" height="71" width="488" html.valueishtml="0"  name=t_user_id visible="1"  font.face="Yu Gothic UI Semilight" font.height="-11" font.weight="400"  font.family="3" font.pitch="2" font.charset="128" background.mode="1" background.color="536870912" background.transparency="0" background.gradient.color="8421504" background.gradient.transparency="0" background.gradient.angle="0" background.brushmode="0" background.gradient.repetition.mode="0" background.gradient.repetition.count="0" background.gradient.repetition.length="100" background.gradient.focus="0" background.gradient.scale="100" background.gradient.spread="100" tooltip.backcolor="134217752" tooltip.delay.initial="0" tooltip.delay.visible="32000" tooltip.enabled="0" tooltip.hasclosebutton="0" tooltip.icon="0" tooltip.isbubble="0" tooltip.maxwidth="0" tooltip.textcolor="134217751" tooltip.transparency="0" transparency="0" )
+text(band=detail alignment="1" text="パスワード" border="0" color="33554432" x="32" y="143" height="71" width="488" html.valueishtml="0"  name=t_password visible="1"  font.face="Yu Gothic UI Semilight" font.height="-11" font.weight="400"  font.family="3" font.pitch="2" font.charset="128" background.mode="1" background.color="536870912" background.transparency="0" background.gradient.color="8421504" background.gradient.transparency="0" background.gradient.angle="0" background.brushmode="0" background.gradient.repetition.mode="0" background.gradient.repetition.count="0" background.gradient.repetition.length="100" background.gradient.focus="0" background.gradient.scale="100" background.gradient.spread="100" tooltip.backcolor="134217752" tooltip.delay.initial="0" tooltip.delay.visible="32000" tooltip.enabled="0" tooltip.hasclosebutton="0" tooltip.icon="0" tooltip.isbubble="0" tooltip.maxwidth="0" tooltip.textcolor="134217751" tooltip.transparency="0" transparency="0" )
+column(band=detail id=9 alignment="0" tabsequence=80 border="5" color="33554432~t/* 0:入力可 1:ユーザーID以外入力可 9:入力不可 */
+case( edit_mode
+  when 0 then RGB( 0, 0, 0 )
+  when 1 then RGB( 0, 0, 0 )
+  when 9 then RGB( 128, 128, 128 )
+         else RGB( 128, 128, 128 )
+)
+" x="540" y="342" height="82" width="508" format="[general]" html.valueishtml="0" protect="0~t/* 0:入力可 1:ユーザーID以外入力可 9:入力不可 */
+case( edit_mode
+  when 0 then 0
+  when 1 then 0
+  when 9 then 1
+         else 1
+)
+"  name=busyo_code visible="1" dddw.name=d_dddw_meisyo dddw.displaycolumn=meisyo_mei dddw.datacolumn=meisyo_code_num dddw.percentwidth=0 dddw.lines=0 dddw.limit=0 dddw.allowedit=no dddw.useasborder=yes dddw.case=any dddw.imemode=0 dddw.vscrollbar=yes dddw.autoretrieve=no  font.face="Yu Gothic UI Semilight" font.height="-12" font.weight="400"  font.family="3" font.pitch="2" font.charset="128" background.mode="0" background.color="1073741824~tcase( edit_mode
+  when 0 then RGB( 255, 255, 255 )
+  when 1 then RGB( 255, 255, 255 )
+  when 9 then RGB( 240, 240, 240 )
+         else RGB( 240, 240, 240 )
+)
+" background.transparency="0" background.gradient.color="8421504" background.gradient.transparency="0" background.gradient.angle="0" background.brushmode="0" background.gradient.repetition.mode="0" background.gradient.repetition.count="0" background.gradient.repetition.length="100" background.gradient.focus="0" background.gradient.scale="100" background.gradient.spread="100" tooltip.backcolor="134217752" tooltip.delay.initial="0" tooltip.delay.visible="32000" tooltip.enabled="0" tooltip.hasclosebutton="0" tooltip.icon="0" tooltip.isbubble="0" tooltip.maxwidth="0" tooltip.textcolor="134217751" tooltip.transparency="0" transparency="0" )
+text(band=detail alignment="1" text="所属部署" border="0" color="33554432" x="32" y="349" height="71" width="488" html.valueishtml="0"  name=t_busyo_code visible="1"  font.face="Yu Gothic UI Semilight" font.height="-11" font.weight="400"  font.family="3" font.pitch="2" font.charset="128" background.mode="1" background.color="536870912" background.transparency="0" background.gradient.color="8421504" background.gradient.transparency="0" background.gradient.angle="0" background.brushmode="0" background.gradient.repetition.mode="0" background.gradient.repetition.count="0" background.gradient.repetition.length="100" background.gradient.focus="0" background.gradient.scale="100" background.gradient.spread="100" tooltip.backcolor="134217752" tooltip.delay.initial="0" tooltip.delay.visible="32000" tooltip.enabled="0" tooltip.hasclosebutton="0" tooltip.icon="0" tooltip.isbubble="0" tooltip.maxwidth="0" tooltip.textcolor="134217751" tooltip.transparency="0" transparency="0" )
+text(band=detail alignment="1" text="クラス" border="0" color="33554432" x="1088" y="349" height="71" width="248" html.valueishtml="0"  name=t_class visible="1"  font.face="Yu Gothic UI Semilight" font.height="-11" font.weight="400"  font.family="3" font.pitch="2" font.charset="128" background.mode="1" background.color="536870912" background.transparency="0" background.gradient.color="8421504" background.gradient.transparency="0" background.gradient.angle="0" background.brushmode="0" background.gradient.repetition.mode="0" background.gradient.repetition.count="0" background.gradient.repetition.length="100" background.gradient.focus="0" background.gradient.scale="100" background.gradient.spread="100" tooltip.backcolor="134217752" tooltip.delay.initial="0" tooltip.delay.visible="32000" tooltip.enabled="0" tooltip.hasclosebutton="0" tooltip.icon="0" tooltip.isbubble="0" tooltip.maxwidth="0" tooltip.textcolor="134217751" tooltip.transparency="0" transparency="0" )
+column(band=detail id=10 alignment="0" tabsequence=90 border="5" color="33554432~t/* 0:入力可 1:ユーザーID以外入力可 9:入力不可 */
+case( edit_mode
+  when 0 then RGB( 0, 0, 0 )
+  when 1 then RGB( 0, 0, 0 )
+  when 9 then RGB( 128, 128, 128 )
+         else RGB( 128, 128, 128 )
+)
+" x="1356" y="342" height="82" width="348" format="[general]" html.valueishtml="0" protect="0~t/* 0:入力可 1:ユーザーID以外入力可 9:入力不可 */
+case( edit_mode
+  when 0 then 0
+  when 1 then 0
+  when 9 then 1
+         else 1
+)
+"  name=class visible="1" dddw.name=d_dddw_meisyo dddw.displaycolumn=meisyo_mei dddw.datacolumn=meisyo_code_num dddw.percentwidth=0 dddw.lines=0 dddw.limit=0 dddw.allowedit=no dddw.useasborder=yes dddw.case=any dddw.imemode=0 dddw.vscrollbar=yes dddw.autoretrieve=no  font.face="Yu Gothic UI Semilight" font.height="-12" font.weight="400"  font.family="3" font.pitch="2" font.charset="128" background.mode="0" background.color="1073741824~tcase( edit_mode
+  when 0 then RGB( 255, 255, 255 )
+  when 1 then RGB( 255, 255, 255 )
+  when 9 then RGB( 240, 240, 240 )
+         else RGB( 240, 240, 240 )
+)
+" background.transparency="0" background.gradient.color="8421504" background.gradient.transparency="0" background.gradient.angle="0" background.brushmode="0" background.gradient.repetition.mode="0" background.gradient.repetition.count="0" background.gradient.repetition.length="100" background.gradient.focus="0" background.gradient.scale="100" background.gradient.spread="100" tooltip.backcolor="134217752" tooltip.delay.initial="0" tooltip.delay.visible="32000" tooltip.enabled="0" tooltip.hasclosebutton="0" tooltip.icon="0" tooltip.isbubble="0" tooltip.maxwidth="0" tooltip.textcolor="134217751" tooltip.transparency="0" transparency="0" )
+column(band=detail id=16 alignment="0" tabsequence=100 border="0" color="0~t/* 0:入力可 1:ユーザーID以外入力可 9:入力不可 */
+case( edit_mode
+  when 0 then RGB( 0, 0, 0 )
+  when 1 then RGB( 0, 0, 0 )
+  when 9 then RGB( 128, 128, 128 )
+         else RGB( 128, 128, 128 )
+)
+" x="1744" y="342" height="82" width="588" format="[general]" html.valueishtml="0" protect="0~t/* 0:入力可 1:ユーザーID以外入力可 9:入力不可 */
+case( edit_mode
+  when 0 then 0
+  when 1 then 0
+  when 9 then 1
+         else 1
+)
+"  name=login_kengen visible="1" bitmapname=yes checkbox.text="ログイン許可" checkbox.on="1" checkbox.off="0" checkbox.scale=no checkbox.threed=no  font.face="Yu Gothic UI Semilight" font.height="-12" font.weight="400"  font.family="3" font.pitch="2" font.charset="128" background.mode="0" background.color="553648127~t/* 0:入力可 1:ユーザーID以外入力可 9:入力不可 */
+case( edit_mode
+  when 0 then RGB( 255, 255, 255 )
+  when 1 then RGB( 255, 255, 255 )
+  when 9 then RGB( 240, 240, 240 )
+         else RGB( 240, 240, 240 )
+)
+" background.transparency="0" background.gradient.color="8421504" background.gradient.transparency="0" background.gradient.angle="0" background.brushmode="0" background.gradient.repetition.mode="0" background.gradient.repetition.count="0" background.gradient.repetition.length="100" background.gradient.focus="0" background.gradient.scale="100" background.gradient.spread="100" tooltip.backcolor="134217752" tooltip.delay.initial="0" tooltip.delay.visible="32000" tooltip.enabled="0" tooltip.hasclosebutton="0" tooltip.icon="0" tooltip.isbubble="0" tooltip.maxwidth="0" tooltip.textcolor="134217751" tooltip.transparency="0" transparency="0" )
+text(band=detail alignment="1" text="利用者権限" border="0" color="33554432" x="2372" y="349" height="71" width="328" html.valueishtml="0"  name=t_riyou_kengen visible="1"  font.face="Yu Gothic UI Semilight" font.height="-11" font.weight="400"  font.family="3" font.pitch="2" font.charset="128" background.mode="1" background.color="536870912" background.transparency="0" background.gradient.color="8421504" background.gradient.transparency="0" background.gradient.angle="0" background.brushmode="0" background.gradient.repetition.mode="0" background.gradient.repetition.count="0" background.gradient.repetition.length="100" background.gradient.focus="0" background.gradient.scale="100" background.gradient.spread="100" tooltip.backcolor="134217752" tooltip.delay.initial="0" tooltip.delay.visible="32000" tooltip.enabled="0" tooltip.hasclosebutton="0" tooltip.icon="0" tooltip.isbubble="0" tooltip.maxwidth="0" tooltip.textcolor="134217751" tooltip.transparency="0" transparency="0" )
+button(band=detail text="権限設定" enabled=yes action="0" border="0" color="33554432" x="2720" y="338" height="92" width="328" vtextalign="0" htextalign="0"  name=b_kengen visible="1"  font.face="Yu Gothic UI Semilight" font.height="-10" font.weight="400"  font.family="3" font.pitch="2" font.charset="128" background.mode="2" background.color="67108864" background.transparency="0" background.gradient.color="8421504" background.gradient.transparency="0" background.gradient.angle="0" background.brushmode="0" background.gradient.repetition.mode="0" background.gradient.repetition.count="0" background.gradient.repetition.length="100" background.gradient.focus="0" background.gradient.scale="100" background.gradient.spread="100" tooltip.backcolor="134217752" tooltip.delay.initial="0" tooltip.delay.visible="32000" tooltip.enabled="0" tooltip.hasclosebutton="0" tooltip.icon="0" tooltip.isbubble="0" tooltip.maxwidth="0" tooltip.textcolor="134217751" tooltip.transparency="0" transparency="0" )
+column(band=detail id=11 alignment="0" tabsequence=110 border="5" color="33554432~t/* 0:入力可 1:ユーザーID以外入力可 9:入力不可 */
+case( edit_mode
+  when 0 then RGB( 0, 0, 0 )
+  when 1 then RGB( 0, 0, 0 )
+  when 9 then RGB( 128, 128, 128 )
+         else RGB( 128, 128, 128 )
+)
+" x="540" y="445" height="82" width="708" format="[general]" html.valueishtml="0" protect="0~t/* 0:入力可 1:ユーザーID以外入力可 9:入力不可 */
+case( edit_mode
+  when 0 then 0
+  when 1 then 0
+  when 9 then 1
+         else 1
+)
+"  name=init_menu_id visible="1" dddw.name=d_dddw_meisyo dddw.displaycolumn=meisyo_mei dddw.datacolumn=meisyo_code_num dddw.percentwidth=0 dddw.lines=0 dddw.limit=0 dddw.allowedit=no dddw.useasborder=yes dddw.case=any dddw.imemode=0 dddw.vscrollbar=yes dddw.autoretrieve=no  font.face="Yu Gothic UI Semilight" font.height="-12" font.weight="400"  font.family="3" font.pitch="2" font.charset="128" background.mode="0" background.color="1073741824~tcase( edit_mode
+  when 0 then RGB( 255, 255, 255 )
+  when 1 then RGB( 255, 255, 255 )
+  when 9 then RGB( 240, 240, 240 )
+         else RGB( 240, 240, 240 )
+)
+" background.transparency="0" background.gradient.color="8421504" background.gradient.transparency="0" background.gradient.angle="0" background.brushmode="0" background.gradient.repetition.mode="0" background.gradient.repetition.count="0" background.gradient.repetition.length="100" background.gradient.focus="0" background.gradient.scale="100" background.gradient.spread="100" tooltip.backcolor="134217752" tooltip.delay.initial="0" tooltip.delay.visible="32000" tooltip.enabled="0" tooltip.hasclosebutton="0" tooltip.icon="0" tooltip.isbubble="0" tooltip.maxwidth="0" tooltip.textcolor="134217751" tooltip.transparency="0" transparency="0" )
+text(band=detail alignment="1" text="初期メニュー" border="0" color="33554432" x="32" y="452" height="71" width="488" html.valueishtml="0"  name=t_init_menu_id visible="1"  font.face="Yu Gothic UI Semilight" font.height="-11" font.weight="400"  font.family="3" font.pitch="2" font.charset="128" background.mode="1" background.color="536870912" background.transparency="0" background.gradient.color="8421504" background.gradient.transparency="0" background.gradient.angle="0" background.brushmode="0" background.gradient.repetition.mode="0" background.gradient.repetition.count="0" background.gradient.repetition.length="100" background.gradient.focus="0" background.gradient.scale="100" background.gradient.spread="100" tooltip.backcolor="134217752" tooltip.delay.initial="0" tooltip.delay.visible="32000" tooltip.enabled="0" tooltip.hasclosebutton="0" tooltip.icon="0" tooltip.isbubble="0" tooltip.maxwidth="0" tooltip.textcolor="134217751" tooltip.transparency="0" transparency="0" )
+text(band=detail alignment="1" text="初期表示拠点" border="0" color="33554432" x="1288" y="452" height="71" width="488" html.valueishtml="0"  name=t_kyoten_code visible="1"  font.face="Yu Gothic UI Semilight" font.height="-11" font.weight="400"  font.family="3" font.pitch="2" font.charset="128" background.mode="1" background.color="536870912" background.transparency="0" background.gradient.color="8421504" background.gradient.transparency="0" background.gradient.angle="0" background.brushmode="0" background.gradient.repetition.mode="0" background.gradient.repetition.count="0" background.gradient.repetition.length="100" background.gradient.focus="0" background.gradient.scale="100" background.gradient.spread="100" tooltip.backcolor="134217752" tooltip.delay.initial="0" tooltip.delay.visible="32000" tooltip.enabled="0" tooltip.hasclosebutton="0" tooltip.icon="0" tooltip.isbubble="0" tooltip.maxwidth="0" tooltip.textcolor="134217751" tooltip.transparency="0" transparency="0" )
+column(band=detail id=13 alignment="0" tabsequence=120 border="5" color="33554432~t/* 0:入力可 1:ユーザーID以外入力可 9:入力不可 */
+case( edit_mode
+  when 0 then RGB( 0, 0, 0 )
+  when 1 then RGB( 0, 0, 0 )
+  when 9 then RGB( 128, 128, 128 )
+         else RGB( 128, 128, 128 )
+)
+" x="1816" y="445" height="82" width="428" format="[general]" html.valueishtml="0" protect="0~t/* 0:入力可 1:ユーザーID以外入力可 9:入力不可 */
+case( edit_mode
+  when 0 then 0
+  when 1 then 0
+  when 9 then 1
+         else 1
+)
+"  name=kyoten_code visible="1" dddw.name=d_dddw_kyoten dddw.displaycolumn=kyoten_mei_dsp dddw.datacolumn=kyoten_code dddw.percentwidth=0 dddw.lines=0 dddw.limit=0 dddw.allowedit=no dddw.useasborder=yes dddw.case=any dddw.imemode=0 dddw.vscrollbar=yes dddw.autoretrieve=no  font.face="Yu Gothic UI Semilight" font.height="-12" font.weight="400"  font.family="3" font.pitch="2" font.charset="128" background.mode="0" background.color="1073741824~tcase( edit_mode
+  when 0 then RGB( 255, 255, 255 )
+  when 1 then RGB( 255, 255, 255 )
+  when 9 then RGB( 240, 240, 240 )
+         else RGB( 240, 240, 240 )
+)
+" background.transparency="0" background.gradient.color="8421504" background.gradient.transparency="0" background.gradient.angle="0" background.brushmode="0" background.gradient.repetition.mode="0" background.gradient.repetition.count="0" background.gradient.repetition.length="100" background.gradient.focus="0" background.gradient.scale="100" background.gradient.spread="100" tooltip.backcolor="134217752" tooltip.delay.initial="0" tooltip.delay.visible="32000" tooltip.enabled="0" tooltip.hasclosebutton="0" tooltip.icon="0" tooltip.isbubble="0" tooltip.maxwidth="0" tooltip.textcolor="134217751" tooltip.transparency="0" transparency="0" )
+text(band=detail alignment="1" text="拠点グループ" border="0" color="33554432" x="2284" y="452" height="71" width="488" html.valueishtml="0"  name=t_kyoten_group_code visible="1"  font.face="Yu Gothic UI Semilight" font.height="-11" font.weight="400"  font.family="3" font.pitch="2" font.charset="128" background.mode="1" background.color="536870912" background.transparency="0" background.gradient.color="8421504" background.gradient.transparency="0" background.gradient.angle="0" background.brushmode="0" background.gradient.repetition.mode="0" background.gradient.repetition.count="0" background.gradient.repetition.length="100" background.gradient.focus="0" background.gradient.scale="100" background.gradient.spread="100" tooltip.backcolor="134217752" tooltip.delay.initial="0" tooltip.delay.visible="32000" tooltip.enabled="0" tooltip.hasclosebutton="0" tooltip.icon="0" tooltip.isbubble="0" tooltip.maxwidth="0" tooltip.textcolor="134217751" tooltip.transparency="0" transparency="0" )
+column(band=detail id=15 alignment="0" tabsequence=130 border="5" color="0~t/* 0:入力可 1:ユーザーID以外入力可 9:入力不可 */
+case( edit_mode
+  when 0 then RGB( 0, 0, 0 )
+  when 1 then RGB( 0, 0, 0 )
+  when 9 then RGB( 128, 128, 128 )
+         else RGB( 128, 128, 128 )
+)
+" x="2792" y="445" height="82" width="908" format="[general]" html.valueishtml="0" protect="0~t/* 0:入力可 1:ユーザーID以外入力可 9:入力不可 */
+case( edit_mode
+  when 0 then 0
+  when 1 then 0
+  when 9 then 1
+         else 1
+)
+"  name=kyoten_group_code visible="1" dddw.name=d_dddw_meisyo dddw.displaycolumn=meisyo_mei dddw.datacolumn=meisyo_code_num dddw.percentwidth=0 dddw.lines=0 dddw.limit=0 dddw.allowedit=no dddw.useasborder=yes dddw.case=any dddw.imemode=0 dddw.vscrollbar=yes dddw.autoretrieve=no  font.face="Yu Gothic UI Semilight" font.height="-12" font.weight="400"  font.family="3" font.pitch="2" font.charset="128" background.mode="0" background.color="16777215~tcase( edit_mode
+  when 0 then RGB( 255, 255, 255 )
+  when 1 then RGB( 255, 255, 255 )
+  when 9 then RGB( 240, 240, 240 )
+         else RGB( 240, 240, 240 )
+)
+" background.transparency="0" background.gradient.color="8421504" background.gradient.transparency="0" background.gradient.angle="0" background.brushmode="0" background.gradient.repetition.mode="0" background.gradient.repetition.count="0" background.gradient.repetition.length="100" background.gradient.focus="0" background.gradient.scale="100" background.gradient.spread="100" tooltip.backcolor="134217752" tooltip.delay.initial="0" tooltip.delay.visible="32000" tooltip.enabled="0" tooltip.hasclosebutton="0" tooltip.icon="0" tooltip.isbubble="0" tooltip.maxwidth="0" tooltip.textcolor="134217751" tooltip.transparency="0" transparency="0" )
+text(band=detail alignment="1" text="入出庫拠点" border="0" color="33554432" x="3740" y="452" height="71" width="408" html.valueishtml="0"  name=t_kyoten_code2 visible="1"  font.face="Yu Gothic UI Semilight" font.height="-11" font.weight="400"  font.family="3" font.pitch="2" font.charset="128" background.mode="1" background.color="536870912" background.transparency="0" background.gradient.color="8421504" background.gradient.transparency="0" background.gradient.angle="0" background.brushmode="0" background.gradient.repetition.mode="0" background.gradient.repetition.count="0" background.gradient.repetition.length="100" background.gradient.focus="0" background.gradient.scale="100" background.gradient.spread="100" tooltip.backcolor="134217752" tooltip.delay.initial="0" tooltip.delay.visible="32000" tooltip.enabled="0" tooltip.hasclosebutton="0" tooltip.icon="0" tooltip.isbubble="0" tooltip.maxwidth="0" tooltip.textcolor="134217751" tooltip.transparency="0" transparency="0" )
+column(band=detail id=14 alignment="0" tabsequence=140 border="5" color="0~t/* 0:入力可 1:ユーザーID以外入力可 9:入力不可 */
+case( edit_mode
+  when 0 then RGB( 0, 0, 0 )
+  when 1 then RGB( 0, 0, 0 )
+  when 9 then RGB( 128, 128, 128 )
+         else RGB( 128, 128, 128 )
+)
+" x="4168" y="445" height="82" width="428" format="[general]" html.valueishtml="0" protect="0~t/* 0:入力可 1:ユーザーID以外入力可 9:入力不可 */
+case( edit_mode
+  when 0 then 0
+  when 1 then 0
+  when 9 then 1
+         else 1
+)
+"  name=kyoten_code_2 visible="1" dddw.name=d_dddw_kyoten dddw.displaycolumn=kyoten_mei_dsp dddw.datacolumn=kyoten_mei dddw.percentwidth=0 dddw.lines=0 dddw.limit=0 dddw.allowedit=no dddw.useasborder=yes dddw.case=any dddw.imemode=0 dddw.vscrollbar=yes dddw.autoretrieve=no  font.face="Yu Gothic UI Semilight" font.height="-12" font.weight="400"  font.family="3" font.pitch="2" font.charset="128" background.mode="0" background.color="16777215~tcase( edit_mode
+  when 0 then RGB( 255, 255, 255 )
+  when 1 then RGB( 255, 255, 255 )
+  when 9 then RGB( 240, 240, 240 )
+         else RGB( 240, 240, 240 )
+)
+" background.transparency="0" background.gradient.color="8421504" background.gradient.transparency="0" background.gradient.angle="0" background.brushmode="0" background.gradient.repetition.mode="0" background.gradient.repetition.count="0" background.gradient.repetition.length="100" background.gradient.focus="0" background.gradient.scale="100" background.gradient.spread="100" tooltip.backcolor="134217752" tooltip.delay.initial="0" tooltip.delay.visible="32000" tooltip.enabled="0" tooltip.hasclosebutton="0" tooltip.icon="0" tooltip.isbubble="0" tooltip.maxwidth="0" tooltip.textcolor="134217751" tooltip.transparency="0" transparency="0" )
+column(band=detail id=18 alignment="0" tabsequence=150 border="5" color="33554432~t/* 0:入力可 1:ユーザーID以外入力可 9:入力不可 */
+case( edit_mode
+  when 0 then RGB( 0, 0, 0 )
+  when 1 then RGB( 0, 0, 0 )
+  when 9 then RGB( 128, 128, 128 )
+         else RGB( 128, 128, 128 )
+)
+" x="540" y="548" height="82" width="408" format="[general]" html.valueishtml="0" protect="0~t/* 0:入力可 1:ユーザーID以外入力可 9:入力不可 */
+case( edit_mode
+  when 0 then 0
+  when 1 then 0
+  when 9 then 1
+         else 1
+)
+"  name=riyou_str_date_str visible="1" edit.limit=0 edit.case=any edit.focusrectangle=no edit.autoselect=no edit.imemode=0  font.face="Yu Gothic UI Semilight" font.height="-12" font.weight="400"  font.family="3" font.pitch="2" font.charset="128" background.mode="0" background.color="1073741824~tcase( edit_mode
+  when 0 then RGB( 255, 255, 255 )
+  when 1 then RGB( 255, 255, 255 )
+  when 9 then RGB( 240, 240, 240 )
+         else RGB( 240, 240, 240 )
+)
+" background.transparency="0" background.gradient.color="8421504" background.gradient.transparency="0" background.gradient.angle="0" background.brushmode="0" background.gradient.repetition.mode="0" background.gradient.repetition.count="0" background.gradient.repetition.length="100" background.gradient.focus="0" background.gradient.scale="100" background.gradient.spread="100" tooltip.backcolor="134217752" tooltip.delay.initial="0" tooltip.delay.visible="32000" tooltip.enabled="0" tooltip.hasclosebutton="0" tooltip.icon="0" tooltip.isbubble="0" tooltip.maxwidth="0" tooltip.textcolor="134217751" tooltip.transparency="0" transparency="0" )
+text(band=detail alignment="1" text="利用開始" border="0" color="33554432" x="32" y="555" height="71" width="488" html.valueishtml="0"  name=t_riyou_str_date visible="1"  font.face="Yu Gothic UI Semilight" font.height="-11" font.weight="400"  font.family="3" font.pitch="2" font.charset="128" background.mode="1" background.color="536870912" background.transparency="0" background.gradient.color="8421504" background.gradient.transparency="0" background.gradient.angle="0" background.brushmode="0" background.gradient.repetition.mode="0" background.gradient.repetition.count="0" background.gradient.repetition.length="100" background.gradient.focus="0" background.gradient.scale="100" background.gradient.spread="100" tooltip.backcolor="134217752" tooltip.delay.initial="0" tooltip.delay.visible="32000" tooltip.enabled="0" tooltip.hasclosebutton="0" tooltip.icon="0" tooltip.isbubble="0" tooltip.maxwidth="0" tooltip.textcolor="134217751" tooltip.transparency="0" transparency="0" )
+text(band=detail alignment="2" text="～" border="0" color="33554432" x="968" y="555" height="71" width="88" html.valueishtml="0"  name=t_tilde visible="1"  font.face="Yu Gothic UI Semilight" font.height="-11" font.weight="400"  font.family="3" font.pitch="2" font.charset="128" background.mode="1" background.color="536870912" background.transparency="0" background.gradient.color="8421504" background.gradient.transparency="0" background.gradient.angle="0" background.brushmode="0" background.gradient.repetition.mode="0" background.gradient.repetition.count="0" background.gradient.repetition.length="100" background.gradient.focus="0" background.gradient.scale="100" background.gradient.spread="100" tooltip.backcolor="134217752" tooltip.delay.initial="0" tooltip.delay.visible="32000" tooltip.enabled="0" tooltip.hasclosebutton="0" tooltip.icon="0" tooltip.isbubble="0" tooltip.maxwidth="0" tooltip.textcolor="134217751" tooltip.transparency="0" transparency="0" )
+column(band=detail id=20 alignment="0" tabsequence=160 border="5" color="33554432~t/* 0:入力可 1:ユーザーID以外入力可 9:入力不可 */
+case( edit_mode
+  when 0 then RGB( 0, 0, 0 )
+  when 1 then RGB( 0, 0, 0 )
+  when 9 then RGB( 128, 128, 128 )
+         else RGB( 128, 128, 128 )
+)
+" x="1076" y="548" height="82" width="408" format="[general]" html.valueishtml="0" protect="0~t/* 0:入力可 1:ユーザーID以外入力可 9:入力不可 */
+case( edit_mode
+  when 0 then 0
+  when 1 then 0
+  when 9 then 1
+         else 1
+)
+"  name=riyou_end_date_str visible="1" edit.limit=0 edit.case=any edit.focusrectangle=no edit.autoselect=no edit.imemode=0  font.face="Yu Gothic UI Semilight" font.height="-12" font.weight="400"  font.family="3" font.pitch="2" font.charset="128" background.mode="0" background.color="1073741824~tcase( edit_mode
+  when 0 then RGB( 255, 255, 255 )
+  when 1 then RGB( 255, 255, 255 )
+  when 9 then RGB( 240, 240, 240 )
+         else RGB( 240, 240, 240 )
+)
+" background.transparency="0" background.gradient.color="8421504" background.gradient.transparency="0" background.gradient.angle="0" background.brushmode="0" background.gradient.repetition.mode="0" background.gradient.repetition.count="0" background.gradient.repetition.length="100" background.gradient.focus="0" background.gradient.scale="100" background.gradient.spread="100" tooltip.backcolor="134217752" tooltip.delay.initial="0" tooltip.delay.visible="32000" tooltip.enabled="0" tooltip.hasclosebutton="0" tooltip.icon="0" tooltip.isbubble="0" tooltip.maxwidth="0" tooltip.textcolor="134217751" tooltip.transparency="0" transparency="0" )
+htmltable(border="1" )
+htmlgen(clientevents="1" clientvalidation="1" clientcomputedfields="1" clientformatting="0" clientscriptable="0" generatejavascript="1" encodeselflinkargs="1" netscapelayers="0" pagingmethod=0 generatedddwframes="1" )
+xhtmlgen() cssgen(sessionspecific="0" )
+xmlgen(inline="0" )
+xsltgen()
+jsgen()
+export.xml(headgroups="1" includewhitespace="0" metadatatype=0 savemetadata=0 )
+import.xml()
+export.pdf(method=0 distill.custompostscript="0" xslfop.print="0" nativepdf.customsize=0 nativepdf.customorientation=0 nativepdf.pdfstandard=0 nativepdf.useprintspec=no )
+export.xhtml()
+ 

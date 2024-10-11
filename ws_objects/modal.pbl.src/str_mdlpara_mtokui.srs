@@ -1,0 +1,7 @@
+﻿$PBExportHeader$str_mdlpara_mtokui.srs
+$PBExportComments$m_tokui用のモーダル構造体
+global type str_mdlpara_mtokui from structure
+	long		in_tanto_code
+	str_mtokui		ret[]
+end type
+

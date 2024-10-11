@@ -1,0 +1,13 @@
+﻿$PBExportHeader$prj_liberation.srj
+EXE:cocos.exe,,0,0,1,0,C:\Program Files (x86)\Appeon\Common\PowerBuilder\Runtime 19.2.0.2747
+CMP:0,0,0,3,0,0,1
+COM:㈱コーコス信岡
+DES:新基幹システム
+CPY:㈱コーコス信岡
+PRD:PowerBuilder Enterprise Series
+PVS:1.0.0.1
+PVN:1,0,0,1
+FVS:1.0.0.1
+FVN:1,0,0,1
+MAN:0,asInvoker,0
+PBD:liberation.pbl,,1

@@ -1,0 +1,8 @@
+﻿$PBExportHeader$str_para_menu.srs
+$PBExportComments$メニュー画面でメニュー用タブを生成する際に使用する構造体
+global type str_para_menu from structure
+	string		menu_id
+	string		tab_id
+	string		param
+end type
+

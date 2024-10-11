@@ -1,0 +1,6 @@
+﻿$PBExportHeader$str_mdlpara_mbrand.srs
+$PBExportComments$m_brand用のモーダル構造体
+global type str_mdlpara_mbrand from structure
+	str_mbrand		ret[]
+end type
+

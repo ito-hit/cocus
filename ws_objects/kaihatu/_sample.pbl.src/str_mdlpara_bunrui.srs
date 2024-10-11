@@ -1,0 +1,12 @@
+﻿$PBExportHeader$str_mdlpara_bunrui.srs
+$PBExportComments$m_bunruiのmodal構造体
+global type str_mdlpara_bunrui from structure
+	boolean		ret
+	long		out_daibunrui_code
+	long		out_tyubunrui_code
+	long		out_syobunrui_code
+	string		out_daibunrui_mei		descriptor "comment" = "追加"
+	string		out_tyubunrui_mei		descriptor "comment" = "追加"
+	string		out_syobunrui_mei		descriptor "comment" = "追加"
+end type
+

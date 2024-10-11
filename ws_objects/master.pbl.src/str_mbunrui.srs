@@ -1,0 +1,34 @@
+﻿$PBExportHeader$str_mbunrui.srs
+$PBExportComments$m_bunrui用の構造体
+global type str_mbunrui from structure
+	long		daibunrui_code
+	long		tyubunrui_code
+	long		syobunrui_code
+	string		daibunrui_mei
+	string		tyubunrui_mei
+	string		syobunrui_mei
+	integer		zaiko_kanri_flg
+	integer		suryo_keisan_flg
+	integer		kingaku_keisan_flg
+	integer		arari_keisan_flg
+	integer		hako_keisan_flg
+	integer		kenpin_taisyo_flg
+	integer		muryo_kyoka_flg
+	integer		bhin_flg
+	integer		group_code
+	integer		brand_code
+	string		bikou
+	datetime	touroku_date
+	string		touroku_user_id
+	string		touroku_client_id
+	string		touroku_pg_id
+	datetime	henkou_date
+	string		henkou_user_id
+	string		henkou_client_id
+	string		henkou_pg_id
+	datetime	kousin_date
+	string		kousin_user_id
+	string		kousin_client_id
+	string		kousin_pg_id
+	integer		haita_flg
+end type

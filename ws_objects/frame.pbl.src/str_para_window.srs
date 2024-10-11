@@ -1,0 +1,8 @@
+﻿$PBExportHeader$str_para_window.srs
+$PBExportComments$ウインドウを開くときのパラメータとして使用する構造体
+global type str_para_window from structure
+	string		window_id
+	boolean		readonly_flg
+	string		param
+end type
+

@@ -1,0 +1,119 @@
+﻿$PBExportHeader$dsm_unso.srd
+$PBExportComments$wsm_unsoのデータウィンドウ
+release 19;
+datawindow(units=0 timer_interval=0 color=268435456 brushmode=0 transparency=0 gradient.angle=0 gradient.color=8421504 gradient.focus=0 gradient.repetition.count=0 gradient.repetition.length=100 gradient.repetition.mode=0 gradient.scale=100 gradient.spread=100 gradient.transparency=0 picture.blur=0 picture.clip.bottom=0 picture.clip.left=0 picture.clip.right=0 picture.clip.top=0 picture.mode=0 picture.scale.x=100 picture.scale.y=100 picture.transparency=0 processing=1 HTMLDW=no print.printername="" print.documentname="" print.orientation = 0 print.margin.left = 96 print.margin.right = 96 print.margin.top = 85 print.margin.bottom = 85 print.paper.source = 0 print.paper.size = 0 print.canusedefaultprinter=yes print.prompt=no print.buttons=no print.preview.buttons=no print.cliptext=no print.overrideprintjob=no print.collate=yes print.background=no print.preview.background=no print.preview.outline=yes hidegrayline=no showbackcoloronxp=no picture.file="" grid.lines=0 grid.columnmove=no selected.mouse=no )
+header(height=85 color="67108864" transparency="0" gradient.color="8421504" gradient.transparency="0" gradient.angle="0" brushmode="0" gradient.repetition.mode="0" gradient.repetition.count="0" gradient.repetition.length="100" gradient.focus="0" gradient.scale="100" gradient.spread="100" )
+summary(height=0 color="536870912" transparency="0" gradient.color="8421504" gradient.transparency="0" gradient.angle="0" brushmode="0" gradient.repetition.mode="0" gradient.repetition.count="0" gradient.repetition.length="100" gradient.focus="0" gradient.scale="100" gradient.spread="100" )
+footer(height=0 color="536870912" transparency="0" gradient.color="8421504" gradient.transparency="0" gradient.angle="0" brushmode="0" gradient.repetition.mode="0" gradient.repetition.count="0" gradient.repetition.length="100" gradient.focus="0" gradient.scale="100" gradient.spread="100" )
+detail(height=85 color="536870912~tfo_lattice( getrow() )" transparency="0" gradient.color="8421504" gradient.transparency="0" gradient.angle="0" brushmode="0" gradient.repetition.mode="0" gradient.repetition.count="0" gradient.repetition.length="100" gradient.focus="0" gradient.scale="100" gradient.spread="100" )
+table(column=(type=decimal(0) update=yes updatewhereclause=yes key=yes name=unso_code dbname="m_unso.unso_code" dbalias="un.unso_code" )
+ column=(type=char(30) update=yes updatewhereclause=yes name=unso_mei dbname="m_unso.unso_mei" dbalias="un.unso_mei" )
+ column=(type=char(10) update=yes updatewhereclause=yes name=unso_mei_ryaku dbname="m_unso.unso_mei_ryaku" dbalias="un.unso_mei_ryaku" )
+ column=(type=decimal(0) update=yes updatewhereclause=yes name=air_flg dbname="m_unso.air_flg" dbalias="un.air_flg" )
+ column=(type=char(3) updatewhereclause=yes name=air_mei dbname="air_mei" )
+ column=(type=decimal(0) update=yes updatewhereclause=yes name=untin_flg dbname="m_unso.untin_flg" dbalias="un.untin_flg" )
+ column=(type=char(3) updatewhereclause=yes name=untin_keisan dbname="untin_keisan" )
+ column=(type=decimal(0) update=yes updatewhereclause=yes name=keisan_code dbname="m_unso.keisan_code" dbalias="un.keisan_code" )
+ column=(type=decimal(0) update=yes updatewhereclause=yes name=okurijyo_flg dbname="m_unso.okurijyo_flg" dbalias="un.okurijyo_flg" )
+ column=(type=decimal(0) update=yes updatewhereclause=yes name=okurijyo_code dbname="m_unso.okurijyo_code" dbalias="un.okurijyo_code" )
+ column=(type=decimal(0) update=yes updatewhereclause=yes name=tyakubarai_furikae_flg dbname="m_unso.tyakubarai_furikae_flg" dbalias="un.tyakubarai_furikae_flg" )
+ column=(type=decimal(0) update=yes updatewhereclause=yes name=tyakubarai_unso_code dbname="m_unso.tyakubarai_unso_code" dbalias="un.tyakubarai_unso_code" )
+ column=(type=decimal(0) update=yes updatewhereclause=yes name=haiban_flg dbname="m_unso.haiban_flg" dbalias="un.haiban_flg" )
+ column=(type=char(40) updatewhereclause=yes name=untin dbname="untin" )
+ column=(type=datetime update=yes updatewhereclause=yes name=touroku_date dbname="m_unso.touroku_date" dbalias="un.touroku_date" )
+ column=(type=char(10) update=yes updatewhereclause=yes name=touroku_user_id dbname="m_unso.touroku_user_id" dbalias="un.touroku_user_id" )
+ column=(type=char(40) update=yes updatewhereclause=yes name=touroku_client_id dbname="m_unso.touroku_client_id" dbalias="un.touroku_client_id" )
+ column=(type=char(40) update=yes updatewhereclause=yes name=touroku_pg_id dbname="m_unso.touroku_pg_id" dbalias="un.touroku_pg_id" )
+ column=(type=datetime update=yes updatewhereclause=yes name=henkou_date dbname="m_unso.henkou_date" dbalias="un.henkou_date" )
+ column=(type=char(10) update=yes updatewhereclause=yes name=henkou_user_id dbname="m_unso.henkou_user_id" dbalias="un.henkou_user_id" )
+ column=(type=char(40) update=yes updatewhereclause=yes name=henkou_client_id dbname="m_unso.henkou_client_id" dbalias="un.henkou_client_id" )
+ column=(type=char(40) update=yes updatewhereclause=yes name=henkou_pg_id dbname="m_unso.henkou_pg_id" dbalias="un.henkou_pg_id" )
+ column=(type=datetime update=yes updatewhereclause=yes name=kousin_date dbname="m_unso.kousin_date" dbalias="un.kousin_date" )
+ column=(type=char(10) update=yes updatewhereclause=yes name=kousin_user_id dbname="m_unso.kousin_user_id" dbalias="un.kousin_user_id" )
+ column=(type=char(40) update=yes updatewhereclause=yes name=kousin_client_id dbname="m_unso.kousin_client_id" dbalias="un.kousin_client_id" )
+ column=(type=char(40) update=yes updatewhereclause=yes name=kousin_pg_id dbname="m_unso.kousin_pg_id" dbalias="un.kousin_pg_id" )
+ column=(type=decimal(0) update=yes updatewhereclause=yes name=haita_flg dbname="m_unso.haita_flg" dbalias="un.haita_flg" )
+ retrieve="select un.unso_code,
+       un.unso_mei,un.unso_mei_ryaku,
+       un.air_flg,
+       decode( un.air_flg, 1, '航空便', '' ) air_mei,
+       un.untin_flg,
+       decode( un.untin_flg, 1, 'する', 'しない' ) untin_keisan,
+       un.keisan_code,
+       un.okurijyo_flg,un.okurijyo_code,
+       un.tyakubarai_furikae_flg,un.tyakubarai_unso_code,
+       un.haiban_flg,
+       decode( untin_2, null, untin_1, untin_2 ) untin,
+       un.touroku_date,un.touroku_user_id,un.touroku_client_id,un.touroku_pg_id,
+       un.henkou_date,un.henkou_user_id,un.henkou_client_id,un.henkou_pg_id,
+       un.kousin_date,un.kousin_user_id,un.kousin_client_id,un.kousin_pg_id,
+       un.haita_flg
+  from m_unso un,
+       ( select unso_code,
+                max( decode( key_syubetu,1,untin, 0 ) ) untin_1,
+                max( decode( key_syubetu,2,untin, 0 ) ) untin_2
+           from ( select ut.key_syubetu,
+                         ut.unso_code,
+                         decode( :p_tokui_code, null, '', decode( :p_todofuken_code, null, null, ut.untin ) ) untin
+                    from m_untin ut,
+                         ( select tokui_code,
+                                  todofuken_code,
+                                  untin_kbn
+                             from m_tokui
+                            where decode( :p_tokui_code, null, 1, tokui_code )			= decode( :p_tokui_code, null, 1, :p_tokui_code )
+                              and decode( :p_todofuken_code, null, 1, todofuken_code )	= decode( :p_todofuken_code, null, 1, :p_todofuken_code )
+                         ) tk
+                   where ut.key_code	= tk.todofuken_code
+                     and ut.kyoten_code	= 0	/*現状は0(本社出荷)固定にしておく*/
+                     and ut.key_syubetu	= 1
+                     and ut.untin_kbn	= tk.untin_kbn
+
+                  union all
+
+                  select ut.key_syubetu,
+                         ut.unso_code,
+                         decode( :p_tokui_code, null, '', decode( :p_todofuken_code, null, null,  ut.untin ) ) untin
+                    from m_untin ut,
+                         ( select tokui_code,
+                                  todofuken_code,
+                                  untin_kbn
+                             from m_tokui
+                            where decode( :p_tokui_code, null, 1, tokui_code )			= decode( :p_tokui_code, null, 1, :p_tokui_code )
+                              and decode( :p_todofuken_code, null, 1, todofuken_code )	= decode( :p_todofuken_code, null, 1, :p_todofuken_code )
+                         ) tk
+                   where ut.key_code	= tk.tokui_code
+                     and ut.kyoten_code	= 0	/*現状は0(本社出荷)固定にしておく*/
+                     and ut.key_syubetu	= 2
+                     and ut.untin_kbn	= tk.untin_kbn
+                )
+          group by unso_code
+       ) ut
+ where un.unso_code			= ut.unso_code(+)
+   and un.haiban_flg		<> 1
+   and (   un.unso_mei			like '%' || :p_unso_mei || '%'
+        or un.unso_mei_ryaku	like '%' || :p_unso_mei || '%'
+       )
+ order by un.unso_code" update="m_unso" updatewhere=1 updatekeyinplace=no arguments=(("p_tokui_code", number),("p_todofuken_code", number),("p_unso_mei", string)) )
+text(band=header alignment="2" text="コード" border="6" color="33554432" x="12" y="7" height="75" width="248" html.valueishtml="0"  name=unso_code_t visible="1"  font.face="Yu Gothic UI Semilight" font.height="-11" font.weight="400"  font.family="3" font.pitch="2" font.charset="1" background.mode="1" background.color="536870912" background.transparency="0" background.gradient.color="8421504" background.gradient.transparency="0" background.gradient.angle="0" background.brushmode="0" background.gradient.repetition.mode="0" background.gradient.repetition.count="0" background.gradient.repetition.length="100" background.gradient.focus="0" background.gradient.scale="100" background.gradient.spread="100" tooltip.backcolor="134217752" tooltip.delay.initial="0" tooltip.delay.visible="32000" tooltip.enabled="0" tooltip.hasclosebutton="0" tooltip.icon="0" tooltip.isbubble="0" tooltip.maxwidth="0" tooltip.textcolor="134217751" tooltip.transparency="0" transparency="0" )
+text(band=header alignment="2" text="運送便名" border="6" color="33554432" x="272" y="7" height="75" width="1208" html.valueishtml="0"  name=unso_mei_t visible="1"  font.face="Yu Gothic UI Semilight" font.height="-11" font.weight="400"  font.family="3" font.pitch="2" font.charset="1" background.mode="1" background.color="536870912" background.transparency="0" background.gradient.color="8421504" background.gradient.transparency="0" background.gradient.angle="0" background.brushmode="0" background.gradient.repetition.mode="0" background.gradient.repetition.count="0" background.gradient.repetition.length="100" background.gradient.focus="0" background.gradient.scale="100" background.gradient.spread="100" tooltip.backcolor="134217752" tooltip.delay.initial="0" tooltip.delay.visible="32000" tooltip.enabled="0" tooltip.hasclosebutton="0" tooltip.icon="0" tooltip.isbubble="0" tooltip.maxwidth="0" tooltip.textcolor="134217751" tooltip.transparency="0" transparency="0" )
+text(band=header alignment="2" text="略称" border="6" color="33554432" x="1492" y="7" height="75" width="408" html.valueishtml="0"  name=unso_mei_ryaku_t visible="1"  font.face="Yu Gothic UI Semilight" font.height="-11" font.weight="400"  font.family="3" font.pitch="2" font.charset="1" background.mode="1" background.color="536870912" background.transparency="0" background.gradient.color="8421504" background.gradient.transparency="0" background.gradient.angle="0" background.brushmode="0" background.gradient.repetition.mode="0" background.gradient.repetition.count="0" background.gradient.repetition.length="100" background.gradient.focus="0" background.gradient.scale="100" background.gradient.spread="100" tooltip.backcolor="134217752" tooltip.delay.initial="0" tooltip.delay.visible="32000" tooltip.enabled="0" tooltip.hasclosebutton="0" tooltip.icon="0" tooltip.isbubble="0" tooltip.maxwidth="0" tooltip.textcolor="134217751" tooltip.transparency="0" transparency="0" )
+text(band=header alignment="2" text="航空便" border="6" color="33554432" x="1912" y="7" height="75" width="252" html.valueishtml="0"  name=air_mei_t visible="1"  font.face="Yu Gothic UI Semilight" font.height="-11" font.weight="400"  font.family="3" font.pitch="2" font.charset="1" background.mode="1" background.color="536870912" background.transparency="0" background.gradient.color="0" background.gradient.transparency="0" background.gradient.angle="0" background.brushmode="0" background.gradient.repetition.mode="0" background.gradient.repetition.count="0" background.gradient.repetition.length="0" background.gradient.focus="0" background.gradient.scale="0" background.gradient.spread="0" tooltip.backcolor="0" tooltip.delay.initial="0" tooltip.delay.visible="0" tooltip.enabled="0" tooltip.hasclosebutton="0" tooltip.icon="0" tooltip.isbubble="0" tooltip.maxwidth="0" tooltip.textcolor="0" tooltip.transparency="0" transparency="0" )
+text(band=header alignment="2" text="運賃計算" border="6" color="33554432" x="2172" y="7" height="75" width="332" html.valueishtml="0"  name=untin_keisan_t visible="1"  font.face="Yu Gothic UI Semilight" font.height="-11" font.weight="400"  font.family="3" font.pitch="2" font.charset="1" background.mode="1" background.color="536870912" background.transparency="0" background.gradient.color="0" background.gradient.transparency="0" background.gradient.angle="0" background.brushmode="0" background.gradient.repetition.mode="0" background.gradient.repetition.count="0" background.gradient.repetition.length="0" background.gradient.focus="0" background.gradient.scale="0" background.gradient.spread="0" tooltip.backcolor="0" tooltip.delay.initial="0" tooltip.delay.visible="0" tooltip.enabled="0" tooltip.hasclosebutton="0" tooltip.icon="0" tooltip.isbubble="0" tooltip.maxwidth="0" tooltip.textcolor="0" tooltip.transparency="0" transparency="0" )
+text(band=header alignment="2" text="運賃額" border="6" color="33554432" x="2512" y="7" height="75" width="292" html.valueishtml="0"  name=untin_t visible="1"  font.face="Yu Gothic UI Semilight" font.height="-11" font.weight="400"  font.family="3" font.pitch="2" font.charset="1" background.mode="1" background.color="536870912" background.transparency="0" background.gradient.color="0" background.gradient.transparency="0" background.gradient.angle="0" background.brushmode="0" background.gradient.repetition.mode="0" background.gradient.repetition.count="0" background.gradient.repetition.length="0" background.gradient.focus="0" background.gradient.scale="0" background.gradient.spread="0" tooltip.backcolor="0" tooltip.delay.initial="0" tooltip.delay.visible="0" tooltip.enabled="0" tooltip.hasclosebutton="0" tooltip.icon="0" tooltip.isbubble="0" tooltip.maxwidth="0" tooltip.textcolor="0" tooltip.transparency="0" transparency="0" )
+column(band=detail id=1 alignment="1" tabsequence=32766 border="0" color="33554432" x="12" y="3" height="71" width="248" format="[general]" html.valueishtml="0"  name=unso_code visible="1" edit.limit=0 edit.case=any edit.focusrectangle=no edit.autoselect=yes edit.autohscroll=yes edit.imemode=0  font.face="Yu Gothic UI Semilight" font.height="-11" font.weight="400"  font.family="3" font.pitch="2" font.charset="1" background.mode="1" background.color="536870912" background.transparency="0" background.gradient.color="8421504" background.gradient.transparency="0" background.gradient.angle="0" background.brushmode="0" background.gradient.repetition.mode="0" background.gradient.repetition.count="0" background.gradient.repetition.length="100" background.gradient.focus="0" background.gradient.scale="100" background.gradient.spread="100" tooltip.backcolor="134217752" tooltip.delay.initial="0" tooltip.delay.visible="32000" tooltip.enabled="0" tooltip.hasclosebutton="0" tooltip.icon="0" tooltip.isbubble="0" tooltip.maxwidth="0" tooltip.textcolor="134217751" tooltip.transparency="0" transparency="0" )
+column(band=detail id=3 alignment="0" tabsequence=32766 border="0" color="33554432" x="1492" y="3" height="71" width="408" format="[general]" html.valueishtml="0"  name=unso_mei_ryaku visible="1" edit.limit=10 edit.case=any edit.focusrectangle=no edit.autoselect=yes edit.autohscroll=yes edit.imemode=0  font.face="Yu Gothic UI Semilight" font.height="-11" font.weight="400"  font.family="3" font.pitch="2" font.charset="1" background.mode="1" background.color="536870912" background.transparency="0" background.gradient.color="8421504" background.gradient.transparency="0" background.gradient.angle="0" background.brushmode="0" background.gradient.repetition.mode="0" background.gradient.repetition.count="0" background.gradient.repetition.length="100" background.gradient.focus="0" background.gradient.scale="100" background.gradient.spread="100" tooltip.backcolor="134217752" tooltip.delay.initial="0" tooltip.delay.visible="32000" tooltip.enabled="0" tooltip.hasclosebutton="0" tooltip.icon="0" tooltip.isbubble="0" tooltip.maxwidth="0" tooltip.textcolor="134217751" tooltip.transparency="0" transparency="0" )
+column(band=detail id=5 alignment="0" tabsequence=32766 border="0" color="33554432" x="1916" y="3" height="71" width="248" format="[general]" html.valueishtml="0"  name=air_mei visible="1" edit.limit=0 edit.case=any edit.focusrectangle=no edit.autoselect=no edit.imemode=0  font.face="Yu Gothic UI Semilight" font.height="-11" font.weight="400"  font.family="3" font.pitch="2" font.charset="1" background.mode="1" background.color="536870912" background.transparency="0" background.gradient.color="8421504" background.gradient.transparency="0" background.gradient.angle="0" background.brushmode="0" background.gradient.repetition.mode="0" background.gradient.repetition.count="0" background.gradient.repetition.length="100" background.gradient.focus="0" background.gradient.scale="100" background.gradient.spread="100" tooltip.backcolor="134217752" tooltip.delay.initial="0" tooltip.delay.visible="32000" tooltip.enabled="0" tooltip.hasclosebutton="0" tooltip.icon="0" tooltip.isbubble="0" tooltip.maxwidth="0" tooltip.textcolor="134217751" tooltip.transparency="0" transparency="0" )
+column(band=detail id=7 alignment="0" tabsequence=32766 border="0" color="33554432" x="2176" y="3" height="71" width="328" format="[general]" html.valueishtml="0"  name=untin_keisan visible="1" edit.limit=0 edit.case=any edit.focusrectangle=no edit.autoselect=no edit.imemode=0  font.face="Yu Gothic UI Semilight" font.height="-11" font.weight="400"  font.family="3" font.pitch="2" font.charset="1" background.mode="1" background.color="536870912" background.transparency="0" background.gradient.color="8421504" background.gradient.transparency="0" background.gradient.angle="0" background.brushmode="0" background.gradient.repetition.mode="0" background.gradient.repetition.count="0" background.gradient.repetition.length="100" background.gradient.focus="0" background.gradient.scale="100" background.gradient.spread="100" tooltip.backcolor="134217752" tooltip.delay.initial="0" tooltip.delay.visible="32000" tooltip.enabled="0" tooltip.hasclosebutton="0" tooltip.icon="0" tooltip.isbubble="0" tooltip.maxwidth="0" tooltip.textcolor="134217751" tooltip.transparency="0" transparency="0" )
+column(band=detail id=14 alignment="0" tabsequence=32766 border="0" color="33554432" x="2516" y="3" height="71" width="288" format="[general]" html.valueishtml="0"  name=untin visible="1" edit.limit=0 edit.case=any edit.focusrectangle=no edit.autoselect=no edit.imemode=0  font.face="Yu Gothic UI Semilight" font.height="-11" font.weight="400"  font.family="3" font.pitch="2" font.charset="1" background.mode="1" background.color="536870912" background.transparency="0" background.gradient.color="8421504" background.gradient.transparency="0" background.gradient.angle="0" background.brushmode="0" background.gradient.repetition.mode="0" background.gradient.repetition.count="0" background.gradient.repetition.length="100" background.gradient.focus="0" background.gradient.scale="100" background.gradient.spread="100" tooltip.backcolor="134217752" tooltip.delay.initial="0" tooltip.delay.visible="32000" tooltip.enabled="0" tooltip.hasclosebutton="0" tooltip.icon="0" tooltip.isbubble="0" tooltip.maxwidth="0" tooltip.textcolor="134217751" tooltip.transparency="0" transparency="0" )
+column(band=detail id=2 alignment="0" tabsequence=32766 border="0" color="33554432" x="272" y="3" height="71" width="1208" format="[general]" html.valueishtml="0"  name=unso_mei visible="1" edit.limit=30 edit.case=any edit.focusrectangle=no edit.autoselect=yes edit.autohscroll=yes edit.imemode=0  font.face="Yu Gothic UI Semilight" font.height="-11" font.weight="400"  font.family="3" font.pitch="2" font.charset="1" background.mode="1" background.color="536870912" background.transparency="0" background.gradient.color="8421504" background.gradient.transparency="0" background.gradient.angle="0" background.brushmode="0" background.gradient.repetition.mode="0" background.gradient.repetition.count="0" background.gradient.repetition.length="100" background.gradient.focus="0" background.gradient.scale="100" background.gradient.spread="100" tooltip.backcolor="134217752" tooltip.delay.initial="0" tooltip.delay.visible="32000" tooltip.enabled="0" tooltip.hasclosebutton="0" tooltip.icon="0" tooltip.isbubble="0" tooltip.maxwidth="0" tooltip.textcolor="134217751" tooltip.transparency="0" transparency="0" )
+htmltable(border="1" )
+htmlgen(clientevents="1" clientvalidation="1" clientcomputedfields="1" clientformatting="0" clientscriptable="0" generatejavascript="1" encodeselflinkargs="1" netscapelayers="0" pagingmethod=0 generatedddwframes="1" )
+xhtmlgen() cssgen(sessionspecific="0" )
+xmlgen(inline="0" )
+xsltgen()
+jsgen()
+export.xml(headgroups="1" includewhitespace="0" metadatatype=0 savemetadata=0 )
+import.xml()
+export.pdf(method=2 distill.custompostscript="0" xslfop.print="0" nativepdf.customsize=0 nativepdf.customorientation=0 nativepdf.pdfstandard=0 nativepdf.useprintspec=no )
+export.xhtml()
+ 

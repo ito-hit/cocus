@@ -1,0 +1,22 @@
+﻿$PBExportHeader$str_palette.srs
+$PBExportComments$システム内で使用する基本色
+global type str_palette from structure
+	long		error_text
+	long		error_text_dark
+	long		error_back
+	long		warning_text
+	long		warning_text_dark
+	long		warning_back
+	long		info_text
+	long		info_text_dark
+	long		info_back
+	long		success_text
+	long		success_text_dark
+	long		success_back
+	long		lattice_odd
+	long		lattice_even
+	long		main_background
+	long		upper_background
+	long		dwlist_background
+end type
+

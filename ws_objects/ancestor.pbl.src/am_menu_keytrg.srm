@@ -1,0 +1,1463 @@
+﻿$PBExportHeader$am_menu_keytrg.srm
+$PBExportComments$ファンクションキーを動作させるための裏技
+forward
+global type am_menu_keytrg from menu
+end type
+type m_ファイルf from menu within am_menu_keytrg
+end type
+type m_f1 from menu within m_ファイルf
+end type
+type m_f2 from menu within m_ファイルf
+end type
+type m_f3 from menu within m_ファイルf
+end type
+type m_f4 from menu within m_ファイルf
+end type
+type m_f5 from menu within m_ファイルf
+end type
+type m_f6 from menu within m_ファイルf
+end type
+type m_f7 from menu within m_ファイルf
+end type
+type m_f8 from menu within m_ファイルf
+end type
+type m_f9 from menu within m_ファイルf
+end type
+type m_1 from menu within m_ファイルf
+end type
+type m_f11 from menu within m_ファイルf
+end type
+type m_f12 from menu within m_ファイルf
+end type
+type m_sf1 from menu within m_ファイルf
+end type
+type m_sf2 from menu within m_ファイルf
+end type
+type m_sf3 from menu within m_ファイルf
+end type
+type m_sf4 from menu within m_ファイルf
+end type
+type m_sf5 from menu within m_ファイルf
+end type
+type m_sf6 from menu within m_ファイルf
+end type
+type m_sf7 from menu within m_ファイルf
+end type
+type m_sf8 from menu within m_ファイルf
+end type
+type m_sf9 from menu within m_ファイルf
+end type
+type m_sf10 from menu within m_ファイルf
+end type
+type m_sf11 from menu within m_ファイルf
+end type
+type m_sf12 from menu within m_ファイルf
+end type
+type m_csf1 from menu within m_ファイルf
+end type
+type m_csf2 from menu within m_ファイルf
+end type
+type m_csf3 from menu within m_ファイルf
+end type
+type m_csf4 from menu within m_ファイルf
+end type
+type m_csf5 from menu within m_ファイルf
+end type
+type m_csf6 from menu within m_ファイルf
+end type
+type m_csf7 from menu within m_ファイルf
+end type
+type m_csf8 from menu within m_ファイルf
+end type
+type m_csf9 from menu within m_ファイルf
+end type
+type m_csf10 from menu within m_ファイルf
+end type
+type m_csf11 from menu within m_ファイルf
+end type
+type m_csf12 from menu within m_ファイルf
+end type
+type m_ファイルf from menu within am_menu_keytrg
+m_f1 m_f1
+m_f2 m_f2
+m_f3 m_f3
+m_f4 m_f4
+m_f5 m_f5
+m_f6 m_f6
+m_f7 m_f7
+m_f8 m_f8
+m_f9 m_f9
+m_1 m_1
+m_f11 m_f11
+m_f12 m_f12
+m_sf1 m_sf1
+m_sf2 m_sf2
+m_sf3 m_sf3
+m_sf4 m_sf4
+m_sf5 m_sf5
+m_sf6 m_sf6
+m_sf7 m_sf7
+m_sf8 m_sf8
+m_sf9 m_sf9
+m_sf10 m_sf10
+m_sf11 m_sf11
+m_sf12 m_sf12
+m_csf1 m_csf1
+m_csf2 m_csf2
+m_csf3 m_csf3
+m_csf4 m_csf4
+m_csf5 m_csf5
+m_csf6 m_csf6
+m_csf7 m_csf7
+m_csf8 m_csf8
+m_csf9 m_csf9
+m_csf10 m_csf10
+m_csf11 m_csf11
+m_csf12 m_csf12
+end type
+global type am_menu_keytrg from menu
+m_ファイルf m_ファイルf
+end type
+end forward
+
+global type am_menu_keytrg from menu
+m_ファイルf m_ファイルf
+end type
+global am_menu_keytrg am_menu_keytrg
+
+forward prototypes
+public subroutine of_key_trigger (keycode p_keycode, integer p_control, integer p_shift)
+end prototypes
+
+public subroutine of_key_trigger (keycode p_keycode, integer p_control, integer p_shift);graphicobject	l_obj
+
+l_obj	= getfocus()
+
+l_obj.dynamic event fnkeyevent( p_keycode, p_control, p_shift )
+
+end subroutine
+
+on am_menu_keytrg.create
+am_menu_keytrg=this
+call super::create
+this.menutextcolor = 134217735
+this.menubackcolor = 134217732
+this.menuhighlightcolor = 134217741
+this.textsize = 8
+this.weight = 400
+this.facename = "Tahoma"
+this.titlebackcolor = 134217730
+this.bitmapbackcolor = 12632256
+this.menubitmaps = true
+this.titlegradient = true
+this.toolbartextcolor = 134217746
+this.toolbarbackcolor = 67108864
+this.toolbarhighlightcolor = 134217741
+this.toolbargradient = true
+this.bitmapgradient = true
+this.m_ファイルf=create m_ファイルf
+this.Item[UpperBound(this.Item)+1]=this.m_ファイルf
+end on
+
+on am_menu_keytrg.destroy
+call super::destroy
+destroy(this.m_ファイルf)
+end on
+
+type m_ファイルf from menu within am_menu_keytrg
+m_f1 m_f1
+m_f2 m_f2
+m_f3 m_f3
+m_f4 m_f4
+m_f5 m_f5
+m_f6 m_f6
+m_f7 m_f7
+m_f8 m_f8
+m_f9 m_f9
+m_1 m_1
+m_f11 m_f11
+m_f12 m_f12
+m_sf1 m_sf1
+m_sf2 m_sf2
+m_sf3 m_sf3
+m_sf4 m_sf4
+m_sf5 m_sf5
+m_sf6 m_sf6
+m_sf7 m_sf7
+m_sf8 m_sf8
+m_sf9 m_sf9
+m_sf10 m_sf10
+m_sf11 m_sf11
+m_sf12 m_sf12
+m_csf1 m_csf1
+m_csf2 m_csf2
+m_csf3 m_csf3
+m_csf4 m_csf4
+m_csf5 m_csf5
+m_csf6 m_csf6
+m_csf7 m_csf7
+m_csf8 m_csf8
+m_csf9 m_csf9
+m_csf10 m_csf10
+m_csf11 m_csf11
+m_csf12 m_csf12
+end type
+
+on m_ファイルf.create
+call super::create
+this.visible = false
+this.text = "ファンクション(&F)"
+this.menutextcolor = 134217735
+this.menubackcolor = 134217732
+this.menuhighlightcolor = 134217741
+this.textsize = 8
+this.weight = 400
+this.facename = "Tahoma"
+this.titlebackcolor = 134217730
+this.bitmapbackcolor = 12632256
+this.menubitmaps = true
+this.titlegradient = true
+this.toolbartextcolor = 134217746
+this.toolbarbackcolor = 67108864
+this.toolbarhighlightcolor = 134217741
+this.toolbargradient = true
+this.bitmapgradient = true
+this.m_f1=create m_f1
+this.m_f2=create m_f2
+this.m_f3=create m_f3
+this.m_f4=create m_f4
+this.m_f5=create m_f5
+this.m_f6=create m_f6
+this.m_f7=create m_f7
+this.m_f8=create m_f8
+this.m_f9=create m_f9
+this.m_1=create m_1
+this.m_f11=create m_f11
+this.m_f12=create m_f12
+this.m_sf1=create m_sf1
+this.m_sf2=create m_sf2
+this.m_sf3=create m_sf3
+this.m_sf4=create m_sf4
+this.m_sf5=create m_sf5
+this.m_sf6=create m_sf6
+this.m_sf7=create m_sf7
+this.m_sf8=create m_sf8
+this.m_sf9=create m_sf9
+this.m_sf10=create m_sf10
+this.m_sf11=create m_sf11
+this.m_sf12=create m_sf12
+this.m_csf1=create m_csf1
+this.m_csf2=create m_csf2
+this.m_csf3=create m_csf3
+this.m_csf4=create m_csf4
+this.m_csf5=create m_csf5
+this.m_csf6=create m_csf6
+this.m_csf7=create m_csf7
+this.m_csf8=create m_csf8
+this.m_csf9=create m_csf9
+this.m_csf10=create m_csf10
+this.m_csf11=create m_csf11
+this.m_csf12=create m_csf12
+this.Item[UpperBound(this.Item)+1]=this.m_f1
+this.Item[UpperBound(this.Item)+1]=this.m_f2
+this.Item[UpperBound(this.Item)+1]=this.m_f3
+this.Item[UpperBound(this.Item)+1]=this.m_f4
+this.Item[UpperBound(this.Item)+1]=this.m_f5
+this.Item[UpperBound(this.Item)+1]=this.m_f6
+this.Item[UpperBound(this.Item)+1]=this.m_f7
+this.Item[UpperBound(this.Item)+1]=this.m_f8
+this.Item[UpperBound(this.Item)+1]=this.m_f9
+this.Item[UpperBound(this.Item)+1]=this.m_1
+this.Item[UpperBound(this.Item)+1]=this.m_f11
+this.Item[UpperBound(this.Item)+1]=this.m_f12
+this.Item[UpperBound(this.Item)+1]=this.m_sf1
+this.Item[UpperBound(this.Item)+1]=this.m_sf2
+this.Item[UpperBound(this.Item)+1]=this.m_sf3
+this.Item[UpperBound(this.Item)+1]=this.m_sf4
+this.Item[UpperBound(this.Item)+1]=this.m_sf5
+this.Item[UpperBound(this.Item)+1]=this.m_sf6
+this.Item[UpperBound(this.Item)+1]=this.m_sf7
+this.Item[UpperBound(this.Item)+1]=this.m_sf8
+this.Item[UpperBound(this.Item)+1]=this.m_sf9
+this.Item[UpperBound(this.Item)+1]=this.m_sf10
+this.Item[UpperBound(this.Item)+1]=this.m_sf11
+this.Item[UpperBound(this.Item)+1]=this.m_sf12
+this.Item[UpperBound(this.Item)+1]=this.m_csf1
+this.Item[UpperBound(this.Item)+1]=this.m_csf2
+this.Item[UpperBound(this.Item)+1]=this.m_csf3
+this.Item[UpperBound(this.Item)+1]=this.m_csf4
+this.Item[UpperBound(this.Item)+1]=this.m_csf5
+this.Item[UpperBound(this.Item)+1]=this.m_csf6
+this.Item[UpperBound(this.Item)+1]=this.m_csf7
+this.Item[UpperBound(this.Item)+1]=this.m_csf8
+this.Item[UpperBound(this.Item)+1]=this.m_csf9
+this.Item[UpperBound(this.Item)+1]=this.m_csf10
+this.Item[UpperBound(this.Item)+1]=this.m_csf11
+this.Item[UpperBound(this.Item)+1]=this.m_csf12
+end on
+
+on m_ファイルf.destroy
+call super::destroy
+destroy(this.m_f1)
+destroy(this.m_f2)
+destroy(this.m_f3)
+destroy(this.m_f4)
+destroy(this.m_f5)
+destroy(this.m_f6)
+destroy(this.m_f7)
+destroy(this.m_f8)
+destroy(this.m_f9)
+destroy(this.m_1)
+destroy(this.m_f11)
+destroy(this.m_f12)
+destroy(this.m_sf1)
+destroy(this.m_sf2)
+destroy(this.m_sf3)
+destroy(this.m_sf4)
+destroy(this.m_sf5)
+destroy(this.m_sf6)
+destroy(this.m_sf7)
+destroy(this.m_sf8)
+destroy(this.m_sf9)
+destroy(this.m_sf10)
+destroy(this.m_sf11)
+destroy(this.m_sf12)
+destroy(this.m_csf1)
+destroy(this.m_csf2)
+destroy(this.m_csf3)
+destroy(this.m_csf4)
+destroy(this.m_csf5)
+destroy(this.m_csf6)
+destroy(this.m_csf7)
+destroy(this.m_csf8)
+destroy(this.m_csf9)
+destroy(this.m_csf10)
+destroy(this.m_csf11)
+destroy(this.m_csf12)
+end on
+
+type m_f1 from menu within m_ファイルf
+end type
+
+on m_f1.create
+call super::create
+this.text = "F1~tF1"
+this.shortcut = 112
+this.menutextcolor = 134217735
+this.menubackcolor = 134217732
+this.menuhighlightcolor = 134217741
+this.textsize = 8
+this.weight = 400
+this.facename = "Tahoma"
+this.titlebackcolor = 134217730
+this.bitmapbackcolor = 12632256
+this.menubitmaps = true
+this.titlegradient = true
+this.toolbartextcolor = 134217746
+this.toolbarbackcolor = 67108864
+this.toolbarhighlightcolor = 134217741
+this.toolbargradient = true
+this.bitmapgradient = true
+end on
+
+on m_f1.destroy
+call super::destroy
+end on
+
+event clicked;of_key_trigger( KeyF1!, 0, 0 )
+end event
+
+type m_f2 from menu within m_ファイルf
+end type
+
+on m_f2.create
+call super::create
+this.text = "F2~tF2"
+this.shortcut = 113
+this.menutextcolor = 134217735
+this.menubackcolor = 134217732
+this.menuhighlightcolor = 134217741
+this.textsize = 8
+this.weight = 400
+this.facename = "Tahoma"
+this.titlebackcolor = 134217730
+this.bitmapbackcolor = 12632256
+this.menubitmaps = true
+this.titlegradient = true
+this.toolbartextcolor = 134217746
+this.toolbarbackcolor = 67108864
+this.toolbarhighlightcolor = 134217741
+this.toolbargradient = true
+this.bitmapgradient = true
+end on
+
+on m_f2.destroy
+call super::destroy
+end on
+
+event clicked;of_key_trigger( KeyF2!, 0, 0 )
+end event
+
+type m_f3 from menu within m_ファイルf
+end type
+
+on m_f3.create
+call super::create
+this.text = "F3~tF3"
+this.shortcut = 114
+this.menutextcolor = 134217735
+this.menubackcolor = 134217732
+this.menuhighlightcolor = 134217741
+this.textsize = 8
+this.weight = 400
+this.facename = "Tahoma"
+this.titlebackcolor = 134217730
+this.bitmapbackcolor = 12632256
+this.menubitmaps = true
+this.titlegradient = true
+this.toolbartextcolor = 134217746
+this.toolbarbackcolor = 67108864
+this.toolbarhighlightcolor = 134217741
+this.toolbargradient = true
+this.bitmapgradient = true
+end on
+
+on m_f3.destroy
+call super::destroy
+end on
+
+event clicked;of_key_trigger( KeyF3!, 0, 0 )
+end event
+
+type m_f4 from menu within m_ファイルf
+end type
+
+on m_f4.create
+call super::create
+this.text = "F4~tF4"
+this.shortcut = 115
+this.menutextcolor = 134217735
+this.menubackcolor = 134217732
+this.menuhighlightcolor = 134217741
+this.textsize = 8
+this.weight = 400
+this.facename = "Tahoma"
+this.titlebackcolor = 134217730
+this.bitmapbackcolor = 12632256
+this.menubitmaps = true
+this.titlegradient = true
+this.toolbartextcolor = 134217746
+this.toolbarbackcolor = 67108864
+this.toolbarhighlightcolor = 134217741
+this.toolbargradient = true
+this.bitmapgradient = true
+end on
+
+on m_f4.destroy
+call super::destroy
+end on
+
+event clicked;of_key_trigger( KeyF4!, 0, 0 )
+end event
+
+type m_f5 from menu within m_ファイルf
+end type
+
+on m_f5.create
+call super::create
+this.text = "F5~tF5"
+this.shortcut = 116
+this.menutextcolor = 134217735
+this.menubackcolor = 134217732
+this.menuhighlightcolor = 134217741
+this.textsize = 8
+this.weight = 400
+this.facename = "Tahoma"
+this.titlebackcolor = 134217730
+this.bitmapbackcolor = 12632256
+this.menubitmaps = true
+this.titlegradient = true
+this.toolbartextcolor = 134217746
+this.toolbarbackcolor = 67108864
+this.toolbarhighlightcolor = 134217741
+this.toolbargradient = true
+this.bitmapgradient = true
+end on
+
+on m_f5.destroy
+call super::destroy
+end on
+
+event clicked;of_key_trigger( KeyF5!, 0, 0 )
+end event
+
+type m_f6 from menu within m_ファイルf
+end type
+
+on m_f6.create
+call super::create
+this.text = "F6~tF6"
+this.shortcut = 117
+this.menutextcolor = 134217735
+this.menubackcolor = 134217732
+this.menuhighlightcolor = 134217741
+this.textsize = 8
+this.weight = 400
+this.facename = "Tahoma"
+this.titlebackcolor = 134217730
+this.bitmapbackcolor = 12632256
+this.menubitmaps = true
+this.titlegradient = true
+this.toolbartextcolor = 134217746
+this.toolbarbackcolor = 67108864
+this.toolbarhighlightcolor = 134217741
+this.toolbargradient = true
+this.bitmapgradient = true
+end on
+
+on m_f6.destroy
+call super::destroy
+end on
+
+event clicked;of_key_trigger( KeyF6!, 0, 0 )
+end event
+
+type m_f7 from menu within m_ファイルf
+end type
+
+on m_f7.create
+call super::create
+this.text = "F7~tF7"
+this.shortcut = 118
+this.menutextcolor = 134217735
+this.menubackcolor = 134217732
+this.menuhighlightcolor = 134217741
+this.textsize = 8
+this.weight = 400
+this.facename = "Tahoma"
+this.titlebackcolor = 134217730
+this.bitmapbackcolor = 12632256
+this.menubitmaps = true
+this.titlegradient = true
+this.toolbartextcolor = 134217746
+this.toolbarbackcolor = 67108864
+this.toolbarhighlightcolor = 134217741
+this.toolbargradient = true
+this.bitmapgradient = true
+end on
+
+on m_f7.destroy
+call super::destroy
+end on
+
+event clicked;of_key_trigger( KeyF7!, 0, 0 )
+end event
+
+type m_f8 from menu within m_ファイルf
+end type
+
+on m_f8.create
+call super::create
+this.text = "F8~tF8"
+this.shortcut = 119
+this.menutextcolor = 134217735
+this.menubackcolor = 134217732
+this.menuhighlightcolor = 134217741
+this.textsize = 8
+this.weight = 400
+this.facename = "Tahoma"
+this.titlebackcolor = 134217730
+this.bitmapbackcolor = 12632256
+this.menubitmaps = true
+this.titlegradient = true
+this.toolbartextcolor = 134217746
+this.toolbarbackcolor = 67108864
+this.toolbarhighlightcolor = 134217741
+this.toolbargradient = true
+this.bitmapgradient = true
+end on
+
+on m_f8.destroy
+call super::destroy
+end on
+
+event clicked;of_key_trigger( KeyF8!, 0, 0 )
+end event
+
+type m_f9 from menu within m_ファイルf
+end type
+
+on m_f9.create
+call super::create
+this.text = "F9~tF9"
+this.shortcut = 120
+this.menutextcolor = 134217735
+this.menubackcolor = 134217732
+this.menuhighlightcolor = 134217741
+this.textsize = 8
+this.weight = 400
+this.facename = "Tahoma"
+this.titlebackcolor = 134217730
+this.bitmapbackcolor = 12632256
+this.menubitmaps = true
+this.titlegradient = true
+this.toolbartextcolor = 134217746
+this.toolbarbackcolor = 67108864
+this.toolbarhighlightcolor = 134217741
+this.toolbargradient = true
+this.bitmapgradient = true
+end on
+
+on m_f9.destroy
+call super::destroy
+end on
+
+event clicked;of_key_trigger( KeyF9!, 0, 0 )
+end event
+
+type m_1 from menu within m_ファイルf
+end type
+
+event clicked;of_key_trigger( KeyF10!, 0, 0 )
+
+////parentwindow.dynamic event key( KeyF10!, 0 )
+//graphicobject	l_obj
+//
+////l_obj	= getfocus()
+//getfocus().dynamic event syskeydown( KeyF10!, 0 )
+////messagebox( "am_menu", "f10_kick" )
+end event
+
+on m_1.create
+call super::create
+this.text = "F10~tF10"
+this.shortcut = 121
+this.toolbaritemvisible = false
+this.menutextcolor = 134217735
+this.menubackcolor = 134217732
+this.menuhighlightcolor = 134217741
+this.textsize = 8
+this.weight = 400
+this.facename = "Tahoma"
+this.titlebackcolor = 134217730
+this.bitmapbackcolor = 12632256
+this.menubitmaps = true
+this.titlegradient = true
+this.toolbartextcolor = 134217746
+this.toolbarbackcolor = 67108864
+this.toolbarhighlightcolor = 134217741
+this.toolbargradient = true
+this.bitmapgradient = true
+end on
+
+on m_1.destroy
+call super::destroy
+end on
+
+type m_f11 from menu within m_ファイルf
+end type
+
+on m_f11.create
+call super::create
+this.text = "F11~tF11"
+this.shortcut = 122
+this.menutextcolor = 134217735
+this.menubackcolor = 134217732
+this.menuhighlightcolor = 134217741
+this.textsize = 8
+this.weight = 400
+this.facename = "Tahoma"
+this.titlebackcolor = 134217730
+this.bitmapbackcolor = 12632256
+this.menubitmaps = true
+this.titlegradient = true
+this.toolbartextcolor = 134217746
+this.toolbarbackcolor = 67108864
+this.toolbarhighlightcolor = 134217741
+this.toolbargradient = true
+this.bitmapgradient = true
+end on
+
+on m_f11.destroy
+call super::destroy
+end on
+
+event clicked;of_key_trigger( KeyF11!, 0, 0 )
+end event
+
+type m_f12 from menu within m_ファイルf
+end type
+
+on m_f12.create
+call super::create
+this.text = "F12~tF12"
+this.shortcut = 123
+this.menutextcolor = 134217735
+this.menubackcolor = 134217732
+this.menuhighlightcolor = 134217741
+this.textsize = 8
+this.weight = 400
+this.facename = "Tahoma"
+this.titlebackcolor = 134217730
+this.bitmapbackcolor = 12632256
+this.menubitmaps = true
+this.titlegradient = true
+this.toolbartextcolor = 134217746
+this.toolbarbackcolor = 67108864
+this.toolbarhighlightcolor = 134217741
+this.toolbargradient = true
+this.bitmapgradient = true
+end on
+
+on m_f12.destroy
+call super::destroy
+end on
+
+event clicked;of_key_trigger( KeyF12!, 0, 0 )
+end event
+
+type m_sf1 from menu within m_ファイルf
+end type
+
+on m_sf1.create
+call super::create
+this.text = "SF1~tShift+F1"
+this.shortcut = 1136
+this.menutextcolor = 134217735
+this.menubackcolor = 134217732
+this.menuhighlightcolor = 134217741
+this.textsize = 8
+this.weight = 400
+this.facename = "Tahoma"
+this.titlebackcolor = 134217730
+this.bitmapbackcolor = 12632256
+this.menubitmaps = true
+this.titlegradient = true
+this.toolbartextcolor = 134217746
+this.toolbarbackcolor = 67108864
+this.toolbarhighlightcolor = 134217741
+this.toolbargradient = true
+this.bitmapgradient = true
+end on
+
+on m_sf1.destroy
+call super::destroy
+end on
+
+event clicked;of_key_trigger( KeyF1!, 0, 1 )
+
+end event
+
+type m_sf2 from menu within m_ファイルf
+end type
+
+on m_sf2.create
+call super::create
+this.text = "SF2~tShift+F2"
+this.shortcut = 1137
+this.menutextcolor = 134217735
+this.menubackcolor = 134217732
+this.menuhighlightcolor = 134217741
+this.textsize = 8
+this.weight = 400
+this.facename = "Tahoma"
+this.titlebackcolor = 134217730
+this.bitmapbackcolor = 12632256
+this.menubitmaps = true
+this.titlegradient = true
+this.toolbartextcolor = 134217746
+this.toolbarbackcolor = 67108864
+this.toolbarhighlightcolor = 134217741
+this.toolbargradient = true
+this.bitmapgradient = true
+end on
+
+on m_sf2.destroy
+call super::destroy
+end on
+
+event clicked;of_key_trigger( KeyF2!, 0, 1 )
+end event
+
+type m_sf3 from menu within m_ファイルf
+end type
+
+on m_sf3.create
+call super::create
+this.text = "SF3~tShift+F3"
+this.shortcut = 1138
+this.menutextcolor = 134217735
+this.menubackcolor = 134217732
+this.menuhighlightcolor = 134217741
+this.textsize = 8
+this.weight = 400
+this.facename = "Tahoma"
+this.titlebackcolor = 134217730
+this.bitmapbackcolor = 12632256
+this.menubitmaps = true
+this.titlegradient = true
+this.toolbartextcolor = 134217746
+this.toolbarbackcolor = 67108864
+this.toolbarhighlightcolor = 134217741
+this.toolbargradient = true
+this.bitmapgradient = true
+end on
+
+on m_sf3.destroy
+call super::destroy
+end on
+
+event clicked;of_key_trigger( KeyF3!, 0, 1 )
+end event
+
+type m_sf4 from menu within m_ファイルf
+end type
+
+on m_sf4.create
+call super::create
+this.text = "SF4~tShift+F4"
+this.shortcut = 1139
+this.menutextcolor = 134217735
+this.menubackcolor = 134217732
+this.menuhighlightcolor = 134217741
+this.textsize = 8
+this.weight = 400
+this.facename = "Tahoma"
+this.titlebackcolor = 134217730
+this.bitmapbackcolor = 12632256
+this.menubitmaps = true
+this.titlegradient = true
+this.toolbartextcolor = 134217746
+this.toolbarbackcolor = 67108864
+this.toolbarhighlightcolor = 134217741
+this.toolbargradient = true
+this.bitmapgradient = true
+end on
+
+on m_sf4.destroy
+call super::destroy
+end on
+
+event clicked;of_key_trigger( KeyF4!, 0, 1 )
+end event
+
+type m_sf5 from menu within m_ファイルf
+end type
+
+on m_sf5.create
+call super::create
+this.text = "SF5~tShift+F5"
+this.shortcut = 1140
+this.menutextcolor = 134217735
+this.menubackcolor = 134217732
+this.menuhighlightcolor = 134217741
+this.textsize = 8
+this.weight = 400
+this.facename = "Tahoma"
+this.titlebackcolor = 134217730
+this.bitmapbackcolor = 12632256
+this.menubitmaps = true
+this.titlegradient = true
+this.toolbartextcolor = 134217746
+this.toolbarbackcolor = 67108864
+this.toolbarhighlightcolor = 134217741
+this.toolbargradient = true
+this.bitmapgradient = true
+end on
+
+on m_sf5.destroy
+call super::destroy
+end on
+
+event clicked;of_key_trigger( KeyF5!, 0, 1 )
+end event
+
+type m_sf6 from menu within m_ファイルf
+end type
+
+on m_sf6.create
+call super::create
+this.text = "SF6~tShift+F6"
+this.shortcut = 1141
+this.menutextcolor = 134217735
+this.menubackcolor = 134217732
+this.menuhighlightcolor = 134217741
+this.textsize = 8
+this.weight = 400
+this.facename = "Tahoma"
+this.titlebackcolor = 134217730
+this.bitmapbackcolor = 12632256
+this.menubitmaps = true
+this.titlegradient = true
+this.toolbartextcolor = 134217746
+this.toolbarbackcolor = 67108864
+this.toolbarhighlightcolor = 134217741
+this.toolbargradient = true
+this.bitmapgradient = true
+end on
+
+on m_sf6.destroy
+call super::destroy
+end on
+
+event clicked;of_key_trigger( KeyF6!, 0, 1 )
+end event
+
+type m_sf7 from menu within m_ファイルf
+end type
+
+on m_sf7.create
+call super::create
+this.text = "SF7~tShift+F7"
+this.shortcut = 1142
+this.menutextcolor = 134217735
+this.menubackcolor = 134217732
+this.menuhighlightcolor = 134217741
+this.textsize = 8
+this.weight = 400
+this.facename = "Tahoma"
+this.titlebackcolor = 134217730
+this.bitmapbackcolor = 12632256
+this.menubitmaps = true
+this.titlegradient = true
+this.toolbartextcolor = 134217746
+this.toolbarbackcolor = 67108864
+this.toolbarhighlightcolor = 134217741
+this.toolbargradient = true
+this.bitmapgradient = true
+end on
+
+on m_sf7.destroy
+call super::destroy
+end on
+
+event clicked;of_key_trigger( KeyF7!, 0, 1 )
+end event
+
+type m_sf8 from menu within m_ファイルf
+end type
+
+on m_sf8.create
+call super::create
+this.text = "SF8~tShift+F8"
+this.shortcut = 1143
+this.menutextcolor = 134217735
+this.menubackcolor = 134217732
+this.menuhighlightcolor = 134217741
+this.textsize = 8
+this.weight = 400
+this.facename = "Tahoma"
+this.titlebackcolor = 134217730
+this.bitmapbackcolor = 12632256
+this.menubitmaps = true
+this.titlegradient = true
+this.toolbartextcolor = 134217746
+this.toolbarbackcolor = 67108864
+this.toolbarhighlightcolor = 134217741
+this.toolbargradient = true
+this.bitmapgradient = true
+end on
+
+on m_sf8.destroy
+call super::destroy
+end on
+
+event clicked;of_key_trigger( KeyF8!, 0, 1 )
+end event
+
+type m_sf9 from menu within m_ファイルf
+end type
+
+on m_sf9.create
+call super::create
+this.text = "SF9~tShift+F9"
+this.shortcut = 1144
+this.menutextcolor = 134217735
+this.menubackcolor = 134217732
+this.menuhighlightcolor = 134217741
+this.textsize = 8
+this.weight = 400
+this.facename = "Tahoma"
+this.titlebackcolor = 134217730
+this.bitmapbackcolor = 12632256
+this.menubitmaps = true
+this.titlegradient = true
+this.toolbartextcolor = 134217746
+this.toolbarbackcolor = 67108864
+this.toolbarhighlightcolor = 134217741
+this.toolbargradient = true
+this.bitmapgradient = true
+end on
+
+on m_sf9.destroy
+call super::destroy
+end on
+
+event clicked;of_key_trigger( KeyF9!, 0, 1 )
+end event
+
+type m_sf10 from menu within m_ファイルf
+end type
+
+on m_sf10.create
+call super::create
+this.text = "SF10~tShift+F10"
+this.shortcut = 1145
+this.menutextcolor = 134217735
+this.menubackcolor = 134217732
+this.menuhighlightcolor = 134217741
+this.textsize = 8
+this.weight = 400
+this.facename = "Tahoma"
+this.titlebackcolor = 134217730
+this.bitmapbackcolor = 12632256
+this.menubitmaps = true
+this.titlegradient = true
+this.toolbartextcolor = 134217746
+this.toolbarbackcolor = 67108864
+this.toolbarhighlightcolor = 134217741
+this.toolbargradient = true
+this.bitmapgradient = true
+end on
+
+on m_sf10.destroy
+call super::destroy
+end on
+
+event clicked;of_key_trigger( KeyF10!, 0, 1 )
+end event
+
+type m_sf11 from menu within m_ファイルf
+end type
+
+on m_sf11.create
+call super::create
+this.text = "SF11~tShift+F11"
+this.shortcut = 1146
+this.menutextcolor = 134217735
+this.menubackcolor = 134217732
+this.menuhighlightcolor = 134217741
+this.textsize = 8
+this.weight = 400
+this.facename = "Tahoma"
+this.titlebackcolor = 134217730
+this.bitmapbackcolor = 12632256
+this.menubitmaps = true
+this.titlegradient = true
+this.toolbartextcolor = 134217746
+this.toolbarbackcolor = 67108864
+this.toolbarhighlightcolor = 134217741
+this.toolbargradient = true
+this.bitmapgradient = true
+end on
+
+on m_sf11.destroy
+call super::destroy
+end on
+
+event clicked;of_key_trigger( KeyF11!, 0, 1 )
+end event
+
+type m_sf12 from menu within m_ファイルf
+end type
+
+on m_sf12.create
+call super::create
+this.text = "SF12~tShift+F12"
+this.shortcut = 1147
+this.menutextcolor = 134217735
+this.menubackcolor = 134217732
+this.menuhighlightcolor = 134217741
+this.textsize = 8
+this.weight = 400
+this.facename = "Tahoma"
+this.titlebackcolor = 134217730
+this.bitmapbackcolor = 12632256
+this.menubitmaps = true
+this.titlegradient = true
+this.toolbartextcolor = 134217746
+this.toolbarbackcolor = 67108864
+this.toolbarhighlightcolor = 134217741
+this.toolbargradient = true
+this.bitmapgradient = true
+end on
+
+on m_sf12.destroy
+call super::destroy
+end on
+
+event clicked;of_key_trigger( KeyF12!, 0, 1 )
+end event
+
+type m_csf1 from menu within m_ファイルf
+end type
+
+on m_csf1.create
+call super::create
+this.text = "CSF1~tCtrl+Shift+F1"
+this.shortcut = 1392
+this.menutextcolor = 134217735
+this.menubackcolor = 134217732
+this.menuhighlightcolor = 134217741
+this.textsize = 8
+this.weight = 400
+this.facename = "Tahoma"
+this.titlebackcolor = 134217730
+this.bitmapbackcolor = 12632256
+this.menubitmaps = true
+this.titlegradient = true
+this.toolbartextcolor = 134217746
+this.toolbarbackcolor = 67108864
+this.toolbarhighlightcolor = 134217741
+this.toolbargradient = true
+this.bitmapgradient = true
+end on
+
+on m_csf1.destroy
+call super::destroy
+end on
+
+event clicked;of_key_trigger( KeyF1!, 1, 1 )
+end event
+
+type m_csf2 from menu within m_ファイルf
+end type
+
+on m_csf2.create
+call super::create
+this.text = "CSF2~tCtrl+Shift+F2"
+this.shortcut = 1393
+this.menutextcolor = 134217735
+this.menubackcolor = 134217732
+this.menuhighlightcolor = 134217741
+this.textsize = 8
+this.weight = 400
+this.facename = "Tahoma"
+this.titlebackcolor = 134217730
+this.bitmapbackcolor = 12632256
+this.menubitmaps = true
+this.titlegradient = true
+this.toolbartextcolor = 134217746
+this.toolbarbackcolor = 67108864
+this.toolbarhighlightcolor = 134217741
+this.toolbargradient = true
+this.bitmapgradient = true
+end on
+
+on m_csf2.destroy
+call super::destroy
+end on
+
+event clicked;of_key_trigger( KeyF2!, 1, 1 )
+end event
+
+type m_csf3 from menu within m_ファイルf
+end type
+
+on m_csf3.create
+call super::create
+this.text = "CSF3~tCtrl+Shift+F3"
+this.shortcut = 1394
+this.menutextcolor = 134217735
+this.menubackcolor = 134217732
+this.menuhighlightcolor = 134217741
+this.textsize = 8
+this.weight = 400
+this.facename = "Tahoma"
+this.titlebackcolor = 134217730
+this.bitmapbackcolor = 12632256
+this.menubitmaps = true
+this.titlegradient = true
+this.toolbartextcolor = 134217746
+this.toolbarbackcolor = 67108864
+this.toolbarhighlightcolor = 134217741
+this.toolbargradient = true
+this.bitmapgradient = true
+end on
+
+on m_csf3.destroy
+call super::destroy
+end on
+
+event clicked;of_key_trigger( KeyF3!, 1, 1 )
+end event
+
+type m_csf4 from menu within m_ファイルf
+end type
+
+on m_csf4.create
+call super::create
+this.text = "CSF4~tCtrl+Shift+F4"
+this.shortcut = 1395
+this.menutextcolor = 134217735
+this.menubackcolor = 134217732
+this.menuhighlightcolor = 134217741
+this.textsize = 8
+this.weight = 400
+this.facename = "Tahoma"
+this.titlebackcolor = 134217730
+this.bitmapbackcolor = 12632256
+this.menubitmaps = true
+this.titlegradient = true
+this.toolbartextcolor = 134217746
+this.toolbarbackcolor = 67108864
+this.toolbarhighlightcolor = 134217741
+this.toolbargradient = true
+this.bitmapgradient = true
+end on
+
+on m_csf4.destroy
+call super::destroy
+end on
+
+event clicked;of_key_trigger( KeyF4!, 1, 1 )
+end event
+
+type m_csf5 from menu within m_ファイルf
+end type
+
+on m_csf5.create
+call super::create
+this.text = "CSF5~tCtrl+Shift+F5"
+this.shortcut = 1396
+this.menutextcolor = 134217735
+this.menubackcolor = 134217732
+this.menuhighlightcolor = 134217741
+this.textsize = 8
+this.weight = 400
+this.facename = "Tahoma"
+this.titlebackcolor = 134217730
+this.bitmapbackcolor = 12632256
+this.menubitmaps = true
+this.titlegradient = true
+this.toolbartextcolor = 134217746
+this.toolbarbackcolor = 67108864
+this.toolbarhighlightcolor = 134217741
+this.toolbargradient = true
+this.bitmapgradient = true
+end on
+
+on m_csf5.destroy
+call super::destroy
+end on
+
+event clicked;of_key_trigger( KeyF5!, 1, 1 )
+end event
+
+type m_csf6 from menu within m_ファイルf
+end type
+
+on m_csf6.create
+call super::create
+this.text = "CSF6~tCtrl+Shift+F6"
+this.shortcut = 1397
+this.menutextcolor = 134217735
+this.menubackcolor = 134217732
+this.menuhighlightcolor = 134217741
+this.textsize = 8
+this.weight = 400
+this.facename = "Tahoma"
+this.titlebackcolor = 134217730
+this.bitmapbackcolor = 12632256
+this.menubitmaps = true
+this.titlegradient = true
+this.toolbartextcolor = 134217746
+this.toolbarbackcolor = 67108864
+this.toolbarhighlightcolor = 134217741
+this.toolbargradient = true
+this.bitmapgradient = true
+end on
+
+on m_csf6.destroy
+call super::destroy
+end on
+
+event clicked;of_key_trigger( KeyF6!, 1, 1 )
+end event
+
+type m_csf7 from menu within m_ファイルf
+end type
+
+on m_csf7.create
+call super::create
+this.text = "CSF7~tCtrl+Shift+F7"
+this.shortcut = 1398
+this.menutextcolor = 134217735
+this.menubackcolor = 134217732
+this.menuhighlightcolor = 134217741
+this.textsize = 8
+this.weight = 400
+this.facename = "Tahoma"
+this.titlebackcolor = 134217730
+this.bitmapbackcolor = 12632256
+this.menubitmaps = true
+this.titlegradient = true
+this.toolbartextcolor = 134217746
+this.toolbarbackcolor = 67108864
+this.toolbarhighlightcolor = 134217741
+this.toolbargradient = true
+this.bitmapgradient = true
+end on
+
+on m_csf7.destroy
+call super::destroy
+end on
+
+event clicked;of_key_trigger( KeyF7!, 1, 1 )
+end event
+
+type m_csf8 from menu within m_ファイルf
+end type
+
+on m_csf8.create
+call super::create
+this.text = "CSF8~tCtrl+Shift+F8"
+this.shortcut = 1399
+this.menutextcolor = 134217735
+this.menubackcolor = 134217732
+this.menuhighlightcolor = 134217741
+this.textsize = 8
+this.weight = 400
+this.facename = "Tahoma"
+this.titlebackcolor = 134217730
+this.bitmapbackcolor = 12632256
+this.menubitmaps = true
+this.titlegradient = true
+this.toolbartextcolor = 134217746
+this.toolbarbackcolor = 67108864
+this.toolbarhighlightcolor = 134217741
+this.toolbargradient = true
+this.bitmapgradient = true
+end on
+
+on m_csf8.destroy
+call super::destroy
+end on
+
+event clicked;of_key_trigger( KeyF8!, 1, 1 )
+end event
+
+type m_csf9 from menu within m_ファイルf
+end type
+
+on m_csf9.create
+call super::create
+this.text = "CSF9~tCtrl+Shift+F9"
+this.shortcut = 1400
+this.menutextcolor = 134217735
+this.menubackcolor = 134217732
+this.menuhighlightcolor = 134217741
+this.textsize = 8
+this.weight = 400
+this.facename = "Tahoma"
+this.titlebackcolor = 134217730
+this.bitmapbackcolor = 12632256
+this.menubitmaps = true
+this.titlegradient = true
+this.toolbartextcolor = 134217746
+this.toolbarbackcolor = 67108864
+this.toolbarhighlightcolor = 134217741
+this.toolbargradient = true
+this.bitmapgradient = true
+end on
+
+on m_csf9.destroy
+call super::destroy
+end on
+
+event clicked;of_key_trigger( KeyF9!, 1, 1 )
+end event
+
+type m_csf10 from menu within m_ファイルf
+end type
+
+on m_csf10.create
+call super::create
+this.text = "CSF10~tCtrl+Shift+F10"
+this.shortcut = 1401
+this.menutextcolor = 134217735
+this.menubackcolor = 134217732
+this.menuhighlightcolor = 134217741
+this.textsize = 8
+this.weight = 400
+this.facename = "Tahoma"
+this.titlebackcolor = 134217730
+this.bitmapbackcolor = 12632256
+this.menubitmaps = true
+this.titlegradient = true
+this.toolbartextcolor = 134217746
+this.toolbarbackcolor = 67108864
+this.toolbarhighlightcolor = 134217741
+this.toolbargradient = true
+this.bitmapgradient = true
+end on
+
+on m_csf10.destroy
+call super::destroy
+end on
+
+event clicked;of_key_trigger( KeyF10!, 1, 1 )
+end event
+
+type m_csf11 from menu within m_ファイルf
+end type
+
+on m_csf11.create
+call super::create
+this.text = "CSF11~tCtrl+Shift+F11"
+this.shortcut = 1402
+this.menutextcolor = 134217735
+this.menubackcolor = 134217732
+this.menuhighlightcolor = 134217741
+this.textsize = 8
+this.weight = 400
+this.facename = "Tahoma"
+this.titlebackcolor = 134217730
+this.bitmapbackcolor = 12632256
+this.menubitmaps = true
+this.titlegradient = true
+this.toolbartextcolor = 134217746
+this.toolbarbackcolor = 67108864
+this.toolbarhighlightcolor = 134217741
+this.toolbargradient = true
+this.bitmapgradient = true
+end on
+
+on m_csf11.destroy
+call super::destroy
+end on
+
+event clicked;of_key_trigger( KeyF11!, 1, 1 )
+end event
+
+type m_csf12 from menu within m_ファイルf
+end type
+
+on m_csf12.create
+call super::create
+this.text = "CSF12~tCtrl+Shift+F12"
+this.shortcut = 1403
+this.menutextcolor = 134217735
+this.menubackcolor = 134217732
+this.menuhighlightcolor = 134217741
+this.textsize = 8
+this.weight = 400
+this.facename = "Tahoma"
+this.titlebackcolor = 134217730
+this.bitmapbackcolor = 12632256
+this.menubitmaps = true
+this.titlegradient = true
+this.toolbartextcolor = 134217746
+this.toolbarbackcolor = 67108864
+this.toolbarhighlightcolor = 134217741
+this.toolbargradient = true
+this.bitmapgradient = true
+end on
+
+on m_csf12.destroy
+call super::destroy
+end on
+
+event clicked;of_key_trigger( KeyF12!, 1, 1 )
+end event
+

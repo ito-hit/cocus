@@ -1,0 +1,7 @@
+﻿$PBExportHeader$str_mdlpara_center_group.srs
+$PBExportComments$m_center_groupのmodal構造体
+global type str_mdlpara_center_group from structure
+	boolean		ret
+	long		out_center_group_code
+end type
+

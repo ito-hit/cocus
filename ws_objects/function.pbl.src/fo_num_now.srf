@@ -1,0 +1,14 @@
+﻿$PBExportHeader$fo_num_now.srf
+$PBExportComments$サーバーのシステム時間を数値タイプで返すグローバル関数
+global type fo_num_now from function_object
+end type
+
+forward prototypes
+global function long fo_num_now ()
+end prototypes
+
+global function long fo_num_now ();// サーバーのシステム時間を数値で返す
+return fnc.db.of_get_numsystime( )
+
+end function
+

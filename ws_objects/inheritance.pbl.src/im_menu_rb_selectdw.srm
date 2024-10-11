@@ -1,0 +1,290 @@
+﻿$PBExportHeader$im_menu_rb_selectdw.srm
+$PBExportComments$DW上の右クリックメニューの先祖オブジェクト
+forward
+global type im_menu_rb_selectdw from im_menu
+end type
+type m_選択行のコピー from menu within im_menu_rb_selectdw
+end type
+type m_0 from menu within im_menu_rb_selectdw
+end type
+type m_矩形選択 from menu within im_menu_rb_selectdw
+end type
+global type im_menu_rb_selectdw from im_menu
+m_選択行のコピー m_選択行のコピー
+m_0 m_0
+m_矩形選択 m_矩形選択
+end type
+end forward
+
+global type im_menu_rb_selectdw from im_menu
+m_選択行のコピー m_選択行のコピー
+m_0 m_0
+m_矩形選択 m_矩形選択
+end type
+global im_menu_rb_selectdw im_menu_rb_selectdw
+
+on im_menu_rb_selectdw.create
+im_menu_rb_selectdw=this
+call super::create
+this.m_選択行のコピー=create m_選択行のコピー
+this.m_0=create m_0
+this.m_矩形選択=create m_矩形選択
+this.Item[UpperBound(this.Item)+1]=this.m_選択行のコピー
+this.Item[UpperBound(this.Item)+1]=this.m_0
+this.Item[UpperBound(this.Item)+1]=this.m_矩形選択
+end on
+
+on im_menu_rb_selectdw.destroy
+call super::destroy
+destroy(this.m_選択行のコピー)
+destroy(this.m_0)
+destroy(this.m_矩形選択)
+end on
+
+type m_選択行のコピー from menu within im_menu_rb_selectdw
+end type
+
+event clicked;
+choose case typeof( focusobj )
+//	case animation!
+//		i_anmtin.event rbuttonmenuclick( "copy" )
+//	case checkbox!
+//		i_chkbox.event rbuttonmenuclick( "copy" )
+//	case commandbutton!
+//		i_cmdbtn.event rbuttonmenuclick( "copy" )
+	case datawindow!
+		i_datwin.event rbuttonmenuclick( "copy" )
+//	case datepicker!
+//		i_dtpick.event rbuttonmenuclick( "copy" )
+//	case dropdownlistbox!
+//		i_dpdnlst.event rbuttonmenuclick( "copy" )
+//	case dropdownpicturelistbox!
+//		i_dpdnpiclst.event rbuttonmenuclick( "copy" )
+//	case editmask!
+//		i_edtmsk.event rbuttonmenuclick( "copy" )
+//	case graph!
+//		i_graph.event rbuttonmenuclick( "copy" )
+//	case groupbox!
+//		i_grpbox.event rbuttonmenuclick( "copy" )
+//	case hprogressbar!
+//		i_hprgrs.event rbuttonmenuclick( "copy" )
+//	case hscrollbar!
+//		i_hscrl.event rbuttonmenuclick( "copy" )
+//	case htrackbar!
+//		i_htrck.event rbuttonmenuclick( "copy" )
+//	case inkedit!
+//		i_inkedt.event rbuttonmenuclick( "copy" )
+//	case inkpicture!
+//		i_inkpic.event rbuttonmenuclick( "copy" )
+//	case listbox!
+//		i_lstbox.event rbuttonmenuclick( "copy" )
+//	case listview!
+//		i_lstview.event rbuttonmenuclick( "copy" )
+//	case monthcalendar!
+//		i_monthcal.event rbuttonmenuclick( "copy" )
+//	case multilineedit!
+//		i_mltilinedt.event rbuttonmenuclick( "copy" )
+//	case picture!
+//		i_pic.event rbuttonmenuclick( "copy" )
+//	case picturebutton!
+//		i_picbtn.event rbuttonmenuclick( "copy" )
+//	case picturehyperlink!
+//		i_pichyplnk.event rbuttonmenuclick( "copy" )
+//	case picturelistbox!
+//		i_piclst.event rbuttonmenuclick( "copy" )
+//	case radiobutton!
+//		i_rdiobtn.event rbuttonmenuclick( "copy" )
+//	case richtextedit!
+//		i_rtxtedt.event rbuttonmenuclick( "copy" )
+//	case singlelineedit!
+//		i_sgllineedt.event rbuttonmenuclick( "copy" )
+//	case statichyperlink!
+//		i_stchyplnk.event rbuttonmenuclick( "copy" )
+//	case statictext!
+//		i_stctxt.event rbuttonmenuclick( "copy" )
+//	case tab!
+//		i_tab.event rbuttonmenuclick( "copy" )
+//	case treeview!
+//		i_trview.event rbuttonmenuclick( "copy" )
+//	case userobject!
+//		i_usrobj.event rbuttonmenuclick( "copy" )
+//	case vprogressbar!
+//		i_vprgrs.event rbuttonmenuclick( "copy" )
+//	case vscrollbar!
+//		i_vscrl.event rbuttonmenuclick( "copy" )
+//	case vtrackbar!
+//		i_vtrck.event rbuttonmenuclick( "copy" )
+//	case window!
+//		i_win.event rbuttonmenuclick( "copy" )
+	case else
+end choose
+
+m_矩形選択.checked	= false
+
+end event
+
+on m_選択行のコピー.create
+call super::create
+this.text = "選択行のコピー"
+this.menutextcolor = 134217735
+this.menubackcolor = 134217732
+this.menuhighlightcolor = 134217741
+this.textsize = 9
+this.weight = 400
+this.facename = "MS UI Gothic"
+this.titlebackcolor = 134217730
+this.bitmapbackcolor = 12632256
+this.menubitmaps = true
+this.titlegradient = true
+this.toolbartextcolor = 134217746
+this.toolbarbackcolor = 67108864
+this.toolbarhighlightcolor = 134217741
+this.toolbargradient = true
+this.bitmapgradient = true
+end on
+
+on m_選択行のコピー.destroy
+call super::destroy
+end on
+
+type m_0 from menu within im_menu_rb_selectdw
+end type
+
+on m_0.create
+call super::create
+this.text = "-"
+this.menutextcolor = 134217735
+this.menubackcolor = 134217732
+this.menuhighlightcolor = 134217741
+this.textsize = 9
+this.weight = 400
+this.facename = "MS UI Gothic"
+this.titlebackcolor = 134217730
+this.bitmapbackcolor = 12632256
+this.menubitmaps = true
+this.titlegradient = true
+this.toolbartextcolor = 134217746
+this.toolbarbackcolor = 67108864
+this.toolbarhighlightcolor = 134217741
+this.toolbargradient = true
+this.bitmapgradient = true
+end on
+
+on m_0.destroy
+call super::destroy
+end on
+
+type m_矩形選択 from menu within im_menu_rb_selectdw
+end type
+
+event clicked;
+string	l_word
+
+this.checked = not this.checked
+
+if this.checked then
+	l_word	= "rectangleon"
+else
+	l_word	= "rectangleoff"
+end if	
+
+choose case typeof( focusobj )
+//	case animation!
+//		i_anmtin.event rbuttonmenuclick( l_word )
+//	case checkbox!
+//		i_chkbox.event rbuttonmenuclick( l_word )
+//	case commandbutton!
+//		i_cmdbtn.event rbuttonmenuclick( l_word )
+	case datawindow!
+		i_datwin.event rbuttonmenuclick( l_word )
+//	case datepicker!
+//		i_dtpick.event rbuttonmenuclick( l_word )
+//	case dropdownlistbox!
+//		i_dpdnlst.event rbuttonmenuclick( l_word )
+//	case dropdownpicturelistbox!
+//		i_dpdnpiclst.event rbuttonmenuclick( l_word )
+//	case editmask!
+//		i_edtmsk.event rbuttonmenuclick( l_word )
+//	case graph!
+//		i_graph.event rbuttonmenuclick( l_word )
+//	case groupbox!
+//		i_grpbox.event rbuttonmenuclick( l_word )
+//	case hprogressbar!
+//		i_hprgrs.event rbuttonmenuclick( l_word )
+//	case hscrollbar!
+//		i_hscrl.event rbuttonmenuclick( l_word )
+//	case htrackbar!
+//		i_htrck.event rbuttonmenuclick( l_word )
+//	case inkedit!
+//		i_inkedt.event rbuttonmenuclick( l_word )
+//	case inkpicture!
+//		i_inkpic.event rbuttonmenuclick( l_word )
+//	case listbox!
+//		i_lstbox.event rbuttonmenuclick( l_word )
+//	case listview!
+//		i_lstview.event rbuttonmenuclick( l_word )
+//	case monthcalendar!
+//		i_monthcal.event rbuttonmenuclick( l_word )
+//	case multilineedit!
+//		i_mltilinedt.event rbuttonmenuclick( l_word )
+//	case picture!
+//		i_pic.event rbuttonmenuclick( l_word )
+//	case picturebutton!
+//		i_picbtn.event rbuttonmenuclick( l_word )
+//	case picturehyperlink!
+//		i_pichyplnk.event rbuttonmenuclick( l_word )
+//	case picturelistbox!
+//		i_piclst.event rbuttonmenuclick( l_word )
+//	case radiobutton!
+//		i_rdiobtn.event rbuttonmenuclick( l_word )
+//	case richtextedit!
+//		i_rtxtedt.event rbuttonmenuclick( l_word )
+//	case singlelineedit!
+//		i_sgllineedt.event rbuttonmenuclick( l_word )
+//	case statichyperlink!
+//		i_stchyplnk.event rbuttonmenuclick( l_word )
+//	case statictext!
+//		i_stctxt.event rbuttonmenuclick( l_word )
+//	case tab!
+//		i_tab.event rbuttonmenuclick( l_word )
+//	case treeview!
+//		i_trview.event rbuttonmenuclick( l_word )
+//	case userobject!
+//		i_usrobj.event rbuttonmenuclick( l_word )
+//	case vprogressbar!
+//		i_vprgrs.event rbuttonmenuclick( l_word )
+//	case vscrollbar!
+//		i_vscrl.event rbuttonmenuclick( l_word )
+//	case vtrackbar!
+//		i_vtrck.event rbuttonmenuclick( l_word )
+//	case window!
+//		i_win.event rbuttonmenuclick( l_word )
+	case else
+end choose
+
+end event
+
+on m_矩形選択.create
+call super::create
+this.text = "矩形選択"
+this.menutextcolor = 134217735
+this.menubackcolor = 134217732
+this.menuhighlightcolor = 134217741
+this.textsize = 9
+this.weight = 400
+this.facename = "MS UI Gothic"
+this.titlebackcolor = 134217730
+this.bitmapbackcolor = 12632256
+this.menubitmaps = true
+this.titlegradient = true
+this.toolbartextcolor = 134217746
+this.toolbarbackcolor = 67108864
+this.toolbarhighlightcolor = 134217741
+this.toolbargradient = true
+this.bitmapgradient = true
+end on
+
+on m_矩形選択.destroy
+call super::destroy
+end on
+

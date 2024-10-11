@@ -1,0 +1,27 @@
+﻿$PBExportHeader$str_mkamoku.srs
+$PBExportComments$m_kamoku用の構造体
+global type str_mkamoku from structure
+	long		kamoku_code
+	long		hojyo_kamoku_code
+	string		kamoku_mei
+	string		hojyo_kamoku_mei
+	string		zei_kbn
+	integer		zei_keisan_kbn
+	integer		tegata_nyuryoku_flg
+	integer		bumon_nyuryoku_flg
+	integer		siyo_kinsi_flg
+	datetime		touroku_date
+	string		touroku_user_id
+	string		touroku_client_id
+	string		touroku_pg_id
+	datetime		henkou_date
+	string		henkou_user_id
+	string		henkou_client_id
+	string		henkou_pg_id
+	datetime		kousin_date
+	string		kousin_user_id
+	string		kousin_client_id
+	string		kousin_pg_id
+	integer		haita_flg
+end type
+

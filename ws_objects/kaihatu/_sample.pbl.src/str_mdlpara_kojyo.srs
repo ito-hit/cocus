@@ -1,0 +1,15 @@
+﻿$PBExportHeader$str_mdlpara_kojyo.srs
+$PBExportComments$sy_m_kojyoのmodal構造体
+global type str_mdlpara_kojyo from structure
+	boolean		ret
+	long		out_kojyo_code
+	string		out_kojyo_mei		descriptor "comment" = "追加"
+	string		out_kojyo_mei_ryaku		descriptor "comment" = "追加"
+	string		out_yubin_bango		descriptor "comment" = "追加"
+	string		out_jyusyo_1		descriptor "comment" = "追加"
+	string		out_jyusyo_2		descriptor "comment" = "追加"
+	string		out_denwa_bango		descriptor "comment" = "追加"
+	string		out_fax_no		descriptor "comment" = "追加"
+	string		out_tuka_code		descriptor "comment" = "追加"
+end type
+

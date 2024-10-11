@@ -1,0 +1,6 @@
+﻿$PBExportHeader$str_mdlpara_mgtin_kanri.srs
+$PBExportComments$m_gtin_kanri用のモーダル構造体
+global type str_mdlpara_mgtin_kanri from structure
+	str_mgtin_kanri		ret[]
+end type
+

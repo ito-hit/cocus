@@ -1,0 +1,6 @@
+﻿$PBExportHeader$str_mdlpara_mkyoten.srs
+$PBExportComments$m_kyoten用のモーダル構造体
+global type str_mdlpara_mkyoten from structure
+	str_mkyoten		ret[]
+end type
+

@@ -1,0 +1,15 @@
+﻿$PBExportHeader$str_mdlpara_kihon.srs
+$PBExportComments$m_kihonのmodal構造体
+global type str_mdlpara_kihon from structure
+	boolean		ret
+	long		out_jigyo_nendo
+	string		out_kaisya_mei		descriptor "comment" = "追加"
+	string		out_kaisya_mei_ryaku		descriptor "comment" = "追加"
+	string		out_yubin_no		descriptor "comment" = "追加"
+	string		out_jyusyo		descriptor "comment" = "追加"
+	string		out_tel_no		descriptor "comment" = "追加"
+	string		out_fax_no		descriptor "comment" = "追加"
+	string		out_jigyosya_code		descriptor "comment" = "追加"
+	string		out_houjin_no		descriptor "comment" = "追加"
+end type
+

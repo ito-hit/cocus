@@ -1,0 +1,26 @@
+﻿$PBExportHeader$fo_lattice.srf
+$PBExportComments$行の背景色を網掛け表示するグローバル関数
+global type fo_lattice from function_object
+end type
+
+forward prototypes
+global function long fo_lattice (long p_row)
+end prototypes
+
+global function long fo_lattice (long p_row);if mod( p_row, 2 ) <> 0 then
+	if palette.lattice_even <> 0 then
+		return palette.lattice_even
+	else
+		// 2023.04.19 kin 大鶴さん仕様に合わせる
+		return rgb( 245, 245, 245 )
+		//return rgb( 240, 240, 240 )
+	end if
+else
+	if palette.lattice_odd <> 0 then
+		return palette.lattice_odd
+	else
+		return rgb( 255, 255, 245 )
+	end if
+end if
+end function
+

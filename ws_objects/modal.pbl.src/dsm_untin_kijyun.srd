@@ -1,0 +1,72 @@
+﻿$PBExportHeader$dsm_untin_kijyun.srd
+$PBExportComments$wsm_untin_kijyunのデータウィンドウ
+release 19;
+datawindow(units=0 timer_interval=0 color=268435456 brushmode=0 transparency=0 gradient.angle=0 gradient.color=8421504 gradient.focus=0 gradient.repetition.count=0 gradient.repetition.length=100 gradient.repetition.mode=0 gradient.scale=100 gradient.spread=100 gradient.transparency=0 picture.blur=0 picture.clip.bottom=0 picture.clip.left=0 picture.clip.right=0 picture.clip.top=0 picture.mode=0 picture.scale.x=100 picture.scale.y=100 picture.transparency=0 processing=1 HTMLDW=no print.printername="" print.documentname="" print.orientation = 0 print.margin.left = 96 print.margin.right = 96 print.margin.top = 85 print.margin.bottom = 85 print.paper.source = 0 print.paper.size = 0 print.canusedefaultprinter=yes print.prompt=no print.buttons=no print.preview.buttons=no print.cliptext=no print.overrideprintjob=no print.collate=yes print.background=no print.preview.background=no print.preview.outline=yes hidegrayline=no showbackcoloronxp=no picture.file="" grid.lines=0 grid.columnmove=no selected.mouse=no )
+header(height=85 color="67108864" transparency="0" gradient.color="8421504" gradient.transparency="0" gradient.angle="0" brushmode="0" gradient.repetition.mode="0" gradient.repetition.count="0" gradient.repetition.length="100" gradient.focus="0" gradient.scale="100" gradient.spread="100" )
+summary(height=0 color="536870912" transparency="0" gradient.color="8421504" gradient.transparency="0" gradient.angle="0" brushmode="0" gradient.repetition.mode="0" gradient.repetition.count="0" gradient.repetition.length="100" gradient.focus="0" gradient.scale="100" gradient.spread="100" )
+footer(height=0 color="536870912" transparency="0" gradient.color="8421504" gradient.transparency="0" gradient.angle="0" brushmode="0" gradient.repetition.mode="0" gradient.repetition.count="0" gradient.repetition.length="100" gradient.focus="0" gradient.scale="100" gradient.spread="100" )
+detail(height=85 color="536870912~tfo_lattice(getrow())" transparency="0" gradient.color="8421504" gradient.transparency="0" gradient.angle="0" brushmode="0" gradient.repetition.mode="0" gradient.repetition.count="0" gradient.repetition.length="100" gradient.focus="0" gradient.scale="100" gradient.spread="100" )
+table(column=(type=char(10) updatewhereclause=yes name=kijyun_code dbname="kijyun_code" )
+ column=(type=char(40) updatewhereclause=yes name=kijyun_mei dbname="kijyun_mei" )
+ column=(type=char(10) updatewhereclause=yes name=kijyun_mei_ryaku dbname="kijyun_mei_ryaku" )
+ column=(type=char(1) updatewhereclause=yes name=seikyu_kbn dbname="seikyu_kbn" )
+ column=(type=char(256) updatewhereclause=yes name=kbn_mei dbname="kbn_mei" )
+ column=(type=char(1) updatewhereclause=yes name=keisan_kijyun dbname="keisan_kijyun" )
+ column=(type=decimal(0) updatewhereclause=yes name=keisan_kijyunti dbname="keisan_kijyunti" )
+ column=(type=char(41) updatewhereclause=yes name=keisan_kijyunti_hyoji dbname="keisan_kijyunti_hyoji" )
+ column=(type=datetime updatewhereclause=yes name=touroku_date dbname="touroku_date" )
+ column=(type=char(10) updatewhereclause=yes name=touroku_user_id dbname="touroku_user_id" )
+ column=(type=char(40) updatewhereclause=yes name=touroku_client_id dbname="touroku_client_id" )
+ column=(type=char(40) updatewhereclause=yes name=touroku_pg_id dbname="touroku_pg_id" )
+ column=(type=datetime updatewhereclause=yes name=henkou_date dbname="henkou_date" )
+ column=(type=char(10) updatewhereclause=yes name=henkou_user_id dbname="henkou_user_id" )
+ column=(type=char(40) updatewhereclause=yes name=henkou_client_id dbname="henkou_client_id" )
+ column=(type=char(40) updatewhereclause=yes name=henkou_pg_id dbname="henkou_pg_id" )
+ column=(type=datetime updatewhereclause=yes name=kousin_date dbname="kousin_date" )
+ column=(type=char(10) updatewhereclause=yes name=kousin_user_id dbname="kousin_user_id" )
+ column=(type=char(40) updatewhereclause=yes name=kousin_client_id dbname="kousin_client_id" )
+ column=(type=char(40) updatewhereclause=yes name=kousin_pg_id dbname="kousin_pg_id" )
+ column=(type=decimal(0) updatewhereclause=yes name=haita_flg dbname="haita_flg" )
+ retrieve="select u.kijyun_code,
+       u.kijyun_mei,u.kijyun_mei_ryaku,
+       u.seikyu_kbn,m.kbn_mei,
+       u.keisan_kijyun,u.keisan_kijyunti,
+       case u.keisan_kijyun
+            when 'S' then decode( u.keisan_kijyunti, 0, '', to_char(u.keisan_kijyunti) || '点' )
+            when 'K' then decode( u.keisan_kijyunti, 0, '', to_char(u.keisan_kijyunti) || '円' )
+                     else to_char( u.keisan_kijyunti )
+       end keisan_kijyunti_hyoji,
+       u.touroku_date,u.touroku_user_id,u.touroku_client_id,u.touroku_pg_id,
+       u.henkou_date,u.henkou_user_id,u.henkou_client_id,u.henkou_pg_id,
+       u.kousin_date,u.kousin_user_id,u.kousin_client_id,u.kousin_pg_id,
+       u.haita_flg
+  from m_untin_kijyun u,
+       ( select meisyo_code seikyu_kbn,
+                meisyo_1 kbn_mei
+           from m_meisyo
+          where meisyo_kbn	= 157
+       ) m
+ where u.seikyu_kbn			= m.seikyu_kbn
+   and (    kijyun_mei			like '%' || :p_kijyun_mei || '%'
+         or kijyun_mei_ryaku	like '%' || :p_kijyun_mei || '%'
+       )
+ order by seikyu_kbn,keisan_kijyun,keisan_kijyunti" arguments=(("p_kijyun_mei", string)) )
+text(band=header alignment="2" text="コード" border="6" color="33554432" x="4" y="7" height="75" width="412" html.valueishtml="0"  name=kijyun_code_t visible="1"  font.face="Yu Gothic UI Semilight" font.height="-11" font.weight="400"  font.family="3" font.pitch="2" font.charset="1" background.mode="1" background.color="536870912" background.transparency="0" background.gradient.color="8421504" background.gradient.transparency="0" background.gradient.angle="0" background.brushmode="0" background.gradient.repetition.mode="0" background.gradient.repetition.count="0" background.gradient.repetition.length="100" background.gradient.focus="0" background.gradient.scale="100" background.gradient.spread="100" tooltip.backcolor="134217752" tooltip.delay.initial="0" tooltip.delay.visible="32000" tooltip.enabled="0" tooltip.hasclosebutton="0" tooltip.icon="0" tooltip.isbubble="0" tooltip.maxwidth="0" tooltip.textcolor="134217751" tooltip.transparency="0" transparency="0" )
+text(band=header alignment="2" text="基準名" border="6" color="33554432" x="424" y="7" height="75" width="1612" html.valueishtml="0"  name=kijyun_mei_t visible="1"  font.face="Yu Gothic UI Semilight" font.height="-11" font.weight="400"  font.family="3" font.pitch="2" font.charset="1" background.mode="1" background.color="536870912" background.transparency="0" background.gradient.color="8421504" background.gradient.transparency="0" background.gradient.angle="0" background.brushmode="0" background.gradient.repetition.mode="0" background.gradient.repetition.count="0" background.gradient.repetition.length="100" background.gradient.focus="0" background.gradient.scale="100" background.gradient.spread="100" tooltip.backcolor="134217752" tooltip.delay.initial="0" tooltip.delay.visible="32000" tooltip.enabled="0" tooltip.hasclosebutton="0" tooltip.icon="0" tooltip.isbubble="0" tooltip.maxwidth="0" tooltip.textcolor="134217751" tooltip.transparency="0" transparency="0" )
+text(band=header alignment="2" text="区分" border="6" color="33554432" x="2044" y="7" height="75" width="172" html.valueishtml="0"  name=kbn_mei_t visible="1"  font.face="Yu Gothic UI Semilight" font.height="-11" font.weight="400"  font.family="3" font.pitch="2" font.charset="1" background.mode="1" background.color="536870912" background.transparency="0" background.gradient.color="8421504" background.gradient.transparency="0" background.gradient.angle="0" background.brushmode="0" background.gradient.repetition.mode="0" background.gradient.repetition.count="0" background.gradient.repetition.length="100" background.gradient.focus="0" background.gradient.scale="100" background.gradient.spread="100" tooltip.backcolor="134217752" tooltip.delay.initial="0" tooltip.delay.visible="32000" tooltip.enabled="0" tooltip.hasclosebutton="0" tooltip.icon="0" tooltip.isbubble="0" tooltip.maxwidth="0" tooltip.textcolor="134217751" tooltip.transparency="0" transparency="0" )
+text(band=header alignment="2" text="基準値" border="6" color="33554432" x="2224" y="7" height="75" width="492" html.valueishtml="0"  name=keisan_kijyunti_hyoji_t visible="1"  font.face="Yu Gothic UI Semilight" font.height="-11" font.weight="400"  font.family="3" font.pitch="2" font.charset="1" background.mode="1" background.color="536870912" background.transparency="0" background.gradient.color="8421504" background.gradient.transparency="0" background.gradient.angle="0" background.brushmode="0" background.gradient.repetition.mode="0" background.gradient.repetition.count="0" background.gradient.repetition.length="100" background.gradient.focus="0" background.gradient.scale="100" background.gradient.spread="100" tooltip.backcolor="134217752" tooltip.delay.initial="0" tooltip.delay.visible="32000" tooltip.enabled="0" tooltip.hasclosebutton="0" tooltip.icon="0" tooltip.isbubble="0" tooltip.maxwidth="0" tooltip.textcolor="134217751" tooltip.transparency="0" transparency="0" )
+column(band=detail id=1 alignment="0" tabsequence=32766 border="0" color="33554432" x="8" y="3" height="71" width="408" format="[general]" html.valueishtml="0"  name=kijyun_code visible="1" edit.limit=10 edit.case=any edit.focusrectangle=no edit.autoselect=yes edit.autohscroll=yes edit.imemode=0  font.face="Yu Gothic UI Semilight" font.height="-11" font.weight="400"  font.family="3" font.pitch="2" font.charset="1" background.mode="1" background.color="536870912" background.transparency="0" background.gradient.color="8421504" background.gradient.transparency="0" background.gradient.angle="0" background.brushmode="0" background.gradient.repetition.mode="0" background.gradient.repetition.count="0" background.gradient.repetition.length="100" background.gradient.focus="0" background.gradient.scale="100" background.gradient.spread="100" tooltip.backcolor="134217752" tooltip.delay.initial="0" tooltip.delay.visible="32000" tooltip.enabled="0" tooltip.hasclosebutton="0" tooltip.icon="0" tooltip.isbubble="0" tooltip.maxwidth="0" tooltip.textcolor="134217751" tooltip.transparency="0" transparency="0" )
+column(band=detail id=2 alignment="0" tabsequence=32766 border="0" color="33554432" x="428" y="3" height="71" width="1608" format="[general]" html.valueishtml="0"  name=kijyun_mei visible="1" edit.limit=40 edit.case=any edit.focusrectangle=no edit.autoselect=yes edit.autohscroll=yes edit.imemode=0  font.face="Yu Gothic UI Semilight" font.height="-11" font.weight="400"  font.family="3" font.pitch="2" font.charset="1" background.mode="1" background.color="536870912" background.transparency="0" background.gradient.color="8421504" background.gradient.transparency="0" background.gradient.angle="0" background.brushmode="0" background.gradient.repetition.mode="0" background.gradient.repetition.count="0" background.gradient.repetition.length="100" background.gradient.focus="0" background.gradient.scale="100" background.gradient.spread="100" tooltip.backcolor="134217752" tooltip.delay.initial="0" tooltip.delay.visible="32000" tooltip.enabled="0" tooltip.hasclosebutton="0" tooltip.icon="0" tooltip.isbubble="0" tooltip.maxwidth="0" tooltip.textcolor="134217751" tooltip.transparency="0" transparency="0" )
+column(band=detail id=5 alignment="0" tabsequence=32766 border="0" color="33554432" x="2048" y="3" height="71" width="168" format="[general]" html.valueishtml="0"  name=kbn_mei visible="1" edit.limit=256 edit.case=any edit.focusrectangle=no edit.autoselect=yes edit.autohscroll=yes edit.imemode=0  font.face="Yu Gothic UI Semilight" font.height="-11" font.weight="400"  font.family="3" font.pitch="2" font.charset="1" background.mode="1" background.color="536870912" background.transparency="0" background.gradient.color="8421504" background.gradient.transparency="0" background.gradient.angle="0" background.brushmode="0" background.gradient.repetition.mode="0" background.gradient.repetition.count="0" background.gradient.repetition.length="100" background.gradient.focus="0" background.gradient.scale="100" background.gradient.spread="100" tooltip.backcolor="134217752" tooltip.delay.initial="0" tooltip.delay.visible="32000" tooltip.enabled="0" tooltip.hasclosebutton="0" tooltip.icon="0" tooltip.isbubble="0" tooltip.maxwidth="0" tooltip.textcolor="134217751" tooltip.transparency="0" transparency="0" )
+column(band=detail id=8 alignment="1" tabsequence=32766 border="0" color="33554432" x="2228" y="3" height="71" width="488" format="[general]" html.valueishtml="0"  name=keisan_kijyunti_hyoji visible="1" edit.limit=41 edit.case=any edit.focusrectangle=no edit.autoselect=yes edit.autohscroll=yes edit.imemode=0  font.face="Yu Gothic UI Semilight" font.height="-11" font.weight="400"  font.family="3" font.pitch="2" font.charset="1" background.mode="1" background.color="536870912" background.transparency="0" background.gradient.color="8421504" background.gradient.transparency="0" background.gradient.angle="0" background.brushmode="0" background.gradient.repetition.mode="0" background.gradient.repetition.count="0" background.gradient.repetition.length="100" background.gradient.focus="0" background.gradient.scale="100" background.gradient.spread="100" tooltip.backcolor="134217752" tooltip.delay.initial="0" tooltip.delay.visible="32000" tooltip.enabled="0" tooltip.hasclosebutton="0" tooltip.icon="0" tooltip.isbubble="0" tooltip.maxwidth="0" tooltip.textcolor="134217751" tooltip.transparency="0" transparency="0" )
+htmltable(border="1" )
+htmlgen(clientevents="1" clientvalidation="1" clientcomputedfields="1" clientformatting="0" clientscriptable="0" generatejavascript="1" encodeselflinkargs="1" netscapelayers="0" pagingmethod=0 generatedddwframes="1" )
+xhtmlgen() cssgen(sessionspecific="0" )
+xmlgen(inline="0" )
+xsltgen()
+jsgen()
+export.xml(headgroups="1" includewhitespace="0" metadatatype=0 savemetadata=0 )
+import.xml()
+export.pdf(method=2 distill.custompostscript="0" xslfop.print="0" nativepdf.customsize=0 nativepdf.customorientation=0 nativepdf.pdfstandard=0 nativepdf.useprintspec=no )
+export.xhtml()
+ 

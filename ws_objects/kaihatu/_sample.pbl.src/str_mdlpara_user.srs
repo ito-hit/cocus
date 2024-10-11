@@ -1,0 +1,19 @@
+﻿$PBExportHeader$str_mdlpara_user.srs
+$PBExportComments$m_userのmodal構造体
+global type str_mdlpara_user from structure
+	boolean		ret
+	string		out_user_id
+	string		out_user_mei		descriptor "comment" = "追加"
+	string		out_user_mei_ryaku		descriptor "comment" = "追加"
+	string		out_mail_address		descriptor "comment" = "追加"
+	long		out_busyo_code		descriptor "comment" = "追加"
+	long		out_class		descriptor "comment" = "追加"
+	string		out_init_menu_id		descriptor "comment" = "追加"
+	string		out_init_tab_id		descriptor "comment" = "追加"
+	long		out_kyoten_code		descriptor "comment" = "追加"
+	long		out_kyoten_group_code		descriptor "comment" = "追加"
+	long		out_login_kengen		descriptor "comment" = "追加"
+	long		out_riyou_str_date		descriptor "comment" = "追加"
+	long		out_riyou_end_date		descriptor "comment" = "追加"
+end type
+

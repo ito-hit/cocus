@@ -1,0 +1,13 @@
+﻿$PBExportHeader$fo_nvl.srf
+$PBExportComments$Oracleのnvl関数と同じ動きをするグローバル関数
+global type fo_nvl from function_object
+end type
+
+forward prototypes
+global function any fo_nvl (any p_value, any p_true)
+end prototypes
+
+global function any fo_nvl (any p_value, any p_true);return fnc.of_nvl( p_value, p_true )
+
+end function
+

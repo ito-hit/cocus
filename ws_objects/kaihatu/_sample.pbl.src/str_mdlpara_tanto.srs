@@ -1,0 +1,14 @@
+﻿$PBExportHeader$str_mdlpara_tanto.srs
+$PBExportComments$m_tantorのmodal構造体
+global type str_mdlpara_tanto from structure
+	boolean		ret
+	long		out_tanto_code
+	string		out_tanto_mei		descriptor "comment" = "追加"
+	string		out_tanto_mei_ryaku		descriptor "comment" = "追加"
+	long		out_nayose_code		descriptor "comment" = "追加"
+	long		out_bumon_code		descriptor "comment" = "追加"
+	long		out_eigyosyo_code		descriptor "comment" = "追加"
+	long		out_ka_code		descriptor "comment" = "追加"
+	string		out_user_id		descriptor "comment" = "追加"
+end type
+

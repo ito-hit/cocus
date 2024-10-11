@@ -1,0 +1,168 @@
+﻿$PBExportHeader$am_menu.srm
+forward
+global type am_menu from menu
+end type
+end forward
+
+global type am_menu from menu
+end type
+global am_menu am_menu
+
+type variables
+graphicobject 			focusobj
+
+ivo_animation				i_anmtin
+ivo_checkbox				i_chkbox
+ivo_commandbutton			i_cmdbtn
+ivo_datawindow				i_datwin
+ivo_datepicker				i_dtpick
+ivo_dropdownlistbox			i_dpdnlst
+ivo_dropdownpicturelistbox	i_dpdnpiclst
+ivo_editmask				i_edtmsk
+ivo_graph					i_graph
+ivo_groupbox				i_grpbox
+ivo_hprogressbar			i_hprgrs
+ivo_hscrollbar				i_hscrl
+ivo_htrackbar				i_htrck
+ivo_inkedit					i_inkedt
+ivo_inkpicture				i_inkpic
+ivo_listbox					i_lstbox
+ivo_listview				i_lstview
+ivo_monthcalendar			i_monthcal
+ivo_multilineedit			i_mltilinedt
+ivo_picture					i_pic
+ivo_picturebutton			i_picbtn
+ivo_picturehyperlink		i_pichyplnk
+ivo_picturelistbox			i_piclst
+ivo_radiobutton				i_rdiobtn
+ivo_richtextedit			i_rtxtedt
+ivo_singlelineedit			i_sgllineedt
+ivo_statichyperlink			i_stchyplnk
+ivo_statictext				i_stctxt
+ivo_tab						i_tab
+ivo_treeview				i_trview
+ivo_userobject				i_usrobj
+ivo_vprogressbar			i_vprgrs
+ivo_vscrollbar				i_vscrl
+ivo_vtrackbar				i_vtrck
+aw_window					i_win
+
+end variables
+
+forward prototypes
+public subroutine of_key_trigger (keycode p_keycode, integer p_control, integer p_shift)
+public subroutine of_set_object (graphicobject p_obj)
+end prototypes
+
+public subroutine of_key_trigger (keycode p_keycode, integer p_control, integer p_shift);
+graphicobject	l_obj
+
+l_obj	= getfocus()
+
+l_obj.dynamic event fnkeyevent( p_keycode, p_control, p_shift )
+
+end subroutine
+
+public subroutine of_set_object (graphicobject p_obj);
+choose case typeof( p_obj )
+	case animation!
+		i_anmtin		= p_obj
+	case checkbox!
+		i_chkbox		= p_obj
+	case commandbutton!
+		i_cmdbtn		= p_obj
+	case datawindow!
+		i_datwin		= p_obj
+	case datepicker!
+		i_dtpick		= p_obj
+	case dropdownlistbox!
+		i_dpdnlst		= p_obj
+	case dropdownpicturelistbox!
+		i_dpdnpiclst	= p_obj
+	case editmask!
+		i_edtmsk		= p_obj
+	case graph!
+		i_graph			= p_obj
+	case groupbox!
+		i_grpbox		= p_obj
+	case hprogressbar!
+		i_hprgrs		= p_obj
+	case hscrollbar!
+		i_hscrl			= p_obj
+	case htrackbar!
+		i_htrck			= p_obj
+	case inkedit!
+		i_inkedt		= p_obj
+	case inkpicture!
+		i_inkpic		= p_obj
+	case listbox!
+		i_lstbox		= p_obj
+	case listview!
+		i_lstview		= p_obj
+	case monthcalendar!
+		i_monthcal		= p_obj
+	case multilineedit!
+		i_mltilinedt	= p_obj
+	case picture!
+		i_pic			= p_obj
+	case picturebutton!
+		i_picbtn		= p_obj
+	case picturehyperlink!
+		i_pichyplnk		= p_obj
+	case picturelistbox!
+		i_piclst		= p_obj
+	case radiobutton!
+		i_rdiobtn		= p_obj
+	case richtextedit!
+		i_rtxtedt		= p_obj
+	case singlelineedit!
+		i_sgllineedt	= p_obj
+	case statichyperlink!
+		i_stchyplnk		= p_obj
+	case statictext!
+		i_stctxt		= p_obj
+	case tab!
+		i_tab			= p_obj
+	case treeview!
+		i_trview		= p_obj
+	case userobject!
+		i_usrobj		= p_obj
+	case vprogressbar!
+		i_vprgrs		= p_obj
+	case vscrollbar!
+		i_vscrl			= p_obj
+	case vtrackbar!
+		i_vtrck			= p_obj
+	case window!
+		i_win			= p_obj
+	case else
+end choose
+
+focusobj	= p_obj
+
+end subroutine
+
+on am_menu.create
+am_menu=this
+call super::create
+this.menutextcolor = 134217735
+this.menubackcolor = 134217732
+this.menuhighlightcolor = 134217741
+this.textsize = 9
+this.weight = 400
+this.facename = "MS UI Gothic"
+this.titlebackcolor = 134217730
+this.bitmapbackcolor = 12632256
+this.menubitmaps = true
+this.titlegradient = true
+this.toolbartextcolor = 134217746
+this.toolbarbackcolor = 67108864
+this.toolbarhighlightcolor = 134217741
+this.toolbargradient = true
+this.bitmapgradient = true
+end on
+
+on am_menu.destroy
+call super::destroy
+end on
+

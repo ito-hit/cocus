@@ -1,0 +1,9 @@
+﻿$PBExportHeader$str_mdlpara_bukken.srs
+$PBExportComments$m_bukkenのmodal構造体
+global type str_mdlpara_bukken from structure
+	boolean		ret
+	long		out_bukken_code
+	string		out_bukken_mei		descriptor "comment" = "追加"
+	long		out_tokui_code		descriptor "comment" = "追加"
+end type
+

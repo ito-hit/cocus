@@ -1,0 +1,6 @@
+﻿$PBExportHeader$str_mdlpara_mniokurinin.srs
+$PBExportComments$m_niokurinin用のモーダル構造体
+global type str_mdlpara_mniokurinin from structure
+	str_mniokurinin		ret[]
+end type
+

@@ -1,0 +1,6 @@
+﻿$PBExportHeader$str_mdlpara_muser.srs
+$PBExportComments$m_user用のモーダル構造体
+global type str_mdlpara_muser from structure
+	str_muser		ret[]
+end type
+

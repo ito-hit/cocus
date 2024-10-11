@@ -1,0 +1,40 @@
+﻿$PBExportHeader$fo_back_color.srf
+$PBExportComments$背景色を設定するグローバル関数
+global type fo_back_color from function_object
+end type
+
+forward prototypes
+global function long fo_back_color (string p_type)
+end prototypes
+
+global function long fo_back_color (string p_type);choose case p_type
+	case "error"
+		if palette.error_back <> 0 then
+			return palette.error_back
+		else
+			return rgb( 242, 222, 222 )
+		end if
+	case "warning"
+		if palette.warning_back <> 0 then
+			return palette.warning_back
+		else
+			return rgb( 252, 248, 227 )
+		end if
+	case "info"
+		if palette.info_back <> 0 then
+			return palette.info_back
+		else
+			return rgb( 217, 237, 247 )
+		end if
+	case "success"
+		if palette.success_back <> 0 then
+			return palette.success_back
+		else
+			return rgb( 223, 240, 216 )
+		end if
+	case else
+		return rgb( 0, 0, 0 )
+end choose
+
+end function
+

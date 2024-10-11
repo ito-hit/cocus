@@ -1,0 +1,8 @@
+﻿$PBExportHeader$str_mdlpara_nendo.srs
+$PBExportComments$m_nendoのmodal構造体
+global type str_mdlpara_nendo from structure
+	boolean		ret
+	long		out_nendo_code
+	string		out_nendo_mei		descriptor "comment" = "追加"
+end type
+

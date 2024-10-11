@@ -1,0 +1,17 @@
+﻿$PBExportHeader$str_mdlpara_center.srs
+$PBExportComments$m_centerのmodal構造体
+global type str_mdlpara_center from structure
+	boolean		ret
+	long		out_center_code
+	string		out_center_mei		descriptor "comment" = "追加"
+	string		out_center_mei_ryaku		descriptor "comment" = "追加"
+	long		out_center_kbn		descriptor "comment" = "追加"
+	string		out_yubin_no		descriptor "comment" = "追加"
+	string		out_jyusyo		descriptor "comment" = "追加"
+	string		out_tel_no		descriptor "comment" = "追加"
+	string		out_fax_no		descriptor "comment" = "追加"
+	long		out_unso_code		descriptor "comment" = "追加"
+	long		out_wms_kadou_flg		descriptor "comment" = "追加"
+	long		out_wms_nouhinsyo_flg		descriptor "comment" = "追加"
+end type
+

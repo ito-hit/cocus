@@ -1,0 +1,7 @@
+﻿$PBExportHeader$str_mdlpara_mbukken.srs
+$PBExportComments$m_bukken用のモーダル構造体
+global type str_mdlpara_mbukken from structure
+	long		in_tokui_code
+	str_mbukken		ret[]
+end type
+

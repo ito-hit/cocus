@@ -1,0 +1,81 @@
+﻿$PBExportHeader$dsm_kihon.srd
+$PBExportComments$wsm_kihonのデータウィンドウ
+release 19;
+datawindow(units=0 timer_interval=0 color=268435456 brushmode=0 transparency=0 gradient.angle=0 gradient.color=8421504 gradient.focus=0 gradient.repetition.count=0 gradient.repetition.length=100 gradient.repetition.mode=0 gradient.scale=100 gradient.spread=100 gradient.transparency=0 picture.blur=0 picture.clip.bottom=0 picture.clip.left=0 picture.clip.right=0 picture.clip.top=0 picture.mode=0 picture.scale.x=100 picture.scale.y=100 picture.transparency=0 processing=1 HTMLDW=no print.printername="" print.documentname="" print.orientation = 0 print.margin.left = 96 print.margin.right = 96 print.margin.top = 85 print.margin.bottom = 85 print.paper.source = 0 print.paper.size = 0 print.canusedefaultprinter=yes print.prompt=no print.buttons=no print.preview.buttons=no print.cliptext=no print.overrideprintjob=no print.collate=yes print.background=no print.preview.background=no print.preview.outline=yes hidegrayline=no showbackcoloronxp=no picture.file="" grid.lines=0 grid.columnmove=no selected.mouse=no )
+header(height=85 color="67108864" transparency="0" gradient.color="8421504" gradient.transparency="0" gradient.angle="0" brushmode="0" gradient.repetition.mode="0" gradient.repetition.count="0" gradient.repetition.length="100" gradient.focus="0" gradient.scale="100" gradient.spread="100" )
+summary(height=0 color="536870912" transparency="0" gradient.color="8421504" gradient.transparency="0" gradient.angle="0" brushmode="0" gradient.repetition.mode="0" gradient.repetition.count="0" gradient.repetition.length="100" gradient.focus="0" gradient.scale="100" gradient.spread="100" )
+footer(height=0 color="536870912" transparency="0" gradient.color="8421504" gradient.transparency="0" gradient.angle="0" brushmode="0" gradient.repetition.mode="0" gradient.repetition.count="0" gradient.repetition.length="100" gradient.focus="0" gradient.scale="100" gradient.spread="100" )
+detail(height=85 color="536870912~tfo_lattice( getrow() )" transparency="0" gradient.color="8421504" gradient.transparency="0" gradient.angle="0" brushmode="0" gradient.repetition.mode="0" gradient.repetition.count="0" gradient.repetition.length="100" gradient.focus="0" gradient.scale="100" gradient.spread="100" )
+table(column=(type=decimal(0) update=yes updatewhereclause=yes key=yes name=kanri_code dbname="m_kihon.kanri_code" dbalias=".kanri_code" )
+ column=(type=char(128) update=yes updatewhereclause=yes name=kaisya_mei dbname="m_kihon.kaisya_mei" dbalias=".kaisya_mei" )
+ column=(type=char(32) update=yes updatewhereclause=yes name=kaisya_mei_ryaku dbname="m_kihon.kaisya_mei_ryaku" dbalias=".kaisya_mei_ryaku" )
+ column=(type=char(10) update=yes updatewhereclause=yes name=yubin_no dbname="m_kihon.yubin_no" dbalias=".yubin_no" )
+ column=(type=char(128) update=yes updatewhereclause=yes name=jyusyo dbname="m_kihon.jyusyo" dbalias=".jyusyo" )
+ column=(type=char(15) update=yes updatewhereclause=yes name=tel_no dbname="m_kihon.tel_no" dbalias=".tel_no" )
+ column=(type=char(15) update=yes updatewhereclause=yes name=fax_no dbname="m_kihon.fax_no" dbalias=".fax_no" )
+ column=(type=char(15) update=yes updatewhereclause=yes name=jigyosya_code dbname="m_kihon.jigyosya_code" dbalias=".jigyosya_code" )
+ column=(type=char(15) update=yes updatewhereclause=yes name=houjin_no dbname="m_kihon.houjin_no" dbalias=".houjin_no" )
+ column=(type=decimal(0) update=yes updatewhereclause=yes name=syori_date dbname="m_kihon.syori_date" dbalias=".syori_date" )
+ column=(type=decimal(0) update=yes updatewhereclause=yes name=jigyo_nendo dbname="m_kihon.jigyo_nendo" dbalias=".jigyo_nendo" )
+ column=(type=decimal(0) update=yes updatewhereclause=yes name=uriage_sime_date dbname="m_kihon.uriage_sime_date" dbalias=".uriage_sime_date" )
+ column=(type=decimal(0) update=yes updatewhereclause=yes name=siire_sime_date dbname="m_kihon.siire_sime_date" dbalias=".siire_sime_date" )
+ column=(type=decimal(0) update=yes updatewhereclause=yes name=genka_sime_nengetu dbname="m_kihon.genka_sime_nengetu" dbalias=".genka_sime_nengetu" )
+ column=(type=decimal(0) update=yes updatewhereclause=yes name=sime_jyotai_kbn dbname="m_kihon.sime_jyotai_kbn" dbalias=".sime_jyotai_kbn" )
+ column=(type=decimal(0) update=yes updatewhereclause=yes name=tougetu_str_date dbname="m_kihon.tougetu_str_date" dbalias=".tougetu_str_date" )
+ column=(type=decimal(0) update=yes updatewhereclause=yes name=tougetu_end_date dbname="m_kihon.tougetu_end_date" dbalias=".tougetu_end_date" )
+ column=(type=decimal(0) update=yes updatewhereclause=yes name=yokugetu_str_date dbname="m_kihon.yokugetu_str_date" dbalias=".yokugetu_str_date" )
+ column=(type=decimal(0) update=yes updatewhereclause=yes name=yokugetu_end_date dbname="m_kihon.yokugetu_end_date" dbalias=".yokugetu_end_date" )
+ column=(type=decimal(0) update=yes updatewhereclause=yes name=zeiritu_henpin_str_date dbname="m_kihon.zeiritu_henpin_str_date" dbalias=".zeiritu_henpin_str_date" )
+ column=(type=decimal(0) update=yes updatewhereclause=yes name=zeiritu_henpin_end_date dbname="m_kihon.zeiritu_henpin_end_date" dbalias=".zeiritu_henpin_end_date" )
+ column=(type=decimal(0) update=yes updatewhereclause=yes name=zei_hasuu_uriage dbname="m_kihon.zei_hasuu_uriage" dbalias=".zei_hasuu_uriage" )
+ column=(type=decimal(0) update=yes updatewhereclause=yes name=zei_hasuu_siire dbname="m_kihon.zei_hasuu_siire" dbalias=".zei_hasuu_siire" )
+ column=(type=datetime update=yes updatewhereclause=yes name=touroku_date dbname="m_kihon.touroku_date" dbalias=".touroku_date" )
+ column=(type=char(10) update=yes updatewhereclause=yes name=touroku_user_id dbname="m_kihon.touroku_user_id" dbalias=".touroku_user_id" )
+ column=(type=char(40) update=yes updatewhereclause=yes name=touroku_client_id dbname="m_kihon.touroku_client_id" dbalias=".touroku_client_id" )
+ column=(type=char(40) update=yes updatewhereclause=yes name=touroku_pg_id dbname="m_kihon.touroku_pg_id" dbalias=".touroku_pg_id" )
+ column=(type=datetime update=yes updatewhereclause=yes name=henkou_date dbname="m_kihon.henkou_date" dbalias=".henkou_date" )
+ column=(type=char(10) update=yes updatewhereclause=yes name=henkou_user_id dbname="m_kihon.henkou_user_id" dbalias=".henkou_user_id" )
+ column=(type=char(40) update=yes updatewhereclause=yes name=henkou_client_id dbname="m_kihon.henkou_client_id" dbalias=".henkou_client_id" )
+ column=(type=char(40) update=yes updatewhereclause=yes name=henkou_pg_id dbname="m_kihon.henkou_pg_id" dbalias=".henkou_pg_id" )
+ column=(type=datetime update=yes updatewhereclause=yes name=kousin_date dbname="m_kihon.kousin_date" dbalias=".kousin_date" )
+ column=(type=char(10) update=yes updatewhereclause=yes name=kousin_user_id dbname="m_kihon.kousin_user_id" dbalias=".kousin_user_id" )
+ column=(type=char(40) update=yes updatewhereclause=yes name=kousin_client_id dbname="m_kihon.kousin_client_id" dbalias=".kousin_client_id" )
+ column=(type=char(40) update=yes updatewhereclause=yes name=kousin_pg_id dbname="m_kihon.kousin_pg_id" dbalias=".kousin_pg_id" )
+ column=(type=decimal(0) update=yes updatewhereclause=yes name=haita_flg dbname="m_kihon.haita_flg" dbalias=".haita_flg" )
+ retrieve="select kanri_code,
+       kaisya_mei,kaisya_mei_ryaku,
+       yubin_no,jyusyo,
+       tel_no,fax_no,
+       jigyosya_code,houjin_no,
+       syori_date,
+       jigyo_nendo,
+       uriage_sime_date,siire_sime_date,genka_sime_nengetu,
+       sime_jyotai_kbn,
+       tougetu_str_date,tougetu_end_date,
+       yokugetu_str_date,yokugetu_end_date,
+       zeiritu_henpin_str_date,zeiritu_henpin_end_date,
+       zei_hasuu_uriage,zei_hasuu_siire,
+       touroku_date,touroku_user_id,touroku_client_id,touroku_pg_id,
+       henkou_date,henkou_user_id,henkou_client_id,henkou_pg_id,
+       kousin_date,kousin_user_id,kousin_client_id,kousin_pg_id,
+       haita_flg
+  from m_kihon
+ where (   kaisya_mei		like '%' || :p_kaisya_mei || '%'
+        or kaisya_mei_ryaku	like '%' || :p_kaisya_mei || '%'
+       )
+ order by kanri_code" update="m_kihon" updatewhere=1 updatekeyinplace=no arguments=(("p_kaisya_mei", string)) )
+text(band=header alignment="2" text="コード" border="6" color="33554432" x="12" y="7" height="75" width="292" html.valueishtml="0"  name=kanri_code_t visible="1"  font.face="Yu Gothic UI Semilight" font.height="-11" font.weight="400"  font.family="3" font.pitch="2" font.charset="1" background.mode="1" background.color="536870912" background.transparency="0" background.gradient.color="8421504" background.gradient.transparency="0" background.gradient.angle="0" background.brushmode="0" background.gradient.repetition.mode="0" background.gradient.repetition.count="0" background.gradient.repetition.length="100" background.gradient.focus="0" background.gradient.scale="100" background.gradient.spread="100" tooltip.backcolor="134217752" tooltip.delay.initial="0" tooltip.delay.visible="32000" tooltip.enabled="0" tooltip.hasclosebutton="0" tooltip.icon="0" tooltip.isbubble="0" tooltip.maxwidth="0" tooltip.textcolor="134217751" tooltip.transparency="0" transparency="0" )
+text(band=header alignment="2" text="会社名" border="6" color="33554432" x="316" y="7" height="75" width="1196" html.valueishtml="0"  name=kaisya_mei_t visible="1"  font.face="Yu Gothic UI Semilight" font.height="-11" font.weight="400"  font.family="3" font.pitch="2" font.charset="1" background.mode="1" background.color="536870912" background.transparency="0" background.gradient.color="8421504" background.gradient.transparency="0" background.gradient.angle="0" background.brushmode="0" background.gradient.repetition.mode="0" background.gradient.repetition.count="0" background.gradient.repetition.length="100" background.gradient.focus="0" background.gradient.scale="100" background.gradient.spread="100" tooltip.backcolor="134217752" tooltip.delay.initial="0" tooltip.delay.visible="32000" tooltip.enabled="0" tooltip.hasclosebutton="0" tooltip.icon="0" tooltip.isbubble="0" tooltip.maxwidth="0" tooltip.textcolor="134217751" tooltip.transparency="0" transparency="0" )
+column(band=detail id=1 alignment="1" tabsequence=32766 border="0" color="33554432" x="12" y="3" height="71" width="292" format="[general]" html.valueishtml="0"  name=kanri_code visible="1" edit.limit=0 edit.case=any edit.focusrectangle=no edit.autoselect=yes edit.autohscroll=yes edit.imemode=0  font.face="Yu Gothic UI Semilight" font.height="-11" font.weight="400"  font.family="3" font.pitch="2" font.charset="1" background.mode="1" background.color="536870912" background.transparency="0" background.gradient.color="8421504" background.gradient.transparency="0" background.gradient.angle="0" background.brushmode="0" background.gradient.repetition.mode="0" background.gradient.repetition.count="0" background.gradient.repetition.length="100" background.gradient.focus="0" background.gradient.scale="100" background.gradient.spread="100" tooltip.backcolor="134217752" tooltip.delay.initial="0" tooltip.delay.visible="32000" tooltip.enabled="0" tooltip.hasclosebutton="0" tooltip.icon="0" tooltip.isbubble="0" tooltip.maxwidth="0" tooltip.textcolor="134217751" tooltip.transparency="0" transparency="0" )
+column(band=detail id=2 alignment="0" tabsequence=32766 border="0" color="33554432" x="316" y="3" height="71" width="1196" format="[general]" html.valueishtml="0"  name=kaisya_mei visible="1" edit.limit=128 edit.case=any edit.focusrectangle=no edit.autoselect=yes edit.autohscroll=yes edit.imemode=0  font.face="Yu Gothic UI Semilight" font.height="-11" font.weight="400"  font.family="3" font.pitch="2" font.charset="1" background.mode="1" background.color="536870912" background.transparency="0" background.gradient.color="8421504" background.gradient.transparency="0" background.gradient.angle="0" background.brushmode="0" background.gradient.repetition.mode="0" background.gradient.repetition.count="0" background.gradient.repetition.length="100" background.gradient.focus="0" background.gradient.scale="100" background.gradient.spread="100" tooltip.backcolor="134217752" tooltip.delay.initial="0" tooltip.delay.visible="32000" tooltip.enabled="0" tooltip.hasclosebutton="0" tooltip.icon="0" tooltip.isbubble="0" tooltip.maxwidth="0" tooltip.textcolor="134217751" tooltip.transparency="0" transparency="0" )
+htmltable(border="1" )
+htmlgen(clientevents="1" clientvalidation="1" clientcomputedfields="1" clientformatting="0" clientscriptable="0" generatejavascript="1" encodeselflinkargs="1" netscapelayers="0" pagingmethod=0 generatedddwframes="1" )
+xhtmlgen() cssgen(sessionspecific="0" )
+xmlgen(inline="0" )
+xsltgen()
+jsgen()
+export.xml(headgroups="1" includewhitespace="0" metadatatype=0 savemetadata=0 )
+import.xml()
+export.pdf(method=2 distill.custompostscript="0" xslfop.print="0" nativepdf.customsize=0 nativepdf.customorientation=0 nativepdf.pdfstandard=0 nativepdf.useprintspec=no )
+export.xhtml()
+ 

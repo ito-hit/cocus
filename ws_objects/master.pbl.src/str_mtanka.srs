@@ -1,0 +1,51 @@
+﻿$PBExportHeader$str_mtanka.srs
+$PBExportComments$m_tanka用の構造体
+global type str_mtanka from structure
+	long		tokui_code
+	long		syohin_code
+	decimal {2}	tanka
+	long		up_1
+	long		up_2
+	long		up_3
+	long		up_4
+	long		up_5
+	long		tanka_henkou_date
+	decimal {2}	old_tanka
+	integer		zei_kbn
+	decimal {2}	zeiritu
+	decimal {2}	zeibetu_tanka
+	long		zeibetu_up_1
+	long		zeibetu_up_2
+	long		zeibetu_up_3
+	long		zeibetu_up_4
+	long		zeibetu_up_5
+	decimal {2}	jyoudai
+	decimal {2}	kakeritu
+	integer		tokune_flg
+	decimal {2}	new_tanka
+	long		new_up_1
+	long		new_up_2
+	long		new_up_3
+	long		new_up_4
+	long		new_up_5
+	integer		new_zei_kbn
+	decimal {2}	new_zeiritu
+	decimal {2}	new_jyodai
+	decimal {2}	new_kakeritu
+	long		tekiyo_date_str
+	long		tekiyo_date_end
+	string		note
+	datetime	touroku_date
+	string		touroku_user_id
+	string		touroku_client_id
+	string		touroku_pg_id
+	datetime	henkou_date
+	string		henkou_user_id
+	string		henkou_client_id
+	string		henkou_pg_id
+	datetime	kousin_date
+	string		kousin_user_id
+	string		kousin_client_id
+	string		kousin_pg_id
+	integer		haita_flg
+end type

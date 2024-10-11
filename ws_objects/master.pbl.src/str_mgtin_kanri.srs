@@ -1,0 +1,25 @@
+﻿$PBExportHeader$str_mgtin_kanri.srs
+$PBExportComments$m_gtin_kanri用の構造体
+global type str_mgtin_kanri from structure
+	string		jigyosya_code
+	string		jigyosya_mei
+	integer		jido_saiban_flg
+	long		item_code_str
+	long		item_code_end
+	long		item_code_gen
+	integer		rep_flg
+	integer		haiban_flg
+	datetime	touroku_date
+	string		touroku_user_id
+	string		touroku_client_id
+	string		touroku_pg_id
+	datetime	henkou_date
+	string		henkou_user_id
+	string		henkou_client_id
+	string		henkou_pg_id
+	datetime	kousin_date
+	string		kousin_user_id
+	string		kousin_client_id
+	string		kousin_pg_id
+	integer		haita_flg
+end type

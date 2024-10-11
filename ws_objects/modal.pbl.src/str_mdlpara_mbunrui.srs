@@ -1,0 +1,6 @@
+﻿$PBExportHeader$str_mdlpara_mbunrui.srs
+$PBExportComments$m_bunrui用のモーダル構造体
+global type str_mdlpara_mbunrui from structure
+	str_mbunrui		ret[]
+end type
+

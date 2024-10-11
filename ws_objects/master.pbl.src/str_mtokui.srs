@@ -1,0 +1,147 @@
+﻿$PBExportHeader$str_mtokui.srs
+global type str_mtokui from structure
+	long		tokui_code
+	string		tokui_mei_full
+	string		tokui_mei
+	string		tokui_mei_syagai
+	string		tokui_mei_ryaku
+	string		tokui_mei_kana
+	integer		tokui_kbn
+	integer		gyotai_kbn
+	integer		syokuti_flg
+	string		torihiki_code
+	string		jigyosya_code
+	string		houjin_no
+	integer		bumon_code
+	integer		tanto_code
+	integer		tanto_code_new
+	long		nayose_code
+	integer		nayose_eda
+	long		seikyu_code
+	integer		seikyu_eda
+	integer		torihiki_jyoken_kbn
+	longlong		yosin_gendo_gaku
+	integer		syohizei_kbn
+	integer		zei_hasu_kbn
+	string		untin_kbn_fax
+	string		untin_kbn_net
+	string		untin_kbn_edi
+	integer		untin_kbn
+	integer		torihiki_teisi_kbn
+	integer		torihiki_teisi_riyu
+	integer		syusoku_flg
+	integer		kesikomi_flg
+	integer		kaisyu_flg
+	integer		kaisyu_keikoku_flg
+	integer		nohinsyo_kbn
+	integer		nohinsyo_hakkou_kbn
+	integer		nohinsyo_kingaku_kbn
+	integer		nohinsyo_kousou_kbn
+	integer		nohinsyo_kousou_jyun
+	integer		seikyusyo_kbn
+	integer		seikyu_meisai_kbn
+	integer		seikyu_tanni_kbn
+	integer		seikyu_denpyo_no_hyoji_kbn
+	integer		seikyu_cd_hyoji_flg
+	integer		siharai_kijitu_hyoji_flg
+	integer		jikai_siharai_hyoji_flg
+	integer		seikyu_data_kbn
+	long		kijyun_kingaku
+	integer		simebi_1
+	integer		nyukin_tuki_1
+	integer		nyukin_date_1
+	integer		nyukin_houhou_1
+	integer		tegata_site_1
+	integer		nyukin_tuki_1m
+	integer		nyukin_date_1m
+	integer		nyukin_houhou_1m
+	integer		tegata_site_1m
+	integer		simebi_2
+	integer		nyukin_tuki_2
+	integer		nyukin_date_2
+	integer		nyukin_houhou_2
+	integer		tegata_site_2
+	integer		nyukin_tuki_2m
+	integer		nyukin_date_2m
+	integer		nyukin_houhou_2m
+	integer		tegata_site_2m
+	integer		tanka_touroku_flg
+	integer		unso_code
+	integer		leadtime_flg
+	integer		saiken_doukou_flg
+	integer		jyuten_kbn
+	long		reserve_hikiate_code
+	integer		rank
+	integer		syukka_yusen_jyun
+	long		syukka_siji_kingaku
+	integer		todofuken_code
+	long		sikutyoson_code
+	string		yubin_no
+	string		jyusyo
+	string		tel_no
+	string		fax_no
+	string		url
+	string		daihyo_yakusyoku
+	string		daihyo_simei
+	integer		sogyo_kbn
+	long		sogyo_nen
+	integer		sogyo_tuki
+	integer		kessan_tuki
+	string		gyosyu
+	long		sihonkin
+	long		jyugyoin_su
+	string		torihiki_ginkou_1
+	string		torihiki_ginkou_siten_1
+	string		torihiki_ginkou_2
+	string		torihiki_ginkou_siten_2
+	string		torihiki_ginkou_3
+	string		torihiki_ginkou_siten_3
+	long		siten_su
+	long		kojyo_su
+	string		hanbai_saki
+	string		siire_saki
+	string		jigyo_naiyo
+	integer		gyokai_tii
+	integer		torihiki_keii
+	string		torihiki_keii_bikou
+	integer		baibai_keiyaku_flg
+	integer		hosyonin_umu
+	string		hosyonin_mei
+	string		hosyonin_kankei
+	string		hosyokin
+	decimal { 2 }		ryoritu_1
+	integer		ryoritu_tani_1
+	decimal { 2 }		ryoritu_2
+	integer		ryoritu_tani_2
+	decimal { 2 }		ryoritu_3
+	integer		ryoritu_tani_3
+	decimal { 2 }		ryoritu_4
+	integer		ryoritu_tani_4
+	decimal { 2 }		ryoritu_5
+	integer		ryoritu_tani_5
+	decimal { 2 }		tesuryo_1
+	integer		tesuryo_tani_1
+	decimal { 2 }		tesuryo_2
+	integer		tesuryo_tani_2
+	decimal { 2 }		tesuryo_3
+	integer		tesuryo_tani_3
+	decimal { 2 }		tesuryo_4
+	integer		tesuryo_tani_4
+	decimal { 2 }		tesuryo_5
+	integer		tesuryo_tani_5
+	string		memo
+	datetime		touroku_date
+	string		touroku_user_id
+	string		touroku_client_id
+	string		touroku_pg_id
+	datetime		henkou_date
+	string		henkou_user_id
+	string		henkou_client_id
+	string		henkou_pg_id
+	datetime		kousin_date
+	string		kousin_user_id
+	string		kousin_client_id
+	string		kousin_pg_id
+	integer		haita_flg
+end type
+

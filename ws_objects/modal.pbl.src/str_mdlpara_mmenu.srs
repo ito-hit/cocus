@@ -1,0 +1,7 @@
+﻿$PBExportHeader$str_mdlpara_mmenu.srs
+$PBExportComments$m_menu用のモーダル構造体
+global type str_mdlpara_mmenu from structure
+	string		in_menu_id
+	str_mmenu		ret[]
+end type
+

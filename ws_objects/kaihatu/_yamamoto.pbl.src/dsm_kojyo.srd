@@ -1,0 +1,269 @@
+﻿$PBExportHeader$dsm_kojyo.srd
+$PBExportComments$wsm_kojyoのデータウィンドウ
+release 19;
+datawindow(units=0 timer_interval=0 color=268435456 brushmode=0 transparency=0 gradient.angle=0 gradient.color=8421504 gradient.focus=0 gradient.repetition.count=0 gradient.repetition.length=100 gradient.repetition.mode=0 gradient.scale=100 gradient.spread=100 gradient.transparency=0 picture.blur=0 picture.clip.bottom=0 picture.clip.left=0 picture.clip.right=0 picture.clip.top=0 picture.mode=0 picture.scale.x=100 picture.scale.y=100 picture.transparency=0 processing=1 HTMLDW=no print.printername="" print.documentname="" print.orientation = 0 print.margin.left = 96 print.margin.right = 96 print.margin.top = 85 print.margin.bottom = 85 print.paper.source = 0 print.paper.size = 0 print.canusedefaultprinter=yes print.prompt=no print.buttons=no print.preview.buttons=no print.cliptext=no print.overrideprintjob=no print.collate=yes print.background=no print.preview.background=no print.preview.outline=yes hidegrayline=no showbackcoloronxp=no picture.file="" grid.lines=0 grid.columnmove=no selected.mouse=no )
+header(height=85 color="67108864" transparency="0" gradient.color="8421504" gradient.transparency="0" gradient.angle="0" brushmode="0" gradient.repetition.mode="0" gradient.repetition.count="0" gradient.repetition.length="100" gradient.focus="0" gradient.scale="100" gradient.spread="100" )
+summary(height=0 color="536870912" transparency="0" gradient.color="8421504" gradient.transparency="0" gradient.angle="0" brushmode="0" gradient.repetition.mode="0" gradient.repetition.count="0" gradient.repetition.length="100" gradient.focus="0" gradient.scale="100" gradient.spread="100" )
+footer(height=0 color="536870912" transparency="0" gradient.color="8421504" gradient.transparency="0" gradient.angle="0" brushmode="0" gradient.repetition.mode="0" gradient.repetition.count="0" gradient.repetition.length="100" gradient.focus="0" gradient.scale="100" gradient.spread="100" )
+detail(height=85 color="536870912~tfo_lattice( getrow() )" transparency="0" gradient.color="8421504" gradient.transparency="0" gradient.angle="0" brushmode="0" gradient.repetition.mode="0" gradient.repetition.count="0" gradient.repetition.length="100" gradient.focus="0" gradient.scale="100" gradient.spread="100" )
+table(column=(type=decimal(0) updatewhereclause=yes name=kojyo_code dbname="sy_m_kojyo.kojyo_code" )
+ column=(type=decimal(0) updatewhereclause=yes name=bumon_code dbname="sy_m_kojyo.bumon_code" )
+ column=(type=char(3) updatewhereclause=yes name=aiueo_code dbname="sy_m_kojyo.aiueo_code" )
+ column=(type=char(32) updatewhereclause=yes name=kojyo_mei dbname="sy_m_kojyo.kojyo_mei" )
+ column=(type=char(6) updatewhereclause=yes name=kojyo_mei_ryaku dbname="sy_m_kojyo.kojyo_mei_ryaku" )
+ column=(type=decimal(0) updatewhereclause=yes name=kojyo_kbn dbname="sy_m_kojyo.kojyo_kbn" )
+ column=(type=char(8) updatewhereclause=yes name=yubin_bango dbname="sy_m_kojyo.yubin_bango" )
+ column=(type=char(28) updatewhereclause=yes name=jyusyo_1 dbname="sy_m_kojyo.jyusyo_1" )
+ column=(type=char(28) updatewhereclause=yes name=jyusyo_2 dbname="sy_m_kojyo.jyusyo_2" )
+ column=(type=char(12) updatewhereclause=yes name=denwa_bango dbname="sy_m_kojyo.denwa_bango" )
+ column=(type=char(12) updatewhereclause=yes name=fax_no dbname="sy_m_kojyo.fax_no" )
+ column=(type=char(20) updatewhereclause=yes name=atena dbname="sy_m_kojyo.atena" )
+ column=(type=decimal(0) updatewhereclause=yes name=group_code dbname="sy_m_kojyo.group_code" )
+ column=(type=char(3) updatewhereclause=yes name=tuka_code dbname="sy_m_kojyo.tuka_code" )
+ column=(type=decimal(0) updatewhereclause=yes name=sime_hi dbname="sy_m_kojyo.sime_hi" )
+ column=(type=decimal(0) updatewhereclause=yes name=siharai_hi dbname="sy_m_kojyo.siharai_hi" )
+ column=(type=decimal(0) updatewhereclause=yes name=siharai_meisai_flg dbname="sy_m_kojyo.siharai_meisai_flg" )
+ column=(type=decimal(0) updatewhereclause=yes name=siharai_saki_kojyo_code dbname="sy_m_kojyo.siharai_saki_kojyo_code" )
+ column=(type=decimal(0) updatewhereclause=yes name=siharai_houhou dbname="sy_m_kojyo.siharai_houhou" )
+ column=(type=decimal(0) updatewhereclause=yes name=siharai_tuki dbname="sy_m_kojyo.siharai_tuki" )
+ column=(type=decimal(0) updatewhereclause=yes name=syohizei_keisan_kbn dbname="sy_m_kojyo.syohizei_keisan_kbn" )
+ column=(type=decimal(0) updatewhereclause=yes name=syohizei_marume_kbn dbname="sy_m_kojyo.syohizei_marume_kbn" )
+ column=(type=decimal(2) updatewhereclause=yes name=nuiito_tanka dbname="sy_m_kojyo.nuiito_tanka" )
+ column=(type=decimal(2) updatewhereclause=yes name=keiyaku_bubiki_ritu dbname="sy_m_kojyo.keiyaku_bubiki_ritu" )
+ column=(type=decimal(0) updatewhereclause=yes name=sime_siharai_kingaku_zen dbname="sy_m_kojyo.sime_siharai_kingaku_zen" )
+ column=(type=decimal(0) updatewhereclause=yes name=sime_siharai_kingaku_2tuki dbname="sy_m_kojyo.sime_siharai_kingaku_2tuki" )
+ column=(type=decimal(0) updatewhereclause=yes name=sime_siharai_kingaku_3tuki dbname="sy_m_kojyo.sime_siharai_kingaku_3tuki" )
+ column=(type=decimal(0) updatewhereclause=yes name=sime_siharai_zan_kingaku_zen dbname="sy_m_kojyo.sime_siharai_zan_kingaku_zen" )
+ column=(type=decimal(0) updatewhereclause=yes name=sime_siharai_zan_kingaku_2tuki dbname="sy_m_kojyo.sime_siharai_zan_kingaku_2tuki" )
+ column=(type=decimal(0) updatewhereclause=yes name=sime_siharai_zan_kingaku_3tuki dbname="sy_m_kojyo.sime_siharai_zan_kingaku_3tuki" )
+ column=(type=decimal(0) updatewhereclause=yes name=sime_siire_tan_su dbname="sy_m_kojyo.sime_siire_tan_su" )
+ column=(type=decimal(2) updatewhereclause=yes name=sime_siire_su dbname="sy_m_kojyo.sime_siire_su" )
+ column=(type=decimal(0) updatewhereclause=yes name=sime_siire_henpin_tan_su dbname="sy_m_kojyo.sime_siire_henpin_tan_su" )
+ column=(type=decimal(2) updatewhereclause=yes name=sime_siire_henpin_su dbname="sy_m_kojyo.sime_siire_henpin_su" )
+ column=(type=decimal(0) updatewhereclause=yes name=sime_siire_kingaku dbname="sy_m_kojyo.sime_siire_kingaku" )
+ column=(type=decimal(0) updatewhereclause=yes name=sime_siire_henpin_kingaku dbname="sy_m_kojyo.sime_siire_henpin_kingaku" )
+ column=(type=decimal(0) updatewhereclause=yes name=sime_siire_nebiki_kingaku dbname="sy_m_kojyo.sime_siire_nebiki_kingaku" )
+ column=(type=decimal(0) updatewhereclause=yes name=sime_siire_ta_siire_kingaku dbname="sy_m_kojyo.sime_siire_ta_siire_kingaku" )
+ column=(type=decimal(0) updatewhereclause=yes name=sime_siire_syohizei dbname="sy_m_kojyo.sime_siire_syohizei" )
+ column=(type=decimal(0) updatewhereclause=yes name=sime_siire_horyu_kingaku dbname="sy_m_kojyo.sime_siire_horyu_kingaku" )
+ column=(type=decimal(0) updatewhereclause=yes name=sime_siharai_genkin dbname="sy_m_kojyo.sime_siharai_genkin" )
+ column=(type=decimal(0) updatewhereclause=yes name=sime_siharai_kogitte dbname="sy_m_kojyo.sime_siharai_kogitte" )
+ column=(type=decimal(0) updatewhereclause=yes name=sime_siharai_tegata dbname="sy_m_kojyo.sime_siharai_tegata" )
+ column=(type=decimal(0) updatewhereclause=yes name=sime_siharai_furikomi dbname="sy_m_kojyo.sime_siharai_furikomi" )
+ column=(type=decimal(0) updatewhereclause=yes name=sime_siharai_sousai dbname="sy_m_kojyo.sime_siharai_sousai" )
+ column=(type=decimal(0) updatewhereclause=yes name=sime_siharai_waribiki dbname="sy_m_kojyo.sime_siharai_waribiki" )
+ column=(type=decimal(0) updatewhereclause=yes name=sime_siharai_kawase_sai dbname="sy_m_kojyo.sime_siharai_kawase_sai" )
+ column=(type=decimal(0) updatewhereclause=yes name=sime_siharai_ta dbname="sy_m_kojyo.sime_siharai_ta" )
+ column=(type=decimal(0) updatewhereclause=yes name=sime_siharai_tyosei dbname="sy_m_kojyo.sime_siharai_tyosei" )
+ column=(type=decimal(0) updatewhereclause=yes name=zen_getu_kaikake_zan dbname="sy_m_kojyo.zen_getu_kaikake_zan" )
+ column=(type=decimal(0) updatewhereclause=yes name=zen_getu_kaikake_zan_2tuki dbname="sy_m_kojyo.zen_getu_kaikake_zan_2tuki" )
+ column=(type=decimal(0) updatewhereclause=yes name=zen_getu_kaikake_zan_3tuki dbname="sy_m_kojyo.zen_getu_kaikake_zan_3tuki" )
+ column=(type=decimal(0) updatewhereclause=yes name=tukikei_siire_tan_su dbname="sy_m_kojyo.tukikei_siire_tan_su" )
+ column=(type=decimal(2) updatewhereclause=yes name=tukikei_siire_su dbname="sy_m_kojyo.tukikei_siire_su" )
+ column=(type=decimal(0) updatewhereclause=yes name=tukikei_siire_henpin_tan_su dbname="sy_m_kojyo.tukikei_siire_henpin_tan_su" )
+ column=(type=decimal(2) updatewhereclause=yes name=tukikei_siire_henpin_su dbname="sy_m_kojyo.tukikei_siire_henpin_su" )
+ column=(type=decimal(0) updatewhereclause=yes name=tukikei_siire_kingaku dbname="sy_m_kojyo.tukikei_siire_kingaku" )
+ column=(type=decimal(0) updatewhereclause=yes name=tukikei_siire_henpin_kingaku dbname="sy_m_kojyo.tukikei_siire_henpin_kingaku" )
+ column=(type=decimal(0) updatewhereclause=yes name=tukikei_siire_nebiki_kingaku dbname="sy_m_kojyo.tukikei_siire_nebiki_kingaku" )
+ column=(type=decimal(0) updatewhereclause=yes name=tukikei_siire_ta_siire_kingaku dbname="sy_m_kojyo.tukikei_siire_ta_siire_kingaku" )
+ column=(type=decimal(0) updatewhereclause=yes name=tukikei_siire_syohizei dbname="sy_m_kojyo.tukikei_siire_syohizei" )
+ column=(type=decimal(0) updatewhereclause=yes name=tukikei_siharai_genkin dbname="sy_m_kojyo.tukikei_siharai_genkin" )
+ column=(type=decimal(0) updatewhereclause=yes name=tukikei_siharai_kogitte dbname="sy_m_kojyo.tukikei_siharai_kogitte" )
+ column=(type=decimal(0) updatewhereclause=yes name=tukikei_siharai_tegata dbname="sy_m_kojyo.tukikei_siharai_tegata" )
+ column=(type=decimal(0) updatewhereclause=yes name=tukikei_siharai_furikomi dbname="sy_m_kojyo.tukikei_siharai_furikomi" )
+ column=(type=decimal(0) updatewhereclause=yes name=tukikei_siharai_sousai dbname="sy_m_kojyo.tukikei_siharai_sousai" )
+ column=(type=decimal(0) updatewhereclause=yes name=tukikei_siharai_waribiki dbname="sy_m_kojyo.tukikei_siharai_waribiki" )
+ column=(type=decimal(0) updatewhereclause=yes name=tukikei_siharai_kawase_sai dbname="sy_m_kojyo.tukikei_siharai_kawase_sai" )
+ column=(type=decimal(0) updatewhereclause=yes name=tukikei_siharai_ta dbname="sy_m_kojyo.tukikei_siharai_ta" )
+ column=(type=decimal(0) updatewhereclause=yes name=tukikei_siharai_tyosei dbname="sy_m_kojyo.tukikei_siharai_tyosei" )
+ column=(type=decimal(0) updatewhereclause=yes name=nenkei_siire_tan_su dbname="sy_m_kojyo.nenkei_siire_tan_su" )
+ column=(type=decimal(2) updatewhereclause=yes name=nenkei_siire_su dbname="sy_m_kojyo.nenkei_siire_su" )
+ column=(type=decimal(0) updatewhereclause=yes name=nenkei_siire_henpin_tan_su dbname="sy_m_kojyo.nenkei_siire_henpin_tan_su" )
+ column=(type=decimal(2) updatewhereclause=yes name=nenkei_siire_henpin_su dbname="sy_m_kojyo.nenkei_siire_henpin_su" )
+ column=(type=decimal(0) updatewhereclause=yes name=nenkei_siire_kingaku dbname="sy_m_kojyo.nenkei_siire_kingaku" )
+ column=(type=decimal(0) updatewhereclause=yes name=nenkei_siire_henpin_kingaku dbname="sy_m_kojyo.nenkei_siire_henpin_kingaku" )
+ column=(type=decimal(0) updatewhereclause=yes name=nenkei_siire_nebiki_kingaku dbname="sy_m_kojyo.nenkei_siire_nebiki_kingaku" )
+ column=(type=decimal(0) updatewhereclause=yes name=nenkei_siire_ta_siire_kingaku dbname="sy_m_kojyo.nenkei_siire_ta_siire_kingaku" )
+ column=(type=decimal(0) updatewhereclause=yes name=nenkei_siire_syohizei dbname="sy_m_kojyo.nenkei_siire_syohizei" )
+ column=(type=decimal(0) updatewhereclause=yes name=nenkei_siharai_genkin dbname="sy_m_kojyo.nenkei_siharai_genkin" )
+ column=(type=decimal(0) updatewhereclause=yes name=nenkei_siharai_kogitte dbname="sy_m_kojyo.nenkei_siharai_kogitte" )
+ column=(type=decimal(0) updatewhereclause=yes name=nenkei_siharai_tegata dbname="sy_m_kojyo.nenkei_siharai_tegata" )
+ column=(type=decimal(0) updatewhereclause=yes name=nenkei_siharai_furikomi dbname="sy_m_kojyo.nenkei_siharai_furikomi" )
+ column=(type=decimal(0) updatewhereclause=yes name=nenkei_siharai_sousai dbname="sy_m_kojyo.nenkei_siharai_sousai" )
+ column=(type=decimal(0) updatewhereclause=yes name=nenkei_siharai_waribiki dbname="sy_m_kojyo.nenkei_siharai_waribiki" )
+ column=(type=decimal(0) updatewhereclause=yes name=nenkei_siharai_kawase_sai dbname="sy_m_kojyo.nenkei_siharai_kawase_sai" )
+ column=(type=decimal(0) updatewhereclause=yes name=nenkei_siharai_ta dbname="sy_m_kojyo.nenkei_siharai_ta" )
+ column=(type=decimal(0) updatewhereclause=yes name=nenkei_siharai_tyosei dbname="sy_m_kojyo.nenkei_siharai_tyosei" )
+ column=(type=decimal(2) updatewhereclause=yes name=touki_siire_su_4 dbname="sy_m_kojyo.touki_siire_su_4" )
+ column=(type=decimal(2) updatewhereclause=yes name=touki_siire_su_5 dbname="sy_m_kojyo.touki_siire_su_5" )
+ column=(type=decimal(2) updatewhereclause=yes name=touki_siire_su_6 dbname="sy_m_kojyo.touki_siire_su_6" )
+ column=(type=decimal(2) updatewhereclause=yes name=touki_siire_su_7 dbname="sy_m_kojyo.touki_siire_su_7" )
+ column=(type=decimal(2) updatewhereclause=yes name=touki_siire_su_8 dbname="sy_m_kojyo.touki_siire_su_8" )
+ column=(type=decimal(2) updatewhereclause=yes name=touki_siire_su_9 dbname="sy_m_kojyo.touki_siire_su_9" )
+ column=(type=decimal(2) updatewhereclause=yes name=touki_siire_su_10 dbname="sy_m_kojyo.touki_siire_su_10" )
+ column=(type=decimal(2) updatewhereclause=yes name=touki_siire_su_11 dbname="sy_m_kojyo.touki_siire_su_11" )
+ column=(type=decimal(2) updatewhereclause=yes name=touki_siire_su_12 dbname="sy_m_kojyo.touki_siire_su_12" )
+ column=(type=decimal(2) updatewhereclause=yes name=touki_siire_su_1 dbname="sy_m_kojyo.touki_siire_su_1" )
+ column=(type=decimal(2) updatewhereclause=yes name=touki_siire_su_2 dbname="sy_m_kojyo.touki_siire_su_2" )
+ column=(type=decimal(2) updatewhereclause=yes name=touki_siire_su_3 dbname="sy_m_kojyo.touki_siire_su_3" )
+ column=(type=decimal(0) updatewhereclause=yes name=touki_siire_kingaku_4 dbname="sy_m_kojyo.touki_siire_kingaku_4" )
+ column=(type=decimal(0) updatewhereclause=yes name=touki_siire_kingaku_5 dbname="sy_m_kojyo.touki_siire_kingaku_5" )
+ column=(type=decimal(0) updatewhereclause=yes name=touki_siire_kingaku_6 dbname="sy_m_kojyo.touki_siire_kingaku_6" )
+ column=(type=decimal(0) updatewhereclause=yes name=touki_siire_kingaku_7 dbname="sy_m_kojyo.touki_siire_kingaku_7" )
+ column=(type=decimal(0) updatewhereclause=yes name=touki_siire_kingaku_8 dbname="sy_m_kojyo.touki_siire_kingaku_8" )
+ column=(type=decimal(0) updatewhereclause=yes name=touki_siire_kingaku_9 dbname="sy_m_kojyo.touki_siire_kingaku_9" )
+ column=(type=decimal(0) updatewhereclause=yes name=touki_siire_kingaku_10 dbname="sy_m_kojyo.touki_siire_kingaku_10" )
+ column=(type=decimal(0) updatewhereclause=yes name=touki_siire_kingaku_11 dbname="sy_m_kojyo.touki_siire_kingaku_11" )
+ column=(type=decimal(0) updatewhereclause=yes name=touki_siire_kingaku_12 dbname="sy_m_kojyo.touki_siire_kingaku_12" )
+ column=(type=decimal(0) updatewhereclause=yes name=touki_siire_kingaku_1 dbname="sy_m_kojyo.touki_siire_kingaku_1" )
+ column=(type=decimal(0) updatewhereclause=yes name=touki_siire_kingaku_2 dbname="sy_m_kojyo.touki_siire_kingaku_2" )
+ column=(type=decimal(0) updatewhereclause=yes name=touki_siire_kingaku_3 dbname="sy_m_kojyo.touki_siire_kingaku_3" )
+ column=(type=decimal(2) updatewhereclause=yes name=zenki_siire_su_4 dbname="sy_m_kojyo.zenki_siire_su_4" )
+ column=(type=decimal(2) updatewhereclause=yes name=zenki_siire_su_5 dbname="sy_m_kojyo.zenki_siire_su_5" )
+ column=(type=decimal(2) updatewhereclause=yes name=zenki_siire_su_6 dbname="sy_m_kojyo.zenki_siire_su_6" )
+ column=(type=decimal(2) updatewhereclause=yes name=zenki_siire_su_7 dbname="sy_m_kojyo.zenki_siire_su_7" )
+ column=(type=decimal(2) updatewhereclause=yes name=zenki_siire_su_8 dbname="sy_m_kojyo.zenki_siire_su_8" )
+ column=(type=decimal(2) updatewhereclause=yes name=zenki_siire_su_9 dbname="sy_m_kojyo.zenki_siire_su_9" )
+ column=(type=decimal(2) updatewhereclause=yes name=zenki_siire_su_10 dbname="sy_m_kojyo.zenki_siire_su_10" )
+ column=(type=decimal(2) updatewhereclause=yes name=zenki_siire_su_11 dbname="sy_m_kojyo.zenki_siire_su_11" )
+ column=(type=decimal(2) updatewhereclause=yes name=zenki_siire_su_12 dbname="sy_m_kojyo.zenki_siire_su_12" )
+ column=(type=decimal(2) updatewhereclause=yes name=zenki_siire_su_1 dbname="sy_m_kojyo.zenki_siire_su_1" )
+ column=(type=decimal(2) updatewhereclause=yes name=zenki_siire_su_2 dbname="sy_m_kojyo.zenki_siire_su_2" )
+ column=(type=decimal(2) updatewhereclause=yes name=zenki_siire_su_3 dbname="sy_m_kojyo.zenki_siire_su_3" )
+ column=(type=decimal(0) updatewhereclause=yes name=zenki_siire_kingaku_4 dbname="sy_m_kojyo.zenki_siire_kingaku_4" )
+ column=(type=decimal(0) updatewhereclause=yes name=zenki_siire_kingaku_5 dbname="sy_m_kojyo.zenki_siire_kingaku_5" )
+ column=(type=decimal(0) updatewhereclause=yes name=zenki_siire_kingaku_6 dbname="sy_m_kojyo.zenki_siire_kingaku_6" )
+ column=(type=decimal(0) updatewhereclause=yes name=zenki_siire_kingaku_7 dbname="sy_m_kojyo.zenki_siire_kingaku_7" )
+ column=(type=decimal(0) updatewhereclause=yes name=zenki_siire_kingaku_8 dbname="sy_m_kojyo.zenki_siire_kingaku_8" )
+ column=(type=decimal(0) updatewhereclause=yes name=zenki_siire_kingaku_9 dbname="sy_m_kojyo.zenki_siire_kingaku_9" )
+ column=(type=decimal(0) updatewhereclause=yes name=zenki_siire_kingaku_10 dbname="sy_m_kojyo.zenki_siire_kingaku_10" )
+ column=(type=decimal(0) updatewhereclause=yes name=zenki_siire_kingaku_11 dbname="sy_m_kojyo.zenki_siire_kingaku_11" )
+ column=(type=decimal(0) updatewhereclause=yes name=zenki_siire_kingaku_12 dbname="sy_m_kojyo.zenki_siire_kingaku_12" )
+ column=(type=decimal(0) updatewhereclause=yes name=zenki_siire_kingaku_1 dbname="sy_m_kojyo.zenki_siire_kingaku_1" )
+ column=(type=decimal(0) updatewhereclause=yes name=zenki_siire_kingaku_2 dbname="sy_m_kojyo.zenki_siire_kingaku_2" )
+ column=(type=decimal(0) updatewhereclause=yes name=zenki_siire_kingaku_3 dbname="sy_m_kojyo.zenki_siire_kingaku_3" )
+ column=(type=char(32) updatewhereclause=yes name=daihyo_yaku dbname="sy_m_kojyo.daihyo_yaku" )
+ column=(type=char(20) updatewhereclause=yes name=daihyo_mei dbname="sy_m_kojyo.daihyo_mei" )
+ column=(type=char(64) updatewhereclause=yes name=torihiki_tanto_busyo dbname="sy_m_kojyo.torihiki_tanto_busyo" )
+ column=(type=char(20) updatewhereclause=yes name=torihiki_tanto_yaku dbname="sy_m_kojyo.torihiki_tanto_yaku" )
+ column=(type=char(20) updatewhereclause=yes name=torihiki_tanto_mei dbname="sy_m_kojyo.torihiki_tanto_mei" )
+ column=(type=char(64) updatewhereclause=yes name=torihiki_mail_address dbname="sy_m_kojyo.torihiki_mail_address" )
+ column=(type=char(20) updatewhereclause=yes name=kankei_yaku_1 dbname="sy_m_kojyo.kankei_yaku_1" )
+ column=(type=char(20) updatewhereclause=yes name=kankei_yaku_2 dbname="sy_m_kojyo.kankei_yaku_2" )
+ column=(type=char(20) updatewhereclause=yes name=kankei_yaku_3 dbname="sy_m_kojyo.kankei_yaku_3" )
+ column=(type=char(20) updatewhereclause=yes name=kankei_mei_1 dbname="sy_m_kojyo.kankei_mei_1" )
+ column=(type=char(20) updatewhereclause=yes name=kankei_mei_2 dbname="sy_m_kojyo.kankei_mei_2" )
+ column=(type=char(20) updatewhereclause=yes name=kankei_mei_3 dbname="sy_m_kojyo.kankei_mei_3" )
+ column=(type=char(64) updatewhereclause=yes name=kankei_mail_address_1 dbname="sy_m_kojyo.kankei_mail_address_1" )
+ column=(type=char(64) updatewhereclause=yes name=kankei_mail_address_2 dbname="sy_m_kojyo.kankei_mail_address_2" )
+ column=(type=char(64) updatewhereclause=yes name=kankei_mail_address_3 dbname="sy_m_kojyo.kankei_mail_address_3" )
+ column=(type=decimal(0) updatewhereclause=yes name=seturitu dbname="sy_m_kojyo.seturitu" )
+ column=(type=char(16) updatewhereclause=yes name=sihonkin dbname="sy_m_kojyo.sihonkin" )
+ column=(type=decimal(0) updatewhereclause=yes name=nenga_flg dbname="sy_m_kojyo.nenga_flg" )
+ column=(type=decimal(0) updatewhereclause=yes name=busyo_code dbname="sy_m_kojyo.busyo_code" )
+ column=(type=decimal(0) updatewhereclause=yes name=user_code dbname="sy_m_kojyo.user_code" )
+ column=(type=char(512) updatewhereclause=yes name=bikou dbname="sy_m_kojyo.bikou" )
+ column=(type=char(128) updatewhereclause=yes name=url dbname="sy_m_kojyo.url" )
+ column=(type=decimal(0) updatewhereclause=yes name=kousin_user_id dbname="sy_m_kojyo.kousin_user_id" )
+ column=(type=char(25) updatewhereclause=yes name=kousin_client_id dbname="sy_m_kojyo.kousin_client_id" )
+ column=(type=char(30) updatewhereclause=yes name=kousin_pg_id dbname="sy_m_kojyo.kousin_pg_id" )
+ column=(type=datetime updatewhereclause=yes name=touroku_date dbname="sy_m_kojyo.touroku_date" )
+ column=(type=datetime updatewhereclause=yes name=kousin_date dbname="sy_m_kojyo.kousin_date" )
+ column=(type=decimal(0) updatewhereclause=yes name=haita_flg dbname="sy_m_kojyo.haita_flg" )
+ retrieve="select kojyo_code,bumon_code,aiueo_code,
+       kojyo_mei,kojyo_mei_ryaku,
+       kojyo_kbn,
+       yubin_bango,jyusyo_1,jyusyo_2,
+       denwa_bango,fax_no,
+       atena,
+       group_code,
+       tuka_code,
+       sime_hi,siharai_hi,
+       siharai_meisai_flg,siharai_saki_kojyo_code,siharai_houhou,siharai_tuki,
+       syohizei_keisan_kbn,syohizei_marume_kbn,
+       nuiito_tanka,
+       keiyaku_bubiki_ritu,
+       sime_siharai_kingaku_zen,sime_siharai_kingaku_2tuki,sime_siharai_kingaku_3tuki,
+       sime_siharai_zan_kingaku_zen,sime_siharai_zan_kingaku_2tuki,sime_siharai_zan_kingaku_3tuki,
+       sime_siire_tan_su,sime_siire_su,
+       sime_siire_henpin_tan_su,sime_siire_henpin_su,
+       sime_siire_kingaku,sime_siire_henpin_kingaku,sime_siire_nebiki_kingaku,sime_siire_ta_siire_kingaku,
+       sime_siire_syohizei,
+       sime_siire_horyu_kingaku,
+       sime_siharai_genkin,sime_siharai_kogitte,sime_siharai_tegata,sime_siharai_furikomi,
+       sime_siharai_sousai,sime_siharai_waribiki,sime_siharai_kawase_sai,sime_siharai_ta,sime_siharai_tyosei,
+       zen_getu_kaikake_zan,zen_getu_kaikake_zan_2tuki,zen_getu_kaikake_zan_3tuki,
+       tukikei_siire_tan_su,tukikei_siire_su,
+       tukikei_siire_henpin_tan_su,tukikei_siire_henpin_su,
+       tukikei_siire_kingaku,tukikei_siire_henpin_kingaku,
+       tukikei_siire_nebiki_kingaku,tukikei_siire_ta_siire_kingaku,
+       tukikei_siire_syohizei,
+       tukikei_siharai_genkin,tukikei_siharai_kogitte,tukikei_siharai_tegata,tukikei_siharai_furikomi,
+       tukikei_siharai_sousai,tukikei_siharai_waribiki,tukikei_siharai_kawase_sai,tukikei_siharai_ta,tukikei_siharai_tyosei,
+       nenkei_siire_tan_su,nenkei_siire_su,
+       nenkei_siire_henpin_tan_su,nenkei_siire_henpin_su,
+       nenkei_siire_kingaku,nenkei_siire_henpin_kingaku,
+       nenkei_siire_nebiki_kingaku,nenkei_siire_ta_siire_kingaku,
+       nenkei_siire_syohizei,
+       nenkei_siharai_genkin,nenkei_siharai_kogitte,nenkei_siharai_tegata,nenkei_siharai_furikomi,
+       nenkei_siharai_sousai,nenkei_siharai_waribiki,nenkei_siharai_kawase_sai,nenkei_siharai_ta,nenkei_siharai_tyosei,
+       touki_siire_su_4,touki_siire_su_5,
+       touki_siire_su_6,touki_siire_su_7,touki_siire_su_8,touki_siire_su_9,touki_siire_su_10,
+       touki_siire_su_11,touki_siire_su_12,
+       touki_siire_su_1,touki_siire_su_2,touki_siire_su_3,
+       touki_siire_kingaku_4,touki_siire_kingaku_5,
+       touki_siire_kingaku_6,touki_siire_kingaku_7,touki_siire_kingaku_8,touki_siire_kingaku_9,touki_siire_kingaku_10,
+       touki_siire_kingaku_11,touki_siire_kingaku_12,
+       touki_siire_kingaku_1,touki_siire_kingaku_2,touki_siire_kingaku_3,
+       zenki_siire_su_4,zenki_siire_su_5,
+       zenki_siire_su_6,zenki_siire_su_7,zenki_siire_su_8,zenki_siire_su_9,zenki_siire_su_10,
+       zenki_siire_su_11,zenki_siire_su_12,
+       zenki_siire_su_1,zenki_siire_su_2,zenki_siire_su_3,
+       zenki_siire_kingaku_4,zenki_siire_kingaku_5,
+       zenki_siire_kingaku_6,zenki_siire_kingaku_7,zenki_siire_kingaku_8,zenki_siire_kingaku_9,zenki_siire_kingaku_10,
+       zenki_siire_kingaku_11,zenki_siire_kingaku_12,
+       zenki_siire_kingaku_1,zenki_siire_kingaku_2,zenki_siire_kingaku_3,
+       daihyo_yaku,daihyo_mei,
+       torihiki_tanto_busyo,torihiki_tanto_yaku,torihiki_tanto_mei,torihiki_mail_address,
+       kankei_yaku_1,kankei_yaku_2,kankei_yaku_3,
+       kankei_mei_1,kankei_mei_2,kankei_mei_3,
+       kankei_mail_address_1,kankei_mail_address_2,kankei_mail_address_3,
+       seturitu,sihonkin,
+       nenga_flg,
+       busyo_code,user_code,
+       bikou,
+       url,
+       kousin_user_id,kousin_client_id,kousin_pg_id,
+       touroku_date,
+       kousin_date,
+       haita_flg
+  from sy_m_kojyo
+ where bumon_code		= 9
+   and (    kojyo_mei		like '%' || :p_kojyo_mei || '%'
+         or kojyo_mei_ryaku	like '%' || :p_kojyo_mei || '%'
+       )" arguments=(("p_kojyo_mei", string)) )
+text(band=header alignment="2" text="コード" border="6" color="33554432" x="4" y="7" height="75" width="252" html.valueishtml="0"  name=kojyo_code_t visible="1"  font.face="Yu Gothic UI Semilight" font.height="-11" font.weight="400"  font.family="3" font.pitch="2" font.charset="1" background.mode="1" background.color="536870912" background.transparency="0" background.gradient.color="8421504" background.gradient.transparency="0" background.gradient.angle="0" background.brushmode="0" background.gradient.repetition.mode="0" background.gradient.repetition.count="0" background.gradient.repetition.length="100" background.gradient.focus="0" background.gradient.scale="100" background.gradient.spread="100" tooltip.backcolor="134217752" tooltip.delay.initial="0" tooltip.delay.visible="32000" tooltip.enabled="0" tooltip.hasclosebutton="0" tooltip.icon="0" tooltip.isbubble="0" tooltip.maxwidth="0" tooltip.textcolor="134217751" tooltip.transparency="0" transparency="0" )
+text(band=header alignment="2" text="工場名" border="6" color="33554432" x="264" y="7" height="75" width="1292" html.valueishtml="0"  name=kojyo_mei_t visible="1"  font.face="Yu Gothic UI Semilight" font.height="-11" font.weight="400"  font.family="3" font.pitch="2" font.charset="1" background.mode="1" background.color="536870912" background.transparency="0" background.gradient.color="8421504" background.gradient.transparency="0" background.gradient.angle="0" background.brushmode="0" background.gradient.repetition.mode="0" background.gradient.repetition.count="0" background.gradient.repetition.length="100" background.gradient.focus="0" background.gradient.scale="100" background.gradient.spread="100" tooltip.backcolor="134217752" tooltip.delay.initial="0" tooltip.delay.visible="32000" tooltip.enabled="0" tooltip.hasclosebutton="0" tooltip.icon="0" tooltip.isbubble="0" tooltip.maxwidth="0" tooltip.textcolor="134217751" tooltip.transparency="0" transparency="0" )
+text(band=header alignment="2" text="取引通貨" border="6" color="33554432" x="1564" y="7" height="75" width="332" html.valueishtml="0"  name=tuka_code_t visible="1"  font.face="Yu Gothic UI Semilight" font.height="-11" font.weight="400"  font.family="3" font.pitch="2" font.charset="1" background.mode="1" background.color="536870912" background.transparency="0" background.gradient.color="0" background.gradient.transparency="0" background.gradient.angle="0" background.brushmode="0" background.gradient.repetition.mode="0" background.gradient.repetition.count="0" background.gradient.repetition.length="0" background.gradient.focus="0" background.gradient.scale="0" background.gradient.spread="0" tooltip.backcolor="0" tooltip.delay.initial="0" tooltip.delay.visible="0" tooltip.enabled="0" tooltip.hasclosebutton="0" tooltip.icon="0" tooltip.isbubble="0" tooltip.maxwidth="0" tooltip.textcolor="0" tooltip.transparency="0" transparency="0" )
+text(band=header alignment="2" text="住所1" border="6" color="33554432" x="1904" y="7" height="75" width="1132" html.valueishtml="0"  name=jyusyo_1_t visible="1"  font.face="Yu Gothic UI Semilight" font.height="-11" font.weight="400"  font.family="3" font.pitch="2" font.charset="1" background.mode="1" background.color="536870912" background.transparency="0" background.gradient.color="8421504" background.gradient.transparency="0" background.gradient.angle="0" background.brushmode="0" background.gradient.repetition.mode="0" background.gradient.repetition.count="0" background.gradient.repetition.length="100" background.gradient.focus="0" background.gradient.scale="100" background.gradient.spread="100" tooltip.backcolor="134217752" tooltip.delay.initial="0" tooltip.delay.visible="32000" tooltip.enabled="0" tooltip.hasclosebutton="0" tooltip.icon="0" tooltip.isbubble="0" tooltip.maxwidth="0" tooltip.textcolor="134217751" tooltip.transparency="0" transparency="0" )
+text(band=header alignment="2" text="住所2" border="6" color="33554432" x="3044" y="7" height="75" width="1132" html.valueishtml="0"  name=jyusyo_2_t visible="1"  font.face="Yu Gothic UI Semilight" font.height="-11" font.weight="400"  font.family="3" font.pitch="2" font.charset="1" background.mode="1" background.color="536870912" background.transparency="0" background.gradient.color="8421504" background.gradient.transparency="0" background.gradient.angle="0" background.brushmode="0" background.gradient.repetition.mode="0" background.gradient.repetition.count="0" background.gradient.repetition.length="100" background.gradient.focus="0" background.gradient.scale="100" background.gradient.spread="100" tooltip.backcolor="134217752" tooltip.delay.initial="0" tooltip.delay.visible="32000" tooltip.enabled="0" tooltip.hasclosebutton="0" tooltip.icon="0" tooltip.isbubble="0" tooltip.maxwidth="0" tooltip.textcolor="134217751" tooltip.transparency="0" transparency="0" )
+text(band=header alignment="2" text="電話番号" border="6" color="33554432" x="4184" y="7" height="75" width="492" html.valueishtml="0"  name=denwa_bango_t visible="1"  font.face="Yu Gothic UI Semilight" font.height="-11" font.weight="400"  font.family="3" font.pitch="2" font.charset="1" background.mode="1" background.color="536870912" background.transparency="0" background.gradient.color="8421504" background.gradient.transparency="0" background.gradient.angle="0" background.brushmode="0" background.gradient.repetition.mode="0" background.gradient.repetition.count="0" background.gradient.repetition.length="100" background.gradient.focus="0" background.gradient.scale="100" background.gradient.spread="100" tooltip.backcolor="134217752" tooltip.delay.initial="0" tooltip.delay.visible="32000" tooltip.enabled="0" tooltip.hasclosebutton="0" tooltip.icon="0" tooltip.isbubble="0" tooltip.maxwidth="0" tooltip.textcolor="134217751" tooltip.transparency="0" transparency="0" )
+text(band=header alignment="2" text="FAX番号" border="6" color="33554432" x="4684" y="7" height="75" width="492" html.valueishtml="0"  name=fax_no_t visible="1"  font.face="Yu Gothic UI Semilight" font.height="-11" font.weight="400"  font.family="3" font.pitch="2" font.charset="1" background.mode="1" background.color="536870912" background.transparency="0" background.gradient.color="8421504" background.gradient.transparency="0" background.gradient.angle="0" background.brushmode="0" background.gradient.repetition.mode="0" background.gradient.repetition.count="0" background.gradient.repetition.length="100" background.gradient.focus="0" background.gradient.scale="100" background.gradient.spread="100" tooltip.backcolor="134217752" tooltip.delay.initial="0" tooltip.delay.visible="32000" tooltip.enabled="0" tooltip.hasclosebutton="0" tooltip.icon="0" tooltip.isbubble="0" tooltip.maxwidth="0" tooltip.textcolor="134217751" tooltip.transparency="0" transparency="0" )
+column(band=detail id=1 alignment="1" tabsequence=32766 border="0" color="33554432" x="8" y="3" height="71" width="248" format="[general]" html.valueishtml="0"  name=kojyo_code visible="1" edit.limit=0 edit.case=any edit.focusrectangle=no edit.autoselect=yes edit.autohscroll=yes edit.imemode=0  font.face="Yu Gothic UI Semilight" font.height="-11" font.weight="400"  font.family="3" font.pitch="2" font.charset="1" background.mode="1" background.color="536870912" background.transparency="0" background.gradient.color="8421504" background.gradient.transparency="0" background.gradient.angle="0" background.brushmode="0" background.gradient.repetition.mode="0" background.gradient.repetition.count="0" background.gradient.repetition.length="100" background.gradient.focus="0" background.gradient.scale="100" background.gradient.spread="100" tooltip.backcolor="134217752" tooltip.delay.initial="0" tooltip.delay.visible="32000" tooltip.enabled="0" tooltip.hasclosebutton="0" tooltip.icon="0" tooltip.isbubble="0" tooltip.maxwidth="0" tooltip.textcolor="134217751" tooltip.transparency="0" transparency="0" )
+column(band=detail id=4 alignment="0" tabsequence=32766 border="0" color="33554432" x="268" y="3" height="71" width="1288" format="[general]" html.valueishtml="0"  name=kojyo_mei visible="1" edit.limit=32 edit.case=any edit.focusrectangle=no edit.autoselect=yes edit.autohscroll=yes edit.imemode=0  font.face="Yu Gothic UI Semilight" font.height="-11" font.weight="400"  font.family="3" font.pitch="2" font.charset="1" background.mode="1" background.color="536870912" background.transparency="0" background.gradient.color="8421504" background.gradient.transparency="0" background.gradient.angle="0" background.brushmode="0" background.gradient.repetition.mode="0" background.gradient.repetition.count="0" background.gradient.repetition.length="100" background.gradient.focus="0" background.gradient.scale="100" background.gradient.spread="100" tooltip.backcolor="134217752" tooltip.delay.initial="0" tooltip.delay.visible="32000" tooltip.enabled="0" tooltip.hasclosebutton="0" tooltip.icon="0" tooltip.isbubble="0" tooltip.maxwidth="0" tooltip.textcolor="134217751" tooltip.transparency="0" transparency="0" )
+column(band=detail id=14 alignment="0" tabsequence=32766 border="0" color="33554432" x="1568" y="3" height="71" width="328" format="[general]" html.valueishtml="0"  name=tuka_code visible="1" edit.limit=0 edit.case=any edit.focusrectangle=no edit.autoselect=no edit.imemode=0  font.face="Yu Gothic UI Semilight" font.height="-11" font.weight="400"  font.family="3" font.pitch="2" font.charset="1" background.mode="1" background.color="536870912" background.transparency="0" background.gradient.color="8421504" background.gradient.transparency="0" background.gradient.angle="0" background.brushmode="0" background.gradient.repetition.mode="0" background.gradient.repetition.count="0" background.gradient.repetition.length="100" background.gradient.focus="0" background.gradient.scale="100" background.gradient.spread="100" tooltip.backcolor="134217752" tooltip.delay.initial="0" tooltip.delay.visible="32000" tooltip.enabled="0" tooltip.hasclosebutton="0" tooltip.icon="0" tooltip.isbubble="0" tooltip.maxwidth="0" tooltip.textcolor="134217751" tooltip.transparency="0" transparency="0" )
+column(band=detail id=8 alignment="0" tabsequence=32766 border="0" color="33554432" x="1908" y="3" height="71" width="1128" format="[general]" html.valueishtml="0"  name=jyusyo_1 visible="1" edit.limit=28 edit.case=any edit.focusrectangle=no edit.autoselect=yes edit.autohscroll=yes edit.imemode=0  font.face="Yu Gothic UI Semilight" font.height="-11" font.weight="400"  font.family="3" font.pitch="2" font.charset="1" background.mode="1" background.color="536870912" background.transparency="0" background.gradient.color="8421504" background.gradient.transparency="0" background.gradient.angle="0" background.brushmode="0" background.gradient.repetition.mode="0" background.gradient.repetition.count="0" background.gradient.repetition.length="100" background.gradient.focus="0" background.gradient.scale="100" background.gradient.spread="100" tooltip.backcolor="134217752" tooltip.delay.initial="0" tooltip.delay.visible="32000" tooltip.enabled="0" tooltip.hasclosebutton="0" tooltip.icon="0" tooltip.isbubble="0" tooltip.maxwidth="0" tooltip.textcolor="134217751" tooltip.transparency="0" transparency="0" )
+column(band=detail id=9 alignment="0" tabsequence=32766 border="0" color="33554432" x="3048" y="3" height="71" width="1128" format="[general]" html.valueishtml="0"  name=jyusyo_2 visible="1" edit.limit=28 edit.case=any edit.focusrectangle=no edit.autoselect=yes edit.autohscroll=yes edit.imemode=0  font.face="Yu Gothic UI Semilight" font.height="-11" font.weight="400"  font.family="3" font.pitch="2" font.charset="1" background.mode="1" background.color="536870912" background.transparency="0" background.gradient.color="8421504" background.gradient.transparency="0" background.gradient.angle="0" background.brushmode="0" background.gradient.repetition.mode="0" background.gradient.repetition.count="0" background.gradient.repetition.length="100" background.gradient.focus="0" background.gradient.scale="100" background.gradient.spread="100" tooltip.backcolor="134217752" tooltip.delay.initial="0" tooltip.delay.visible="32000" tooltip.enabled="0" tooltip.hasclosebutton="0" tooltip.icon="0" tooltip.isbubble="0" tooltip.maxwidth="0" tooltip.textcolor="134217751" tooltip.transparency="0" transparency="0" )
+column(band=detail id=10 alignment="2" tabsequence=32766 border="0" color="33554432" x="4188" y="3" height="71" width="488" format="[general]" html.valueishtml="0"  name=denwa_bango visible="1" edit.limit=12 edit.case=any edit.focusrectangle=no edit.autoselect=yes edit.autohscroll=yes edit.imemode=0  font.face="Yu Gothic UI Semilight" font.height="-11" font.weight="400"  font.family="3" font.pitch="2" font.charset="1" background.mode="1" background.color="536870912" background.transparency="0" background.gradient.color="8421504" background.gradient.transparency="0" background.gradient.angle="0" background.brushmode="0" background.gradient.repetition.mode="0" background.gradient.repetition.count="0" background.gradient.repetition.length="100" background.gradient.focus="0" background.gradient.scale="100" background.gradient.spread="100" tooltip.backcolor="134217752" tooltip.delay.initial="0" tooltip.delay.visible="32000" tooltip.enabled="0" tooltip.hasclosebutton="0" tooltip.icon="0" tooltip.isbubble="0" tooltip.maxwidth="0" tooltip.textcolor="134217751" tooltip.transparency="0" transparency="0" )
+column(band=detail id=11 alignment="2" tabsequence=32766 border="0" color="33554432" x="4688" y="3" height="71" width="488" format="[general]" html.valueishtml="0"  name=fax_no visible="1" edit.limit=12 edit.case=any edit.focusrectangle=no edit.autoselect=yes edit.autohscroll=yes edit.imemode=0  font.face="Yu Gothic UI Semilight" font.height="-11" font.weight="400"  font.family="3" font.pitch="2" font.charset="1" background.mode="1" background.color="536870912" background.transparency="0" background.gradient.color="8421504" background.gradient.transparency="0" background.gradient.angle="0" background.brushmode="0" background.gradient.repetition.mode="0" background.gradient.repetition.count="0" background.gradient.repetition.length="100" background.gradient.focus="0" background.gradient.scale="100" background.gradient.spread="100" tooltip.backcolor="134217752" tooltip.delay.initial="0" tooltip.delay.visible="32000" tooltip.enabled="0" tooltip.hasclosebutton="0" tooltip.icon="0" tooltip.isbubble="0" tooltip.maxwidth="0" tooltip.textcolor="134217751" tooltip.transparency="0" transparency="0" )
+htmltable(border="1" )
+htmlgen(clientevents="1" clientvalidation="1" clientcomputedfields="1" clientformatting="0" clientscriptable="0" generatejavascript="1" encodeselflinkargs="1" netscapelayers="0" pagingmethod=0 generatedddwframes="1" )
+xhtmlgen() cssgen(sessionspecific="0" )
+xmlgen(inline="0" )
+xsltgen()
+jsgen()
+export.xml(headgroups="1" includewhitespace="0" metadatatype=0 savemetadata=0 )
+import.xml()
+export.pdf(method=2 distill.custompostscript="0" xslfop.print="0" nativepdf.customsize=0 nativepdf.customorientation=0 nativepdf.pdfstandard=0 nativepdf.useprintspec=no )
+export.xhtml()
+ 

@@ -1,0 +1,6 @@
+﻿$PBExportHeader$str_mdlpara_mgroup.srs
+$PBExportComments$m_group用のモーダル構造体
+global type str_mdlpara_mgroup from structure
+	str_mgroup		ret[]
+end type
+

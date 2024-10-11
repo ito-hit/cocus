@@ -1,0 +1,27 @@
+﻿$PBExportHeader$str_mnendo.srs
+$PBExportComments$m_nendo用の構造体
+global type str_mnendo from structure
+	long		nendo_code
+	string		nendo_mei
+	long		kisyo_nengetu
+	long		kimatu_nengetu
+	long		kisyo_date
+	long		kimatu_date
+	integer		tuki_1q
+	integer		tuki_2q
+	integer		tuki_3q
+	integer		tuki_4q
+	datetime	touroku_date
+	string		touroku_user_id
+	string		touroku_client_id
+	string		touroku_pg_id
+	datetime	henkou_date
+	string		henkou_user_id
+	string		henkou_client_id
+	string		henkou_pg_id
+	datetime	kousin_date
+	string		kousin_user_id
+	string		kousin_client_id
+	string		kousin_pg_id
+	integer		haita_flg
+end type

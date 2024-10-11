@@ -1,0 +1,6 @@
+﻿$PBExportHeader$str_mdlpara_mnendo.srs
+$PBExportComments$m_nendo用のモーダル構造体
+global type str_mdlpara_mnendo from structure
+	str_mnendo		ret[]
+end type
+

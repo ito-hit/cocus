@@ -1,0 +1,64 @@
+﻿$PBExportHeader$fo_color.srf
+$PBExportComments$テキストカラーを設定するグローバル関数
+global type fo_color from function_object
+end type
+
+forward prototypes
+global function long fo_color (string p_type)
+end prototypes
+
+global function long fo_color (string p_type);choose case p_type
+	case "error"
+		if palette.error_text <> 0 then
+			return palette.error_text
+		else
+			return rgb( 169, 68, 66 )
+		end if
+	case "warning"
+		if palette.warning_text <> 0 then
+			return palette.warning_text
+		else
+			return rgb( 138, 109, 59 )
+		end if
+	case "info"
+		if palette.info_text <> 0 then
+			return palette.info_text
+		else
+			return rgb( 49, 112, 143 )
+		end if
+	case "success"
+		if palette.success_text <> 0 then
+			return palette.success_text
+		else
+			return rgb( 60, 118, 61 )
+		end if
+	case "error_dark"
+		if palette.error_text_dark <> 0 then
+			return palette.error_text_dark
+		else
+			return rgb( 132, 53, 52 )
+		end if
+	case "warning_dark"
+		if palette.warning_text_dark <> 0 then
+			return palette.warning_text_dark
+		else
+			return rgb( 102, 81, 44 )
+		end if
+	case "info_dark"
+		if palette.info_text_dark <> 0 then
+			return palette.info_text_dark
+		else
+			return rgb( 36, 82, 105 )
+		end if
+	case "success_dark"
+		if palette.success_text_dark <> 0 then
+			return palette.success_text_dark
+		else
+			return rgb( 43, 84, 44 )
+		end if
+	case else
+		return rgb( 0, 0, 0 )
+end choose
+
+end function
+

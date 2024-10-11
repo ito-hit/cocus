@@ -1,0 +1,122 @@
+﻿$PBExportHeader$d_tuuti.srd
+release 19;
+datawindow(units=0 timer_interval=0 color=268435456 brushmode=0 transparency=0 gradient.angle=0 gradient.color=8421504 gradient.focus=0 gradient.repetition.count=0 gradient.repetition.length=100 gradient.repetition.mode=0 gradient.scale=100 gradient.spread=100 gradient.transparency=0 picture.blur=0 picture.clip.bottom=0 picture.clip.left=0 picture.clip.right=0 picture.clip.top=0 picture.mode=0 picture.scale.x=100 picture.scale.y=100 picture.transparency=0 processing=1 HTMLDW=no print.printername="" print.documentname="" print.orientation = 0 print.margin.left = 96 print.margin.right = 96 print.margin.top = 85 print.margin.bottom = 85 print.paper.source = 0 print.paper.size = 0 print.canusedefaultprinter=yes print.prompt=no print.buttons=no print.preview.buttons=no print.cliptext=no print.overrideprintjob=no print.collate=yes print.background=no print.preview.background=no print.preview.outline=yes hidegrayline=no showbackcoloronxp=no picture.file="" grid.lines=2 grid.columnmove=no selected.mouse=no )
+header(height=85 color="67108864" transparency="0" gradient.color="8421504" gradient.transparency="0" gradient.angle="0" brushmode="0" gradient.repetition.mode="0" gradient.repetition.count="0" gradient.repetition.length="100" gradient.focus="0" gradient.scale="100" gradient.spread="100" )
+summary(height=0 color="536870912" transparency="0" gradient.color="8421504" gradient.transparency="0" gradient.angle="0" brushmode="0" gradient.repetition.mode="0" gradient.repetition.count="0" gradient.repetition.length="100" gradient.focus="0" gradient.scale="100" gradient.spread="100" )
+footer(height=0 color="536870912" transparency="0" gradient.color="8421504" gradient.transparency="0" gradient.angle="0" brushmode="0" gradient.repetition.mode="0" gradient.repetition.count="0" gradient.repetition.length="100" gradient.focus="0" gradient.scale="100" gradient.spread="100" )
+detail(height=85 color="536870912~tcase( tuuti_lvl
+	when 3 then fo_back_color( ~"warning~" )	// 警告
+	when 4 then fo_back_color( ~"error~" )	// エラー
+	else fo_lattice( getrow() )
+)
+" transparency="0" gradient.color="8421504" gradient.transparency="0" gradient.angle="0" brushmode="0" gradient.repetition.mode="0" gradient.repetition.count="0" gradient.repetition.length="100" gradient.focus="0" gradient.scale="100" gradient.spread="100" )
+table(column=(type=number updatewhereclause=yes name=chkbox dbname="chkbox" values="	1/	0" )
+ column=(type=decimal(0) updatewhereclause=yes name=tuuti_syubetu dbname="tuuti_syubetu" )
+ column=(type=char(256) updatewhereclause=yes name=syubetu_mei dbname="syubetu_mei" )
+ column=(type=decimal(0) updatewhereclause=yes name=tuuti_lvl dbname="tuuti_lvl" )
+ column=(type=char(256) updatewhereclause=yes name=level_mei dbname="level_mei" )
+ column=(type=char(2000) updatewhereclause=yes name=message dbname="message" )
+ column=(type=char(10) updatewhereclause=yes name=hassinsya_id dbname="hassinsya_id" )
+ column=(type=char(20) updatewhereclause=yes name=hassinsya_mei dbname="hassinsya_mei" )
+ column=(type=char(25) updatewhereclause=yes name=kikan dbname="kikan" )
+ column=(type=datetime updatewhereclause=yes name=tuuti_str_date dbname="tuuti_str_date" )
+ column=(type=datetime updatewhereclause=yes name=tuuti_end_date dbname="tuuti_end_date" )
+ column=(type=decimal(0) updatewhereclause=yes name=tuuti_no dbname="tuuti_no" )
+ column=(type=char(10) updatewhereclause=yes name=user_id dbname="user_id" )
+ column=(type=decimal(0) updatewhereclause=yes name=tokui_code dbname="tokui_code" )
+ column=(type=char(10) updatewhereclause=yes name=entry_user_id dbname="entry_user_id" )
+ column=(type=decimal(0) updatewhereclause=yes name=mail_flg dbname="mail_flg" )
+ column=(type=decimal(0) updatewhereclause=yes name=mail_sumi_flg dbname="mail_sumi_flg" )
+ column=(type=decimal(0) update=yes updatewhereclause=yes name=kidoku_flg dbname="kidoku_flg" )
+ column=(type=datetime updatewhereclause=yes name=touroku_date dbname="touroku_date" )
+ column=(type=char(37) updatewhereclause=yes key=yes name=rowid dbname="rowid" )
+ retrieve="select 0 chkbox,
+       tti.tuuti_syubetu,
+       msb.syubetu_mei,
+       tti.tuuti_lvl,
+       mlv.level_mei,
+       tti.message,
+       tti.hassinsya_id,
+       tti.hassinsya_mei,
+       to_char( tti.tuuti_str_date, 'mm/dd hh24:mi' ) || ' ～ ' || to_char( tti.tuuti_end_date, 'mm/dd hh24:mi' ) kikan,
+       tti.tuuti_str_date,
+       tti.tuuti_end_date,
+       tti.tuuti_no,
+       tti.user_id,
+       tti.tokui_code,
+       tti.entry_user_id,
+       tti.mail_flg,
+       tti.mail_sumi_flg,
+       tti.kidoku_flg,
+       tti.touroku_date,
+       tti.rowid
+  from d_tuuti tti,
+       ( select to_number( meisyo_code ) syubetu_code,
+                meisyo_1 syubetu_mei
+           from m_meisyo
+          where meisyo_kbn	= 163
+       ) msb,
+       ( select to_number( meisyo_code ) level_code,
+                meisyo_1 level_mei
+           from m_meisyo
+          where meisyo_kbn	= 164
+       ) mlv
+ where tti.tuuti_syubetu	= msb.syubetu_code(+)
+   and tti.tuuti_lvl		= mlv.level_code(+)
+   and ( tti.user_id			= :p_user_id or tti.user_id > 6000 )" update="d_tuuti" updatewhere=0 updatekeyinplace=no arguments=(("p_user_id", string))  sort="touroku_date D tuuti_no A " )
+text(band=header alignment="2" text="" border="6" color="33554432" x="8" y="7" height="75" width="112" html.valueishtml="0"  name=t_1 visible="1"  font.face="Yu Gothic UI Semilight" font.height="-12" font.weight="700"  font.family="3" font.pitch="2" font.charset="128" background.mode="1" background.color="536870912" background.transparency="0" background.gradient.color="8421504" background.gradient.transparency="0" background.gradient.angle="0" background.brushmode="0" background.gradient.repetition.mode="0" background.gradient.repetition.count="0" background.gradient.repetition.length="100" background.gradient.focus="0" background.gradient.scale="100" background.gradient.spread="100" tooltip.backcolor="134217752" tooltip.delay.initial="0" tooltip.delay.visible="32000" tooltip.enabled="0" tooltip.hasclosebutton="0" tooltip.icon="0" tooltip.isbubble="0" tooltip.maxwidth="0" tooltip.textcolor="134217751" tooltip.transparency="0" transparency="0" )
+text(band=header alignment="2" text="種別" border="6" color="33554432" x="128" y="7" height="75" width="532" html.valueishtml="0"  name=syubetu_mei_t visible="1"  font.face="Yu Gothic UI Semilight" font.height="-12" font.weight="700"  font.family="3" font.pitch="2" font.charset="128" background.mode="1" background.color="536870912" background.transparency="0" background.gradient.color="0" background.gradient.transparency="0" background.gradient.angle="0" background.brushmode="0" background.gradient.repetition.mode="0" background.gradient.repetition.count="0" background.gradient.repetition.length="0" background.gradient.focus="0" background.gradient.scale="0" background.gradient.spread="0" tooltip.backcolor="0" tooltip.delay.initial="0" tooltip.delay.visible="0" tooltip.enabled="0" tooltip.hasclosebutton="0" tooltip.icon="0" tooltip.isbubble="0" tooltip.maxwidth="0" tooltip.textcolor="0" tooltip.transparency="0" transparency="0" )
+text(band=header alignment="2" text="レベル" border="6" color="33554432" x="668" y="7" height="75" width="276" html.valueishtml="0"  name=level_mei_t visible="1"  font.face="Yu Gothic UI Semilight" font.height="-12" font.weight="700"  font.family="3" font.pitch="2" font.charset="128" background.mode="1" background.color="536870912" background.transparency="0" background.gradient.color="0" background.gradient.transparency="0" background.gradient.angle="0" background.brushmode="0" background.gradient.repetition.mode="0" background.gradient.repetition.count="0" background.gradient.repetition.length="0" background.gradient.focus="0" background.gradient.scale="0" background.gradient.spread="0" tooltip.backcolor="0" tooltip.delay.initial="0" tooltip.delay.visible="0" tooltip.enabled="0" tooltip.hasclosebutton="0" tooltip.icon="0" tooltip.isbubble="0" tooltip.maxwidth="0" tooltip.textcolor="0" tooltip.transparency="0" transparency="0" )
+text(band=header alignment="2" text="メッセージ" border="6" color="33554432" x="952" y="7" height="75" width="1156" html.valueishtml="0"  name=message_t visible="1"  font.face="Yu Gothic UI Semilight" font.height="-12" font.weight="700"  font.family="3" font.pitch="2" font.charset="128" background.mode="1" background.color="536870912" background.transparency="0" background.gradient.color="0" background.gradient.transparency="0" background.gradient.angle="0" background.brushmode="0" background.gradient.repetition.mode="0" background.gradient.repetition.count="0" background.gradient.repetition.length="0" background.gradient.focus="0" background.gradient.scale="0" background.gradient.spread="0" tooltip.backcolor="0" tooltip.delay.initial="0" tooltip.delay.visible="0" tooltip.enabled="0" tooltip.hasclosebutton="0" tooltip.icon="0" tooltip.isbubble="0" tooltip.maxwidth="0" tooltip.textcolor="0" tooltip.transparency="0" transparency="0" )
+text(band=header alignment="2" text="発信者" border="6" color="33554432" x="2116" y="7" height="75" width="500" html.valueishtml="0"  name=hassinsya_mei_t visible="1"  font.face="Yu Gothic UI Semilight" font.height="-12" font.weight="700"  font.family="3" font.pitch="2" font.charset="128" background.mode="1" background.color="536870912" background.transparency="0" background.gradient.color="0" background.gradient.transparency="0" background.gradient.angle="0" background.brushmode="0" background.gradient.repetition.mode="0" background.gradient.repetition.count="0" background.gradient.repetition.length="0" background.gradient.focus="0" background.gradient.scale="0" background.gradient.spread="0" tooltip.backcolor="0" tooltip.delay.initial="0" tooltip.delay.visible="0" tooltip.enabled="0" tooltip.hasclosebutton="0" tooltip.icon="0" tooltip.isbubble="0" tooltip.maxwidth="0" tooltip.textcolor="0" tooltip.transparency="0" transparency="0" )
+text(band=header alignment="2" text="通知期間" border="6" color="33554432" x="2624" y="7" height="75" width="804" html.valueishtml="0"  name=kikan_t visible="1"  font.face="Yu Gothic UI Semilight" font.height="-12" font.weight="700"  font.family="3" font.pitch="2" font.charset="128" background.mode="1" background.color="536870912" background.transparency="0" background.gradient.color="0" background.gradient.transparency="0" background.gradient.angle="0" background.brushmode="0" background.gradient.repetition.mode="0" background.gradient.repetition.count="0" background.gradient.repetition.length="0" background.gradient.focus="0" background.gradient.scale="0" background.gradient.spread="0" tooltip.backcolor="0" tooltip.delay.initial="0" tooltip.delay.visible="0" tooltip.enabled="0" tooltip.hasclosebutton="0" tooltip.icon="0" tooltip.isbubble="0" tooltip.maxwidth="0" tooltip.textcolor="0" tooltip.transparency="0" transparency="0" )
+text(band=header alignment="2" text="通知番号" border="6" color="33554432" x="3436" y="7" height="75" width="308" html.valueishtml="0"  name=tuuti_no_t visible="1"  font.face="Yu Gothic UI Semilight" font.height="-12" font.weight="700"  font.family="3" font.pitch="2" font.charset="128" background.mode="1" background.color="536870912" background.transparency="0" background.gradient.color="0" background.gradient.transparency="0" background.gradient.angle="0" background.brushmode="0" background.gradient.repetition.mode="0" background.gradient.repetition.count="0" background.gradient.repetition.length="0" background.gradient.focus="0" background.gradient.scale="0" background.gradient.spread="0" tooltip.backcolor="0" tooltip.delay.initial="0" tooltip.delay.visible="0" tooltip.enabled="0" tooltip.hasclosebutton="0" tooltip.icon="0" tooltip.isbubble="0" tooltip.maxwidth="0" tooltip.textcolor="0" tooltip.transparency="0" transparency="0" )
+column(band=detail id=1 alignment="2" tabsequence=10 border="0" color="33554432" x="8" y="3" height="75" width="112" format="[general]" html.valueishtml="0"  name=chkbox pointer="HyperLink!" visible="1" checkbox.text="" checkbox.on="1" checkbox.off="0" checkbox.scale=no checkbox.threed=no  font.face="Yu Gothic UI Semilight" font.height="-12" font.weight="400"  font.family="3" font.pitch="2" font.charset="128" background.mode="1" background.color="536870912" background.transparency="0" background.gradient.color="8421504" background.gradient.transparency="0" background.gradient.angle="0" background.brushmode="0" background.gradient.repetition.mode="0" background.gradient.repetition.count="0" background.gradient.repetition.length="100" background.gradient.focus="0" background.gradient.scale="100" background.gradient.spread="100" tooltip.backcolor="134217752" tooltip.delay.initial="0" tooltip.delay.visible="32000" tooltip.enabled="0" tooltip.hasclosebutton="0" tooltip.icon="0" tooltip.isbubble="0" tooltip.maxwidth="0" tooltip.textcolor="134217751" tooltip.transparency="0" transparency="0" )
+column(band=detail id=3 alignment="0" tabsequence=32766 border="0" color="33554432~tcase( tuuti_lvl
+	when 2 then fo_color( ~"error~" )	// 要注意
+	when 3 then fo_color( ~"warning~" )	// 警告
+	when 4 then fo_color( ~"error~" )	// エラー
+	else fo_color( ~"~" )
+)" x="128" y="0" height="75" width="532" format="[general]" html.valueishtml="0"  name=syubetu_mei visible="1" edit.limit=0 edit.case=any edit.focusrectangle=no edit.autoselect=no edit.imemode=0  font.face="Yu Gothic UI Semilight" font.height="-12" font.weight="400~tif( kidoku_flg=0, 700, 400 )"  font.family="3" font.pitch="2" font.charset="128" background.mode="1" background.color="536870912" background.transparency="0" background.gradient.color="8421504" background.gradient.transparency="0" background.gradient.angle="0" background.brushmode="0" background.gradient.repetition.mode="0" background.gradient.repetition.count="0" background.gradient.repetition.length="100" background.gradient.focus="0" background.gradient.scale="100" background.gradient.spread="100" tooltip.backcolor="134217752" tooltip.delay.initial="0" tooltip.delay.visible="32000" tooltip.enabled="0" tooltip.hasclosebutton="0" tooltip.icon="0" tooltip.isbubble="0" tooltip.maxwidth="0" tooltip.textcolor="134217751" tooltip.transparency="0" transparency="0" )
+column(band=detail id=5 alignment="2" tabsequence=32766 border="0" color="33554432~tcase( tuuti_lvl
+	when 2 then fo_color( ~"error~" )	// 要注意
+	when 3 then fo_color( ~"warning~" )	// 警告
+	when 4 then fo_color( ~"error~" )	// エラー
+	else fo_color( ~"~" )
+)" x="668" y="0" height="75" width="276" format="[general]" html.valueishtml="0"  name=level_mei visible="1" edit.limit=0 edit.case=any edit.focusrectangle=no edit.autoselect=no edit.imemode=0  font.face="Yu Gothic UI Semilight" font.height="-12" font.weight="400~tif( kidoku_flg=0, 700, 400 )"  font.family="3" font.pitch="2" font.charset="128" background.mode="1" background.color="536870912" background.transparency="0" background.gradient.color="8421504" background.gradient.transparency="0" background.gradient.angle="0" background.brushmode="0" background.gradient.repetition.mode="0" background.gradient.repetition.count="0" background.gradient.repetition.length="100" background.gradient.focus="0" background.gradient.scale="100" background.gradient.spread="100" tooltip.backcolor="134217752" tooltip.delay.initial="0" tooltip.delay.visible="32000" tooltip.enabled="0" tooltip.hasclosebutton="0" tooltip.icon="0" tooltip.isbubble="0" tooltip.maxwidth="0" tooltip.textcolor="134217751" tooltip.transparency="0" transparency="0" )
+column(band=detail id=6 alignment="0" tabsequence=32766 border="0" color="33554432~tcase( tuuti_lvl
+	when 2 then fo_color( ~"error~" )	// 要注意
+	when 3 then fo_color( ~"warning~" )	// 警告
+	when 4 then fo_color( ~"error~" )	// エラー
+	else fo_color( ~"~" )
+)" x="952" y="0" height="75" width="1156" format="[general]" html.valueishtml="0"  name=message visible="1" edit.limit=0 edit.case=any edit.focusrectangle=no edit.autoselect=no edit.imemode=0  font.face="Yu Gothic UI Semilight" font.height="-12" font.weight="400~tif( kidoku_flg=0, 700, 400 )"  font.family="3" font.pitch="2" font.charset="128" background.mode="1" background.color="536870912" background.transparency="0" background.gradient.color="8421504" background.gradient.transparency="0" background.gradient.angle="0" background.brushmode="0" background.gradient.repetition.mode="0" background.gradient.repetition.count="0" background.gradient.repetition.length="100" background.gradient.focus="0" background.gradient.scale="100" background.gradient.spread="100" tooltip.backcolor="134217752" tooltip.delay.initial="0" tooltip.delay.visible="32000" tooltip.enabled="0" tooltip.hasclosebutton="0" tooltip.icon="0" tooltip.isbubble="0" tooltip.maxwidth="0" tooltip.textcolor="134217751" tooltip.transparency="0" transparency="0" )
+column(band=detail id=8 alignment="2" tabsequence=32766 border="0" color="33554432~tcase( tuuti_lvl
+	when 2 then fo_color( ~"error~" )	// 要注意
+	when 3 then fo_color( ~"warning~" )	// 警告
+	when 4 then fo_color( ~"error~" )	// エラー
+	else fo_color( ~"~" )
+)" x="2116" y="0" height="75" width="500" format="[general]" html.valueishtml="0"  name=hassinsya_mei visible="1" edit.limit=0 edit.case=any edit.focusrectangle=no edit.autoselect=no edit.imemode=0  font.face="Yu Gothic UI Semilight" font.height="-12" font.weight="400~tif( kidoku_flg=0, 700, 400 )"  font.family="3" font.pitch="2" font.charset="128" background.mode="1" background.color="536870912" background.transparency="0" background.gradient.color="8421504" background.gradient.transparency="0" background.gradient.angle="0" background.brushmode="0" background.gradient.repetition.mode="0" background.gradient.repetition.count="0" background.gradient.repetition.length="100" background.gradient.focus="0" background.gradient.scale="100" background.gradient.spread="100" tooltip.backcolor="134217752" tooltip.delay.initial="0" tooltip.delay.visible="32000" tooltip.enabled="0" tooltip.hasclosebutton="0" tooltip.icon="0" tooltip.isbubble="0" tooltip.maxwidth="0" tooltip.textcolor="134217751" tooltip.transparency="0" transparency="0" )
+column(band=detail id=9 alignment="0" tabsequence=32766 border="0" color="33554432~tcase( tuuti_lvl
+	when 2 then fo_color( ~"error~" )	// 要注意
+	when 3 then fo_color( ~"warning~" )	// 警告
+	when 4 then fo_color( ~"error~" )	// エラー
+	else fo_color( ~"~" )
+)" x="2624" y="0" height="75" width="804" format="[general]" html.valueishtml="0"  name=kikan visible="1" edit.limit=0 edit.case=any edit.focusrectangle=no edit.autoselect=no edit.imemode=0  font.face="Yu Gothic UI Semilight" font.height="-12" font.weight="400~tif( kidoku_flg=0, 700, 400 )"  font.family="3" font.pitch="2" font.charset="128" background.mode="1" background.color="536870912" background.transparency="0" background.gradient.color="8421504" background.gradient.transparency="0" background.gradient.angle="0" background.brushmode="0" background.gradient.repetition.mode="0" background.gradient.repetition.count="0" background.gradient.repetition.length="100" background.gradient.focus="0" background.gradient.scale="100" background.gradient.spread="100" tooltip.backcolor="134217752" tooltip.delay.initial="0" tooltip.delay.visible="32000" tooltip.enabled="0" tooltip.hasclosebutton="0" tooltip.icon="0" tooltip.isbubble="0" tooltip.maxwidth="0" tooltip.textcolor="134217751" tooltip.transparency="0" transparency="0" )
+column(band=detail id=12 alignment="2" tabsequence=32766 border="0" color="33554432~tcase( tuuti_lvl
+	when 2 then fo_color( ~"error~" )	// 要注意
+	when 3 then fo_color( ~"warning~" )	// 警告
+	when 4 then fo_color( ~"error~" )	// エラー
+	else fo_color( ~"~" )
+)" x="3436" y="0" height="75" width="308" format="[general]" html.valueishtml="0"  name=tuuti_no visible="1" edit.limit=0 edit.case=any edit.focusrectangle=no edit.autoselect=no edit.imemode=0  font.face="Yu Gothic UI Semilight" font.height="-12" font.weight="400~tif( kidoku_flg=0, 700, 400 )"  font.family="3" font.pitch="2" font.charset="128" background.mode="1" background.color="536870912" background.transparency="0" background.gradient.color="8421504" background.gradient.transparency="0" background.gradient.angle="0" background.brushmode="0" background.gradient.repetition.mode="0" background.gradient.repetition.count="0" background.gradient.repetition.length="100" background.gradient.focus="0" background.gradient.scale="100" background.gradient.spread="100" tooltip.backcolor="134217752" tooltip.delay.initial="0" tooltip.delay.visible="32000" tooltip.enabled="0" tooltip.hasclosebutton="0" tooltip.icon="0" tooltip.isbubble="0" tooltip.maxwidth="0" tooltip.textcolor="134217751" tooltip.transparency="0" transparency="0" )
+compute(band=summary alignment="2" expression="sum(chkbox for all)"enabled="0" border="0" color="33554432" x="4" y="4" height="75" width="116" format="[general]" html.valueishtml="0"  name=chkbox_sum visible="1"  font.face="Yu Gothic UI Semilight" font.height="-12" font.weight="400"  font.family="3" font.pitch="2" font.charset="128" background.mode="1" background.color="536870912" background.transparency="0" background.gradient.color="8421504" background.gradient.transparency="0" background.gradient.angle="0" background.brushmode="0" background.gradient.repetition.mode="0" background.gradient.repetition.count="0" background.gradient.repetition.length="100" background.gradient.focus="0" background.gradient.scale="100" background.gradient.spread="100" tooltip.backcolor="134217752" tooltip.delay.initial="0" tooltip.delay.visible="32000" tooltip.enabled="0" tooltip.hasclosebutton="0" tooltip.icon="0" tooltip.isbubble="0" tooltip.maxwidth="0" tooltip.textcolor="134217751" tooltip.transparency="0" transparency="0" )
+htmltable(border="1" )
+htmlgen(clientevents="1" clientvalidation="1" clientcomputedfields="1" clientformatting="0" clientscriptable="0" generatejavascript="1" encodeselflinkargs="1" netscapelayers="0" pagingmethod=0 generatedddwframes="1" )
+xhtmlgen() cssgen(sessionspecific="0" )
+xmlgen(inline="0" )
+xsltgen()
+jsgen()
+export.xml(headgroups="1" includewhitespace="0" metadatatype=0 savemetadata=0 )
+import.xml()
+export.pdf(method=0 distill.custompostscript="0" xslfop.print="0" nativepdf.customsize=0 nativepdf.customorientation=0 nativepdf.pdfstandard=0 nativepdf.useprintspec=no )
+export.xhtml()
+ 

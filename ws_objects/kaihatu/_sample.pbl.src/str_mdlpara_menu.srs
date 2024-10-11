@@ -1,0 +1,11 @@
+﻿$PBExportHeader$str_mdlpara_menu.srs
+$PBExportComments$m_menuのmodal構造体
+global type str_mdlpara_menu from structure
+	boolean		ret
+	string		out_menu_id
+	string		out_tab_id		descriptor "comment" = "追加"
+	string		out_window_id		descriptor "comment" = "追加"
+	long		out_siyo_kanou_flg		descriptor "comment" = "追加"
+	string		out_param		descriptor "comment" = "追加"
+end type
+
