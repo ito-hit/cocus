@@ -1,0 +1,33 @@
+﻿$PBExportHeader$str_maite_hinban.srs
+$PBExportComments$m_aite_hinban用の構造体
+global type str_maite_hinban from structure
+	long		tokui_code
+	long		sku_code
+	long		syohin_code
+	integer		iro_no
+	string		aite_hinban
+	string		aite_hinmei
+	string		aite_iromei
+	string		aite_sizemei
+	string		aite_bumon_code
+	string		aite_bumon_mei
+	decimal {2}	aite_baika1
+	decimal {2}	aite_baika2
+	decimal {2}	new_baika1
+	decimal {2}	new_baika2
+	long		tekiyo_date_str
+	long		tekiyo_date_end
+	datetime	touroku_date
+	string		touroku_user_id
+	string		touroku_client_id
+	string		touroku_pg_id
+	datetime	henkou_date
+	string		henkou_user_id
+	string		henkou_client_id
+	string		henkou_pg_id
+	datetime	kousin_date
+	string		kousin_user_id
+	string		kousin_client_id
+	string		kousin_pg_id
+	integer		haita_flg
+end type

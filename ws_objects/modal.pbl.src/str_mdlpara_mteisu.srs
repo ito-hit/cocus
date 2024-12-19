@@ -1,0 +1,6 @@
+﻿$PBExportHeader$str_mdlpara_mteisu.srs
+$PBExportComments$m_teisuのモーダル用構造体
+global type str_mdlpara_mteisu from structure
+	str_mteisu		ret[]
+end type
+

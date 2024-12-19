@@ -1,0 +1,26 @@
+﻿$PBExportHeader$str_mgtin.srs
+$PBExportComments$m_gtin用の構造体
+global type str_mgtin from structure
+	string		gtin_code
+	longlong	sku_code
+	long		syohin_code
+	integer		iro_no
+	integer		code_kbn
+	string		jigyosya_code
+	integer		touroku_iti
+	integer		indicator
+	long		irisu
+	datetime	touroku_date
+	string		touroku_user_id
+	string		touroku_client_id
+	string		touroku_pg_id
+	datetime	henkou_date
+	string		henkou_user_id
+	string		henkou_client_id
+	string		henkou_pg_id
+	datetime	kousin_date
+	string		kousin_user_id
+	string		kousin_client_id
+	string		kousin_pg_id
+	integer		haita_flg
+end type

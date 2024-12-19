@@ -1,0 +1,34 @@
+﻿$PBExportHeader$str_mtokui_atesaki.srs
+$PBExportComments$m_tokui_atesaki用の構造体
+global type str_mtokui_atesaki from structure
+	long		tokui_code
+	integer		atesaki_kbn
+	string		yubin_no
+	string		jyusyo1
+	string		jyusyo2
+	string		jyusyo3
+	string		jyusyo4
+	string		atena1
+	string		atena2
+	string		atena3
+	string		atena4
+	string		tel_no
+	string		fax_no
+	string		bikou1
+	string		bikou2
+	string		bikou3
+	string		note
+	datetime	touroku_date
+	string		touroku_user_id
+	string		touroku_client_id
+	string		touroku_pg_id
+	datetime	henkou_date
+	string		henkou_user_id
+	string		henkou_client_id
+	string		henkou_pg_id
+	datetime	kousin_date
+	string		kousin_user_id
+	string		kousin_client_id
+	string		kousin_pg_id
+	integer		haita_flg
+end type

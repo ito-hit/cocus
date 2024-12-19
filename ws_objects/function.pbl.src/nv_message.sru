@@ -26,6 +26,7 @@ public subroutine of_error (string p_text)
 public subroutine of_error_db (string p_text, inv_transaction p_tran)
 public subroutine of_error_dwo (dwobject p_dwo, string p_text)
 public subroutine of_error_sle (singlelineedit p_sle, string p_text)
+public subroutine of_error_dwo (datawindow p_dw, long p_row, dwobject p_dwo, string p_text)
 end prototypes
 
 public subroutine of_warning (string p_text);// --------------------------------------------------------------------------
@@ -214,6 +215,78 @@ p_sle.backcolor	= l_sle_backcolor
 p_sle.textcolor	= l_sle_textcolor
 
 p_sle.setfocus( )
+
+end subroutine
+
+public subroutine of_error_dwo (datawindow p_dw, long p_row, dwobject p_dwo, string p_text);// --------------------------------------------------------------------------
+// Script:		nv_func.of_error_dwo
+// Purpose:		エラーが発生したカラムにフォーカスし、エラーメッセージを表示する（データウインドウ用）
+//
+// Arguments:	p_dw	- データウインドウ
+//				p_row	- エラーが発生した行
+//				p_dwo	- データウインドウオブジェクト
+// 				p_text	- メッセージボックスに表示する文字列
+//
+// Date        Prog/ID	Description of Change / Reason
+// ----------  --------	-----------------------------------------------------
+// 2024.11.11	Kin		Initial coding
+// --------------------------------------------------------------------------
+
+integer	l_dwo_x, l_dwo_width
+long	l_dw_pos, l_dw_pos_after
+integer	l_dw_width
+
+long	l_row_first, l_row_last, l_row_after
+
+l_dw_pos	= long( p_dw.object.datawindow.horizontalscrollposition )
+l_dw_width	= p_dw.width
+l_dwo_x		= long( p_dwo.x )
+l_dwo_width	= long( p_dwo.width )
+
+l_row_first	= long( p_dw.object.datawindow.firstrowonpage )
+l_row_last	= long( p_dw.object.datawindow.lastrowonpage )
+
+p_dw.setredraw( false )
+
+// DW表示範囲内に入っていなければ縦スクロールを行う
+if p_row >= l_row_first and p_row <= l_row_last then
+	// 調整不要
+	l_row_after	= l_row_first
+else
+	// 対象行へスクロール
+	l_row_after	= p_row
+end if
+
+
+// DW表示範囲内に入っていなければ横スクロールを行う
+if l_dwo_x >= l_dw_pos and l_dw_pos < ( l_dwo_x + l_dwo_width ) then	// dwo開始位置がdw範囲内にあるか
+	if ( l_dwo_x + l_dwo_width ) <= ( l_dw_pos + l_dw_width ) then		// dwoの終了位置がdw範囲内にあるか
+		// 調整不要
+		l_dw_pos_after	= l_dw_pos
+	else
+		// 右へスクロール
+		l_dw_pos_after	= ( l_dwo_x + l_dwo_width ) - l_dw_width + 100
+	end if
+else
+	// 左へスクロール(スクロール量0でも表示しきれるなら0にする)
+	if l_dw_width >= ( l_dwo_x + l_dwo_width ) then
+		l_dw_pos_after	= 0
+	else
+		l_dw_pos_after	= l_dwo_x
+	end if
+end if
+
+if l_dw_pos_after < 0 then
+	l_dw_pos_after	= 0
+end if
+
+p_dw.scrolltorow( l_row_after )
+p_dw.object.datawindow.horizontalscrollposition	= l_dw_pos_after
+
+p_dw.setredraw( true )
+
+of_error_dwo( p_dwo, p_text )
+
 
 end subroutine
 

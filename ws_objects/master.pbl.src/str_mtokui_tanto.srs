@@ -1,0 +1,24 @@
+﻿$PBExportHeader$str_mtokui_tanto.srs
+$PBExportComments$m_tokui_tanto用の構造体
+global type str_mtokui_tanto from structure
+	long		tokui_code
+	long		nengetu
+	long		nen
+	integer		tuki
+	integer		tanto_code
+	long		uriage_mokuhyo
+	long		arari_mokuhyo
+	datetime	touroku_date
+	string		touroku_user_id
+	string		touroku_client_id
+	string		touroku_pg_id
+	datetime	henkou_date
+	string		henkou_user_id
+	string		henkou_client_id
+	string		henkou_pg_id
+	datetime	kousin_date
+	string		kousin_user_id
+	string		kousin_client_id
+	string		kousin_pg_id
+	integer		haita_flg
+end type

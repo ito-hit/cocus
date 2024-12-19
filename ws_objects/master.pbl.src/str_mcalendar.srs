@@ -1,0 +1,26 @@
+﻿$PBExportHeader$str_mcalendar.srs
+$PBExportComments$m_calendar用の構造体
+global type str_mcalendar from structure
+	long		kyoten_code
+	integer		calendar_kbn
+	long		hizuke
+	long		nen
+	integer		tuki
+	integer		hi
+	integer		youbi
+	integer		taisyo_flg
+	string		tekiyo
+	datetime	touroku_date
+	string		touroku_user_id
+	string		touroku_client_id
+	string		touroku_pg_id
+	datetime	henkou_date
+	string		henkou_user_id
+	string		henkou_client_id
+	string		henkou_pg_id
+	datetime	kousin_date
+	string		kousin_user_id
+	string		kousin_client_id
+	string		kousin_pg_id
+	integer		haita_flg
+end type

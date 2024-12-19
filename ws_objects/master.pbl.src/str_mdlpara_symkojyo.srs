@@ -1,0 +1,6 @@
+﻿$PBExportHeader$str_mdlpara_symkojyo.srs
+$PBExportComments$m_brand用のモーダル構造体
+global type str_mdlpara_symkojyo from structure
+	str_symkojyo		ret[]
+end type
+

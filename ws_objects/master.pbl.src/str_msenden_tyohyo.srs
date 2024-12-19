@@ -1,0 +1,24 @@
+﻿$PBExportHeader$str_msenden_tyohyo.srs
+$PBExportComments$m_senden_tyohyo用の構造体
+global type str_msenden_tyohyo from structure
+	string		tyohyo_id
+	string		tyohyo_mei
+	string		tyohyo_mei_ryaku
+	integer		tyohyo_syubetu
+	integer		max_gyo_su
+	integer		syori_jyun
+	string		guide_message
+	datetime	touroku_date
+	string		touroku_user_id
+	string		touroku_client_id
+	string		touroku_pg_id
+	datetime	henkou_date
+	string		henkou_user_id
+	string		henkou_client_id
+	string		henkou_pg_id
+	datetime	kousin_date
+	string		kousin_user_id
+	string		kousin_client_id
+	string		kousin_pg_id
+	integer		haita_flg
+end type
